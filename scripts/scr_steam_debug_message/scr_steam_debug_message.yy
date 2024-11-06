@@ -1,0 +1,11 @@
+{
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "scr_steam_debug_message",
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Core",
+    "path": "folders/Scripts/Gmnet/Steam/Core.yy",
+  },
+}
