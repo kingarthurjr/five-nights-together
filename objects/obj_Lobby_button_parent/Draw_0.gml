@@ -1,5 +1,5 @@
 /// @description  Draw text
-Text_Font=font0;
+Text_Font=fnt_fnaf40;
 Text_Color=c_ltgray;
 Text_To_Draw=MyText;
 Text_Auto_Wrap=false;

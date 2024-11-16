@@ -68,6 +68,6 @@
   "nineSlice": null,
   "parent": {
     "name": "htme_demo",
-    "path": "folders/Sprites/htme_demo.yy",
+    "path": "folders/Sprites/GMnet/htme_demo.yy",
   },
 }

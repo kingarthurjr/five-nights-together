@@ -39,7 +39,7 @@ function htme_config() {
 	 * More Information can be found in the manual.
 	 */
  
-	self.use_udphp = false;
+	self.use_udphp = true;
 
 	/** 
 	 * WHEN USING GMnet PUNCH:

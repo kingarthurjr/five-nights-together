@@ -68,6 +68,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Lobby",
-    "path": "folders/Sprites/Lobby.yy",
+    "path": "folders/Sprites/GMnet/Lobby.yy",
   },
 }

@@ -25,8 +25,8 @@ var l = htme_getLANServers();
 myCounter=0;
 for (var i = ListOffset; i<4+ListOffset;i++) {
     ServerInfoSet=false;
-    MyText="Server: " + string(i+1);
-    MyServerNumber=i;
+    MyText="";
+	MyServerNumber=i;
     //draw_text(10,85+80*i,"=("+string(i+1)+")=");
     if (ds_exists(l,ds_type_list)) {
         if (ds_list_size(l)>i) {
@@ -40,8 +40,8 @@ for (var i = ListOffset; i<4+ListOffset;i++) {
             var totalPlayers = entry[? "data6"];
             //draw_text(70,85+80*i,servername+" | "+ip+":"+string(port));
             //draw_text(70,115+80*i,description);
-            MyText+="#" + string(servername) + " (" + string(totalPlayers) + ")";
-            MyText+="#" + string(description);
+            MyText+=string(servername);
+            MyText+="#" + string(description) + " (" + string(totalPlayers) + "/7)";
             ServerInfoSet=true;
         }
     }
