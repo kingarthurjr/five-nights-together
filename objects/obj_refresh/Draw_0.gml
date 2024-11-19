@@ -1,5 +1,5 @@
 /// @description  Draw text
-Text_Font=font0;
+/*Text_Font=font0;
 Text_Color=c_ltgray;
 Text_To_Draw="Refresh";
 Text_Auto_Wrap=false;
@@ -11,5 +11,4 @@ Text_allow_different_xyscale=false; // fill whole area with text
 //draw_self();
 
 // Run
-scr_Text_Fit_Box_Common();
-
+scr_Text_Fit_Box_Common();*/

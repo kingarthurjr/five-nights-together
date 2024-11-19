@@ -1,6 +1,6 @@
 /// @description  Draw text
 Text_Font=fnt_fnaf40;
-Text_Color=c_ltgray;
+Text_Color=c_white;
 Text_To_Draw=MyText;
 Text_Auto_Wrap=false;
 Text_Max_Scale=-1; // Will try to hold this scale on the text (-1 to fit in box)

@@ -1,0 +1,1 @@
+global.isPrivate = false; //Reset isPrivate to false every time
