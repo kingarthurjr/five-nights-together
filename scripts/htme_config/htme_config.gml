@@ -15,7 +15,7 @@ function htme_config() {
 	 * Use htme_debugOverlayEnabled() to check if the overlay is on, to draw your own
 	 * debug information. 
 	*/
-	self.debugoverlay = true;
+	self.debugoverlay = false;
 
 	/** 
 	 * Use different versions of Game Maker Studio

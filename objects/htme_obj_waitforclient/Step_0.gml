@@ -1,13 +1,13 @@
 /// @description Check if client is connected
 if (htme_clientIsConnected()) 
 {
-	if global.isPrivate = true
+	if global.isPrivate = true and global.password = false
 	{
 		room_goto(rm_password);
 	}
 	else
 	{
-		room_goto(htme_rom_demo);
+		room_goto(rm_waitingroom);
 	}
 }
 if (htme_clientConnectionFailed()) {

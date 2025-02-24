@@ -4,7 +4,7 @@ audio_play_sound(choose(snd_click1,snd_click2,snd_click3),10,false);
 var port = 6510;
 
 //Setup server, on success start game, on failure end the game.
-if (htme_serverStart(port,32)) {
+if (htme_serverStart(port,7)) {
     //Set a server name and description. See chapter BONUS 1 in the manual.
     //This is only relevant if you are using GMnet ENGINE version, otherwise you
     //won't notice this

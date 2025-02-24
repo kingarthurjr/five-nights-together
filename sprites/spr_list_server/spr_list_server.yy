@@ -70,6 +70,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Server List",
-    "path": "folders/Sprites/Server List.yy",
+    "path": "folders/Sprites/Lobby/Server List.yy",
   },
 }

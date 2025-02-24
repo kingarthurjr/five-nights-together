@@ -17,7 +17,7 @@
   "soundFile": "snd_blip.mp3",
   "duration": 0.144,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Cameras",
+    "path": "folders/Sounds/Devices/Cameras.yy",
   },
 }

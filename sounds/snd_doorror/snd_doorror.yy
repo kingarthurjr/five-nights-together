@@ -17,7 +17,7 @@
   "soundFile": "snd_doorror.wav",
   "duration": 0.336689,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Office",
+    "path": "folders/Sounds/Office.yy",
   },
 }

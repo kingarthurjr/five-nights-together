@@ -1,0 +1,1 @@
+obj_characterInfo.current = animNumber;

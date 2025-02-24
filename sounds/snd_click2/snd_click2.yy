@@ -17,7 +17,7 @@
   "soundFile": "snd_click2.mp3",
   "duration": 0.293333,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Menu",
+    "path": "folders/Sounds/Menu.yy",
   },
 }

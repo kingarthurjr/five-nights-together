@@ -2,13 +2,15 @@
 if (is_undefined(htme_globalGet("password")))
 {
 	htme_globalSet("password",keyboard_string,buffer_string); //Create Password
-	room_goto(htme_rom_demo);
+	global.password = true;
+	room_goto(htme_rom_connecting);
 }
 else //If it has, make sure it is correct
 {
 	if keyboard_string = htme_globalGet("password")
 	{
-		room_goto(htme_rom_demo);
+		global.password = true;
+		room_goto(htme_rom_connecting);
 	}
 	else
 	{

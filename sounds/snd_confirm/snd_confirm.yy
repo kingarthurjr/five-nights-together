@@ -17,7 +17,7 @@
   "soundFile": "snd_confirm.ogg",
   "duration": 0.727875,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Menu",
+    "path": "folders/Sounds/Menu.yy",
   },
 }

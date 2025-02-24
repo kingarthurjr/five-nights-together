@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Server List",
-    "path": "folders/Objects/Server List.yy",
+    "name": "Lobby",
+    "path": "folders/Objects/Lobby.yy",
   },
 }

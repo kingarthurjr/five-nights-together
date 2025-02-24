@@ -17,7 +17,7 @@
   "soundFile": "snd_switch.ogg",
   "duration": 0.352542,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Menu",
+    "path": "folders/Sounds/Menu.yy",
   },
 }

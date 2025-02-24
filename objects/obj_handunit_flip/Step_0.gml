@@ -1,0 +1,20 @@
+/// @description Animation End
+
+if image_speed = -1
+{
+	if floor(image_index) = 0
+	{
+		instance_create_layer(40,270,"Buttons",obj_arrow_left);
+		instance_create_layer(920,270,"Buttons",obj_arrow_right);
+		instance_create_layer(680,500,"Buttons",obj_button_handunit);
+		instance_create_layer(360,500,"Buttons",obj_button_camera);
+		instance_destroy();
+	}
+}
+else
+{
+	if floor(image_index) = image_number - 1
+	{
+		instance_change(obj_handunit,true);
+	}
+}

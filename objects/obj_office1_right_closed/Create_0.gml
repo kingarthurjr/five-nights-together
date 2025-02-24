@@ -1,0 +1,1 @@
+animationStarted = false;
