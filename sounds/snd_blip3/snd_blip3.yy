@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_blip2",
+  "name": "snd_blip3",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,7 +14,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_blip2.wav",
+  "soundFile": "snd_blip3.wav",
   "duration": 0.025147,
   "parent": {
     "name": "HandUnit",

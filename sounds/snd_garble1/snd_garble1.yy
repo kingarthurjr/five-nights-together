@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_flip2",
+  "name": "snd_garble1",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,10 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_flip2.ogg",
-  "duration": 0.534059,
+  "soundFile": "snd_garble1.mp3",
+  "duration": 4.127347,
   "parent": {
-    "name": "HandUnit",
-    "path": "folders/Sounds/Devices/HandUnit.yy",
+    "name": "Cameras",
+    "path": "folders/Sounds/Devices/Cameras.yy",
   },
 }

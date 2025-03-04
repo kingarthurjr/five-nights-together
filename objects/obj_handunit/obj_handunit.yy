@@ -32,6 +32,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "HandUnit",
-    "path": "folders/Objects/HandUnit.yy",
+    "path": "folders/Objects/Devices/HandUnit.yy",
   },
 }

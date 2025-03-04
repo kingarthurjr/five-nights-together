@@ -33,6 +33,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Buttons",
-    "path": "folders/Objects/HandUnit/Buttons.yy",
+    "path": "folders/Objects/Devices/HandUnit/Buttons.yy",
   },
 }
