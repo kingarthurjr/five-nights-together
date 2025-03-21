@@ -6,7 +6,7 @@ usage[1] = htme_globalGet("doorLeft");
 usage[2] = htme_globalGet("doorRight");
 usage[3] = htme_globalGet("light");
 usage[4] = htme_globalGet("cameraActive");
-powerDown = 120;
+powerDown = 147;
 //Count Active Items
 if htme_globalGet("powerOut") = 0
 {
@@ -15,7 +15,7 @@ if htme_globalGet("powerOut") = 0
 		if usage[i] = 1
 		{
 			usageTotal += 1;
-			powerDown -= 30;
+			powerDown -= 39;
 		}
 	}
 	if htme_globalGet("buildingTemp") >= 110 //Overheated

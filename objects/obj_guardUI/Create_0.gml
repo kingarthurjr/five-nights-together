@@ -1,4 +1,4 @@
-powerDown = 120;
+powerDown = 147;
 heatUp = 150;
 goUp = 0;
 
