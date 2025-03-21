@@ -89,6 +89,14 @@ if instance_exists(obj_bluescreen)
 {
     instance_destroy(obj_bluescreen);
 }
+if instance_exists(obj_cameramap1)
+{
+    instance_destroy(obj_cameramap1);
+}
+if instance_exists(obj_static)
+{
+    instance_destroy(obj_static);
+}
 
 //Tell the server that the camera is disabled
 htme_globalSet("cameraActive",0,buffer_bool);

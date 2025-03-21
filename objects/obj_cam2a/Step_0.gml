@@ -3,7 +3,7 @@ if htme_globalGet("cam2a") = 1
 {
     if !instance_exists(obj_videoerror)
     {
-        instance_create_layer(0,0,"Animatronics",obj_videoerror);
+        instance_create(0,0,obj_videoerror);
     }
 }
 else

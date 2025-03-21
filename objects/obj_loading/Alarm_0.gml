@@ -12,6 +12,8 @@ if htme_globalGet("name["+string(htme_globalGet("guardSelected"))+"]") = global.
 		sprite_prefetch(spr_office1_left_door);
 		sprite_prefetch(spr_office1_right);
 		sprite_prefetch(spr_office1_right_door);
+		sprite_prefetch(spr_monitor);
+		sprite_prefetch(spr_handunit);
 	}
 }
 

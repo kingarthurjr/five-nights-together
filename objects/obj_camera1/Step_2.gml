@@ -19,10 +19,15 @@ if htme_globalGet("camera") != current //If camera changed
 	teaseFUN = irandom_range(1,100);
 	
 	//Create Camera Transition Animation
-	if !instance_exists(obj_switch)
+	if instance_exists(obj_movement)
 	{
-		instance_create(0,0,obj_switch);
+		instance_destroy(obj_movement);
 	}
+	if instance_exists(obj_switch)
+	{
+		instance_destroy(obj_switch);
+	}
+	instance_create(0,0,obj_switch);
 	
 	//Create New Camera Feed
 	if htme_globalGet("camera") = 0

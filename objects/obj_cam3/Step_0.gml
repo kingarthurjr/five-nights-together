@@ -22,12 +22,16 @@ else if htme_globalGet("chica") = 10
 {
 	image_index = 5;
 }
+else if htme_globalGet("mimic") = 10
+{
+	image_index = (htme_globalGet("bonnieSpecial")) ? 10 : ((htme_globalGet("freddySpecial")) ? 9 : 8);
+}
 //Camera Disabled
 if htme_globalGet("cam3") = 1
 {
     if !instance_exists(obj_videoerror)
     {
-        instance_create_layer(0,0,"Animatronics",obj_videoerror);
+        instance_create(0,0,obj_videoerror);
     }
 }
 else

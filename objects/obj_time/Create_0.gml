@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-//For Trailer
-image_index = 2;
+depth = -13;
+time = 12;
+alarm[0] = room_speed*60;

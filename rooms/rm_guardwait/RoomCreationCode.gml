@@ -1,5 +1,7 @@
 ///Set Night Guard Defaults
 
+//Time
+htme_globalSet("6am",0,buffer_bool);
 //Office Status
 htme_globalSet("facing",0,buffer_u8);
 htme_globalSet("doorLeft",0,buffer_bool);
@@ -9,6 +11,9 @@ htme_globalSet("light",0,buffer_bool);
 htme_globalSet("powerOut",0,buffer_bool);
 htme_globalSet("buildingPower",100,buffer_u8);
 htme_globalSet("buildingTemp",60,buffer_u8);
+htme_globalSet("ovenUse",0,buffer_u8);
+htme_globalSet("ovenTemp",160,buffer_u8);
+global.bluescreenFirstTime = false;
 //Camera Status
 htme_globalSet("camera",0,buffer_s8);
 htme_globalSet("cameraActive",0,buffer_bool);
@@ -24,6 +29,9 @@ htme_globalSet("cam4b",0,buffer_bool);
 htme_globalSet("cam5",0,buffer_bool);
 htme_globalSet("cam6",0,buffer_bool);
 htme_globalSet("cam7",0,buffer_bool);
+//Animatronics
+htme_globalSet("breakBonnie",0,buffer_bool);
+htme_globalSet("foxyWatched",0,buffer_bool);
 
 ///Temporary
 room_goto(rm_office1);

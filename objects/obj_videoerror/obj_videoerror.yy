@@ -24,11 +24,13 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Mechanics",
-    "path": "folders/Objects/Devices/Cameras/Mechanics.yy",
+    "name": "Bonnie",
+    "path": "folders/Objects/Devices/Cameras/Mechanics/Bonnie.yy",
   },
 }

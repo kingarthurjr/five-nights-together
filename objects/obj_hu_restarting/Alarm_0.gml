@@ -4,14 +4,10 @@ if obj_handunit.generator = 1
     if htme_globalGet("powerOut") = 1
     {
         audio_play_sound(snd_powerback,10,false);
-        htme_globalSet("powerOut",1,buffer_bool);
-        with(obj_office1)
+        htme_globalSet("powerOut",0,buffer_bool);
+        with(obj_office1_outage)
         {
-            sprite_index = spr_office1;
-        }
-        with(obj_handunit)
-        {
-            sprite_index = spr_handunit;
+            instance_change(obj_office1,true);
         }
     }
     obj_handunit.generator = 0;

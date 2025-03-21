@@ -1,4 +1,4 @@
-/// @description increase/Decrease Temperature
+/// @description Increase/Decrease Temperature
 
 //Increase or Decrease Temperature Accordingly
 if htme_globalGet("buildingTemp") < 110 or htme_globalGet("powerOut") = 1

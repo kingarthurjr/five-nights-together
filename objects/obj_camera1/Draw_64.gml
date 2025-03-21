@@ -20,7 +20,7 @@ if htme_globalGet("cameraOut") = 0
         }
         if htme_globalGet("camera") = 3
         {
-            draw_text(1120,215,"Dining Hall");
+            draw_text(1120,215,"Dining Area");
         }
         if htme_globalGet("camera") = 4
         {

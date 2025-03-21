@@ -1,13 +1,25 @@
-if !instance_exists(obj_monitor)
+if !instance_exists(obj_camera1)
 {
 	instance_create_layer(0,540,"Devices",obj_monitor);
-	with(obj_handunit_flip)
+	with(obj_monitor)
 	{
-		image_speed = 1;
 		image_index = 0;
+		image_speed = 1;
 	}
+	instance_destroy(obj_button_handunit);
+	instance_destroy(obj_arrow_left);
+	instance_destroy(obj_arrow_right);
+	instance_destroy();
 }
-instance_destroy(obj_button_handunit);
-instance_destroy(obj_arrow_left);
-instance_destroy(obj_arrow_right);
-instance_destroy();
+else
+{
+	instance_destroy(obj_camera1);
+	instance_create_layer(0,540,"Devices",obj_monitor);
+	with(obj_monitor)
+	{
+		image_index = image_number-1;
+		image_speed = -1;
+	}
+	obj_office1.alarm[0] = 10;
+	instance_destroy();
+}

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_stage_springtrap",
   "spriteId": {
-    "name": "spr_stage_chica",
-    "path": "sprites/spr_stage_chica/spr_stage_chica.yy",
+    "name": "spr_stage_springtrap",
+    "path": "sprites/spr_stage_springtrap/spr_stage_springtrap.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,6 +28,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],

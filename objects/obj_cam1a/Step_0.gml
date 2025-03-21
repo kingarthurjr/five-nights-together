@@ -3,7 +3,7 @@ if htme_globalGet("cam1a") = 1
 {
     if !instance_exists(obj_videoerror)
     {
-        instance_create_layer(0,0,"Animatronics",obj_videoerror);
+        instance_create(0,0,obj_videoerror);
     }
 }
 else
@@ -14,7 +14,7 @@ else
     }
 }
 //Camera Change
-if htme_globalGet("camera") != 1
+if htme_globalGet("camera") != 0
 {
 	instance_destroy();
 }
