@@ -1,7 +1,7 @@
 //Locations for the bar
 if currentSelection = 0
 {
-	targetY = 535;
+	targetY = 540;
 }
 if currentSelection = 1
 {
