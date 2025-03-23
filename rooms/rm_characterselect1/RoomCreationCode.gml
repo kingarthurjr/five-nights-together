@@ -10,6 +10,8 @@ htme_globalSet("springtrap",0,buffer_s8);
 htme_globalSet("mimic",0,buffer_s8);
 htme_globalSet("gfreddy",0,buffer_s8);
 htme_globalSet("sfreddy",0,buffer_s8);
+//Jumpscaring
+htme_globalSet("whoGot",0,buffer_u8);
 //Abilities
 htme_globalSet("freddySpecial",0,buffer_bool);
 htme_globalSet("freddyOut",0,buffer_bool);

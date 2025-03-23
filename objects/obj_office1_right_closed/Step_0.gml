@@ -24,3 +24,14 @@ if sprite_index = spr_office1_right_door
 		instance_change(obj_office1_right,true);
 	}
 }
+
+//Jumpscare
+if htme_globalGet("jumpscare") = 1
+{
+	instance_change(obj_office1_rightturn,true);
+	with(obj_office1_rightturn)
+	{
+		image_index = image_number - 1;
+		image_speed = -1;
+	}
+}

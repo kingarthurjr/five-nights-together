@@ -1,0 +1,1 @@
+obj_gameover.alarm[0] = 150;
