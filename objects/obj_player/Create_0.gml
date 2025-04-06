@@ -133,6 +133,7 @@ self.animatronicChosen = 0;
 self.special = false; //Add special syncing when that's done
 
 stopMoving = false;
+previousFrame = image_index;
 
 if htme_isLocal()
 {
