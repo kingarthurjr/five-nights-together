@@ -1,9 +1,9 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "mus_6am",
+  "name": "snd_dooropen",
   "conversionMode": 0,
-  "compression": 3,
+  "compression": 0,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,
@@ -14,10 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mus_6am.mp3",
-  "duration": 17.031837,
+  "soundFile": "snd_dooropen.wav",
+  "duration": 0.436825,
   "parent": {
-    "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "name": "Animatronics",
+    "path": "folders/Sounds/Animatronics.yy",
   },
 }

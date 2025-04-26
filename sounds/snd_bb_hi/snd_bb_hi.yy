@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_bb_hi.mp3",
-  "duration": 1.436735,
+  "duration": 1.018776,
   "parent": {
     "name": "Animatronics",
     "path": "folders/Sounds/Animatronics.yy",
