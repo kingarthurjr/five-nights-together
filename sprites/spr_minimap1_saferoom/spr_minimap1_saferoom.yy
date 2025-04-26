@@ -67,7 +67,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Animatronics",
-    "path": "folders/Sprites/UI/Animatronics.yy",
+    "name": "FNaF1",
+    "path": "folders/Sprites/UI/Animatronics/Minimap/FNaF1.yy",
   },
 }
