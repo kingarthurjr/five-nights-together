@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_camDetect",
+  "name": "obj_camDetectCove",
   "spriteId": {
     "name": "spr_camDetect",
     "path": "sprites/spr_camDetect/spr_camDetect.yy",
