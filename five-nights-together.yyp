@@ -56,6 +56,7 @@
     {"id":{"name":"obj_office1_right","path":"objects/obj_office1_right/obj_office1_right.yy",},"order":5,},
     {"id":{"name":"Obj_Steam_Networking_Circle","path":"objects/Obj_Steam_Networking_Circle/Obj_Steam_Networking_Circle.yy",},"order":1,},
     {"id":{"name":"Obj_Steam_UGC_Item_Actions","path":"objects/Obj_Steam_UGC_Item_Actions/Obj_Steam_UGC_Item_Actions.yy",},"order":3,},
+    {"id":{"name":"obj_curtain","path":"objects/obj_curtain/obj_curtain.yy",},"order":5,},
     {"id":{"name":"spr_list_server","path":"sprites/spr_list_server/spr_list_server.yy",},"order":0,},
     {"id":{"name":"spr_waitchild_left","path":"sprites/spr_waitchild_left/spr_waitchild_left.yy",},"order":0,},
     {"id":{"name":"obj_stage_springtrap","path":"objects/obj_stage_springtrap/obj_stage_springtrap.yy",},"order":3,},
