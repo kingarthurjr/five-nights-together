@@ -17,7 +17,7 @@
   "soundFile": "snd_surfsup.mp3",
   "duration": 2.089796,
   "parent": {
-    "name": "Don't Let Them Leave",
-    "path": "folders/Sounds/Animatronics/Minigames/Don't Let Them Leave.yy",
+    "name": "Minigames",
+    "path": "folders/Sounds/Animatronics/Minigames.yy",
   },
 }

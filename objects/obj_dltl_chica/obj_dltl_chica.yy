@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_dltl_chica",
   "spriteId": {
-    "name": "spr_dltl_bonnie",
-    "path": "sprites/spr_dltl_bonnie/spr_dltl_bonnie.yy",
+    "name": "spr_dltl_chica",
+    "path": "sprites/spr_dltl_chica/spr_dltl_chica.yy",
   },
   "solid": false,
   "visible": true,

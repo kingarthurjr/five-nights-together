@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_dltl_bonnie",
   "spriteId": {
-    "name": "spr_dltl_freddy",
-    "path": "sprites/spr_dltl_freddy/spr_dltl_freddy.yy",
+    "name": "spr_dltl_bonnie",
+    "path": "sprites/spr_dltl_bonnie/spr_dltl_bonnie.yy",
   },
   "solid": false,
   "visible": true,

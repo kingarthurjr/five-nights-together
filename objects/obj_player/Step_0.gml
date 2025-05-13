@@ -302,7 +302,7 @@ else
 }
 
 ///Movement Sound
-if global.minigameActive = 1
+if stopMoving = true
 {
     if audio_is_playing(mus_puppet)
     {

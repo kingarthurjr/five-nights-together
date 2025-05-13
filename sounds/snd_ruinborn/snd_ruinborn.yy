@@ -17,7 +17,7 @@
   "soundFile": "snd_ruinborn.wav",
   "duration": 2.49875,
   "parent": {
-    "name": "Don't Let Them Leave",
-    "path": "folders/Sounds/Animatronics/Minigames/Don't Let Them Leave.yy",
+    "name": "Minigames",
+    "path": "folders/Sounds/Animatronics/Minigames.yy",
   },
 }

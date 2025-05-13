@@ -17,7 +17,7 @@
   "soundFile": "snd_run.wav",
   "duration": 0.052245,
   "parent": {
-    "name": "Don't Let Them Leave",
-    "path": "folders/Sounds/Animatronics/Minigames/Don't Let Them Leave.yy",
+    "name": "Minigames",
+    "path": "folders/Sounds/Animatronics/Minigames.yy",
   },
 }

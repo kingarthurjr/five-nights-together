@@ -4,5 +4,8 @@ if gameover = true
     htme_globalSet("deathCoinLocation",0,buffer_s8);
     global.deathCoin = false;
     obj_player.spawn = true;
-    room = rm_dininghall;
+    if htme_globalGet("mapSelected") = 0 //If FNaF1
+	{
+		room = rm_diningarea;
+	}
 }

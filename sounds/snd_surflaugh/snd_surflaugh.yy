@@ -17,7 +17,7 @@
   "soundFile": "snd_surflaugh.mp3",
   "duration": 1.201633,
   "parent": {
-    "name": "Don't Let Them Leave",
-    "path": "folders/Sounds/Animatronics/Minigames/Don't Let Them Leave.yy",
+    "name": "Minigames",
+    "path": "folders/Sounds/Animatronics/Minigames.yy",
   },
 }

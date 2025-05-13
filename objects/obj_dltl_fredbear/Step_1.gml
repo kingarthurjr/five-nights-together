@@ -14,13 +14,13 @@ while left with no capitals indicate if left keyboard is pressed!
 ///Actual Movement
 if(keyboard_check(vk_up))
 {
-    if(!place_meeting(x, y - spd, obj_border)) if ((global.time % 2) = 0){ y -= spd; audio_play_sound(snd_run,10,false);}
+    if(!place_meeting(x, y - spd, obj_minigame_border)) if ((global.time % 2) = 0){ y -= spd; audio_play_sound(snd_run,10,false);}
     step++;
 }
 
 if(keyboard_check(vk_down))
 {
-    if(!place_meeting(x, y + spd, obj_border)) if ((global.time % 2) = 0){ y += spd; audio_play_sound(snd_run,10,false);}
+    if(!place_meeting(x, y + spd, obj_minigame_border)) if ((global.time % 2) = 0){ y += spd; audio_play_sound(snd_run,10,false);}
     step++;
 }
 

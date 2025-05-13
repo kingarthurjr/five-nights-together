@@ -17,7 +17,7 @@
   "soundFile": "snd_scare.wav",
   "duration": 0.16585,
   "parent": {
-    "name": "Don't Let Them Leave",
-    "path": "folders/Sounds/Animatronics/Minigames/Don't Let Them Leave.yy",
+    "name": "Minigames",
+    "path": "folders/Sounds/Animatronics/Minigames.yy",
   },
 }

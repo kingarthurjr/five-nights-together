@@ -17,7 +17,7 @@
   "soundFile": "snd_hesflippinback.mp3",
   "duration": 3.395918,
   "parent": {
-    "name": "Don't Let Them Leave",
-    "path": "folders/Sounds/Animatronics/Minigames/Don't Let Them Leave.yy",
+    "name": "Minigames",
+    "path": "folders/Sounds/Animatronics/Minigames.yy",
   },
 }

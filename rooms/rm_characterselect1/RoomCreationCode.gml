@@ -19,5 +19,5 @@ htme_globalSet("bonnieSpecial",0,buffer_bool);
 htme_globalSet("ovenUse",0,buffer_u8);
 htme_globalSet("puppetSpecial",0,buffer_bool);
 //Death Coin
-htme_globalSet("deathCoinRoom",-1,buffer_s8);
-htme_globalSet("deathCoinLocation",0,buffer_u8);
+global.coinRoom = 0;
+global.coinLocation = 0;
