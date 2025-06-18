@@ -191,6 +191,7 @@
     {"id":{"name":"obj_lefthall_bonnie","path":"objects/obj_lefthall_bonnie/obj_lefthall_bonnie.yy",},"order":1,},
     {"id":{"name":"htme_clientRecieveVarGroup","path":"scripts/htme_clientRecieveVarGroup/htme_clientRecieveVarGroup.yy",},"order":7,},
     {"id":{"name":"obj_door_office1_right","path":"objects/obj_door_office1_right/obj_door_office1_right.yy",},"order":1,},
+    {"id":{"name":"spr_office2","path":"sprites/spr_office2/spr_office2.yy",},"order":0,},
     {"id":{"name":"htme_clientStop","path":"scripts/htme_clientStop/htme_clientStop.yy",},"order":5,},
     {"id":{"name":"htme_clientBroadcastUnsync","path":"scripts/htme_clientBroadcastUnsync/htme_clientBroadcastUnsync.yy",},"order":7,},
     {"id":{"name":"spr_bonnie_r","path":"sprites/spr_bonnie_r/spr_bonnie_r.yy",},"order":2,},
