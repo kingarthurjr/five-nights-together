@@ -74,6 +74,6 @@
   "nineSlice": null,
   "parent": {
     "name": "The Puppet",
-    "path": "folders/Sprites/Overworld/Animatronics/FNaF1/The Puppet.yy",
+    "path": "folders/Sprites/Overworld/Animatronics/Misc/The Puppet.yy",
   },
 }

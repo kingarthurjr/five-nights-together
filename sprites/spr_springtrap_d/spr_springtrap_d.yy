@@ -74,6 +74,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Springtrap",
-    "path": "folders/Sprites/Overworld/Animatronics/FNaF1/Springtrap.yy",
+    "path": "folders/Sprites/Overworld/Animatronics/Misc/Springtrap.yy",
   },
 }
