@@ -1,2 +1,2 @@
-instance_destroy(obj_honk_freddy);
+instance_destroy(obj_office2_desk);
 instance_destroy(obj_honk_helpy);
