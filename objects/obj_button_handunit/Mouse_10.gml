@@ -7,10 +7,6 @@ if !instance_exists(obj_handunit_flip)
 		image_index = 0;
 	}
 }
-if instance_exists(obj_button_mask)
-{
-	instance_destroy(obj_button_mask);
-}
 instance_destroy(obj_button_camera);
 instance_destroy(obj_arrow_left);
 instance_destroy(obj_arrow_right);
