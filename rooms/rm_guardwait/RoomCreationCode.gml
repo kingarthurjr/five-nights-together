@@ -7,6 +7,7 @@ htme_globalSet("facing",0,buffer_u8);
 htme_globalSet("doorLeft",0,buffer_bool);
 htme_globalSet("doorRight",0,buffer_bool);
 htme_globalSet("light",0,buffer_bool);
+htme_globalSet("mask",0,buffer_u8);
 //Building Status
 htme_globalSet("powerOut",0,buffer_bool);
 htme_globalSet("buildingPower",100,buffer_u8);
@@ -36,4 +37,4 @@ htme_globalSet("jumpscareHappened",0,buffer_bool);
 htme_globalSet("gameover",0,buffer_bool);
 
 ///Temporary
-room_goto(rm_office1);
+room_goto(rm_office2);

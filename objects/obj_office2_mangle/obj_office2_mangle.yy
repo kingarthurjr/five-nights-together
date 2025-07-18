@@ -3,8 +3,13 @@
   "resourceVersion": "1.0",
   "name": "obj_office2_mangle",
   "spriteId": {
+<<<<<<< HEAD
     "name": "spr_office2_mangle",
     "path": "sprites/spr_office2_mangle/spr_office2_mangle.yy",
+=======
+    "name": "spr_office2_tchica",
+    "path": "sprites/spr_office2_tchica/spr_office2_tchica.yy",
+>>>>>>> parent of d316d91 (Added Flickering Lights to FNaF2 Office)
   },
   "solid": false,
   "visible": true,

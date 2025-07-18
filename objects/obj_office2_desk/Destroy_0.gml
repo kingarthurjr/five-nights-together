@@ -1,0 +1,1 @@
+instance_destroy(obj_office2_desk_flickering);
