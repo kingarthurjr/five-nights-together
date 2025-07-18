@@ -4,8 +4,12 @@ if global.nightGuard = 1
 }
 if global.animatronic = 1
 {
-    if htme_globalGet("mapSelected") = 0 //If FNaF1
+    if htme_globalGet("mapSelected") = 0 //FNaF1
 	{
 		room_goto(rm_characterselect1);
+	}
+	if htme_globalGet("mapSelected") = 1 //FNaF2
+	{
+		room_goto(rm_characterselect2);
 	}
 }

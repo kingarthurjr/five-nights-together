@@ -1,5 +1,6 @@
 htme_globalSet("facing",1,buffer_u8);
-instance_create_layer(0,0,"Instances",obj_office2_desk);
+instance_create_layer(0,0,"Desk",obj_office2_desk);
+inOffice = 0;
 
 //Create Buttons
 if !instance_exists(obj_handunit)
@@ -11,9 +12,9 @@ if !instance_exists(obj_handunit)
 	instance_create_layer(480,500,"Buttons",obj_button_mask);
 }
 //Office Flickering
-if !instance_exists(obj_office1_flickering)
+if !instance_exists(obj_office2_flickering)
 {
-    instance_create_layer(0,0,"Animatronics",obj_office1_flickering);
+    instance_create_layer(0,0,"Animatronics",obj_office2_flickering);
 }
 //Sounds
 if audio_is_playing(snd_powerout)
