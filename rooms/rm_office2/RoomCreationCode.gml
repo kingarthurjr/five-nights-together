@@ -1,0 +1,1 @@
+audio_play_sound(snd_office2,10,true);

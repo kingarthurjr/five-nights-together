@@ -4,8 +4,13 @@
   "name": "obj_office2_tbonnie",
   "spriteId": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "spr_office2_tbonnie",
     "path": "sprites/spr_office2_tbonnie/spr_office2_tbonnie.yy",
+=======
+    "name": "spr_office2_tfreddy",
+    "path": "sprites/spr_office2_tfreddy/spr_office2_tfreddy.yy",
+>>>>>>> parent of d316d91 (Added Flickering Lights to FNaF2 Office)
 =======
     "name": "spr_office2_tfreddy",
     "path": "sprites/spr_office2_tfreddy/spr_office2_tfreddy.yy",
