@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_guardUI",
+  "name": "obj_office2_outage",
   "spriteId": {
-    "name": "spr_guardUI",
-    "path": "sprites/spr_guardUI/spr_guardUI.yy",
+    "name": "spr_office2_outage",
+    "path": "sprites/spr_office2_outage/spr_office2_outage.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,16 +25,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Night Guard",
-    "path": "folders/Objects/UI/Night Guard.yy",
+    "name": "FNaF2",
+    "path": "folders/Objects/Office/FNaF2.yy",
   },
 }

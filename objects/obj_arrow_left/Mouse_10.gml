@@ -67,5 +67,6 @@ if instance_exists(obj_office2_right)
 		image_index = image_number - 1;
 		image_speed = -1;
 	}
+	instance_destroy(obj_button_mask);
 }
 instance_destroy();
