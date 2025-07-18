@@ -11,13 +11,13 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 809,
+  "bbox_right": 1153,
   "bbox_top": 0,
   "bbox_bottom": 539,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 960,
+  "width": 1200,
   "height": 540,
   "textureGroupId": {
     "name": "Default",
@@ -27,8 +27,8 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a4ee314d-06cd-4962-8d39-b1f6a33a3091",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"86289d63-b8ff-43f6-a8f2-f4b058d988b1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e4843a5b-d649-4cc4-9fed-930fea51812e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c1546734-f674-4bc6-8a39-2254361fb2a8",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -45,8 +45,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"dc8b20da-9078-4386-bfdd-e06dfabbc49c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a4ee314d-06cd-4962-8d39-b1f6a33a3091","path":"sprites/spr_bathroom_chica/spr_bathroom_chica.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"0a75cbd9-c763-4b81-a89e-2e1a86aa110a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"86289d63-b8ff-43f6-a8f2-f4b058d988b1","path":"sprites/spr_bathroom_chica/spr_bathroom_chica.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"32d622e1-1d48-4ec8-b52e-e8f354769ed5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e4843a5b-d649-4cc4-9fed-930fea51812e","path":"sprites/spr_bathroom_chica/spr_bathroom_chica.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d68effaa-bfb2-4b8f-9b66-adb79df60be8","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c1546734-f674-4bc6-8a39-2254361fb2a8","path":"sprites/spr_bathroom_chica/spr_bathroom_chica.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f8463b30-622b-4132-ac7a-5c35238eb7e2","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3847a83d-4370-4c70-aaa9-0d47b864e52a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
