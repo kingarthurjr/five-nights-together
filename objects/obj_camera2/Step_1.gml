@@ -1,1 +1,0 @@
-current = htme_globalGet("camera");

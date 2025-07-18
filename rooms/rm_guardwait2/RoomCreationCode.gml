@@ -4,8 +4,7 @@
 htme_globalSet("6am",0,buffer_bool);
 //Office Status
 htme_globalSet("facing",0,buffer_u8);
-htme_globalSet("doorLeft",0,buffer_bool);
-htme_globalSet("doorRight",0,buffer_bool);
+htme_globalSet("mask",0,buffer_u8);
 htme_globalSet("light",0,buffer_bool);
 //Building Status
 htme_globalSet("powerOut",0,buffer_bool);
