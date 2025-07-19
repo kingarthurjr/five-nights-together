@@ -16,6 +16,8 @@ htme_globalSet("ovenUse",0,buffer_u8);
 htme_globalSet("ovenTemp",160,buffer_u8);
 global.bluescreenFirstTime = false;
 //Camera Status
+global.camMove = 0;
+global.camMoveX = 0;
 htme_globalSet("camera",0,buffer_s8);
 htme_globalSet("cameraActive",0,buffer_bool);
 htme_globalSet("cameraOut",0,buffer_bool);
@@ -37,4 +39,4 @@ htme_globalSet("jumpscareHappened",0,buffer_bool);
 htme_globalSet("gameover",0,buffer_bool);
 
 ///Temporary
-room_goto(rm_office2);
+room_goto(rm_office1);

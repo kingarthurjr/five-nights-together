@@ -1,3 +1,5 @@
+x = obj_cam4a.x;
+
 if htme_globalGet("foxy") = 6
 {
 	image_index = 1;

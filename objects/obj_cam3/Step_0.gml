@@ -1,5 +1,24 @@
 /// @description Supply Closet
 
+//Camera Panning
+if x <= -240
+{
+	global.camMove = 0;
+}
+if x >= 0
+{
+	global.camMove = 1;
+}
+if global.camMove = 0
+{
+	x += 1;
+}
+if global.camMove = 1
+{
+	x -= 1;
+}
+global.camMoveX = x;
+
 //Who to Display
 image_index = 0;
 if htme_globalGet("springtrap") = 10

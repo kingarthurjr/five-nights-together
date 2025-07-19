@@ -1,3 +1,5 @@
+x = global.camMoveX;
+
 //Who to Display
 image_index = 0;
 if htme_globalGet("springtrap") = 10

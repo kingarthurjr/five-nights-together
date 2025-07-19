@@ -1,3 +1,22 @@
+//Camera Panning
+if x <= -240
+{
+	global.camMove = 0;
+}
+if x >= 0
+{
+	global.camMove = 1;
+}
+if global.camMove = 0
+{
+	x += 1;
+}
+if global.camMove = 1
+{
+	x -= 1;
+}
+global.camMoveX = x;
+
 //Camera Disabled
 if htme_globalGet("cam1a") = 1
 {

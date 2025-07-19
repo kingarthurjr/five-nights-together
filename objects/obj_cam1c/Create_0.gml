@@ -1,5 +1,7 @@
 /// @description Pirate Cove
 
+x = global.camMoveX;
+
 //Who to display?
 image_index = 0;
 if htme_globalGet("foxy") = null

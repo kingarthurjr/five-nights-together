@@ -1,3 +1,5 @@
+x = obj_cam2a.x;
+
 if htme_globalGet("bonnie") = 5
 {
 	image_index = (htme_globalGet("bonnieSpecial")) ? 2 : 1;
