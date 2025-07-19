@@ -1,0 +1,11 @@
+instance_destroy(obj_button_cam1a);
+instance_destroy(obj_button_cam1b);
+instance_destroy(obj_button_cam1c);
+instance_destroy(obj_button_cam2a);
+instance_destroy(obj_button_cam2b);
+instance_destroy(obj_button_cam3);
+instance_destroy(obj_button_cam4a);
+instance_destroy(obj_button_cam4b);
+instance_destroy(obj_button_cam5);
+instance_destroy(obj_button_cam6);
+instance_destroy(obj_button_cam7);
