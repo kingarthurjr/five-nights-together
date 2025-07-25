@@ -6,3 +6,7 @@ if instance_exists(obj_hu_restarting)
 {
 	instance_destroy(obj_hu_restarting);
 }
+if instance_exists(obj_handunit_shadow)
+{
+	instance_destroy(obj_handunit_shadow);
+}

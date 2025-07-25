@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_jumpscare_mimic.wav",
-  "duration": 4.336327,
+  "soundFile": "snd_jumpscare_mimic.mp3",
+  "duration": 3.353855,
   "parent": {
     "name": "Jumpscares",
     "path": "folders/Sounds/Animatronics/Jumpscares.yy",

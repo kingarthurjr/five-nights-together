@@ -27,8 +27,8 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b9155eca-8c3b-4b17-8635-df2a5d4f0e67",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"84625457-aaaa-4ace-925a-3d4d750395c7",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b9c2a1f8-72ec-4136-9d73-3e3be4e75f3e",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -45,8 +45,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"70ad4c9e-69f1-4352-b42a-086859e3ba95","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"84625457-aaaa-4ace-925a-3d4d750395c7","path":"sprites/spr_game_wchica/spr_game_wchica.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"6a9e5d41-41a8-450d-960e-7772c721fa34","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b9c2a1f8-72ec-4136-9d73-3e3be4e75f3e","path":"sprites/spr_game_wchica/spr_game_wchica.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6ba84641-f22e-49e6-b96a-f0bca75999b3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b9155eca-8c3b-4b17-8635-df2a5d4f0e67","path":"sprites/spr_game_wchica/spr_game_wchica.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"70ad4c9e-69f1-4352-b42a-086859e3ba95","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"84625457-aaaa-4ace-925a-3d4d750395c7","path":"sprites/spr_game_wchica/spr_game_wchica.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

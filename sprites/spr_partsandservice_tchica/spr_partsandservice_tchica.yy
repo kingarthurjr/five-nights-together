@@ -10,7 +10,7 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 137,
+  "bbox_left": 0,
   "bbox_right": 367,
   "bbox_top": 0,
   "bbox_bottom": 386,
@@ -27,8 +27,8 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8c025545-b1ae-4fc0-9056-a99c55e7155b",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f440d54f-7a13-4f8e-8b35-7e3a3decaf15",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3361f930-796c-4dc2-b1ea-1a606f6c31c7",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -45,8 +45,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b82f0e86-a53b-4857-87f5-758f12778f84","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f440d54f-7a13-4f8e-8b35-7e3a3decaf15","path":"sprites/spr_partsandservice_tchica/spr_partsandservice_tchica.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"8a6cc907-7a27-490d-b23a-51e0b5e9f264","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3361f930-796c-4dc2-b1ea-1a606f6c31c7","path":"sprites/spr_partsandservice_tchica/spr_partsandservice_tchica.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"85a1bae1-e824-47c6-a4cd-446da9001fa6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8c025545-b1ae-4fc0-9056-a99c55e7155b","path":"sprites/spr_partsandservice_tchica/spr_partsandservice_tchica.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b82f0e86-a53b-4857-87f5-758f12778f84","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f440d54f-7a13-4f8e-8b35-7e3a3decaf15","path":"sprites/spr_partsandservice_tchica/spr_partsandservice_tchica.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

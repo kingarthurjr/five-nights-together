@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_cam08",
   "spriteId": {
-    "name": "spr_cam07",
-    "path": "sprites/spr_cam07/spr_cam07.yy",
+    "name": "spr_cam08",
+    "path": "sprites/spr_cam08/spr_cam08.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,0 +1,17 @@
+x = obj_cam09.x;
+if ds_list_size(htme_getPlayers()) = 2 and htme_globalGet("mimic") = 0
+{
+	image_index = (htme_globalGet("bonnieSpecial")) ? 3 : ((htme_globalGet("freddySpecial")) ? 2 : 1);
+}
+else
+{
+	image_index = 0;
+}
+if htme_globalGet("light") = 1
+{
+	sprite_index = spr_stage_mimic2_light;
+}
+else
+{
+	sprite_index = spr_stage_mimic2;
+}

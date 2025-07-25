@@ -1,13 +1,13 @@
-instance_destroy(obj_cove_tfreddy);
-instance_destroy(obj_cove_wfreddy);
-instance_destroy(obj_cove_tbonnie);
-instance_destroy(obj_cove_wbonnie);
-instance_destroy(obj_cove_tchica);
-instance_destroy(obj_cove_wchica);
-instance_destroy(obj_cove_mangle);
-instance_destroy(obj_cove_wfoxy);
-instance_destroy(obj_cove_springtrap2);
-instance_destroy(obj_cove_mimic);
+instance_destroy(obj_cove2_tfreddy);
+instance_destroy(obj_cove2_wfreddy);
+instance_destroy(obj_cove2_tbonnie);
+instance_destroy(obj_cove2_wbonnie);
+instance_destroy(obj_cove2_tchica);
+instance_destroy(obj_cove2_wchica);
+instance_destroy(obj_cove2_mangle);
+instance_destroy(obj_cove2_wfoxy);
+instance_destroy(obj_cove2_springtrap);
+instance_destroy(obj_cove2_mimic);
 
 if instance_exists(obj_videoerror)
 {

@@ -1,0 +1,1 @@
+current = image_index;

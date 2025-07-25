@@ -41,57 +41,61 @@ if instance_exists(obj_puppetblock)
 {
     instance_destroy(obj_puppetblock);
 }
-if instance_exists(obj_cam1a)
+if instance_exists(obj_cam01)
 {
-    instance_destroy(obj_cam1a);
+    instance_destroy(obj_cam01);
 }
-if instance_exists(obj_cam1b)
+if instance_exists(obj_cam02)
 {
-    instance_destroy(obj_cam1b);
+    instance_destroy(obj_cam02);
 }
-if instance_exists(obj_cam1c)
+if instance_exists(obj_cam03)
 {
-    instance_destroy(obj_cam1c);
+    instance_destroy(obj_cam03);
 }
-if instance_exists(obj_cam2a)
+if instance_exists(obj_cam04)
 {
-    instance_destroy(obj_cam2a);
+    instance_destroy(obj_cam04);
 }
-if instance_exists(obj_cam2b)
+if instance_exists(obj_cam05)
 {
-    instance_destroy(obj_cam2b);
+    instance_destroy(obj_cam05);
 }
-if instance_exists(obj_cam3)
+if instance_exists(obj_cam06)
 {
-    instance_destroy(obj_cam3);
+    instance_destroy(obj_cam06);
 }
-if instance_exists(obj_cam4a)
+if instance_exists(obj_cam07)
 {
-    instance_destroy(obj_cam4a);
+    instance_destroy(obj_cam07);
 }
-if instance_exists(obj_cam4b)
+if instance_exists(obj_cam08)
 {
-    instance_destroy(obj_cam4b);
+    instance_destroy(obj_cam08);
 }
-if instance_exists(obj_cam5)
+if instance_exists(obj_cam09)
 {
-    instance_destroy(obj_cam5);
+    instance_destroy(obj_cam09);
 }
-if instance_exists(obj_cam6)
+if instance_exists(obj_cam10)
 {
-    instance_destroy(obj_cam6);
+    instance_destroy(obj_cam10);
 }
-if instance_exists(obj_cam7)
+if instance_exists(obj_cam11)
 {
-    instance_destroy(obj_cam7);
+    instance_destroy(obj_cam11);
+}
+if instance_exists(obj_cam12)
+{
+    instance_destroy(obj_cam12);
 }
 if instance_exists(obj_bluescreen)
 {
     instance_destroy(obj_bluescreen);
 }
-if instance_exists(obj_cameramap1)
+if instance_exists(obj_cameramap2)
 {
-    instance_destroy(obj_cameramap1);
+    instance_destroy(obj_cameramap2);
 }
 if instance_exists(obj_static)
 {

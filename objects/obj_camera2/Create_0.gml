@@ -28,94 +28,101 @@ else
 	
 	//Create UI
 	instance_create(0,0,obj_switch);
-	instance_create(0,0,obj_cameramap1);
+	instance_create(0,0,obj_cameramap2);
 	instance_create(0,0,obj_static);
-	instance_create(442,434,obj_breaksignal);    
+	instance_create(432,434,obj_breaksignal);    
     if instance_exists(obj_audiocooldown)
     {
-		instance_create(442,418,obj_buttonload);
+		instance_create(432,418,obj_buttonload);
     }
     else
     {
-		instance_create(442,379,obj_playaudio);
+		instance_create(432,379,obj_playaudio);
     }
 	
 	//Create Camera Feed
 	if htme_globalGet("camera") = 0
 	{
-		if !instance_exists(obj_cam1a)
+		if !instance_exists(obj_cam09)
 		{
-			instance_create(0,0,obj_cam1a);
-		}
-	}
-	if htme_globalGet("camera") = 3
-	{
-		if !instance_exists(obj_cam1b)
-		{
-			instance_create(0,0,obj_cam1b);
-		}
-	}
-	if htme_globalGet("camera") = null
-	{
-		if !instance_exists(obj_cam1c)
-		{
-			instance_create(0,0,obj_cam1c);
-		}
-	}
-	if htme_globalGet("camera") = 4
-	{
-		if !instance_exists(obj_cam5)
-		{
-			instance_create(0,0,obj_cam5);
+			instance_create(0,0,obj_cam09);
 		}
 	}
 	if htme_globalGet("camera") = 5
 	{
-		if !instance_exists(obj_cam2a)
+		if !instance_exists(obj_cam11)
 		{
-			instance_create(0,0,obj_cam2a);
+			instance_create(0,0,obj_cam11);
 		}
 	}
 	if htme_globalGet("camera") = 6
 	{
-		if !instance_exists(obj_cam4a)
+		if !instance_exists(obj_cam10)
 		{
-			instance_create(0,0,obj_cam4a);
+			instance_create(0,0,obj_cam10);
 		}
 	}
 	if htme_globalGet("camera") = 7
 	{
-		if !instance_exists(obj_cam2b)
+		if !instance_exists(obj_cam12)
 		{
-			instance_create(0,0,obj_cam2b);
+			instance_create(0,0,obj_cam12);
 		}
 	}
 	if htme_globalGet("camera") = 8
 	{
-		if !instance_exists(obj_cam4b)
+		if !instance_exists(obj_cam07)
 		{
-			instance_create(0,0,obj_cam4b);
+			instance_create(0,0,obj_cam07);
 		}
 	}
 	if htme_globalGet("camera") = 9
 	{
-		if !instance_exists(obj_cam6)
+		if !instance_exists(obj_cam08)
 		{
-			instance_create(0,0,obj_cam6);
+			instance_create(0,0,obj_cam08);
 		}
 	}
 	if htme_globalGet("camera") = 10
 	{
-		if !instance_exists(obj_cam3)
+		if !instance_exists(obj_cam01)
 		{
-			instance_create(0,0,obj_cam3);
+			instance_create(0,0,obj_cam01);
 		}
 	}
 	if htme_globalGet("camera") = 11
 	{
-		if !instance_exists(obj_cam7)
+		if !instance_exists(obj_cam02)
 		{
-			instance_create(0,0,obj_cam7);
+			instance_create(0,0,obj_cam02);
+		}
+	}
+	if htme_globalGet("camera") = 12
+	{
+		if !instance_exists(obj_cam03)
+		{
+			instance_create(0,0,obj_cam03);
+		}
+	}
+	if htme_globalGet("camera") = 13
+	{
+		if !instance_exists(obj_cam04)
+		{
+			instance_create(0,0,obj_cam04);
+		}
+	}
+	if htme_globalGet("camera") = 14
+	{
+		if !instance_exists(obj_cam05)
+		{
+			instance_create(0,0,obj_cam05);
+		}
+	}
+	if htme_globalGet("camera") = 15
+	{
+		if !instance_exists(obj_cam06)
+		{
+			instance_create(0,0,obj_cam06);
 		}
 	}
 }

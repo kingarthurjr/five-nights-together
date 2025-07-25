@@ -1,0 +1,1 @@
+htme_globalSet("freddySpecial",1,buffer_bool);

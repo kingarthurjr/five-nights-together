@@ -1,3 +1,10 @@
+//Flickering
+instance_destroy(obj_office2_flickering);
+instance_destroy(obj_office2_desk_flickering);
+instance_create_layer(0,0,"DeskShadow",obj_office2_flickering_enter);
+
+
+//Who to Display
 if htme_globalGet("tfreddy") = 1
 {
 	image_index = 0;

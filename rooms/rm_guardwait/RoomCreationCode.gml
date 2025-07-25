@@ -53,4 +53,4 @@ htme_globalSet("jumpscareHappened",0,buffer_bool);
 htme_globalSet("gameover",0,buffer_bool);
 
 ///Temporary
-room_goto(rm_office1);
+room_goto(rm_office2);

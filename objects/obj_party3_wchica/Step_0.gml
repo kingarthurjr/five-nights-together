@@ -1,0 +1,10 @@
+x = obj_cam03.x;
+
+if htme_globalGet("wchica") = 12
+{
+	image_index = 1;
+}
+else
+{
+	image_index = 0;
+}

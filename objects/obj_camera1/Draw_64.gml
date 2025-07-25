@@ -6,7 +6,7 @@ if htme_globalGet("cameraOut") = 0
     draw_set_halign(fa_left);
     if teaseFUN = 2
     {
-        draw_text(1120,215,"QHZ DQG LPSURYHG");
+        draw_text(1120,215,"QRW UHDGB WR OHW LW JR BHW");
     }
     else
     {

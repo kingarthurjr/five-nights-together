@@ -43,18 +43,11 @@ if keyboard_check_pressed(ord(global.lightKey)) and inOffice = 0 and !instance_e
 	{
 		audio_play_sound(snd_light2,10,true);
 	}
-	if htme_globalGet("tfreddy") = 4
+	if htme_globalGet("puppet") = 4
 	{
-		if !instance_exists(obj_office2_tfreddy)
+		if !instance_exists(obj_office2_puppet)
 		{
-			instance_create_layer(0,0,"Animatronics",obj_office2_tfreddy);
-		}
-	}
-	if htme_globalGet("tbonnie") = 4
-	{
-		if !instance_exists(obj_office2_tbonnie)
-		{
-			instance_create_layer(0,0,"Animatronics",obj_office2_tbonnie);
+			instance_create_layer(0,0,"Animatronics",obj_office2_puppet);
 		}
 	}
 	if htme_globalGet("tchica") = 4
@@ -64,18 +57,25 @@ if keyboard_check_pressed(ord(global.lightKey)) and inOffice = 0 and !instance_e
 			instance_create_layer(0,0,"Animatronics",obj_office2_tchica);
 		}
 	}
-	if htme_globalGet("mangle") = 4
+	if htme_globalGet("wchica") = 4
 	{
-		if !instance_exists(obj_office2_mangle)
+		if !instance_exists(obj_office2_wchica)
 		{
-			instance_create_layer(0,0,"Animatronics",obj_office2_mangle);
+			instance_create_layer(0,0,"Animatronics",obj_office2_wchica);
 		}
 	}
-	if htme_globalGet("wfreddy") = 4
+	if htme_globalGet("springtrap") = 4
 	{
-		if !instance_exists(obj_office2_wfreddy)
+		if !instance_exists(obj_office2_springtrap)
 		{
-			instance_create_layer(0,0,"Animatronics",obj_office2_wfreddy);
+			instance_create_layer(0,0,"Animatronics",obj_office2_springtrap);
+		}
+	}
+	if htme_globalGet("tbonnie") = 4
+	{
+		if !instance_exists(obj_office2_tbonnie)
+		{
+			instance_create_layer(0,0,"Animatronics",obj_office2_tbonnie);
 		}
 	}
 	if htme_globalGet("wbonnie") = 4
@@ -85,11 +85,25 @@ if keyboard_check_pressed(ord(global.lightKey)) and inOffice = 0 and !instance_e
 			instance_create_layer(0,0,"Animatronics",obj_office2_wbonnie);
 		}
 	}
-	if htme_globalGet("wchica") = 4
+	if htme_globalGet("tfreddy") = 4
 	{
-		if !instance_exists(obj_office2_wchica)
+		if !instance_exists(obj_office2_tfreddy)
 		{
-			instance_create_layer(0,0,"Animatronics",obj_office2_wchica);
+			instance_create_layer(0,0,"Animatronics",obj_office2_tfreddy);
+		}
+	}
+	if htme_globalGet("wfreddy") = 4
+	{
+		if !instance_exists(obj_office2_wfreddy)
+		{
+			instance_create_layer(0,0,"Animatronics",obj_office2_wfreddy);
+		}
+	}
+	if htme_globalGet("mangle") = 4
+	{
+		if !instance_exists(obj_office2_mangle)
+		{
+			instance_create_layer(0,0,"Animatronics",obj_office2_mangle);
 		}
 	}
 	if htme_globalGet("wfoxy") = 4
@@ -97,20 +111,6 @@ if keyboard_check_pressed(ord(global.lightKey)) and inOffice = 0 and !instance_e
 		if !instance_exists(obj_office2_wfoxy)
 		{
 			instance_create_layer(0,0,"Animatronics",obj_office2_wfoxy);
-		}
-	}
-	if htme_globalGet("puppet") = 4
-	{
-		if !instance_exists(obj_office2_puppet)
-		{
-			instance_create_layer(0,0,"Animatronics",obj_office2_puppet);
-		}
-	}
-	if htme_globalGet("springtrap") = 4
-	{
-		if !instance_exists(obj_office2_springtrap)
-		{
-			instance_create_layer(0,0,"Animatronics",obj_office2_springtrap);
 		}
 	}
 	if htme_globalGet("mimic") = 4

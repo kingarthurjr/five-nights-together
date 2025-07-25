@@ -34,6 +34,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "FNaF1",
-    "path": "folders/Objects/Lobby/Character Select/FNaF1.yy",
+    "path": "folders/Objects/UI/Lobby/Character Select/FNaF1.yy",
   },
 }

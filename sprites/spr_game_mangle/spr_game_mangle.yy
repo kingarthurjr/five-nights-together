@@ -10,7 +10,7 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 351,
+  "bbox_left": 0,
   "bbox_right": 749,
   "bbox_top": 0,
   "bbox_bottom": 315,
@@ -27,8 +27,8 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"25bf605d-698c-442f-ba5c-9e2a84ad61c7",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"27bc28a6-cc59-48b4-81d5-53be34392bfe",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4c65e12e-b003-4c15-92fa-d82c7f1f1e69",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -45,8 +45,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"55acfe03-737a-4318-b8f4-0c03787bf385","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"27bc28a6-cc59-48b4-81d5-53be34392bfe","path":"sprites/spr_game_mangle/spr_game_mangle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"23604210-a630-4b99-852c-af1773425fd2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4c65e12e-b003-4c15-92fa-d82c7f1f1e69","path":"sprites/spr_game_mangle/spr_game_mangle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ca0c9734-3ed4-4ba3-b131-42f6bc1eac9a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"25bf605d-698c-442f-ba5c-9e2a84ad61c7","path":"sprites/spr_game_mangle/spr_game_mangle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"55acfe03-737a-4318-b8f4-0c03787bf385","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"27bc28a6-cc59-48b4-81d5-53be34392bfe","path":"sprites/spr_game_mangle/spr_game_mangle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

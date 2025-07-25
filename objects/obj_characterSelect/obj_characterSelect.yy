@@ -30,6 +30,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Character Select",
-    "path": "folders/Objects/Lobby/Character Select.yy",
+    "path": "folders/Objects/UI/Lobby/Character Select.yy",
   },
 }

@@ -7,47 +7,47 @@ if keyboard_check(ord(global.lightKey))
 	{
 		audio_play_sound(snd_light2,10,true);
 	}
-	if htme_globalGet("tfreddy") = 2
+	if htme_globalGet("tfreddy") = 14
 	{
 		image_index = 2;
 	}
-	else if htme_globalGet("tbonnie") = 2
+	else if htme_globalGet("tbonnie") = 14
 	{
 		image_index = 3;
 	}
-	else if htme_globalGet("tchica") = 2
+	else if htme_globalGet("tchica") = 14
 	{
 		image_index = 4;
 	}
-	else if htme_globalGet("mangle") = 2
+	else if htme_globalGet("mangle") = 14
 	{
 		image_index = 5;
 	}
-	else if htme_globalGet("wfreddy") = 2
+	else if htme_globalGet("wfreddy") = 14
 	{
 		image_index = 6;
 	}
-	else if htme_globalGet("wbonnie") = 2
+	else if htme_globalGet("wbonnie") = 14
 	{
 		image_index = 7;
 	}
-	else if htme_globalGet("wchica") = 2
+	else if htme_globalGet("wchica") = 14
 	{
 		image_index = 8;
 	}
-	else if htme_globalGet("wfoxy") = 2
+	else if htme_globalGet("wfoxy") = 14
 	{
 		image_index = 9;
 	}
-	else if htme_globalGet("puppet") = 2
+	else if htme_globalGet("puppet") = 14
 	{
 		image_index = 10;
 	}
-	else if htme_globalGet("springtrap") = 2
+	else if htme_globalGet("springtrap") = 14
 	{
 		image_index = 11;
 	}
-	else if htme_globalGet("mimic") = 2
+	else if htme_globalGet("mimic") = 14
 	{
 		image_index = 12;
 	}
