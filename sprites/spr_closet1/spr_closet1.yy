@@ -69,7 +69,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Objects",
-    "path": "folders/Sprites/Overworld/Objects.yy",
+    "name": "FNaF1",
+    "path": "folders/Sprites/Overworld/Objects/FNaF1.yy",
   },
 }
