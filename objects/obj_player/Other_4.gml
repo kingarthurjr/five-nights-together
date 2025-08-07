@@ -53,23 +53,23 @@ if spawn = true
 		htme_globalSet("guardScore",guardScore+100,buffer_u32);
 		if global.animatronicChosen = 1 //Freddy
 		{
-		    x = 2584;
-		    y = 593;
+		    x = 940;
+		    y = 290;
 		}
 		if global.animatronicChosen = 2 //Bonnie
 		{
-		    x = 2474;
-		    y = 513;
+		    x = 880;
+		    y = 250;
 		}
 		if global.animatronicChosen = 3 //Chica
 		{
-		    x = 2694;
-		    y = 513;
+		    x = 1010;
+		    y = 260;
 		}
 		if global.animatronicChosen = 4 //Foxy
 		{
-		    x = 530;
-		    y = 1370;
+		    x = 160;
+		    y = 780;
 		    facing = RIGHT;
 		    if htme_globalGet("roomAmount") = 2
 		    {
@@ -107,8 +107,8 @@ if spawn = true
 	{
 	    if global.animatronicChosen = 5 //The Puppet
 	    {
-	        x = 2200;
-	        y = 696;
+	        x = 620;
+	        y = 220;
 	    }
 	}
 	if global.animatronicChosen != 6 and global.powerupDeathCoin = 0
@@ -158,18 +158,18 @@ if spawn = true
 	    htme_globalSet("guardScore",guardScore+100,buffer_u32);
 	    if global.animatronicChosen = 8 //Toy Freddy
 	    {
-	        x = 2584;
-	        y = 593;
+	        x = 520;
+	        y = 360;
 	    }
 	    if global.animatronicChosen = 9 //Toy Bonnie
 	    {
-	        x = 2474;
-	        y = 513;
+	        x = 440;
+	        y = 320;
 	    }
 	    if global.animatronicChosen = 10 //Toy Chica
 	    {
-	        x = 2694;
-	        y = 513;
+	        x = 600;
+	        y = 320;
 	    }
 	    if global.animatronicChosen = 11 //Mangle
 	    {
@@ -194,18 +194,18 @@ if spawn = true
 	    }
 		if global.animatronicChosen = 12 //Withered Freddy
 	    {
-	        x = 2584;
-	        y = 593;
+	        x = 520;
+	        y = 360;
 	    }
 	    if global.animatronicChosen = 13 //Withered Bonnie
 	    {
-	        x = 2474;
-	        y = 513;
+	        x = 440;
+	        y = 320;
 	    }
 	    if global.animatronicChosen = 14 //Withered Chica
 	    {
-	        x = 2694;
-	        y = 513;
+	        x = 600;
+	        y = 320;
 	    }
 	    if global.animatronicChosen = 15 //Withered Foxy
 	    {
@@ -230,29 +230,21 @@ if spawn = true
 	    }
 		if global.animatronicChosen = 5 //The Puppet
 	    {
-	        x = 2694;
-	        y = 513;
+	        x = 680;
+	        y = 760;
 	    }
 		if global.animatronicChosen = 6 //Springtrap
 	    {
-	        x = 2694;
-	        y = 513;
-	    }
-	}
-	if room = rm_backstage
-	{
-	    if global.animatronicChosen = 5 //The Puppet
-	    {
-	        x = 2200;
-	        y = 696;
+	        x = 40;
+	        y = 800;
 	    }
 	}
 	if room = rm_kidscove
 	{
-	    if global.animatronicChosen = 5 //The Puppet
+	    if global.animatronicChosen = 11 or global.animatronicChosen = 15 //Mangle or Foxy
 	    {
-	        x = 2200;
-	        y = 696;
+	        x = 280;
+	        y = 560;
 	    }
 	}
 	//Death Coin
