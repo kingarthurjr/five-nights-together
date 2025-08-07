@@ -12,3 +12,19 @@ if !(htme_isLocal())
     self.pressed_right = mp_map_syncOut("pressed_right",self.pressed_right);
 	self.special = mp_map_syncOut("special",self.special);
 }
+
+///Lighting
+/*
+fade = 0 (do nothing)
+fade = 1 (fade out)
+fade = 2 (fade in)
+*/
+
+if collision = true and darkness = .6
+{
+    fade = 1;
+}
+if collision = false and darkness = 0
+{
+    fade = 2;
+}

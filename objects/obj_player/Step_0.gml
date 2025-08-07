@@ -1,9 +1,32 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 if htme_isLocal()
 {
 	global.playerNum = self.playerNum;
+}
+
+///Night Guard Syncing
+if htme_globalGet("jumpscare") = 1
+{
+    room_goto(rm_gameover);
+}
+
+if htme_globalGet("6am") = 1
+{
+    if !instance_exists(obj_6am)
+    {
+        instance_create(0,0,obj_6am);
+    }
+}
+
+if obj_gameknow.powerOut = 1 and powersound = 0 and !audio_is_playing(snd_powerout)
+{
+    audio_play_sound(snd_powerout,10,false);  
+    audio_sound_gain(snd_powerout,0.2,0);
+    powersound = 1
+}
+if obj_gameknow.powerOut = 0 and audio_is_playing(snd_powerout)
+{
+    audio_stop_sound(snd_powerout);
+    powersound = 0;
 }
 
 ///Global Time
@@ -189,7 +212,14 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				sprite_index = spr_freddy_d;
+				if htme_globalGet("freddySpecial") = 1
+				{
+					sprite_index = spr_freddy_d_special;
+				}
+				else
+				{
+					sprite_index = spr_freddy_d;
+				}
 				break;
 			case LEFT:
 				sprite_index = spr_freddy_l;
@@ -299,6 +329,182 @@ else
 				break;
 		}
 	}
+	if global.animatronicChosen = 7 //The Mimic
+	{
+		switch(facing)
+		{
+			case DOWN:
+				sprite_index = spr_mimic_d;
+				break;
+			case LEFT:
+				sprite_index = spr_mimic_l;
+				break;
+			case RIGHT:
+				sprite_index = spr_mimic_r;
+				break;
+			case UP:
+				sprite_index = spr_mimic_u;
+				break;
+		}
+	}
+	if global.animatronicChosen = 8 //Toy Freddy
+	{
+		switch(facing)
+		{
+			case DOWN:
+				if htme_globalGet("freddySpecial") = 1
+				{
+					sprite_index = spr_tfreddy_d_special;
+				}
+				else
+				{
+					sprite_index = spr_tfreddy_d;
+				}
+				break;
+			case LEFT:
+				sprite_index = spr_tfreddy_l;
+				break;
+			case RIGHT:
+				sprite_index = spr_tfreddy_r;
+				break;
+			case UP:
+				sprite_index = spr_tfreddy_u;
+				break;
+		}
+	}
+	if global.animatronicChosen = 9 //Toy Bonnie
+	{
+		switch(facing)
+		{
+			case DOWN:
+				sprite_index = spr_tbonnie_d;
+				break;
+			case LEFT:
+				sprite_index = spr_tbonnie_l;
+				break;
+			case RIGHT:
+				sprite_index = spr_tbonnie_r;
+				break;
+			case UP:
+				sprite_index = spr_tbonnie_u;
+				break;
+		}
+	}
+	if global.animatronicChosen = 10 //Toy Chica
+	{
+		switch(facing)
+		{
+			case DOWN:
+				sprite_index = spr_tchica_d;
+				break;
+			case LEFT:
+				sprite_index = spr_tchica_l;
+				break;
+			case RIGHT:
+				sprite_index = spr_tchica_r;
+				break;
+			case UP:
+				sprite_index = spr_tchica_u;
+				break;
+		}
+	}
+	if global.animatronicChosen = 8 //The Mimic
+	{
+		switch(facing)
+		{
+			case DOWN:
+				sprite_index = spr_mangle_d;
+				break;
+			case LEFT:
+				sprite_index = spr_mangle_l;
+				break;
+			case RIGHT:
+				sprite_index = spr_mangle_r;
+				break;
+			case UP:
+				sprite_index = spr_mangle_u;
+				break;
+		}
+	}
+	if global.animatronicChosen = 9 //Withered Freddy
+	{
+		switch(facing)
+		{
+			case DOWN:
+				if htme_globalGet("freddySpecial") = 1
+				{
+					sprite_index = spr_wfreddy_d_special;
+				}
+				else
+				{
+					sprite_index = spr_wfreddy_d;
+				}
+				break;
+			case LEFT:
+				sprite_index = spr_wfreddy_l;
+				break;
+			case RIGHT:
+				sprite_index = spr_wfreddy_r;
+				break;
+			case UP:
+				sprite_index = spr_wfreddy_u;
+				break;
+		}
+	}
+	if global.animatronicChosen = 10 //Withered Bonnie
+	{
+		switch(facing)
+		{
+			case DOWN:
+				sprite_index = spr_wbonnie_d;
+				break;
+			case LEFT:
+				sprite_index = spr_wbonnie_l;
+				break;
+			case RIGHT:
+				sprite_index = spr_wbonnie_r;
+				break;
+			case UP:
+				sprite_index = spr_wbonnie_u;
+				break;
+		}
+	}
+	if global.animatronicChosen = 11 //Withered Chica
+	{
+		switch(facing)
+		{
+			case DOWN:
+				sprite_index = spr_wchica_d;
+				break;
+			case LEFT:
+				sprite_index = spr_wchica_l;
+				break;
+			case RIGHT:
+				sprite_index = spr_wchica_r;
+				break;
+			case UP:
+				sprite_index = spr_wchica_u;
+				break;
+		}
+	}
+	if global.animatronicChosen = 12 //Withered Foxy
+	{
+		switch(facing)
+		{
+			case DOWN:
+				sprite_index = spr_wfoxy_d;
+				break;
+			case LEFT:
+				sprite_index = spr_wfoxy_l;
+				break;
+			case RIGHT:
+				sprite_index = spr_wfoxy_r;
+				break;
+			case UP:
+				sprite_index = spr_wfoxy_u;
+				break;
+		}
+	}
 }
 
 ///Movement Sound
@@ -328,7 +534,15 @@ else
             else
             {
                 randomize();
-                audio_play_sound(choose(snd_foot1,snd_foot2,snd_foot3),1,false);
+				while(sound = previousSound)
+				{
+					sound = choose(snd_foot1,snd_foot2,snd_foot3,snd_foot4,snd_foot5);
+					if sound != previousSound
+					{
+						audio_play_sound(sound,1,false);
+						previousSound = sound;
+					}
+				}
             }
         }
         if image_index = previousFrame
@@ -340,4 +554,44 @@ else
         }
     }
     previousFrame = image_index;
+}
+
+///Lighting
+/*
+fade = 0 (do nothing)
+fade = 1 (fade out)
+fade = 2 (fade in)
+*/
+
+if room != rm_waitingRoom
+{
+    if obj_gameknow.powerOut = 1
+    {
+        darkness = .6;
+    }
+    else
+    {
+        if fade == 1
+        {
+            if darkness > 0
+            {
+                darkness -= .10;
+            }
+            else
+            {
+                fade = 0;
+            }
+        }
+        if fade == 2
+        {
+            if darkness < .6
+            {
+                darkness += .10;
+            }
+            else
+            {
+                fade = 0;
+            }
+        }
+    }
 }

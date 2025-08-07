@@ -141,3 +141,7 @@ if htme_isLocal()
 	self.skin = global.skin;
 	self.animatronicChosen = global.animatronicChosen;
 }
+
+collision = false;
+fade = 0;
+darkness = 0;
