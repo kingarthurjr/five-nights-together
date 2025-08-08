@@ -8,7 +8,7 @@ else
 	image_index = 0;
 	if htme_globalGet("mapSelected") = 1 //FNaF2
 	{
-		instance_create_layer(x,y,"HandUnitShadow"obj_handunit_shadow);
+		instance_create_layer(x,y,"HandUnitShadow",obj_handunit_shadow);
 	}
 }
 

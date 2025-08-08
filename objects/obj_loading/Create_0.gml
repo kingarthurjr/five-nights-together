@@ -57,3 +57,15 @@ if randomfact == 12
 {
     fazfact = "Fun Fact: You can press T to bring up an in-game chat!";
 }
+if randomfact == 13
+{
+    fazfact = "This isn't how it happened.";
+}
+if randomfact == 14
+{
+    fazfact = "Is it in my head, or am I trapped in its?";
+}
+if randomfact == 15
+{
+    fazfact = "Was that me...?";
+}

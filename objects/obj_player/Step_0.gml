@@ -17,6 +17,7 @@ if htme_globalGet("6am") = 1
     }
 }
 
+/*
 if obj_gameknow.powerOut = 1 and powersound = 0 and !audio_is_playing(snd_powerout)
 {
     audio_play_sound(snd_powerout,10,false);  
@@ -27,7 +28,7 @@ if obj_gameknow.powerOut = 0 and audio_is_playing(snd_powerout)
 {
     audio_stop_sound(snd_powerout);
     powersound = 0;
-}
+}*/
 
 ///Global Time
 if room = rm_waitingroom
@@ -563,7 +564,8 @@ fade = 1 (fade out)
 fade = 2 (fade in)
 */
 
-if room != rm_waitingRoom
+/*
+if room != rm_waitingroom
 {
     if obj_gameknow.powerOut = 1
     {
@@ -594,4 +596,4 @@ if room != rm_waitingRoom
             }
         }
     }
-}
+}*/

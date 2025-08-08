@@ -145,3 +145,5 @@ if htme_isLocal()
 collision = false;
 fade = 0;
 darkness = 0;
+
+spawn = true;

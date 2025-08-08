@@ -23,7 +23,7 @@ if global.mobile = true and room != rm_gameover and room != rm_guardWin
 */
 
 ///Spawn Events
-if room = rm_waitingRoom
+if room = rm_waitingroom
 {
     facing = LEFT;
     spd = 8;
@@ -111,7 +111,7 @@ if spawn = true
 	        y = 220;
 	    }
 	}
-	if global.animatronicChosen != 6 and global.powerupDeathCoin = 0
+	if global.animatronicChosen != 6 //and global.powerupDeathCoin = 0
 	{
 	    if global.animatronicChosen = 3 or global.animatronicChosen = 4 or global.animatronicChosen = 6 or global.animatronicChosen = 7 //If Chica or Foxy or Mimic or Puppet, include kitchen
 	    {
@@ -127,7 +127,7 @@ if spawn = true
 	{
 	    global.coinLocation = 11;
 	    global.deathCoin = true;
-	    if global.powerupDeathCoin = 1
+	    /*if global.powerupDeathCoin = 1
 	    {
 	        ini_open("settings.ini");
 	        if ini_read_real("Settings", "DCoinTrial", 1) = 1
@@ -141,7 +141,7 @@ if spawn = true
 	        }
 	        ini_close();
 	        global.powerupDeathCoin = 0;
-	    }
+	    }*/
 	}
 	spawn = false;
 }
@@ -248,7 +248,7 @@ if spawn = true
 	    }
 	}
 	//Death Coin
-	if global.animatronicChosen != 6 and global.powerupDeathCoin = 0
+	if global.animatronicChosen != 6 //and global.powerupDeathCoin = 0
 	{
 	    global.coinLocation = irandom_range(1,10);
 	    global.deathCoin = false;
@@ -257,7 +257,7 @@ if spawn = true
 	{
 	    global.coinLocation = 11;
 	    global.deathCoin = true;
-	    if global.powerupDeathCoin = 1
+	    /*if global.powerupDeathCoin = 1
 	    {
 	        ini_open("settings.ini");
 	        if ini_read_real("Settings", "DCoinTrial", 1) = 1
@@ -271,7 +271,7 @@ if spawn = true
 	        }
 	        ini_close();
 	        global.powerupDeathCoin = 0;
-	    }
+	    }*/
 	}
 	spawn = false;
 }
