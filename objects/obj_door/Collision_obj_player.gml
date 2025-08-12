@@ -1,7 +1,7 @@
 // MOVE MOVE
 if other.name = global.name //If this player is you
 {
-	if ((newroom == rm_backstage && htme_globalGet("backstageDoor") == 1) || (newroom == rm_closet && htme_globalGet("closetDoor") == 1) || (newroom == rm_kitchen && ((htme_globalGet("kitchenDoor") == 1) or (global.animatronicChosen != 3 and global.animatronicChosen != 4 and global.animatronicChosen != 6 and global.animatronicChosen != 7))) || (newroom == rm_saferoom && global.animatronicChosen != 6))
+	if ((newroom == rm_backstage && htme_globalGet("backstageDoor") == 1) || (newroom == rm_closet && htme_globalGet("closetDoor") == 1) || (newroom == rm_kitchen && ((htme_globalGet("kitchenDoor") == 1) or (global.animatronicChosen != 3 and global.animatronicChosen != 4 and global.animatronicChosen != 6 and global.animatronicChosen != 7))) || (newroom == rm_saferoom && global.animatronicChosen != 6) || (room = rm_partyroom1 && obj_vent_left.closed = 1) || (room = rm_partyroom2 && obj_vent_right.closed = 1))
 	{
 	    locked = true;
 	}

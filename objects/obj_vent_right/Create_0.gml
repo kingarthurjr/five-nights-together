@@ -1,0 +1,12 @@
+/// @description Open or Closed?
+
+if (htme_globalGet("tfreddy") = 15 or 3) or (htme_globalGet("tbonnie") = 15 or 3) or (htme_globalGet("tchica") = 15 or 3) or (htme_globalGet("mangle") = 15 or 3) or (htme_globalGet("wfreddy") = 15 or 3) or (htme_globalGet("wbonnie") = 15 or 3) or (htme_globalGet("wchica") = 15 or 3) or (htme_globalGet("wfoxy") = 15 or 3) or (htme_globalGet("puppet") = 15 or 3) or (htme_globalGet("springtrap") = 15 or 3)
+{
+	image_index = 1
+	closed = 1
+}
+else
+{
+	image_index = 0;
+	closed = 0;
+}
