@@ -24,6 +24,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7E1372AF","properties":[],"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":12.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":920.0,"y":280.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_123C0FE4","properties":[],"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":920.0,"y":600.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_59FD2616","properties":[],"isDnd":false,"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":4.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":960.0,"y":520.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1325ABF7","properties":[],"isDnd":false,"objectId":{"name":"obj_deathcoin","path":"objects/obj_deathcoin/obj_deathcoin.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":540.0,"y":340.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_9E1E801","properties":[],"isDnd":false,"objectId":{"name":"obj_deathcoin","path":"objects/obj_deathcoin/obj_deathcoin.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":260.0,"y":520.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":20,"gridY":20,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_3D8DE19F","spriteId":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":240.0,"y":240.0,},
@@ -49,6 +51,8 @@
     {"name":"inst_7E1372AF","path":"rooms/rm_partsandservice/rm_partsandservice.yy",},
     {"name":"inst_123C0FE4","path":"rooms/rm_partsandservice/rm_partsandservice.yy",},
     {"name":"inst_59FD2616","path":"rooms/rm_partsandservice/rm_partsandservice.yy",},
+    {"name":"inst_1325ABF7","path":"rooms/rm_partsandservice/rm_partsandservice.yy",},
+    {"name":"inst_9E1E801","path":"rooms/rm_partsandservice/rm_partsandservice.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
