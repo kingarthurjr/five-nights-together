@@ -115,11 +115,11 @@ if spawn = true
 	{
 	    if global.animatronicChosen = 3 or global.animatronicChosen = 4 or global.animatronicChosen = 6 or global.animatronicChosen = 7 //If Chica or Foxy or Mimic or Puppet, include kitchen
 	    {
-	        global.coinLocation = irandom_range(1,10);
+	        global.coinLocation = irandom_range(1,20);
 	    }
 	    else
 	    {
-	        global.coinLocation = irandom_range(1,9);
+	        global.coinLocation = irandom_range(1,19);
 	    }
 	    global.deathCoin = false;
 	}
@@ -250,7 +250,7 @@ if spawn = true
 	//Death Coin
 	if global.animatronicChosen != 6 //and global.powerupDeathCoin = 0
 	{
-	    global.coinLocation = irandom_range(1,10);
+	    global.coinLocation = irandom_range(1,22);
 	    global.deathCoin = false;
 	}
 	else

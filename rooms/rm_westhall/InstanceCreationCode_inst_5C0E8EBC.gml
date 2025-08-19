@@ -1,0 +1,1 @@
+whichCoin = 16;
