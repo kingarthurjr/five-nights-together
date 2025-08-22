@@ -26,6 +26,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_BBAC046","properties":[],"isDnd":false,"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":4.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":800.0,"y":360.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_286C6D5E","properties":[],"isDnd":false,"objectId":{"name":"obj_deathcoin","path":"objects/obj_deathcoin/obj_deathcoin.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":200.0,"y":260.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_526C8259","properties":[],"isDnd":false,"objectId":{"name":"obj_deathcoin","path":"objects/obj_deathcoin/obj_deathcoin.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":520.0,"y":260.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_63CF1C71","properties":[],"isDnd":false,"objectId":{"name":"obj_balloonboy","path":"objects/obj_balloonboy/obj_balloonboy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":520.0,"y":120.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":20,"gridY":20,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_196A0433","spriteId":{"name":"spr_table2_side","path":"sprites/spr_table2_side/spr_table2_side.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":280.0,"y":240.0,},
@@ -57,6 +58,7 @@
     {"name":"inst_BBAC046","path":"rooms/rm_partyroom3/rm_partyroom3.yy",},
     {"name":"inst_286C6D5E","path":"rooms/rm_partyroom3/rm_partyroom3.yy",},
     {"name":"inst_526C8259","path":"rooms/rm_partyroom3/rm_partyroom3.yy",},
+    {"name":"inst_63CF1C71","path":"rooms/rm_partyroom3/rm_partyroom3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

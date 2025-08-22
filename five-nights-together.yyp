@@ -1099,6 +1099,7 @@
     {"id":{"name":"obj_cam02","path":"objects/obj_cam02/obj_cam02.yy",},"order":1,},
     {"id":{"name":"spr_party4_mangle","path":"sprites/spr_party4_mangle/spr_party4_mangle.yy",},"order":4,},
     {"id":{"name":"spr_oven_down","path":"sprites/spr_oven_down/spr_oven_down.yy",},"order":9,},
+    {"id":{"name":"obj_balloonboy","path":"objects/obj_balloonboy/obj_balloonboy.yy",},"order":11,},
     {"id":{"name":"spr_waitfoxy_right","path":"sprites/spr_waitfoxy_right/spr_waitfoxy_right.yy",},"order":1,},
     {"id":{"name":"snd_done","path":"sounds/snd_done/snd_done.yy",},"order":2,},
     {"id":{"name":"spr_waitscott_left","path":"sprites/spr_waitscott_left/spr_waitscott_left.yy",},"order":0,},
