@@ -604,6 +604,7 @@
     {"id":{"name":"Obj_Steam_Stat_Win","path":"objects/Obj_Steam_Stat_Win/Obj_Steam_Stat_Win.yy",},"order":3,},
     {"id":{"name":"obj_game_tbonnie","path":"objects/obj_game_tbonnie/obj_game_tbonnie.yy",},"order":1,},
     {"id":{"name":"htme_doPlayers","path":"scripts/htme_doPlayers/htme_doPlayers.yy",},"order":21,},
+    {"id":{"name":"obj_doorOffice","path":"objects/obj_doorOffice/obj_doorOffice.yy",},"order":12,},
     {"id":{"name":"Obj_YoYo_textbox","path":"objects/Obj_YoYo_textbox/Obj_YoYo_textbox.yy",},"order":2,},
     {"id":{"name":"htme_doGlobalSync","path":"scripts/htme_doGlobalSync/htme_doGlobalSync.yy",},"order":23,},
     {"id":{"name":"spr_righthall_bonnie","path":"sprites/spr_righthall_bonnie/spr_righthall_bonnie.yy",},"order":1,},
