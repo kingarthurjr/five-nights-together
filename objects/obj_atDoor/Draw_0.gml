@@ -1,0 +1,5 @@
+x = view_xview[0];
+y = view_yview[0];
+draw_self();
+
+event_inherited();

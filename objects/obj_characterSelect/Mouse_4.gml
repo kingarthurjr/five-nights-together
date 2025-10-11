@@ -7,6 +7,7 @@ if htme_globalGet(animatronic+"Taken") = "noone" //If Freddy isn't taken
         image_index = 1;
         obj_characterInfo.amountSelected = 1;
         global.animatronicChosen = animNumber;
+		global.animatronicName = animatronic;
 		show_debug_message(animatronic+"Taken has been set to "+htme_globalGet(animatronic+"Taken"));
     }
 }
