@@ -11,14 +11,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 97,
+  "bbox_right": 92,
   "bbox_top": 0,
-  "bbox_bottom": 138,
+  "bbox_bottom": 133,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 98,
-  "height": 139,
+  "width": 93,
+  "height": 134,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -27,9 +27,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5b439fd2-5d3b-4437-823a-2c79aae60453",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3660ccab-4dd1-43d9-bd60-07726d5d8be0",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"06f3345d-ca67-452c-bc66-9edf360b2f49",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3a69e9d9-cff8-4dca-bd5f-2b379bdb1cf8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"994a042a-c868-4bc7-9b21-a996caed5d0c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a6a7f94f-7fbc-4686-ae9f-5d6962e946a5",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -46,9 +46,9 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f9323b91-9083-4daa-824d-bb52d2090cc2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5b439fd2-5d3b-4437-823a-2c79aae60453","path":"sprites/spr_cs_foxy/spr_cs_foxy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"2920aed1-9c4b-4999-8289-0f481c655cbe","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3660ccab-4dd1-43d9-bd60-07726d5d8be0","path":"sprites/spr_cs_foxy/spr_cs_foxy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"f2549e47-733d-45a8-9624-687507ad71ee","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"06f3345d-ca67-452c-bc66-9edf360b2f49","path":"sprites/spr_cs_foxy/spr_cs_foxy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e91a710b-ea29-4a55-a018-5b831e34ecb8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3a69e9d9-cff8-4dca-bd5f-2b379bdb1cf8","path":"sprites/spr_cs_foxy/spr_cs_foxy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"58f684af-783a-442b-b9a8-4264b8fd2d7e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"994a042a-c868-4bc7-9b21-a996caed5d0c","path":"sprites/spr_cs_foxy/spr_cs_foxy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6f0a2ff2-e9ca-4518-b8ea-b6eea26be3d8","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a6a7f94f-7fbc-4686-ae9f-5d6962e946a5","path":"sprites/spr_cs_foxy/spr_cs_foxy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -67,7 +67,7 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"368e8788-beb5-4102-b26f-5e5954af0d6a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8655a7a1-8c12-4485-bf1b-41beb2ee759a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
