@@ -31,5 +31,5 @@ if dont = false
 	    }
 	}
 	//Set the animatronic to the correct camera
-	htme_globalSet(global.animatronicName,camNumber,buffer_s8);
+	htme_globalSet(global.animatronics[global.animatronicChosen-1],camNumber,buffer_s8);
 }

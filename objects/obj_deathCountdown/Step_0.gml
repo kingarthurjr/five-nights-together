@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //Set animatronic to position
-htme_globalSet(global.animatronicName,camNumber,buffer_s8);
+htme_globalSet(global.animatronics[global.animatronicChosen-1],camNumber,buffer_s8);
 
 //Interrupt if BB
 if global.bbLocation != 0

@@ -12,8 +12,7 @@ else
 
 if keyboard_check(ord(global.doorKey))
 {
-	//NOTE TO SELF: CREATE SCRIPT THAT CHECKS IF EVERY ANIMATRONIC IS *NOT* AT ARGUMENT
-	if htme_globalGet("freddy") != obj_doorOffice.camNumber and htme_globalGet("bonnie") != obj_doorOffice.camNumber and htme_globalGet("chica") != obj_doorOffice.camNumber and htme_globalGet("foxy") != obj_doorOffice.camNumber and htme_globalGet("puppet") != obj_doorOffice.camNumber and htme_globalGet("springtrap") != obj_doorOffice.camNumber and global.bbLocation = 0
+	if scr_cam_isEmpty(camNumber)
 	{
 	    if global.deathCoin = true
 	    {

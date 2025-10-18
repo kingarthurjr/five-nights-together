@@ -18,12 +18,4 @@ if (other.htme_isLocal()) //If this is the player
 	{
 		htme_globalSet("mimic",camNumber,buffer_s8);
 	}
-	if global.animatronicChosen = 8
-	{
-		htme_globalSet("gfreddy",camNumber,buffer_s8);
-	}
-	if global.animatronicChosen = 9
-	{
-		htme_globalSet("sfreddy",camNumber,buffer_s8);
-	}
 }
