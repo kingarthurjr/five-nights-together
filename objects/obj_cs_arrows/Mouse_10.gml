@@ -1,0 +1,1 @@
+global.clickable = false;

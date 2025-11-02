@@ -9,8 +9,17 @@ pchosen[3] = htme_globalGet("chicaTaken");
 pchosen[4] = htme_globalGet("foxyTaken");
 pchosen[5] = htme_globalGet("puppetTaken");
 pchosen[6] = htme_globalGet("springtrapTaken");
+pchosen[7] = htme_globalGet("mimicTaken");
+pchosen[8] = htme_globalGet("tfreddyTaken");
+pchosen[9] = htme_globalGet("tbonnieTaken");
+pchosen[10] = htme_globalGet("tchicaTaken");
+pchosen[11] = htme_globalGet("mangleTaken");
+pchosen[12] = htme_globalGet("wfreddyTaken");
+pchosen[13] = htme_globalGet("wbonnieTaken");
+pchosen[14] = htme_globalGet("wchicaTaken");
+pchosen[15] = htme_globalGet("wfoxyTaken");
 
-for(var i = 1; i <= 6; i++) 
+for(var i = 1; i <= 15; i++) 
 {
     if pchosen[i] != "noone"
     {

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_cs_wfreddy",
   "spriteId": {
-    "name": "spr_cs_mangle",
-    "path": "sprites/spr_cs_mangle/spr_cs_mangle.yy",
+    "name": "spr_cs_wfreddy",
+    "path": "sprites/spr_cs_wfreddy/spr_cs_wfreddy.yy",
   },
   "solid": false,
   "visible": true,

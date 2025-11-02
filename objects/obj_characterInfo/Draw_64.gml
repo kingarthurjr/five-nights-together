@@ -5,19 +5,19 @@ if current = 0
 {
 	cinfo = "";
 }
-if current = 1
+if current = 1 or current = 8 or current = 12
 {
 	cinfo = "Freddy:  Activating his music box while the guard is watching will\ntrip the power!"
 }
-if current = 2
+if current = 2 or current = 9 or current = 13
 {
 	cinfo = "Bonnie:  Disable cameras by completing a minigame before the\nguard notices!"
 }
-if current = 3
+if current = 3 or current = 10 or current = 14
 {
 	cinfo = "Chica:  Battle the guard for control over the oven, potentially\noverheating the building and causing disastrous malfunctions."
 }
-if current = 4
+if current = 4 or current = 11 or current = 15
 {
 	cinfo = "Foxy:  Hide from the guard long enough and run straight into the\noffice's nearest door!"
 }

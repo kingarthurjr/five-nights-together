@@ -1,4 +1,4 @@
-if htme_globalGet(animatronic+"Taken") = global.name //If not taken by you
+if htme_globalGet(animatronic+"Taken") = global.name //If taken by you
 {
 	image_index = 1;
 }
@@ -11,5 +11,15 @@ else
 	else //Someone else did
 	{
 		image_index = 2;
+		
+		//Destroy Skin Select Arrows
+		if instance_exists(obj_cs_up)
+		{
+			instance_destroy(obj_cs_up);
+		}
+		if instance_exists(obj_cs_down)
+		{
+			instance_destroy(obj_cs_down);
+		}
 	}
 }

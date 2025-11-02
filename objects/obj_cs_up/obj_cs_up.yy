@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_cs_wchica",
+  "name": "obj_cs_up",
   "spriteId": {
-    "name": "spr_cs_wchica",
-    "path": "sprites/spr_cs_wchica/spr_cs_wchica.yy",
+    "name": "spr_cs_up",
+    "path": "sprites/spr_cs_up/spr_cs_up.yy",
   },
   "solid": false,
   "visible": true,
@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_characterSelect",
-    "path": "objects/obj_characterSelect/obj_characterSelect.yy",
+    "name": "obj_cs_skinselect",
+    "path": "objects/obj_cs_skinselect/obj_cs_skinselect.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,13 +27,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "FNaF2",
-    "path": "folders/Objects/UI/Lobby/Character Select/FNaF2.yy",
+    "name": "Character Select",
+    "path": "folders/Objects/UI/Lobby/Character Select.yy",
   },
 }
