@@ -34,6 +34,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Waiting Room",
-    "path": "folders/Objects/UI/Lobby/Waiting Room.yy",
+    "path": "folders/Objects/Lobby/Waiting Room.yy",
   },
 }

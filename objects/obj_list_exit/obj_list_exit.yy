@@ -33,6 +33,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Lobby",
-    "path": "folders/Objects/UI/Lobby.yy",
+    "path": "folders/Objects/Lobby.yy",
   },
 }
