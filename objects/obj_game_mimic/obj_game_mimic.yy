@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Show Stage",
-    "path": "folders/Objects/Devices/Cameras/Animatronics/FNaF2/Show Stage.yy",
+    "name": "Game Area",
+    "path": "folders/Objects/Devices/Cameras/Animatronics/FNaF2/Game Area.yy",
   },
 }

@@ -1,5 +1,5 @@
 x = obj_cam09.x;
-if ds_list_size(htme_getPlayers()) > 2 and htme_globalGet("tfreddy") = 0
+if htme_globalGet("wfreddyTaken") != "noone" and htme_globalGet("wfreddy") = 0
 {
 	image_index = (htme_globalGet("freddySpecial")) ? 2 : 1;
 }
