@@ -27,3 +27,5 @@ htme_globalSet("puppetSpecial",0,buffer_bool);
 //Death Coin
 global.coinRoom = 0;
 global.coinLocation = 0;
+
+global.clickable = true;

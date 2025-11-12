@@ -10,4 +10,5 @@ global.doorKey = "Z";
 //Keep
 global.isPrivate = false; //Reset isPrivate to false every time
 global.password = false;
-global.animatronics = ["freddy","bonnie","chica","foxy","puppet","springtrap","mimic","tfreddy","tbonnie","tchica","mangle","wfreddy","wbonnie","wchica","wfoxy"]
+global.animatronics = ["freddy","bonnie","chica","foxy","puppet","springtrap","mimic","tfreddy","tbonnie","tchica","mangle","wfreddy","wbonnie","wchica","wfoxy"];
+global.coinLocation = 0;
