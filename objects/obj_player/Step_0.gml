@@ -97,7 +97,7 @@ if room != rm_waitingroom
 {
     if(x != xprevious || y != yprevious)
     {
-        image_speed = 0.4
+        image_speed = 1
     }
     else
     {
@@ -409,7 +409,7 @@ else
 				break;
 		}
 	}
-	if global.animatronicChosen = 8 //The Mimic
+	if global.animatronicChosen = 11 //The Mangle
 	{
 		switch(facing)
 		{
@@ -427,7 +427,7 @@ else
 				break;
 		}
 	}
-	if global.animatronicChosen = 9 //Withered Freddy
+	if global.animatronicChosen = 12 //Withered Freddy
 	{
 		switch(facing)
 		{
@@ -452,7 +452,7 @@ else
 				break;
 		}
 	}
-	if global.animatronicChosen = 10 //Withered Bonnie
+	if global.animatronicChosen = 13 //Withered Bonnie
 	{
 		switch(facing)
 		{
@@ -470,7 +470,7 @@ else
 				break;
 		}
 	}
-	if global.animatronicChosen = 11 //Withered Chica
+	if global.animatronicChosen = 14 //Withered Chica
 	{
 		switch(facing)
 		{
@@ -488,7 +488,7 @@ else
 				break;
 		}
 	}
-	if global.animatronicChosen = 12 //Withered Foxy
+	if global.animatronicChosen = 15 //Withered Foxy
 	{
 		switch(facing)
 		{
@@ -520,31 +520,38 @@ else
 {
     if room != rm_waitingroom
     {
-        if (image_index % 2 == 1 && image_index != previousFrame)
-        {
-            if global.animatronicChosen = 5
-            {
-                if global.music = true
-                {
-                    if !audio_is_playing(mus_puppet)
-                    {
-                        audio_play_sound(mus_puppet,10,true);
-                    }
-                }
-            }
-            else
-            {
-                randomize();
-				while(sound = previousSound)
-				{
-					sound = choose(snd_foot1,snd_foot2,snd_foot3,snd_foot4,snd_foot5);
+        if htme_isLocal()
+		{
+			if (floor(image_index) % 2 == 1 && image_index != previousFrame)
+	        {
+	            if global.animatronicChosen = 5
+	            {
+	                if global.music = true
+	                {
+	                    if !audio_is_playing(mus_puppet)
+	                    {
+	                        audio_play_sound(mus_puppet,10,true);
+	                    }
+	                }
+	            }
+	            else
+	            {
+	                randomize();
+					if !audio_is_playing(snd_foot1) and !audio_is_playing(snd_foot2) and !audio_is_playing(snd_foot3) and !audio_is_playing(snd_foot4) and !audio_is_playing(snd_foot5)
+					{
+						audio_play_sound(choose(snd_foot1,snd_foot2,snd_foot3,snd_foot4,snd_foot5),10,false);
+					}
+					/*while(sound = previousSound)
+					{
+						sound = choose(snd_foot1,snd_foot2,snd_foot3,snd_foot4,snd_foot5);
+					}
 					if sound != previousSound
 					{
-						audio_play_sound(sound,1,false);
+						audio_play_sound(sound,10,false);
 						previousSound = sound;
-					}
-				}
-            }
+					}*/
+	            }
+			}
         }
         if image_index = previousFrame
         {
@@ -554,7 +561,7 @@ else
             }
         }
     }
-    previousFrame = image_index;
+	previousFrame = image_index
 }
 
 ///Lighting

@@ -140,10 +140,26 @@ if htme_isLocal()
 	self.name = global.name;
 	self.skin = global.skin;
 	self.animatronicChosen = global.animatronicChosen;
+	instance_create(x,y,obj_campoint).playerobj = self;
 }
 
 collision = false;
 fade = 0;
 darkness = 0;
+sound = snd_foot1;
+previousSound = sound;
 
-spawn = true;
+if global.coinLocation = 0
+{
+    spawn = true;
+    if global.animatronicChosen = 6
+    {
+        global.coinLocation = null;
+    }
+}
+else
+{
+    spawn = false;
+}
+
+event_inherited();
