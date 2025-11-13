@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_vent_left",
   "spriteId": {
-    "name": "spr_door2",
-    "path": "sprites/spr_door2/spr_door2.yy",
+    "name": "spr_vent",
+    "path": "sprites/spr_vent/spr_vent.yy",
   },
   "solid": false,
   "visible": true,
@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects/Overworld/Objects.yy",
+    "name": "FNaF2",
+    "path": "folders/Objects/Overworld/Objects/FNaF2.yy",
   },
 }

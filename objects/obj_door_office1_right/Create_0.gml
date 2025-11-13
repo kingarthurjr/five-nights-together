@@ -1,5 +1,7 @@
 /// @description Open or Closed?
 
+depth = -y;
+
 image_speed = 0;
 if htme_globalGet("doorRight") = 1
 {

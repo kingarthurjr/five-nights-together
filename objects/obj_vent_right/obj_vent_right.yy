@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects/Overworld/Objects.yy",
+    "name": "FNaF2",
+    "path": "folders/Objects/Overworld/Objects/FNaF2.yy",
   },
 }

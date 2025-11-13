@@ -11,7 +11,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_chromabb",
+    "path": "objects/obj_chromabb/obj_chromabb.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -34,7 +37,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects/Overworld/Objects.yy",
+    "name": "FNaF1",
+    "path": "folders/Objects/Overworld/Objects/FNaF1.yy",
   },
 }

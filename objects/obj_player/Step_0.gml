@@ -1,3 +1,8 @@
+if room != rm_waitingroom
+{
+	depth = -y;
+}
+
 if htme_isLocal()
 {
 	global.playerNum = self.playerNum;

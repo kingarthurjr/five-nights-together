@@ -1,5 +1,7 @@
 /// @description Open or Closed?
 
+depth = -y;
+
 image_speed = 0;
 if global.animatronicChosen < 2 or (htme_globalGet("chica") = 9 or htme_globalGet("foxy") = 9 or htme_globalGet("puppet") = 9 or htme_globalGet("springtrap") = 9)
 {
