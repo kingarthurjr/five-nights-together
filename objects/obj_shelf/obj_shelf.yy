@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_shelf",
   "spriteId": {
-    "name": "spr_tv2",
-    "path": "sprites/spr_tv2/spr_tv2.yy",
+    "name": "spr_shelf",
+    "path": "sprites/spr_shelf/spr_shelf.yy",
   },
   "solid": false,
   "visible": true,

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_arcades1",
   "spriteId": {
-    "name": "spr_pizzashelf",
-    "path": "sprites/spr_pizzashelf/spr_pizzashelf.yy",
+    "name": "spr_arcades1",
+    "path": "sprites/spr_arcades1/spr_arcades1.yy",
   },
   "solid": false,
   "visible": true,

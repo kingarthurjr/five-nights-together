@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_supplies",
   "spriteId": {
-    "name": "spr_backstage1_table",
-    "path": "sprites/spr_backstage1_table/spr_backstage1_table.yy",
+    "name": "spr_closet1",
+    "path": "sprites/spr_closet1/spr_closet1.yy",
   },
   "solid": false,
   "visible": true,

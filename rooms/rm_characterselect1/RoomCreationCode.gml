@@ -27,5 +27,7 @@ htme_globalSet("puppetSpecial",0,buffer_bool);
 //Death Coin
 global.coinRoom = 0;
 global.coinLocation = 0;
+//Difficulty Counter
+htme_globalSet("guardScore",0,buffer_u32);
 
 global.clickable = true;

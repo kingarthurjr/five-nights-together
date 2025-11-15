@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_tv1",
   "spriteId": {
-    "name": "spr_closet1",
-    "path": "sprites/spr_closet1/spr_closet1.yy",
+    "name": "spr_tv1",
+    "path": "sprites/spr_tv1/spr_tv1.yy",
   },
   "solid": false,
   "visible": true,

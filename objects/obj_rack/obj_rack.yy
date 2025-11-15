@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_rack",
   "spriteId": {
-    "name": "spr_kitchen1_bg",
-    "path": "sprites/spr_kitchen1_bg/spr_kitchen1_bg.yy",
+    "name": "spr_pizzashelf",
+    "path": "sprites/spr_pizzashelf/spr_pizzashelf.yy",
   },
   "solid": false,
   "visible": true,

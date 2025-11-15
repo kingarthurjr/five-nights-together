@@ -1,7 +1,5 @@
 /// @description Open or Closed?
 
-depth = -y;
-
 image_speed = 0;
 if htme_globalGet("freddy") = 4 or htme_globalGet("bonnie") = 4 or htme_globalGet("chica") = 4 or htme_globalGet("foxy") = 4 or htme_globalGet("puppet") = 4 or htme_globalGet("springtrap") = 4
 {
@@ -14,3 +12,5 @@ else
 	closed = 0;
 }
 audioStarted = false;
+
+event_inherited();

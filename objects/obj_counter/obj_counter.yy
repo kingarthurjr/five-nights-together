@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_counter",
   "spriteId": {
-    "name": "spr_kitchen1_fg",
-    "path": "sprites/spr_kitchen1_fg/spr_kitchen1_fg.yy",
+    "name": "spr_kitchen1_bg",
+    "path": "sprites/spr_kitchen1_bg/spr_kitchen1_bg.yy",
   },
   "solid": false,
   "visible": true,

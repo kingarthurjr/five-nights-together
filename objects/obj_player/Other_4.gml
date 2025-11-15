@@ -41,7 +41,7 @@ else
 }
 
 //FNaF1
-if spawn = true
+if spawn = true and htme_globalGet("mapSelected") = 0
 {
 	if room = rm_diningarea
 	{
@@ -146,7 +146,7 @@ if spawn = true
 	spawn = false;
 }
 //FNaF2
-if spawn = true
+if spawn = true and htme_globalGet("mapSelected") = 1
 {
 	if room = rm_gamearea
 	{

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_ovens",
   "spriteId": {
-    "name": "spr_shelf",
-    "path": "sprites/spr_shelf/spr_shelf.yy",
+    "name": "spr_kitchen1_fg",
+    "path": "sprites/spr_kitchen1_fg/spr_kitchen1_fg.yy",
   },
   "solid": false,
   "visible": true,
