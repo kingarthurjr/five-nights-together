@@ -1,8 +1,10 @@
+//3D Effect
 if room != rm_waitingroom
 {
 	depth = -y;
 }
 
+//Set this object as YOURS
 if htme_isLocal()
 {
 	global.playerNum = self.playerNum;
@@ -13,7 +15,6 @@ if htme_globalGet("jumpscare") = 1
 {
     room_goto(rm_gameover);
 }
-
 if htme_globalGet("6am") = 1
 {
     if !instance_exists(obj_6am)
@@ -609,3 +610,9 @@ if room != rm_waitingroom
         }
     }
 }*/
+
+//Freddy Special
+if htme_globalGet("freddySpecial") and !instance_exists(obj_musicbox)
+{
+	instance_create(0,0,obj_musicbox);
+}

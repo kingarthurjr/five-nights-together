@@ -35,5 +35,10 @@ bonnieReady = false;
 chicaReady = false;
 foxyReady = false;
 puppetReady = false;
+freddyCondition = false;
+bonnieCondition = false;
+chicaCondition = false;
+foxyCondition = false;
+puppetCondition = false;
 
 cheating = 0;
