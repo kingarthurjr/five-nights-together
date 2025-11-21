@@ -26,15 +26,15 @@ if !instance_exists(obj_minigame_border) and !instance_exists(obj_doorfade)
     {
         instance_create(0,0,obj_foxy_run);
         foxyReady = false;
-        if ds_list_size(htme_getPlayers()) = 2
+        if htme_globalGet("activePlayers") = 2
         {
             maxCount = 15*room_speed;
         }
-        if ds_list_size(htme_getPlayers()) = 3
+        if htme_globalGet("activePlayers") = 3
         {
             maxCount = 20*room_speed;
         }
-        if ds_list_size(htme_getPlayers()) >= 4
+        if htme_globalGet("activePlayers") >= 4
         {
             maxCount = 30*room_speed;
         }

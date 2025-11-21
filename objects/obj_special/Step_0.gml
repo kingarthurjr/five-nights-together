@@ -40,22 +40,7 @@ if puppetCooldown = 0
 }
 
 //Which Bonnie is Active?
-if global.animatronicChosen = 2
-{
-	activeBonnie = htme_globalGet("bonnie");
-}
-if global.animatronicChosen = 7
-{
-	activeBonnie = htme_globalGet("mimic");
-}
-if global.animatronicChosen = 9
-{
-	activeBonnie = htme_globalGet("tbonnie");
-}
-if global.animatronicChosen = 13
-{
-	activeBonnie = htme_globalGet("wbonnie");
-}
+activeBonnie = htme_globalGet(global.animatronics[global.animatronicChosen-1]);
 
 //Check if Camera is Hackable
 if htme_globalGet("mapSelected") = 0 //FNaF1
