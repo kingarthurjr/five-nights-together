@@ -49,6 +49,7 @@ htme_globalSet("cameraOut",0,buffer_bool);
 //Animatronics
 htme_globalSet("breakBonnie",0,buffer_bool);
 htme_globalSet("foxyWatched",0,buffer_bool);
+htme_globalSet("foxyClicked",0,buffer_bool);
 htme_globalSet("jumpscare",0,buffer_bool);
 htme_globalSet("jumpscareHappened",0,buffer_bool);
 htme_globalSet("gameover",0,buffer_bool);
