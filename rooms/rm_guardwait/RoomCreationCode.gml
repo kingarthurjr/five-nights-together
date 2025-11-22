@@ -13,7 +13,7 @@ htme_globalSet("powerOut",0,buffer_bool);
 htme_globalSet("buildingPower",100,buffer_u8);
 htme_globalSet("buildingTemp",60,buffer_u8);
 htme_globalSet("ovenUse",0,buffer_u8);
-htme_globalSet("ovenTemp",160,buffer_u8);
+htme_globalSet("ovenTemp",160,buffer_u16);
 global.bluescreenFirstTime = false;
 //Camera Status
 global.camMove = 0;
