@@ -1,0 +1,1 @@
+camerasRebooted = htme_globalGet("camerasRebooted");

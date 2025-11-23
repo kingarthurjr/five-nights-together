@@ -23,6 +23,7 @@ htme_globalSet("whoGot",0,buffer_u8);
 htme_globalSet("freddySpecial",0,buffer_bool);
 htme_globalSet("freddyOut",0,buffer_bool);
 htme_globalSet("bonnieSpecial",0,buffer_bool);
+htme_globalSet("bonnieBroke",0,buffer_bool);
 htme_globalSet("ovenUse",0,buffer_u8);
 htme_globalSet("foxyReady",900,buffer_u16);
 htme_globalSet("bonk",0,buffer_bool);

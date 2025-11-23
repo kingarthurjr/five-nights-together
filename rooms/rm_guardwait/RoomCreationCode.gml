@@ -21,6 +21,7 @@ global.camMoveX = 0;
 htme_globalSet("camera",0,buffer_s8);
 htme_globalSet("cameraActive",0,buffer_bool);
 htme_globalSet("cameraOut",0,buffer_bool);
+htme_globalSet("camerasRebooted",0,buffer_u8);
 	//FNaF1
 	htme_globalSet("cam1a",0,buffer_bool);
 	htme_globalSet("cam1b",0,buffer_bool);

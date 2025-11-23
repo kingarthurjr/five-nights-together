@@ -43,8 +43,7 @@ if !instance_exists(obj_minigame_border) and !instance_exists(obj_doorfade)
     if puppetCondition
     {
         htme_globalSet("puppetSpecial",1,buffer_bool);
-        audio_play_sound(snd_block,10,true);
-        audio_sound_gain(snd_block,0.3,0);
+        audio_play_sound(snd_block,10,true,0.3);
         alarm[2] = 10*room_speed;
         puppetReady = false;
         htme_globalSet("puppetUsed",1,buffer_bool);
