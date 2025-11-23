@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_minimap1_puppet",
+  "name": "obj_minimap2_bb",
   "spriteId": {
-    "name": "spr_minimap1_puppet",
-    "path": "sprites/spr_minimap1_puppet/spr_minimap1_puppet.yy",
+    "name": "spr_minimap1_springtrap",
+    "path": "sprites/spr_minimap1_springtrap/spr_minimap1_springtrap.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,14 +25,14 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "FNaF1",
-    "path": "folders/Objects/UI/Animatronics/Minimap/FNaF1.yy",
+    "name": "FNaF2",
+    "path": "folders/Objects/UI/Animatronics/Minimap/FNaF2.yy",
   },
 }

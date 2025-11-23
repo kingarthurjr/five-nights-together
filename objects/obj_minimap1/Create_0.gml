@@ -1,7 +1,8 @@
-depth = -9998;
+depth = -9997;
 ///Variable Defaults
 facing = 0;
 image_index = global.coinRoom+1;
+event_inherited();
 
 ///Create Locators
 if htme_globalGet("freddyTaken") != 0

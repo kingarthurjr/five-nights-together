@@ -1,34 +1,37 @@
 /// @description Special Events
 
-//Rotate Accordingly
-if (facing = 1 and image_angle != -90) or (facing = 0 and image_angle = 90)
-{
-	image_angle -= 2;
-}
-if (facing = 2 and image_angle != 90) or (facing = 0 and image_angle = -90)
-{
-	image_angle += 2;
-}
-
 //Puppet Special
 if htme_globalGet("puppetSpecial") = 1
 {
-	if !instance_exists(obj_minimap1_puppet)
+	if !instance_exists(obj_minimap2_puppet)
 	{
-		instance_create(x,y,obj_minimap1_puppet);
+		instance_create(x,y,obj_minimap2_puppet);
 	}
 }
 else
 {
-	if instance_exists(obj_minimap1_puppet)
+	if instance_exists(obj_minimap2_puppet)
 	{
-		instance_destroy(obj_minimap1_puppet);
+		instance_destroy(obj_minimap2_puppet);
 	}
 }
 
 //Bonnie Special
+if htme_globalGet("tbonnieSelected")
+{
+	activeBonnie = htme_globalGet("tbonnie");
+}
+if htme_globalGet("wbonnieSelected")
+{
+	activeBonnie = htme_globalGet("wbonnie");
+}
+if htme_globalGet("mimicSelected")
+{
+	activeBonnie = htme_globalGet("mimic");
+}
+
 if htme_globalGet("bonnieBroke") = 1
 {
-	instance_create(x,y,obj_minimap1_disabled).image_index = htme_globalGet("bonnie");
+	instance_create(x,y,obj_minimap2_disabled).image_index = activeBonnie;
 	htme_globalSet("bonnieBroke",0,buffer_bool);
 }

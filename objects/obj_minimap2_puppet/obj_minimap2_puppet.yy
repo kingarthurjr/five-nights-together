@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_minimap1_puppet",
+  "name": "obj_minimap2_puppet",
   "spriteId": {
     "name": "spr_minimap1_puppet",
     "path": "sprites/spr_minimap1_puppet/spr_minimap1_puppet.yy",
@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "FNaF1",
-    "path": "folders/Objects/UI/Animatronics/Minimap/FNaF1.yy",
+    "name": "FNaF2",
+    "path": "folders/Objects/UI/Animatronics/Minimap/FNaF2.yy",
   },
 }

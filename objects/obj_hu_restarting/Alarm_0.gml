@@ -40,8 +40,20 @@ if obj_handunit.cameras = 1
 	}
 	if htme_globalGet("mapSelected") = 1 //FNaF2
 	{
-		//Add Cameras
+		htme_globalSet("cam01",0,buffer_bool);
+		htme_globalSet("cam02",0,buffer_bool);
+		htme_globalSet("cam03",0,buffer_bool);
+		htme_globalSet("cam04",0,buffer_bool);
+		htme_globalSet("cam05",0,buffer_bool);
+		htme_globalSet("cam06",0,buffer_bool);
+		htme_globalSet("cam07",0,buffer_bool);
+		htme_globalSet("cam08",0,buffer_bool);
+		htme_globalSet("cam09",0,buffer_bool);
+		htme_globalSet("cam10",0,buffer_bool);
+		htme_globalSet("cam11",0,buffer_bool);
+		htme_globalSet("cam12",0,buffer_bool);
 	}
+	htme_globalSet("camerasRebooted",htme_globalGet("camerasRebooted")+1,buffer_u8);
 	obj_handunit.cameras = 0;
 }
 audio_stop_sound(snd_rebooting);

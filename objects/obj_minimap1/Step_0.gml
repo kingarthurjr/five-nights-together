@@ -27,8 +27,17 @@ else
 }
 
 //Bonnie Special
+if htme_globalGet("bonnieSelected")
+{
+	activeBonnie = htme_globalGet("bonnie");
+}
+if htme_globalGet("mimicSelected")
+{
+	activeBonnie = htme_globalGet("mimic");
+}
+
 if htme_globalGet("bonnieBroke") = 1
 {
-	instance_create(x,y,obj_minimap1_disabled).image_index = htme_globalGet("bonnie");
+	instance_create(x,y,obj_minimap1_disabled).image_index = activeBonnie;
 	htme_globalSet("bonnieBroke",0,buffer_bool);
 }
