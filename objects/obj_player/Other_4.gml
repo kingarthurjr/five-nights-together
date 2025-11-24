@@ -277,8 +277,7 @@ if spawn = true and htme_globalGet("mapSelected") = 1
 }
 
 ///Animatronic UI
-/*
-if room != rm_waitingRoom
+if room != rm_waitingroom
 {
     if !instance_exists(obj_icon)
     {
@@ -288,22 +287,30 @@ if room != rm_waitingRoom
     {
         instance_create(0,0,obj_special);
     }
-    if !instance_exists(obj_minimap)
+    if htme_globalGet("mapSelected") = 0 and !instance_exists(obj_minimap1)
     {
-        instance_create(0,0,obj_minimap);
+        instance_create(0,0,obj_minimap1);
+    }
+	if htme_globalGet("mapSelected") = 1 and !instance_exists(obj_minimap2)
+    {
+        instance_create(0,0,obj_minimap2);
     }
     if global.animatronicChosen = 6
     {
-        if !instance_exists(obj_bbLocate)
+        if htme_globalGet("mapSelected") = 0 and !instance_exists(obj_minimap1_bb)
         {
-            instance_create(0,0,obj_bbLocate);
+            instance_create(0,0,obj_minimap1_bb);
+        }
+		if htme_globalGet("mapSelected") = 1 and !instance_exists(obj_minimap2_bb)
+        {
+            instance_create(0,0,obj_minimap2_bb);
         }
     }
-    if global.powerupFizzyFaz = 1
+    /*if global.powerupFizzyFaz = 1
     {
         if !instance_exists(obj_fizzyfaz)
         {
             instance_create(0,0,obj_fizzyfaz);
         }
-    }
+    }*/
 }*/

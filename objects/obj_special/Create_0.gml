@@ -8,7 +8,7 @@ if global.animatronicChosen = 7 //The Mimic
 }
 else
 {
-    image_index = scr_get_anim_icon(global.animatronicChosen);
+    image_index = scr_get_anim_icon(global.animatronicChosen,true);
 }
 
 //Cooldown or Foxy Mechanic
