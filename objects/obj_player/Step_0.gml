@@ -43,7 +43,7 @@ if room = rm_waitingroom
 }
 
 ///Actual Movement
-if (self.pressed_up)
+if (self.pressed_up) and !(inVent = 1 and room = rm_officehall)
 {
     facing = UP;
     if room = rm_waitingroom
@@ -57,7 +57,7 @@ if (self.pressed_up)
     step++;
 }
 
-if (self.pressed_down)
+if (self.pressed_down) and !(inVent = 1 and room = rm_officehall)
 {
     facing = DOWN;
     if room = rm_waitingroom
@@ -71,7 +71,7 @@ if (self.pressed_down)
     step++;
 }
 
-if (self.pressed_left)
+if (self.pressed_left) and room != rm_leftvent and room != rm_rightvent
 {
     facing = LEFT;
     if room = rm_waitingroom
@@ -85,7 +85,7 @@ if (self.pressed_left)
     step++;
 }
 
-if (self.pressed_right)
+if (self.pressed_right) and room != rm_leftvent and room != rm_rightvent
 {
     facing = RIGHT;
     if room = rm_waitingroom
@@ -359,7 +359,11 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if htme_globalGet("freddySpecial") = 1
+				if inVent = 1
+				{
+					sprite_index = spr_tfreddy_crawl_d;
+				}
+				else if htme_globalGet("freddySpecial") = 1
 				{
 					sprite_index = spr_tfreddy_d_special;
 				}
@@ -369,10 +373,24 @@ else
 				}
 				break;
 			case LEFT:
-				sprite_index = spr_tfreddy_l;
+				if inVent = 1
+				{
+					sprite_index = spr_tfreddy_crawl_l;
+				}
+				else
+				{
+					sprite_index = spr_tfreddy_l;
+				}
 				break;
 			case RIGHT:
-				sprite_index = spr_tfreddy_r;
+				if inVent = 1
+				{
+					sprite_index = spr_tfreddy_crawl_r;
+				}
+				else
+				{
+					sprite_index = spr_tfreddy_r;
+				}
 				break;
 			case UP:
 				sprite_index = spr_tfreddy_u;
@@ -384,13 +402,34 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				sprite_index = spr_tbonnie_d;
+				if inVent = 1
+				{
+					sprite_index = spr_tbonnie_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_tbonnie_d;
+				}
 				break;
 			case LEFT:
-				sprite_index = spr_tbonnie_l;
+				if inVent = 1
+				{
+					sprite_index = spr_tbonnie_crawl_l;
+				}
+				else
+				{
+					sprite_index = spr_tbonnie_l;
+				}
 				break;
 			case RIGHT:
-				sprite_index = spr_tbonnie_r;
+				if inVent = 1
+				{
+					sprite_index = spr_tbonnie_crawl_r;
+				}
+				else
+				{
+					sprite_index = spr_tbonnie_r;
+				}
 				break;
 			case UP:
 				sprite_index = spr_tbonnie_u;
@@ -402,13 +441,34 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				sprite_index = spr_tchica_d;
+				if inVent = 1
+				{
+					sprite_index = spr_tchica_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_tchica_d;
+				}
 				break;
 			case LEFT:
-				sprite_index = spr_tchica_l;
+				if inVent = 1
+				{
+					sprite_index = spr_tchica_crawl_l;
+				}
+				else
+				{
+					sprite_index = spr_tchica_l;
+				}
 				break;
 			case RIGHT:
-				sprite_index = spr_tchica_r;
+				if inVent = 1
+				{
+					sprite_index = spr_tchica_crawl_r;
+				}
+				else
+				{
+					sprite_index = spr_tchica_r;
+				}
 				break;
 			case UP:
 				sprite_index = spr_tchica_u;
@@ -420,13 +480,34 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				sprite_index = spr_mangle_d;
+				if inVent = 1
+				{
+					sprite_index = spr_mangle_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_mangle_d;
+				}
 				break;
 			case LEFT:
-				sprite_index = spr_mangle_l;
+				if inVent = 1
+				{
+					sprite_index = spr_mangle_crawl_l;
+				}
+				else
+				{
+					sprite_index = spr_mangle_l;
+				}
 				break;
 			case RIGHT:
-				sprite_index = spr_mangle_r;
+				if inVent = 1
+				{
+					sprite_index = spr_mangle_crawl_r;
+				}
+				else
+				{
+					sprite_index = spr_mangle_r;
+				}
 				break;
 			case UP:
 				sprite_index = spr_mangle_u;
@@ -438,7 +519,11 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if htme_globalGet("freddySpecial") = 1
+				if inVent = 1
+				{
+					sprite_index = spr_wfreddy_crawl_d;
+				}
+				else if htme_globalGet("freddySpecial") = 1
 				{
 					sprite_index = spr_wfreddy_d_special;
 				}
@@ -448,10 +533,24 @@ else
 				}
 				break;
 			case LEFT:
-				sprite_index = spr_wfreddy_l;
+				if inVent = 1
+				{
+					sprite_index = spr_wfreddy_crawl_l;
+				}
+				else
+				{
+					sprite_index = spr_wfreddy_l;
+				}
 				break;
 			case RIGHT:
-				sprite_index = spr_wfreddy_r;
+				if inVent = 1
+				{
+					sprite_index = spr_wfreddy_crawl_r;
+				}
+				else
+				{
+					sprite_index = spr_wfreddy_r;
+				}
 				break;
 			case UP:
 				sprite_index = spr_wfreddy_u;
@@ -463,13 +562,34 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				sprite_index = spr_wbonnie_d;
+				if inVent = 1
+				{
+					sprite_index = spr_wbonnie_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_wbonnie_d;
+				}
 				break;
 			case LEFT:
-				sprite_index = spr_wbonnie_l;
+				if inVent = 1
+				{
+					sprite_index = spr_wbonnie_crawl_l;
+				}
+				else
+				{
+					sprite_index = spr_wbonnie_l;
+				}
 				break;
 			case RIGHT:
-				sprite_index = spr_wbonnie_r;
+				if inVent = 1
+				{
+					sprite_index = spr_wbonnie_crawl_r;
+				}
+				else
+				{
+					sprite_index = spr_wbonnie_r;
+				}
 				break;
 			case UP:
 				sprite_index = spr_wbonnie_u;
@@ -481,13 +601,34 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				sprite_index = spr_wchica_d;
+				if inVent = 1
+				{
+					sprite_index = spr_wchica_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_wchica_d;
+				}
 				break;
 			case LEFT:
-				sprite_index = spr_wchica_l;
+				if inVent = 1
+				{
+					sprite_index = spr_wchica_crawl_l;
+				}
+				else
+				{
+					sprite_index = spr_wchica_l;
+				}
 				break;
 			case RIGHT:
-				sprite_index = spr_wchica_r;
+				if inVent = 1
+				{
+					sprite_index = spr_wchica_crawl_r;
+				}
+				else
+				{
+					sprite_index = spr_wchica_r;
+				}
 				break;
 			case UP:
 				sprite_index = spr_wchica_u;
@@ -499,13 +640,34 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				sprite_index = spr_wfoxy_d;
+				if inVent = 1
+				{
+					sprite_index = spr_wfoxy_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_wfoxy_d;
+				}
 				break;
 			case LEFT:
-				sprite_index = spr_wfoxy_l;
+				if inVent = 1
+				{
+					sprite_index = spr_wfoxy_crawl_l;
+				}
+				else
+				{
+					sprite_index = spr_wfoxy_l;
+				}
 				break;
 			case RIGHT:
-				sprite_index = spr_wfoxy_r;
+				if inVent = 1
+				{
+					sprite_index = spr_wfoxy_crawl_r;
+				}
+				else
+				{
+					sprite_index = spr_wfoxy_r;
+				}
 				break;
 			case UP:
 				sprite_index = spr_wfoxy_u;

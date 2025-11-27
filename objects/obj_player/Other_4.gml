@@ -273,6 +273,7 @@ if spawn = true and htme_globalGet("mapSelected") = 1
 	        global.powerupDeathCoin = 0;
 	    }*/
 	}
+	inVent = 0;
 	spawn = false;
 }
 
@@ -313,4 +314,9 @@ if room != rm_waitingroom
             instance_create(0,0,obj_fizzyfaz);
         }
     }*/
-}*/
+}
+
+if room = rm_leftvent or room = rm_rightvent
+{
+	inVent = 1;
+}

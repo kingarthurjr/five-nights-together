@@ -134,6 +134,7 @@ self.special = false; //Add special syncing when that's done
 
 stopMoving = false;
 previousFrame = image_index;
+inVent = 0;
 
 if htme_isLocal()
 {

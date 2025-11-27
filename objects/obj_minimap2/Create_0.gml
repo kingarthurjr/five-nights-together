@@ -4,42 +4,42 @@ image_index = global.coinRoom+1;
 event_inherited();
 
 ///Create Locators
-if htme_globalGet("tfreddyTaken") or htme_globalGet("wfreddyTaken")
+if htme_globalGet("tfreddyTaken") != "noone" or htme_globalGet("wfreddyTaken") != "noone"
 {
 	if !instance_exists(obj_locator_freddy)
 	{
 		instance_create(x,y,obj_locator_freddy);
 	}
 }
-if htme_globalGet("tbonnieTaken") or htme_globalGet("wbonnieTaken")
+if htme_globalGet("tbonnieTaken") != "noone" or htme_globalGet("wbonnieTaken") != "noone"
 {
 	if !instance_exists(obj_locator_bonnie)
 	{
 		instance_create(x,y,obj_locator_bonnie);
 	}
 }
-if htme_globalGet("tchicaTaken") or htme_globalGet("wchicaTaken")
+if htme_globalGet("tchicaTaken") != "noone" or htme_globalGet("wchicaTaken") != "noone"
 {
 	if !instance_exists(obj_locator_chica)
 	{
 		instance_create(x,y,obj_locator_chica);
 	}
 }
-if htme_globalGet("mangleTaken") or htme_globalGet("wfoxyTaken")
+if htme_globalGet("mangleTaken") != "noone" or htme_globalGet("wfoxyTaken") != "noone"
 {
 	if !instance_exists(obj_locator_foxy)
 	{
 		instance_create(x,y,obj_locator_foxy);
 	}
 }
-if htme_globalGet("puppetTaken")
+if htme_globalGet("puppetTaken") != "noone"
 {
 	if !instance_exists(obj_locator_puppet)
 	{
 		instance_create(x,y,obj_locator_puppet);
 	}
 }
-if htme_globalGet("springtrapTaken")
+if htme_globalGet("springtrapTaken") != "noone"
 {
 	if !instance_exists(obj_locator_springtrap)
 	{
