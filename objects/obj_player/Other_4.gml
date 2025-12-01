@@ -316,7 +316,11 @@ if room != rm_waitingroom
     }*/
 }
 
-if room = rm_leftvent or room = rm_rightvent
+if room = rm_leftvent
 {
 	inVent = 1;
+}
+if room = rm_rightvent
+{
+	inVent = 2;
 }

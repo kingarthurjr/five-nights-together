@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "snd_foxylaugh1",
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,
@@ -14,10 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_foxylaugh1",
-  "duration": 0.0,
+  "soundFile": "snd_foxylaugh1.ogg",
+  "duration": 2.616599,
   "parent": {
-    "name": "Minigames",
-    "path": "folders/Sounds/Animatronics/Minigames.yy",
+    "name": "Animatronics",
+    "path": "folders/Sounds/Animatronics.yy",
   },
 }

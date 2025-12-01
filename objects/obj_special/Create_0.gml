@@ -12,7 +12,7 @@ else
 }
 
 //Cooldown or Foxy Mechanic
-if scr_get_anim_icon(global.animatronicChosen) = 3 or global.animatronicChosen = 7
+if scr_get_anim_icon(global.animatronicChosen,true) = 3 or global.animatronicChosen = 7
 {
     if !instance_exists(obj_foxy_watched)
     {
@@ -40,5 +40,6 @@ bonnieCondition = false;
 chicaCondition = false;
 foxyCondition = false;
 puppetCondition = false;
+global.currentMimic = 0;
 
 cheating = 0;

@@ -1,6 +1,7 @@
 /// @description Cheat Check Pt2
 
 //Check Current Foxy
+activeFoxy = "noone";
 if global.animatronicChosen = 4
 {
 	activeFoxy = htme_globalGet("foxy");
@@ -19,7 +20,7 @@ if global.animatronicChosen = 15
 }
 
 //Detect Cheating
-if currentCam != activeFoxy //If camera has changed
+if activeFoxy != "noone" and currentCam != activeFoxy //If camera has changed
 {
     cheating += 1;
     alarm[1] = 60;

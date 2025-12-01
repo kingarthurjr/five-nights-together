@@ -15,9 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_foxylaugh2.ogg",
-  "duration": 2.616599,
+  "duration": 2.375692,
   "parent": {
-    "name": "Minigames",
-    "path": "folders/Sounds/Animatronics/Minigames.yy",
+    "name": "Animatronics",
+    "path": "folders/Sounds/Animatronics.yy",
   },
 }

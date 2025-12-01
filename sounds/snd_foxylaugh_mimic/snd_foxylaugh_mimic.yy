@@ -1,9 +1,9 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_mangle",
+  "name": "snd_foxylaugh_mimic",
   "conversionMode": 0,
-  "compression": 3,
+  "compression": 1,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,
@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_mangle.ogg",
-  "duration": 31.378,
+  "soundFile": "snd_foxylaugh_mimic.wav",
+  "duration": 2.616062,
   "parent": {
     "name": "Animatronics",
     "path": "folders/Sounds/Animatronics.yy",

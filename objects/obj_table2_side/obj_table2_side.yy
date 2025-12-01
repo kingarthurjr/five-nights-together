@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_table2_side",
   "spriteId": {
-    "name": "spr_table2",
-    "path": "sprites/spr_table2/spr_table2.yy",
+    "name": "spr_table2_side",
+    "path": "sprites/spr_table2_side/spr_table2_side.yy",
   },
   "solid": false,
   "visible": true,

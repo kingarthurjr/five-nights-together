@@ -1,14 +1,14 @@
 /// @description Update Location
 
-if htme_globalGet("chica") != 0
+if htme_globalGet("chicaSelected") != "noone"
 {
 	active = htme_globalGet("chica");
 }
-if htme_globalGet("tchica") != 0
+if htme_globalGet("tchicaSelected") != "noone"
 {
 	active = htme_globalGet("tchica");
 }
-if htme_globalGet("wchica") != 0
+if htme_globalGet("wchicaSelected") != "noone"
 {
 	active = htme_globalGet("wchica");
 }

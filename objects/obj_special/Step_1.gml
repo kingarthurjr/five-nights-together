@@ -1,5 +1,6 @@
 /// @description Cheat Check Pt1
 
+currentCam = "noone";
 if global.animatronicChosen = 4
 {
 	currentCam = htme_globalGet("foxy");

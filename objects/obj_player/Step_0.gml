@@ -43,7 +43,7 @@ if room = rm_waitingroom
 }
 
 ///Actual Movement
-if (self.pressed_up) and !(inVent = 1 and room = rm_officehall)
+if (self.pressed_up) and !(inVent != 0 and room = rm_officehall)
 {
     facing = UP;
     if room = rm_waitingroom
@@ -57,7 +57,7 @@ if (self.pressed_up) and !(inVent = 1 and room = rm_officehall)
     step++;
 }
 
-if (self.pressed_down) and !(inVent = 1 and room = rm_officehall)
+if (self.pressed_down) and !(inVent != 0 and room = rm_officehall)
 {
     facing = DOWN;
     if room = rm_waitingroom
@@ -359,7 +359,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent = 1
+				if inVent != 0
 				{
 					sprite_index = spr_tfreddy_crawl_d;
 				}
@@ -377,17 +377,17 @@ else
 				{
 					sprite_index = spr_tfreddy_crawl_l;
 				}
-				else
+				else if inVent = 0
 				{
 					sprite_index = spr_tfreddy_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if inVent = 2
 				{
 					sprite_index = spr_tfreddy_crawl_r;
 				}
-				else
+				else if inVent = 0
 				{
 					sprite_index = spr_tfreddy_r;
 				}
@@ -402,7 +402,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent = 1
+				if inVent != 0
 				{
 					sprite_index = spr_tbonnie_crawl_d;
 				}
@@ -416,17 +416,17 @@ else
 				{
 					sprite_index = spr_tbonnie_crawl_l;
 				}
-				else
+				else if inVent = 0
 				{
 					sprite_index = spr_tbonnie_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if inVent = 2
 				{
 					sprite_index = spr_tbonnie_crawl_r;
 				}
-				else
+				else if inVent = 0
 				{
 					sprite_index = spr_tbonnie_r;
 				}
@@ -441,7 +441,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent = 1
+				if inVent != 0
 				{
 					sprite_index = spr_tchica_crawl_d;
 				}
@@ -455,17 +455,17 @@ else
 				{
 					sprite_index = spr_tchica_crawl_l;
 				}
-				else
+				else if inVent = 0
 				{
 					sprite_index = spr_tchica_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if inVent = 2
 				{
 					sprite_index = spr_tchica_crawl_r;
 				}
-				else
+				else if inVent = 0
 				{
 					sprite_index = spr_tchica_r;
 				}
@@ -480,7 +480,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent = 1
+				if inVent != 0
 				{
 					sprite_index = spr_mangle_crawl_d;
 				}
@@ -494,17 +494,17 @@ else
 				{
 					sprite_index = spr_mangle_crawl_l;
 				}
-				else
+				else if inVent = 0
 				{
 					sprite_index = spr_mangle_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if inVent = 2
 				{
 					sprite_index = spr_mangle_crawl_r;
 				}
-				else
+				else if inVent = 0
 				{
 					sprite_index = spr_mangle_r;
 				}
@@ -519,7 +519,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent = 1
+				if inVent != 0
 				{
 					sprite_index = spr_wfreddy_crawl_d;
 				}
@@ -537,17 +537,17 @@ else
 				{
 					sprite_index = spr_wfreddy_crawl_l;
 				}
-				else
+				else if inVent = 0
 				{
 					sprite_index = spr_wfreddy_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if inVent = 2
 				{
 					sprite_index = spr_wfreddy_crawl_r;
 				}
-				else
+				else if inVent = 0
 				{
 					sprite_index = spr_wfreddy_r;
 				}
@@ -562,7 +562,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent = 1
+				if inVent != 0
 				{
 					sprite_index = spr_wbonnie_crawl_d;
 				}
@@ -576,17 +576,17 @@ else
 				{
 					sprite_index = spr_wbonnie_crawl_l;
 				}
-				else
+				else if inVent = 0
 				{
 					sprite_index = spr_wbonnie_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if inVent = 2
 				{
 					sprite_index = spr_wbonnie_crawl_r;
 				}
-				else
+				else if inVent = 0
 				{
 					sprite_index = spr_wbonnie_r;
 				}
@@ -601,7 +601,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent = 1
+				if inVent != 0
 				{
 					sprite_index = spr_wchica_crawl_d;
 				}
@@ -615,17 +615,17 @@ else
 				{
 					sprite_index = spr_wchica_crawl_l;
 				}
-				else
+				else if inVent = 0
 				{
 					sprite_index = spr_wchica_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if inVent = 2
 				{
 					sprite_index = spr_wchica_crawl_r;
 				}
-				else
+				else if inVent = 0
 				{
 					sprite_index = spr_wchica_r;
 				}
@@ -640,7 +640,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent = 1
+				if inVent != 0
 				{
 					sprite_index = spr_wfoxy_crawl_d;
 				}
@@ -654,17 +654,17 @@ else
 				{
 					sprite_index = spr_wfoxy_crawl_l;
 				}
-				else
+				else if inVent = 0
 				{
 					sprite_index = spr_wfoxy_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if inVent = 2
 				{
 					sprite_index = spr_wfoxy_crawl_r;
 				}
-				else
+				else if inVent = 0
 				{
 					sprite_index = spr_wfoxy_r;
 				}
