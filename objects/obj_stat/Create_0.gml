@@ -6,3 +6,4 @@ prev_x = 808;
 prev_y = 108;
 goback = false; //false if going back to map, true if going into store/battle
 facing = obj_player.facing;
+inVent = obj_player.inVent;

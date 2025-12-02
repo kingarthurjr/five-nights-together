@@ -19,6 +19,7 @@ if other.name = global.name //If this player is you
 	        obj_doorfade.newy = newy;
 	        obj_doorfade.newroom = newroom;
 	        obj_doorfade.facing = facing;
+			obj_doorfade.inVent = inVent;
 	    }
 	    else
 	    {

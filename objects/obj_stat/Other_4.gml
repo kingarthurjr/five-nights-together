@@ -5,4 +5,5 @@ if(instance_number(obj_player) > 0 && goback)
     obj_player.x = prev_x;
     obj_player.y = prev_y;
     obj_player.facing = facing;
+	obj_player.inVent = inVent;
 }

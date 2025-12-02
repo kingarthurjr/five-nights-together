@@ -8,7 +8,7 @@ fade = 2 (fade in)
 
 if fade = 1
 {
-    if image_alpha > 0.20
+    if image_alpha > 0.40
     {
         image_alpha -= .20;
     }

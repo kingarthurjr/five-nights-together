@@ -1,7 +1,7 @@
 /// @description Change
 
 //Toggle
-if (htme_globalGet("tfreddy") = 14 or 2) or (htme_globalGet("tbonnie") = 14 or 2) or (htme_globalGet("tchica") = 14 or 2) or (htme_globalGet("mangle") = 14 or 2) or (htme_globalGet("wfreddy") = 14 or 2) or (htme_globalGet("wbonnie") = 14 or 2) or (htme_globalGet("wchica") = 14 or 2) or (htme_globalGet("wfoxy") = 14 or 2) or (htme_globalGet("puppet") = 14 or 2) or (htme_globalGet("springtrap") = 14 or 2)
+if (htme_globalGet("tfreddy") = 14 or htme_globalGet("tfreddy") = 2) or (htme_globalGet("tbonnie") = 14 or htme_globalGet("tbonnie") = 2) or (htme_globalGet("tchica") = 14 or htme_globalGet("tchica") = 2) or (htme_globalGet("mangle") = 14 or htme_globalGet("mangle") = 2) or (htme_globalGet("wfreddy") = 14 or htme_globalGet("wfreddy") = 2) or (htme_globalGet("wbonnie") = 14 or htme_globalGet("wbonnie") = 2) or (htme_globalGet("wchica") = 14 or htme_globalGet("wchica") = 2) or (htme_globalGet("wfoxy") = 14 or htme_globalGet("wfoxy") = 2) or (htme_globalGet("puppet") = 14 or htme_globalGet("puppet") = 2) or (htme_globalGet("springtrap") = 14 or htme_globalGet("springtrap") = 2)
 {
 	if closed = 0
 	{

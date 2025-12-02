@@ -1,3 +1,3 @@
 newx = 380;
-newy = 480;
+newy = 460;
 newroom = rm_partyroom1;

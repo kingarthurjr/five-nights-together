@@ -341,16 +341,44 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				sprite_index = spr_mimic_d;
+				if inVent != 0
+				{
+					sprite_index = spr_mimic_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_mimic_d;
+				}
 				break;
 			case LEFT:
-				sprite_index = spr_mimic_l;
+				if inVent = 2
+				{
+					sprite_index = spr_mimic_crawl_l;
+				}
+				else if inVent = 0
+				{
+					sprite_index = spr_mimic_l;
+				}
 				break;
 			case RIGHT:
-				sprite_index = spr_mimic_r;
+				if inVent = 1
+				{
+					sprite_index = spr_mimic_crawl_r;
+				}
+				else if inVent = 0
+				{
+					sprite_index = spr_mimic_r;
+				}
 				break;
 			case UP:
-				sprite_index = spr_mimic_u;
+				if inVent != 0
+				{
+					sprite_index = spr_mimic_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_mimic_u;
+				}
 				break;
 		}
 	}
@@ -373,7 +401,7 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 1
+				if inVent = 2
 				{
 					sprite_index = spr_tfreddy_crawl_l;
 				}
@@ -383,7 +411,7 @@ else
 				}
 				break;
 			case RIGHT:
-				if inVent = 2
+				if inVent = 1
 				{
 					sprite_index = spr_tfreddy_crawl_r;
 				}
@@ -393,7 +421,14 @@ else
 				}
 				break;
 			case UP:
-				sprite_index = spr_tfreddy_u;
+				if inVent != 0
+				{
+					sprite_index = spr_tfreddy_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_tfreddy_u;
+				}
 				break;
 		}
 	}
@@ -412,7 +447,7 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 1
+				if inVent = 2
 				{
 					sprite_index = spr_tbonnie_crawl_l;
 				}
@@ -422,7 +457,7 @@ else
 				}
 				break;
 			case RIGHT:
-				if inVent = 2
+				if inVent = 1
 				{
 					sprite_index = spr_tbonnie_crawl_r;
 				}
@@ -432,7 +467,14 @@ else
 				}
 				break;
 			case UP:
-				sprite_index = spr_tbonnie_u;
+				if inVent != 0
+				{
+					sprite_index = spr_tbonnie_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_tbonnie_u;
+				}
 				break;
 		}
 	}
@@ -451,7 +493,7 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 1
+				if inVent = 2
 				{
 					sprite_index = spr_tchica_crawl_l;
 				}
@@ -461,7 +503,7 @@ else
 				}
 				break;
 			case RIGHT:
-				if inVent = 2
+				if inVent = 1
 				{
 					sprite_index = spr_tchica_crawl_r;
 				}
@@ -471,7 +513,14 @@ else
 				}
 				break;
 			case UP:
-				sprite_index = spr_tchica_u;
+				if inVent != 0
+				{
+					sprite_index = spr_tchica_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_tchica_u;
+				}
 				break;
 		}
 	}
@@ -490,7 +539,7 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 1
+				if inVent = 2
 				{
 					sprite_index = spr_mangle_crawl_l;
 				}
@@ -500,7 +549,7 @@ else
 				}
 				break;
 			case RIGHT:
-				if inVent = 2
+				if inVent = 1
 				{
 					sprite_index = spr_mangle_crawl_r;
 				}
@@ -510,7 +559,14 @@ else
 				}
 				break;
 			case UP:
-				sprite_index = spr_mangle_u;
+				if inVent != 0
+				{
+					sprite_index = spr_mangle_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_mangle_u;
+				}
 				break;
 		}
 	}
@@ -533,7 +589,7 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 1
+				if inVent = 2
 				{
 					sprite_index = spr_wfreddy_crawl_l;
 				}
@@ -543,7 +599,7 @@ else
 				}
 				break;
 			case RIGHT:
-				if inVent = 2
+				if inVent = 1
 				{
 					sprite_index = spr_wfreddy_crawl_r;
 				}
@@ -553,7 +609,14 @@ else
 				}
 				break;
 			case UP:
-				sprite_index = spr_wfreddy_u;
+				if inVent != 0
+				{
+					sprite_index = spr_wfreddy_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_wfreddy_u;
+				}
 				break;
 		}
 	}
@@ -572,7 +635,7 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 1
+				if inVent = 2
 				{
 					sprite_index = spr_wbonnie_crawl_l;
 				}
@@ -582,7 +645,7 @@ else
 				}
 				break;
 			case RIGHT:
-				if inVent = 2
+				if inVent = 1
 				{
 					sprite_index = spr_wbonnie_crawl_r;
 				}
@@ -592,7 +655,14 @@ else
 				}
 				break;
 			case UP:
-				sprite_index = spr_wbonnie_u;
+				if inVent != 0
+				{
+					sprite_index = spr_wbonnie_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_wbonnie_u;
+				}
 				break;
 		}
 	}
@@ -611,7 +681,7 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 1
+				if inVent = 2
 				{
 					sprite_index = spr_wchica_crawl_l;
 				}
@@ -621,7 +691,7 @@ else
 				}
 				break;
 			case RIGHT:
-				if inVent = 2
+				if inVent = 1
 				{
 					sprite_index = spr_wchica_crawl_r;
 				}
@@ -631,7 +701,14 @@ else
 				}
 				break;
 			case UP:
-				sprite_index = spr_wchica_u;
+				if inVent != 0
+				{
+					sprite_index = spr_wchica_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_wchica_u;
+				}
 				break;
 		}
 	}
@@ -650,7 +727,7 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 1
+				if inVent = 2
 				{
 					sprite_index = spr_wfoxy_crawl_l;
 				}
@@ -660,7 +737,7 @@ else
 				}
 				break;
 			case RIGHT:
-				if inVent = 2
+				if inVent = 1
 				{
 					sprite_index = spr_wfoxy_crawl_r;
 				}
@@ -670,7 +747,14 @@ else
 				}
 				break;
 			case UP:
-				sprite_index = spr_wfoxy_u;
+				if inVent != 0
+				{
+					sprite_index = spr_wfoxy_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_wfoxy_u;
+				}
 				break;
 		}
 	}

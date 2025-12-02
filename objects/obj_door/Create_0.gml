@@ -3,6 +3,7 @@ var newx, newy, newroom;
 
 fade = 0;
 facing = DOWN;
+inVent = 0;
 
 locked = false;
 collision = false;

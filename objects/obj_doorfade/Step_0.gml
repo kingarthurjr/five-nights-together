@@ -9,6 +9,7 @@ else
 		obj_stat.goback = true;
 		obj_stat.prev_x = newx;
 		obj_stat.prev_y = newy;
+		obj_stat.inVent = inVent;
 		room = newroom;
 		obj_stat.facing = facing;
 	}

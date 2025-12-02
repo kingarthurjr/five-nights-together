@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-image_index = irandom(3);
 if random(1) > 0.7 {
     alarm[0] = 10;
 } else {
