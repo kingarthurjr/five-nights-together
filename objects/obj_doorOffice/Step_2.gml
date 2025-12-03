@@ -1,21 +1,9 @@
-if collision = true
+global.atDoor = false;
+with (obj_doorOffice)
 {
-    if !instance_exists(obj_atDoor)
-    {
-        with(obj_special)
-        {
-            instance_change(obj_atDoor,true);
-        }
-        obj_atDoor.camNumber = camNumber
-    }
+	if collision = true
+	{
+	    global.atDoor = true;
+	}
 }
-else
-{
-    if instance_exists(obj_atDoor)
-    {
-        with(obj_atDoor)
-        {
-            instance_change(obj_special,true);
-        }
-    }
-}
+obj_stat.newCam = camNumber;

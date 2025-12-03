@@ -1,4 +1,4 @@
-depth = -9997;
+depth = -99997;
 ///Variable Defaults
 facing = 0;
 image_index = global.coinRoom+1;

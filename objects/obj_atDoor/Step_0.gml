@@ -1,4 +1,8 @@
-/// @description 
+//If No Longer At Door
+if global.atDoor = false
+{
+	instance_change(obj_special,true);
+}
 
 //Check for Death Coin
 if global.deathCoin = true
@@ -50,29 +54,42 @@ if keyboard_check_released(ord(global.doorKey))
 	}
 	if global.animatronicChosen != 6
 	{
-	    if obj_doorOffice.camNumber = 1
+	    if (room = rm_westhall and obj_doorOffice.camNumber = 1) or (room = rm_officehall and obj_doorOffice.camNumber = 2)
 	    {
 	        if htme_globalGet("leftSeen") = 1
 	        {
-	            htme_globalSet("leftSeen",0,buffer_bool);
-	            audio_play_sound(snd_bonk,10,false);
+	            if htme_globalGet("mapSelected") = 0 //FNaF1
+				{
+					audio_play_sound(snd_bonk,10,false);
+				}
+				htme_globalSet("leftSeen",0,buffer_bool);
 	            global.deathCoin = false;
 	            global.coinLocation = 0;
 	            obj_player.respawn = true;
-	            room = rm_diningarea;
+	            room = spawn;
 	        }
 	    }
-	    if obj_doorOffice.camNumber = 2
+	    if (room = rm_easthall and obj_doorOffice.camNumber = 2) or (room = rm_officehall and obj_doorOffice.camNumber = 3)
 	    {
 	        if htme_globalGet("rightSeen") = 1
 	        {
-	            htme_globalSet("rightSeen",0,buffer_bool);
-	            audio_play_sound(snd_bonk,10,false);
+	            if htme_globalGet("mapSelected") = 0 //FNaF1
+				{
+					audio_play_sound(snd_bonk,10,false);
+				}
+				htme_globalSet("rightSeen",0,buffer_bool);
 	            global.deathCoin = false;
 	            global.coinLocation = 0;
 	            obj_player.respawn = true;
-	            room = rm_diningarea;
+	            room = spawn;
 	        }
 	    }
+		if (room = rm_officehall and obj_doorOffice.camNumber = 1)
+		{
+			global.deathCoin = false;
+	        global.coinLocation = 0;
+	        obj_player.respawn = true;
+	        room = spawn;
+		}
 	}
 }

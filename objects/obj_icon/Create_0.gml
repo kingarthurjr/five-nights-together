@@ -7,6 +7,7 @@
     }
     instance_destroy();
 }*/
+depth = -99999;
 //Set Icon
 image_index = scr_get_anim_icon(global.animatronicChosen,false);
 

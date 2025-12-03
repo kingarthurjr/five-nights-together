@@ -1,6 +1,6 @@
 obj_player.stopMoving = true;
 
-camNumber = obj_doorOffice.camNumber
+camNumber = obj_stat.newCam;
 dont = false;
 setAlarm = false;
 

@@ -6,11 +6,25 @@ if instance_exists(obj_camera1)
         instance_change(obj_monitor,true);
     }
 }
+if instance_exists(obj_camera2)
+{
+    with(obj_camera2)
+    {
+        instance_change(obj_monitor,true);
+    }
+}
 if instance_exists(obj_handunit)
 {
     with(obj_handunit)
     {
         instance_change(obj_handunit_flip,true);
+    }
+}
+if instance_exists(obj_mask)
+{
+    with(obj_mask)
+    {
+        instance_change(obj_mask_flip,true);
     }
 }
 //Tell everyone the jumpscare has begun
@@ -50,5 +64,45 @@ if htme_globalGet("whoGot") = 7
 {
     sprite_index = spr_jumpscare_mimic;
     audio_play_sound(snd_jumpscare_mimic,10,false,2);
+}
+if htme_globalGet("whoGot") = 8
+{
+    sprite_index = spr_jumpscare_tfreddy;
+    audio_play_sound(snd_jumpscare_tfreddy,10,false,2);
+}
+if htme_globalGet("whoGot") = 9
+{
+    sprite_index = spr_jumpscare_tbonnie;
+    audio_play_sound(snd_jumpscare_tbonnie,10,false,2);
+}
+if htme_globalGet("whoGot") = 10
+{
+    sprite_index = spr_jumpscare_tchica;
+    audio_play_sound(snd_jumpscare_tchica,10,false,2);
+}
+if htme_globalGet("whoGot") = 11
+{
+    sprite_index = spr_jumpscare_mangle;
+    audio_play_sound(snd_jumpscare_mangle,10,false,2);
+}
+if htme_globalGet("whoGot") = 12
+{
+    sprite_index = spr_jumpscare_wfreddy;
+    audio_play_sound(snd_jumpscare_wfreddy,10,false,2);
+}
+if htme_globalGet("whoGot") = 13
+{
+    sprite_index = spr_jumpscare_wbonnie;
+    audio_play_sound(snd_jumpscare_wbonnie,10,false,2);
+}
+if htme_globalGet("whoGot") = 14
+{
+    sprite_index = spr_jumpscare_wchica;
+    audio_play_sound(snd_jumpscare_wchica,10,false,2);
+}
+if htme_globalGet("whoGot") = 15
+{
+    sprite_index = spr_jumpscare_wfoxy;
+    audio_play_sound(snd_jumpscare_wfoxy,10,false,2);
 }
 instance_create(0,0,obj_shake);

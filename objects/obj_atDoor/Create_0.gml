@@ -1,5 +1,15 @@
+depth = -99998;
 event_inherited();
 camNumber = 1;
+
+if htme_globalGet("mapSelected") = 0 //FNaF1
+{
+	spawn = rm_diningarea;
+}
+if htme_globalGet("mapSelected") = 1 //FNaF2
+{
+	spawn = rm_gamearea;
+}
 
 /*if global.mobile = true
 {

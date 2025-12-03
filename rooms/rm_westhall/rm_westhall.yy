@@ -34,6 +34,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6279B42E","properties":[],"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":4.5,"scaleY":1.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":720.0,"y":330.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4539FCE2","properties":[],"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":4.5,"scaleY":1.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1060.0,"y":330.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_78900FB6","properties":[],"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":4.5,"scaleY":1.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1280.0,"y":330.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7565139D","properties":[],"isDnd":false,"objectId":{"name":"obj_doorOffice","path":"objects/obj_doorOffice/obj_doorOffice.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":5.0,"scaleY":2.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1110.0,"y":200.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":10,"gridY":10,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"CamDetect","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7C60C9D4_1","properties":[],"isDnd":false,"objectId":{"name":"obj_camDetect","path":"objects/obj_camDetect/obj_camDetect.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":52.999996,"scaleY":6.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":240.0,},
@@ -81,6 +82,7 @@
     {"name":"inst_6279B42E","path":"rooms/rm_westhall/rm_westhall.yy",},
     {"name":"inst_4539FCE2","path":"rooms/rm_westhall/rm_westhall.yy",},
     {"name":"inst_78900FB6","path":"rooms/rm_westhall/rm_westhall.yy",},
+    {"name":"inst_7565139D","path":"rooms/rm_westhall/rm_westhall.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

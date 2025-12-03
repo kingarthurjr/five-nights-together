@@ -17,6 +17,7 @@ htme_globalSet("wbonnie",0,buffer_s8);
 htme_globalSet("wchica",0,buffer_s8);
 htme_globalSet("wfoxy",0,buffer_s8);
 //Jumpscaring
+global.atDoor = false;
 htme_globalSet("tooLate",0,buffer_u8);
 htme_globalSet("whoGot",0,buffer_u8);
 //Abilities
@@ -30,6 +31,8 @@ htme_globalSet("bonk",0,buffer_bool);
 htme_globalSet("puppetSpecial",0,buffer_bool);
 htme_globalSet("puppetUsed",0,buffer_bool);
 htme_globalSet("bbGame",0,buffer_bool);
+global.bbRoom = 0;
+global.bbLocation = 0;
 //Lockable Doors
 htme_globalSet("kitchenDoor",0,buffer_bool);
 htme_globalSet("closetDoor",0,buffer_bool);

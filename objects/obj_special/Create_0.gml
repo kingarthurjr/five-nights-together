@@ -1,3 +1,4 @@
+depth = -99998;
 //Chromatic Aberration
 event_inherited();
 

@@ -1,4 +1,3 @@
 var camNumber
 var facing
-
-collision = false;
+var collision

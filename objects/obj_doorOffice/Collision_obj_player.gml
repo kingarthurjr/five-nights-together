@@ -1,8 +1,5 @@
 // MOVE MOVE
-if other.name = global.name //If this player is you
+if other.name = global.name and other.facing = facing //If this player is you
 {
-	if other.facing = facing
-	{
-	    collision = true;
-	}
+	collision = true;
 }

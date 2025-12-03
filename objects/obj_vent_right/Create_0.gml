@@ -12,3 +12,6 @@ else
 	image_index = 0;
 	closed = 0;
 }
+
+randomize();
+amongus = irandom_range(1,100);
