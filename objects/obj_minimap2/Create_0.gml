@@ -1,4 +1,4 @@
-depth = -99998;
+depth = -999998;
 ///Variable Defaults
 image_index = global.coinRoom+1;
 event_inherited();

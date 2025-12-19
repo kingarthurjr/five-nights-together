@@ -1,2 +1,2 @@
-depth = -99999;
+depth = -999999;
 camerasRebooted = htme_globalGet("camerasRebooted");
