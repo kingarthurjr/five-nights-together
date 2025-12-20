@@ -27,11 +27,11 @@ else
 }
 
 //Bonnie Special
-if htme_globalGet("bonnieSelected")
+if htme_globalGet("bonnieTaken") != "noone"
 {
 	activeBonnie = htme_globalGet("bonnie");
 }
-if htme_globalGet("mimicSelected")
+if htme_globalGet("mimicTaken") != "noone"
 {
 	activeBonnie = htme_globalGet("mimic");
 }

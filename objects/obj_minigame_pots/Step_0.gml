@@ -9,6 +9,10 @@ if gameover = true
 	{
 		room = rm_diningarea;
 	}
+	if htme_globalGet("mapSelected") = 1 //If FNaF2
+	{
+		room = rm_gamearea;
+	}
 }
 
 //Round 2

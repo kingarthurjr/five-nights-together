@@ -164,3 +164,4 @@ else
 }
 
 event_inherited();
+maxCount = 450;

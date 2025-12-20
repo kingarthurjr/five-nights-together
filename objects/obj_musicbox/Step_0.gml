@@ -7,7 +7,7 @@ activeFreddy = htme_globalGet(global.animatronics[global.animatronicChosen-1])
 if global.nightGuard
 {
 	//If Puppet is Blocking
-	if (htme_globalGet("puppetSelected") and htme_globalGet("puppetSpecial") and htme_globalGet("camera") = htme_globalGet("puppet"))
+	if (htme_globalGet("puppetTaken") != "noone" and htme_globalGet("puppetSpecial") and htme_globalGet("camera") = htme_globalGet("puppet"))
 	{
 		audio_sound_gain(musicbox,0,0);
 	}

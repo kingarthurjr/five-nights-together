@@ -1,13 +1,13 @@
 //Which Freddy is Active?
-if htme_globalGet("freddySelected") or htme_globalGet("mimicSelected")
+if htme_globalGet("freddyTaken") != "noone" or htme_globalGet("mimicTaken") != "noone"
 {
 	musicbox = snd_musicbox1;
 }
-if htme_globalGet("tfreddySelected")
+if htme_globalGet("tfreddyTaken") != "noone"
 {
 	musicbox = snd_musicbox2;
 }
-if htme_globalGet("wfreddySelected")
+if htme_globalGet("wfreddyTaken") != "noone"
 {
 	musicbox = snd_musicbox3;
 }

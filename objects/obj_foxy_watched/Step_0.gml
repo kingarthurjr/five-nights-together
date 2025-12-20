@@ -1,18 +1,14 @@
 if htme_globalGet("activePlayers") = 2
 {
-    maxCount = 450;
+    maxCount = 15*room_speed;
 }
 if htme_globalGet("activePlayers") = 3
 {
-    maxCount = 450;
-}
-if htme_globalGet("activePlayers") = 3
-{
-    maxCount = 600;
+    maxCount = 20*room_speed;
 }
 if htme_globalGet("activePlayers") >= 4
 {
-    maxCount = 900;
+    maxCount = 30*room_speed;
 }
 
 if instance_exists(obj_special)

@@ -12,7 +12,7 @@ if htme_globalGet("mapSelected") = 0 //FNaF1
 }
 if htme_globalGet("mapSelected") = 1 //FNaF2
 {
-	if htme_globalGet("wfoxySelected")
+	if htme_globalGet("wfoxyTaken") != "noone"
 	{
 		randomize();
 		audio_play_sound(choose(snd_foxylaugh1,snd_foxylaugh2,snd_foxylaugh3),10,false);
@@ -21,7 +21,7 @@ if htme_globalGet("mapSelected") = 1 //FNaF2
 	{
 		audio_play_sound(snd_mangle,10,true);
 	}
-	if htme_globalGet("mimicSelected")
+	if htme_globalGet("mimicTaken") != "noone"
 	{
 		randomize();
 		audio_play_sound(snd_foxylaugh_mimic,10,false);

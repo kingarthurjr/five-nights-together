@@ -71,21 +71,17 @@ if spawn = true and htme_globalGet("mapSelected") = 0
 		    x = 160;
 		    y = 780;
 		    facing = RIGHT;
-		    if htme_globalGet("roomAmount") = 2
+		    if htme_globalGet("activePlayers") = 2
 		    {
-		        maxCount = 450;
+		        maxCount = 15*room_speed;
 		    }
-		    if htme_globalGet("roomAmount") = 3
+		    if htme_globalGet("activePlayers") = 3
 		    {
-		        maxCount = 450;
+		        maxCount = 20*room_speed;
 		    }
-		    if htme_globalGet("roomAmount") = 3
+		    if htme_globalGet("activePlayers") >= 4
 		    {
-		        maxCount = 600;
-		    }
-		    if htme_globalGet("roomAmount") >= 4
-		    {
-		        maxCount = 900;
+		        maxCount = 30*room_speed;
 		    }
 		    htme_globalSet("foxyReady",maxCount,buffer_u16);
 		}
@@ -174,21 +170,17 @@ if spawn = true and htme_globalGet("mapSelected") = 1
 	    if global.animatronicChosen = 11 //Mangle
 	    {
 	        room = rm_kidscove;
-	        if htme_globalGet("roomAmount") = 2
+	        if htme_globalGet("activePlayers") = 2
 	        {
-	            maxCount = 450;
+	            maxCount = 15*room_speed;
 	        }
-	        if htme_globalGet("roomAmount") = 3
+	        if htme_globalGet("activePlayers") = 3
 	        {
-	            maxCount = 450;
+	            maxCount = 20*room_speed;
 	        }
-	        if htme_globalGet("roomAmount") = 3
+	        if htme_globalGet("activePlayers") >= 4
 	        {
-	            maxCount = 600;
-	        }
-	        if htme_globalGet("roomAmount") >= 4
-	        {
-	            maxCount = 900;
+	            maxCount = 30*room_speed;
 	        }
 	        htme_globalSet("foxyReady",maxCount,buffer_u16);
 	    }
@@ -210,21 +202,17 @@ if spawn = true and htme_globalGet("mapSelected") = 1
 	    if global.animatronicChosen = 15 //Withered Foxy
 	    {
 	        room = rm_kidscove;
-	        if htme_globalGet("roomAmount") = 2
+	        if htme_globalGet("activePlayers") = 2
 	        {
-	            maxCount = 450;
+	            maxCount = 15*room_speed;
 	        }
-	        if htme_globalGet("roomAmount") = 3
+	        if htme_globalGet("activePlayers") = 3
 	        {
-	            maxCount = 450;
+	            maxCount = 20*room_speed;
 	        }
-	        if htme_globalGet("roomAmount") = 3
+	        if htme_globalGet("activePlayers") >= 4
 	        {
-	            maxCount = 600;
-	        }
-	        if htme_globalGet("roomAmount") >= 4
-	        {
-	            maxCount = 900;
+	            maxCount = 30*room_speed;
 	        }
 	        htme_globalSet("foxyReady",maxCount,buffer_u16);
 	    }

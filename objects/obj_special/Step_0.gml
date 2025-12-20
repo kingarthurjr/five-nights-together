@@ -5,7 +5,7 @@ if global.atDoor = true
 }
 
 //Update Current Mimic
-if htme_globalGet("mimicSelected") = 1
+if htme_globalGet("mimicTaken") != "noone"
 {
     image_index = global.currentMimic;
 }
@@ -143,10 +143,10 @@ if htme_globalGet("mapSelected") = 1 //FNaF2
 }
 
 //Display Opacity
-var freddyCondition = (global.currentMimic = 0 or scr_get_anim_icon(global.animatronicChosen,true)+1 = 1) && (freddyReady = true);
-var bonnieCondition = (global.currentMimic = 1 or scr_get_anim_icon(global.animatronicChosen,true)+1 = 2) && (bonnieReady = true) && camSelected;
-var chicaCondition = (global.currentMimic = 2 or scr_get_anim_icon(global.animatronicChosen,true)+1 = 3) && (chicaReady = true);
-var foxyCondition = (global.currentMimic = 3 or scr_get_anim_icon(global.animatronicChosen,true)+1 = 4) && (foxyReady = true);
+var freddyCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 0) or scr_get_anim_icon(global.animatronicChosen,true)+1 = 1) && (freddyReady = true);
+var bonnieCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 1) or scr_get_anim_icon(global.animatronicChosen,true)+1 = 2) && (bonnieReady = true) && camSelected;
+var chicaCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 2) or scr_get_anim_icon(global.animatronicChosen,true)+1 = 3) && (chicaReady = true);
+var foxyCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 3) or scr_get_anim_icon(global.animatronicChosen,true)+1 = 4) && (foxyReady = true);
 var puppetCondition = global.animatronicChosen = 5 && (puppetReady = true);
 
 if !freddyCondition and !bonnieCondition and !chicaCondition and !foxyCondition and !puppetCondition
