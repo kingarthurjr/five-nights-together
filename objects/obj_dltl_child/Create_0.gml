@@ -10,9 +10,11 @@ if surftrap = 1
 {
     sprite_index = spr_dltl_surftrap;
     audio_play_sound(snd_surfsup,10,false);
+	spd = 10;
 }
 if surftrap = 2
 {
     sprite_index = spr_dltl_flipsidefreddy;
     audio_play_sound(snd_hesflippinback,10,false);
+	spd = 10;
 }
