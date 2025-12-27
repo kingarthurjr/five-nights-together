@@ -121,7 +121,7 @@ if spawn = true and htme_globalGet("mapSelected") = 0
 	}
 	else
 	{
-	    global.coinLocation = 11;
+	    global.coinLocation = 21;
 	    global.deathCoin = true;
 	    /*if global.powerupDeathCoin = 1
 	    {
@@ -243,7 +243,7 @@ if spawn = true and htme_globalGet("mapSelected") = 1
 	}
 	else
 	{
-	    global.coinLocation = 11;
+	    global.coinLocation = 23;
 	    global.deathCoin = true;
 	    /*if global.powerupDeathCoin = 1
 	    {

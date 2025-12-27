@@ -1,7 +1,7 @@
 depth = -999998;
 ///Variable Defaults
-image_index = global.coinRoom+1;
 event_inherited();
+coinRoom = 0;
 
 ///Create Locators
 if htme_globalGet("tfreddyTaken") != "noone" or htme_globalGet("wfreddyTaken") != "noone"

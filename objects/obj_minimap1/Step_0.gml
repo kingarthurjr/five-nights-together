@@ -1,5 +1,37 @@
 /// @description Special Events
 
+//Death Coin Location
+coinRoom = 0;
+if global.coinLocation <= 8
+{
+	coinRoom = 3;
+}
+if global.coinLocation = 9
+{
+	coinRoom = 4;
+}
+if global.coinLocation >= 10 and global.coinLocation <= 12
+{
+	coinRoom = 11;
+}
+if global.coinLocation = 20
+{
+	coinRoom = 9;
+}
+if global.coinLocation = 13
+{
+	coinRoom = 10;
+}
+if global.coinLocation >= 14 or global.coinLocation <= 16
+{
+	coinRoom = 5;
+}
+if global.coinLocation >= 17 or global.coinLocation <= 19
+{
+	coinRoom = 6;
+}
+image_index = coinRoom+1;
+
 //Rotate Accordingly
 if (facing = 1 and image_angle != -90) or (facing = 0 and image_angle = 90)
 {
