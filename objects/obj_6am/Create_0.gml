@@ -8,8 +8,7 @@ if instance_exists(obj_static)
 {
     instance_destroy(obj_static);
 }
-
-if instance_exists(obj_guardUI)
+if instance_exists(obj_guardUI1)
 {
-    instance_destroy(obj_guardUI);
+    instance_destroy(obj_guardUI1);
 }

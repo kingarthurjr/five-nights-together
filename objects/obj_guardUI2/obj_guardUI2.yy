@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_guardUI2",
   "spriteId": {
-    "name": "spr_guardUI",
-    "path": "sprites/spr_guardUI/spr_guardUI.yy",
+    "name": "spr_guardUI1",
+    "path": "sprites/spr_guardUI1/spr_guardUI1.yy",
   },
   "solid": false,
   "visible": true,

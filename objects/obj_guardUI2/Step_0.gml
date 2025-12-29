@@ -2,20 +2,18 @@
 
 //Power Items
 usageTotal = 1; //Fan
-usage[1] = htme_globalGet("doorLeft");
-usage[2] = htme_globalGet("doorRight");
-usage[3] = htme_globalGet("light");
-usage[4] = htme_globalGet("cameraActive");
-powerDown = 147;
+usage[1] = htme_globalGet("light");
+usage[2] = htme_globalGet("cameraActive");
+powerDown = 150;
 //Count Active Items
 if htme_globalGet("powerOut") = 0
 {
-	for(var i = 1;i<=4;i++)
+	for(var i = 1;i<=2;i++)
 	{
 		if usage[i] = 1
 		{
 			usageTotal += 1;
-			powerDown -= 39;
+			powerDown -= 30;
 		}
 	}
 	if htme_globalGet("buildingTemp") >= 110 //Overheated
@@ -24,14 +22,14 @@ if htme_globalGet("powerOut") = 0
 		{
 			audio_play_sound(snd_blow,10,true);
 		}
-		usageTotal = 4;
-		powerDown = 30;
+		usageTotal = 3;
+		powerDown = 90;
 		for(var i = 1;i<=3;i++)
 		{
 			if usage[i] = 1
 			{
-				usageTotal = 5;
-				powerDown = 10;
+				usageTotal = 4;
+				powerDown = 30;
 				break;
 			}
 		}
