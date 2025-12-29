@@ -1,7 +1,7 @@
 /// @description Special Events
 
 //Death Coin Location
-coinRoom = 0;
+coinRoom = null;
 if global.coinLocation <= 8
 {
 	coinRoom = 3;

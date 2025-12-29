@@ -1,5 +1,5 @@
-//Death Coin Location
-bbRoom = 0;
+//BB Location
+bbRoom = null;
 if global.bbLocation <= 9
 {
 	bbRoom = 3;

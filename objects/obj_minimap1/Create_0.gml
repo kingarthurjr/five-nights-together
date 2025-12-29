@@ -2,7 +2,7 @@ depth = -99997;
 ///Variable Defaults
 facing = 0;
 event_inherited();
-coinRoom = 0;
+coinRoom = null;
 
 ///Create Locators
 if htme_globalGet("freddyTaken") != "noone"

@@ -1,7 +1,7 @@
 depth = -999998;
 ///Variable Defaults
 event_inherited();
-coinRoom = 0;
+coinRoom = null;
 
 ///Create Locators
 if htme_globalGet("tfreddyTaken") != "noone" or htme_globalGet("wfreddyTaken") != "noone"
