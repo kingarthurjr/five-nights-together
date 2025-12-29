@@ -6,4 +6,3 @@ with (obj_doorOffice)
 	    global.atDoor = true;
 	}
 }
-obj_stat.newCam = camNumber;

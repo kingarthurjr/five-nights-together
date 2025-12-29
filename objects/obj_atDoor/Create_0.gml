@@ -1,6 +1,6 @@
 depth = -99998;
 event_inherited();
-camNumber = 1;
+camNumber = obj_stat.newCam;
 
 if htme_globalGet("mapSelected") = 0 //FNaF1
 {

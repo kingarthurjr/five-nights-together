@@ -13,3 +13,5 @@ htme_globalSet("wfreddyTaken","noone",buffer_string);
 htme_globalSet("wbonnieTaken","noone",buffer_string);
 htme_globalSet("wchicaTaken","noone",buffer_string);
 htme_globalSet("wfoxyTaken","noone",buffer_string);
+
+htme_globalSet("gameStart",0,buffer_bool);
