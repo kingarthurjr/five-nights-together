@@ -1,5 +1,5 @@
 x = obj_cam09.x;
-if htme_globalGet("tfreddyTaken") = "noone" and htme_globalGet("tfreddy") = 0
+if htme_globalGet("tfreddyTaken") != "noone" and htme_globalGet("tfreddy") = 0
 {
 	image_index = (htme_globalGet("freddySpecial")) ? 2 : 1;
 }

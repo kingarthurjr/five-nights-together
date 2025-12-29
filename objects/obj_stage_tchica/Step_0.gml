@@ -1,5 +1,5 @@
 x = obj_cam09.x;
-if ds_list_size(htme_getPlayers()) > 2 and htme_globalGet("chica") = 0
+if htme_globalGet("tchicaTaken") != "noone" and htme_globalGet("tchica") = 0
 {
 	image_index = 1;
 }
