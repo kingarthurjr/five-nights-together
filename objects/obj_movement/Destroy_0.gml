@@ -10,3 +10,7 @@ if audio_is_playing(snd_garble3)
 {
     audio_stop_sound(snd_garble3);
 }
+if audio_is_playing(snd_stare)
+{
+    audio_stop_sound(snd_stare);
+}
