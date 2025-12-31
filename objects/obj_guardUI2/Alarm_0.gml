@@ -21,16 +21,16 @@ if htme_globalGet("powerOut") = 0
 		{
 			instance_destroy(obj_button_camera);
 		}
-		if instance_exists(obj_office1)
+		if instance_exists(obj_office2)
 		{
-			with(obj_office1)
+			with(obj_office2)
 			{
-				instance_change(obj_office1_outage,true);
+				instance_change(obj_office2_outage,true);
 			}
 		}
-		if instance_exists(obj_camera1)
+		if instance_exists(obj_camera2)
 		{
-			instance_destroy(obj_camera1);
+			instance_destroy(obj_camera2);
 			instance_create_layer(0,540,"Devices",obj_monitor);
 			with(obj_monitor)
 			{
@@ -38,50 +38,35 @@ if htme_globalGet("powerOut") = 0
 				image_speed = -1;
 			}
 		}
-		if instance_exists(obj_office1_left)
+		if instance_exists(obj_mask)
 		{
-			with(obj_office1_left)
+			instance_destroy(obj_mask);
+			instance_create_layer(0,540,"Devices",obj_mask_flip);
+			with(obj_mask_flip)
 			{
-				instance_change(obj_office1_leftturn,true);
+				image_index = image_number-1;
+				image_speed = -1;
 			}
-			with(obj_office1_leftturn)
+		}
+		if instance_exists(obj_office2_left)
+		{
+			with(obj_office2_left)
+			{
+				instance_change(obj_office2_leftturn,true);
+			}
+			with(obj_office2_leftturn)
 			{
 				image_index = image_number - 1;
 				image_speed = -1;
 			}
 		}
-		if instance_exists(obj_office1_left_closed)
+		if instance_exists(obj_office2_right)
 		{
-			with(obj_office1_left_closed)
+			with(obj_office2_right)
 			{
-				instance_change(obj_office1_leftturn,true);
+				instance_change(obj_office2_rightturn,true);
 			}
-			with(obj_office1_leftturn)
-			{
-				sprite_index = spr_office1_leftturn_closed;
-				image_index = image_number - 1;
-				image_speed = -1;
-			}
-		}
-		if instance_exists(obj_office1_right)
-		{
-			with(obj_office1_right)
-			{
-				instance_change(obj_office1_rightturn,true);
-			}
-			with(obj_office1_rightturn)
-			{
-				image_index = image_number - 1;
-				image_speed = -1;
-			}
-		}
-		if instance_exists(obj_office1_right_closed)
-		{
-			with(obj_office1_right_closed)
-			{
-				instance_change(obj_office1_rightturn,true);
-			}
-			with(obj_office1_rightturn)
+			with(obj_office2_rightturn)
 			{
 				image_index = image_number - 1;
 				image_speed = -1;

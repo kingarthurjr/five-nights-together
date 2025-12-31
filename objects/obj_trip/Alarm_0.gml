@@ -1,7 +1,18 @@
 /// @description Trigger Outage
 
 //Which Freddy is Active?
-activeFreddy = htme_globalGet(global.animatronics[global.animatronicChosen-1]);
+if htme_globalGet("freddyTaken") != "noone"
+{
+	activeFreddy = htme_globalGet("freddy");
+}
+if htme_globalGet("tfreddyTaken") != "noone"
+{
+	activeFreddy = htme_globalGet("tfreddy");
+}
+if htme_globalGet("wfreddyTaken") != "noone"
+{
+	activeFreddy = htme_globalGet("wfreddy");
+}
 
 //If Guard is STILL looking
 if htme_globalGet("cameraActive") and htme_globalGet("camera") = activeFreddy

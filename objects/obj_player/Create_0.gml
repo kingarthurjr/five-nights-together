@@ -118,7 +118,7 @@ if room = rm_waitingroom
 else
 {
 	facing = DOWN;
-	spd = 4; //speed to move at, so it's easier to change speed if necessary
+	spd = 2; //speed to move at, so it's easier to change speed if necessary
 }
 
 self.playerNum = -1;
@@ -131,8 +131,8 @@ self.name = "";
 self.skin = 0;
 self.animatronicChosen = 0;
 self.special = false; //Add special syncing when that's done
+self.stopMoving = false;
 
-stopMoving = false;
 previousFrame = image_index;
 inVent = 0;
 
@@ -142,6 +142,7 @@ if htme_isLocal()
 	self.skin = global.skin;
 	self.animatronicChosen = global.animatronicChosen;
 	instance_create(x,y,obj_campoint).playerobj = self;
+	global.playerobject = self;
 }
 
 collision = false;

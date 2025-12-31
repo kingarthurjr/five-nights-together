@@ -1,6 +1,5 @@
 /// @description Special Abilities
 
-
 if !instance_exists(obj_minigame_border) and !instance_exists(obj_doorfade)
 {
 	if freddyCondition

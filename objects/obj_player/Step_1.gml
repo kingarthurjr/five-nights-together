@@ -15,7 +15,7 @@ if (htme_isLocal())
       * built your own function that simulates the pressed functions. 
       */
     
-	if stopMoving = false
+	if self.stopMoving = false
 	{
 	    self.pressed_left = keyboard_check(vk_left) or keyboard_check(ord("A"));
 		self.pressed_up = keyboard_check(vk_up) or keyboard_check(ord("W"));

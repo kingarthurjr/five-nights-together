@@ -1,1 +1,1 @@
-alarm[0] = 1*room_speed;
+alarm[0] = 1.5*room_speed;

@@ -43,60 +43,63 @@ if room = rm_waitingroom
 }
 
 ///Actual Movement
-if (self.pressed_up) and !(inVent != 0 and room = rm_officehall)
+if self.stopMoving = false
 {
-    facing = UP;
-    if room = rm_waitingroom
-    {
-        if(!place_meeting(x, y - spd, obj_solid)) if ((self.time % 2) = 0){y -= spd};
-    }
-    else
-    {
-        if(!place_meeting(x, y - spd, obj_solid)) y -= spd;
-    }
-    step++;
-}
+	if (self.pressed_up) and !(inVent != 0 and room = rm_officehall)
+	{
+	    facing = UP;
+	    if room = rm_waitingroom
+	    {
+	        if(!place_meeting(x, y - spd, obj_solid)) if ((self.time % 2) = 0){y -= spd};
+	    }
+	    else
+	    {
+	        if(!place_meeting(x, y - spd, obj_solid)) y -= spd;
+	    }
+	    step++;
+	}
 
-if (self.pressed_down) and !(inVent != 0 and room = rm_officehall)
-{
-    facing = DOWN;
-    if room = rm_waitingroom
-    {
-        if(!place_meeting(x, y + spd, obj_solid)) if ((self.time % 2) = 0){y += spd};
-    }
-    else
-    {
-        if(!place_meeting(x, y + spd, obj_solid)) y += spd;
-    }
-    step++;
-}
+	if (self.pressed_down) and !(inVent != 0 and room = rm_officehall)
+	{
+	    facing = DOWN;
+	    if room = rm_waitingroom
+	    {
+	        if(!place_meeting(x, y + spd, obj_solid)) if ((self.time % 2) = 0){y += spd};
+	    }
+	    else
+	    {
+	        if(!place_meeting(x, y + spd, obj_solid)) y += spd;
+	    }
+	    step++;
+	}
 
-if (self.pressed_left) and room != rm_leftvent and room != rm_rightvent
-{
-    facing = LEFT;
-    if room = rm_waitingroom
-    {
-        if(!place_meeting(x - spd, y, obj_solid)) if ((self.time % 2) = 0){x -= spd};
-    }
-    else
-    {
-        if(!place_meeting(x - spd, y, obj_solid)) x -= spd;
-    }
-    step++;
-}
+	if (self.pressed_left) and room != rm_leftvent and room != rm_rightvent
+	{
+	    facing = LEFT;
+	    if room = rm_waitingroom
+	    {
+	        if(!place_meeting(x - spd, y, obj_solid)) if ((self.time % 2) = 0){x -= spd};
+	    }
+	    else
+	    {
+	        if(!place_meeting(x - spd, y, obj_solid)) x -= spd;
+	    }
+	    step++;
+	}
 
-if (self.pressed_right) and room != rm_leftvent and room != rm_rightvent
-{
-    facing = RIGHT;
-    if room = rm_waitingroom
-    {
-        if(!place_meeting(x + spd, y, obj_solid)) if ((self.time % 2) = 0){x += spd};
-    }
-    else
-    {
-        if(!place_meeting(x + spd, y, obj_solid)) x += spd;
-    }
-    step++;
+	if (self.pressed_right) and room != rm_leftvent and room != rm_rightvent
+	{
+	    facing = RIGHT;
+	    if room = rm_waitingroom
+	    {
+	        if(!place_meeting(x + spd, y, obj_solid)) if ((self.time % 2) = 0){x += spd};
+	    }
+	    else
+	    {
+	        if(!place_meeting(x + spd, y, obj_solid)) x += spd;
+	    }
+	    step++;
+	}
 }
 
 if room != rm_waitingroom

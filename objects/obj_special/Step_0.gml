@@ -28,25 +28,25 @@ if puppetCooldown > 0
     puppetCooldown -= 1;
 }
 //Cooldown Complete
-if freddyCooldown = 0
+if freddyCooldown <= 0
 {
     freddyReady = true;
 }
-if bonnieCooldown = 0 and !instance_exists(obj_minigame_bonnie)
+if bonnieCooldown <= 0 and !instance_exists(obj_minigame_bonnie)
 {
     bonnieReady = true;
 }
-if chicaCooldown = 0 and !instance_exists(obj_minigame_chica)
+if chicaCooldown <= 0 and !instance_exists(obj_minigame_chica)
 {
     chicaReady = true;
 }
-if puppetCooldown = 0
+if puppetCooldown <= 0
 {
     puppetReady = true;
 }
 
 //Which Bonnie is Active?
-activeBonnie = htme_globalGet(global.animatronics[global.animatronicChosen-1]);
+activeBonnie = htme_globalGet(string(global.animatronicName));
 
 //Check if Camera is Hackable
 if htme_globalGet("mapSelected") = 0 //FNaF1
@@ -143,15 +143,15 @@ if htme_globalGet("mapSelected") = 1 //FNaF2
 }
 
 //Display Opacity
-var freddyCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 0) or scr_get_anim_icon(global.animatronicChosen,true)+1 = 1) && (freddyReady = true);
-var bonnieCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 1) or scr_get_anim_icon(global.animatronicChosen,true)+1 = 2) && (bonnieReady = true) && camSelected;
-var chicaCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 2) or scr_get_anim_icon(global.animatronicChosen,true)+1 = 3) && (chicaReady = true);
-var foxyCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 3) or scr_get_anim_icon(global.animatronicChosen,true)+1 = 4) && (foxyReady = true);
-var puppetCondition = global.animatronicChosen = 5 && (puppetReady = true);
+freddyCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 0) or ((scr_get_anim_icon(global.animatronicChosen,true)+1 = 1) && (freddyReady = true)));
+bonnieCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 1) or ((scr_get_anim_icon(global.animatronicChosen,true)+1 = 2) && (bonnieReady = true) && camSelected));
+chicaCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 2) or ((scr_get_anim_icon(global.animatronicChosen,true)+1 = 3) && (chicaReady = true)));
+foxyCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 3) or ((scr_get_anim_icon(global.animatronicChosen,true)+1 = 4) && (foxyReady = true)));
+puppetCondition = global.animatronicChosen = 5 && (puppetReady = true);
 
 if !freddyCondition and !bonnieCondition and !chicaCondition and !foxyCondition and !puppetCondition
 {
-	image_alpha = .10;
+	image_alpha = .50;
 }
 else
 {

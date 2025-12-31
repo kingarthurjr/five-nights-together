@@ -1,7 +1,7 @@
 /// @description Break Camera
 
 //Which Camera?
-camera = htme_globalGet(global.animatronics[global.animatronicChosen-1]);
+camera = htme_globalGet(string(global.animatronicName));
 
 //Set it to broken
 if success = true

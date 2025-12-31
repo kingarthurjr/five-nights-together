@@ -10,6 +10,7 @@ if global.clickable = true
 	        obj_characterInfo.amountSelected = 1;
 	        global.animatronicChosen = animNumber;
 			global.animatronicName = animatronic;
+			htme_globalSet("animatronicName",animatronic,buffer_string);
 			show_debug_message(animatronic+"Taken has been set to "+htme_globalGet(animatronic+"Taken"));
 		
 			//Destroy Skin Select Arrows
