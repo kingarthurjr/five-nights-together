@@ -1,5 +1,5 @@
 //Unfreeze Player
-obj_player.stopMoving = false;
+global.playerobject.stopMoving = false;
 //Reset Cooldown
 obj_special.chicaCooldown = 10*room_speed;
 //Destroy Components

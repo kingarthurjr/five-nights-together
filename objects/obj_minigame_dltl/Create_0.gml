@@ -23,7 +23,7 @@ instance_create(50,180,obj_dltl_createChica);
 instance_create(50,280,obj_dltl_createFoxy);
 
 //Stop the Player
-obj_player.stopMoving = true;
+global.playerobject.stopMoving = true;
 
 //Music
 if global.music = true

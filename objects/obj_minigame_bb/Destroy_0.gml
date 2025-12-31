@@ -1,5 +1,5 @@
 //Unfreeze the Player
-obj_player.stopMoving = false;
+global.playerobject.stopMoving = false;
 //
 instance_destroy(obj_minigame_fg);
 instance_destroy(obj_minigame_border);

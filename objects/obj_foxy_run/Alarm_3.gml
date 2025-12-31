@@ -8,7 +8,7 @@ if htme_globalGet("foxyClicked")
     htme_globalSet("foxyReady",maxCount,buffer_u16);
     global.coinLocation = 0;
     global.deathCoin = false;
-    obj_player.stopMoving = false;
+    global.playerobject.stopMoving = false;
 	htme_globalSet("foxyClicked",0,buffer_bool);
 	room = rm_kidscove;
 }

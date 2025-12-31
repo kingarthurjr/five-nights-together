@@ -4,7 +4,7 @@ var newx, newy, newroom;
 facing = null;
 inVent = 0;
 //Stop Player
-obj_player.stopMoving = true;
+global.playerobject.stopMoving = true;
 
 if !audio_is_playing(snd_transition)
 {

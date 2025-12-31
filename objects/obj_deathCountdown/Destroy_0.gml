@@ -1,7 +1,7 @@
 if dont = false
 {
     htme_globalSet("tooLate",0,buffer_u8);
-    obj_player.stopMoving = false;
+    global.playerobject.stopMoving = false;
     
 	//What camera to go back to
     if htme_globalGet("mapSelected") = 0 //FNaF1

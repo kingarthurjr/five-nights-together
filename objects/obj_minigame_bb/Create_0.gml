@@ -10,7 +10,7 @@ instance_create(850,875,obj_bb_createItem);
 instance_create(1150,875,obj_bb_createItem);
 instance_create(1450,875,obj_bb_createItem);
 //Freeze the Player
-obj_player.stopMoving = true;
+global.playerobject.stopMoving = true;
 //Defaults
 alarm[0] = 90;
 balloonCheck = 0;

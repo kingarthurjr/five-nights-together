@@ -1,5 +1,5 @@
 depth = -999999;
-obj_player.stopMoving = true;
+global.playerobject.stopMoving = true;
 
 camNumber = obj_stat.newCam;
 dont = false;

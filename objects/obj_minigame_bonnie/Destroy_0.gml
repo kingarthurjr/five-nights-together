@@ -1,5 +1,5 @@
 //Unpause Player
-obj_player.stopMoving = false;
+global.playerobject.stopMoving = false;
 
 //Destroy Minigame Components
 instance_destroy(obj_ss_fg);

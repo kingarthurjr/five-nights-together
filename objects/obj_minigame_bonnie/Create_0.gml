@@ -21,6 +21,6 @@ instance_create(0,0,obj_ss_up);
 instance_create(0,0,obj_ss_right);
 instance_create(0,0,obj_ss_text);
 
-obj_player.stopMoving = true;
+global.playerobject.stopMoving = true;
 
 htme_globalSet("bonnieSpecial",1,buffer_bool);

@@ -21,7 +21,7 @@ if door = 1 and htme_globalGet("mapSelected") != 1
     global.coinLocation = 0;
     global.deathCoin = false;
     room = rm_diningarea;
-    obj_player.stopMoving = false;
+    global.playerobject.stopMoving = false;
 }
 else
 {

@@ -25,7 +25,7 @@ alarm[1] = irandom_range(20,30);
 alarm[2] = irandom_range(20,30);
 
 //Stop the Player
-obj_player.stopMoving = true;
+global.playerobject.stopMoving = true;
 
 //Music
 if global.music = true

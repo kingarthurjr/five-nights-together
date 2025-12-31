@@ -24,7 +24,7 @@ instance_create(460,420,suit_options[1]);
 instance_create(680,420,suit_options[2]);
 
 //Stop the Player
-obj_player.stopMoving = true;
+global.playerobject.stopMoving = true;
 
 //Music
 if global.music = true

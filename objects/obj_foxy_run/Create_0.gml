@@ -3,7 +3,7 @@
 //Start Running
 htme_globalSet("foxyRunning",1,buffer_bool);
 alarm[0] = 60;
-obj_player.stopMoving = true;
+global.playerobject.stopMoving = true;
 
 //What Sound to Play
 if htme_globalGet("mapSelected") = 0 //FNaF1
