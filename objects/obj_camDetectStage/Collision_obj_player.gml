@@ -1,6 +1,6 @@
 /// @description Update Camera Position
 
-if (other.htme_isLocal()) //If this is the player
+if other.name = global.name //If this is the player
 {
 	//If anything but Foxy
 	if global.animatronicChosen != 4 and global.animatronicChosen != 8 and global.animatronicChosen != 12
