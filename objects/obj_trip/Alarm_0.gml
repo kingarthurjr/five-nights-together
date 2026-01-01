@@ -28,3 +28,7 @@ if htme_globalGet("cameraActive") and htme_globalGet("camera") = activeFreddy
 	}
 	instance_destroy();
 }
+else
+{
+	alarm[0] = 1;
+}

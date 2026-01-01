@@ -2,6 +2,7 @@ htme_globalSet("facing",0,buffer_u8);
 htme_globalSet("powerOut",1,buffer_bool);
 
 //Outage Sounds
+audio_stop_all();
 audio_play_sound(snd_powerout,10,false);
 audio_play_sound(snd_outage,10,true);
 

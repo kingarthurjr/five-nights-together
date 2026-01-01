@@ -1,4 +1,5 @@
 htme_globalSet("facing",1,buffer_u8);
+htme_globalSet("light",0,buffer_bool);
 htme_globalSet("powerOut",1,buffer_bool);
 
 //Outage Sounds
