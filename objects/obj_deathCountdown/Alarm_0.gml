@@ -46,7 +46,7 @@ else
 	}
 	if htme_globalGet("mapSelected") = 1 //FNaF2
 	{
-	    if htme_globalGet("mask") = 1
+	    if htme_globalGet("mask") = camNumber
 	    {
 	        global.deathCoin = false;
 	        global.coinLocation = 0;

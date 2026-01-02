@@ -105,6 +105,7 @@ if keyboard_check_pressed(ord(global.lightKey)) and inOffice = 0 and !instance_e
 		{
 			instance_create_layer(0,0,"Animatronics",obj_office2_mangle);
 		}
+		htme_globalSet("foxyWatched",1,buffer_bool);
 	}
 	if htme_globalGet("wfoxy") = 4
 	{
@@ -112,6 +113,7 @@ if keyboard_check_pressed(ord(global.lightKey)) and inOffice = 0 and !instance_e
 		{
 			instance_create_layer(0,0,"Animatronics",obj_office2_wfoxy);
 		}
+		htme_globalSet("foxyWatched",1,buffer_bool);
 	}
 	if htme_globalGet("mimic") = 4
 	{
@@ -125,6 +127,7 @@ if keyboard_check_released(ord(global.lightKey)) or inOffice = 1
 {
 	image_index = 0;
 	htme_globalSet("light",0,buffer_bool);
+	htme_globalSet("foxyWatched",0,buffer_bool);
 	if audio_is_playing(snd_light2)
 	{
 		audio_stop_sound(snd_light2);

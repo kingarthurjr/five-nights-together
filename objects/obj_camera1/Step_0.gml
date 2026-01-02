@@ -11,7 +11,7 @@ if htme_globalGet("buildingTemp") >= 100
 }
 
 //Foxy
-if ((htme_globalGet("camera") = htme_globalGet("foxy") and htme_globalGet("foxy") != 0) or (ds_list_size(htme_getPlayers()) = 2 and htme_globalGet("camera") = htme_globalGet("mimic"))) and !(htme_globalGet("camera") = htme_globalGet("puppet") and htme_globalGet("puppetSpecial") = 1)
+if ((htme_globalGet("camera") = htme_globalGet("foxy") and htme_globalGet("foxy") != 0) or (htme_globalGet("mimicTaken") != "noone" and htme_globalGet("camera") = htme_globalGet("mimic"))) and !(htme_globalGet("camera") = htme_globalGet("puppet") and htme_globalGet("puppetSpecial") = 1)
 {
 	htme_globalSet("foxyWatched",1,buffer_bool);
 	if (htme_globalGet("foxyReady") <= 300 and htme_globalGet("camera") != 9) and ds_list_size(htme_getPlayers()) > 2 //Remove the Camera 9 thing for FNaF2

@@ -15,3 +15,4 @@ if ds_list_size(htme_getPlayers()) > 1
         pressed = false;
     }
 }
+htme_globalSet("activePlayers",ds_list_size(htme_getPlayers()),buffer_u8);

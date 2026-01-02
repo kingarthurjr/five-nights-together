@@ -3,4 +3,4 @@
 
 draw_set_font(fnt_fnaf20);
 draw_set_colour(c_red);
-draw_text(1760,rise,"+" + string(amount));
+draw_text(1760,rise,"CHEATING +" + string(amount));

@@ -23,7 +23,7 @@ if global.animatronicChosen = 15
 if activeFoxy != "noone" and currentCam != activeFoxy //If camera has changed
 {
     cheating += 1;
-    alarm[1] = 60;
+    alarm[3] = 60;
         
     if cheating > 4 //If camera has changed too much
     {
@@ -38,4 +38,4 @@ if activeFoxy != "noone" and currentCam != activeFoxy //If camera has changed
         instance_create(0,0,obj_foxyincrease);
         obj_foxyincrease.amount = 3;
     }
-}   
+}
