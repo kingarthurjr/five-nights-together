@@ -30,6 +30,7 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2097ACD0","properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":720.0,"y":240.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_75129653","properties":[],"isDnd":false,"objectId":{"name":"obj_supplies","path":"objects/obj_supplies/obj_supplies.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":360.0,"y":440.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3B994B04","properties":[],"isDnd":false,"objectId":{"name":"obj_cam1_closet","path":"objects/obj_cam1_closet/obj_cam1_closet.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":520.0,"y":40.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":20,"gridY":20,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"CamDetect","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_476CFCF2","properties":[],"isDnd":false,"objectId":{"name":"obj_camDetect","path":"objects/obj_camDetect/obj_camDetect.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":10.0,"scaleY":10.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":360.0,"y":240.0,},
@@ -59,6 +60,7 @@
     {"name":"inst_70B28AF4","path":"rooms/rm_closet/rm_closet.yy",},
     {"name":"inst_2097ACD0","path":"rooms/rm_closet/rm_closet.yy",},
     {"name":"inst_75129653","path":"rooms/rm_closet/rm_closet.yy",},
+    {"name":"inst_3B994B04","path":"rooms/rm_closet/rm_closet.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

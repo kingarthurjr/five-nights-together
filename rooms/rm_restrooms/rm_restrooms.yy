@@ -18,6 +18,7 @@
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_10BC0CBF","properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":200.0,"y":260.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6AAF5348","properties":[],"isDnd":false,"objectId":{"name":"obj_cam1_bathrooms","path":"objects/obj_cam1_bathrooms/obj_cam1_bathrooms.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":40.0,"y":320.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":20,"gridY":20,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Solids","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3C87115C","properties":[],"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":52.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":40.0,"y":200.0,},
@@ -64,6 +65,7 @@
     {"name":"inst_757A86E5","path":"rooms/rm_restrooms/rm_restrooms.yy",},
     {"name":"inst_4A7F79B6","path":"rooms/rm_restrooms/rm_restrooms.yy",},
     {"name":"inst_10BC0CBF","path":"rooms/rm_restrooms/rm_restrooms.yy",},
+    {"name":"inst_6AAF5348","path":"rooms/rm_restrooms/rm_restrooms.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -18,6 +18,8 @@
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_63DB7A83","properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":920.0,"y":260.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4F9D8C83","properties":[],"isDnd":false,"objectId":{"name":"obj_cam1_lefthall","path":"objects/obj_cam1_lefthall/obj_cam1_lefthall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":980.0,"y":40.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_62A1C36E","properties":[],"isDnd":false,"objectId":{"name":"obj_cam1_leftcorner","path":"objects/obj_cam1_leftcorner/obj_cam1_leftcorner.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1220.0,"y":40.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":20,"gridY":20,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Solids","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_68E24A36","properties":[],"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":80.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":360.0,},
@@ -83,6 +85,8 @@
     {"name":"inst_4539FCE2","path":"rooms/rm_westhall/rm_westhall.yy",},
     {"name":"inst_78900FB6","path":"rooms/rm_westhall/rm_westhall.yy",},
     {"name":"inst_7565139D","path":"rooms/rm_westhall/rm_westhall.yy",},
+    {"name":"inst_4F9D8C83","path":"rooms/rm_westhall/rm_westhall.yy",},
+    {"name":"inst_62A1C36E","path":"rooms/rm_westhall/rm_westhall.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

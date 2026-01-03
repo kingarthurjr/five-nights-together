@@ -38,6 +38,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5A9A5475","properties":[],"isDnd":false,"objectId":{"name":"obj_counter","path":"objects/obj_counter/obj_counter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":240.0,"y":400.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4D8BAF2D","properties":[],"isDnd":false,"objectId":{"name":"obj_rack","path":"objects/obj_rack/obj_rack.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":820.0,"y":340.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_47A86DCF","properties":[],"isDnd":false,"objectId":{"name":"obj_ovens","path":"objects/obj_ovens/obj_ovens.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":60.0,"y":560.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_B396C3B","properties":[],"isDnd":false,"objectId":{"name":"obj_cam1_kitchen","path":"objects/obj_cam1_kitchen/obj_cam1_kitchen.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":40.0,"y":40.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":20,"gridY":20,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"CamDetect","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_78A75A32","properties":[],"isDnd":false,"objectId":{"name":"obj_camDetect","path":"objects/obj_camDetect/obj_camDetect.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":44.0,"scaleY":16.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":40.0,"y":240.0,},
@@ -76,6 +77,7 @@
     {"name":"inst_5A9A5475","path":"rooms/rm_kitchen/rm_kitchen.yy",},
     {"name":"inst_4D8BAF2D","path":"rooms/rm_kitchen/rm_kitchen.yy",},
     {"name":"inst_47A86DCF","path":"rooms/rm_kitchen/rm_kitchen.yy",},
+    {"name":"inst_B396C3B","path":"rooms/rm_kitchen/rm_kitchen.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
