@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_cam2_partyroom2",
   "spriteId": {
-    "name": "spr_camera_l",
-    "path": "sprites/spr_camera_l/spr_camera_l.yy",
+    "name": "spr_camera_r",
+    "path": "sprites/spr_camera_r/spr_camera_r.yy",
   },
   "solid": false,
   "visible": true,

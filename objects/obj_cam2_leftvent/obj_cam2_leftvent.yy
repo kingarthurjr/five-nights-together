@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_cam2_leftvent",
   "spriteId": {
-    "name": "spr_camera_u",
-    "path": "sprites/spr_camera_u/spr_camera_u.yy",
+    "name": "spr_camera_l",
+    "path": "sprites/spr_camera_l/spr_camera_l.yy",
   },
   "solid": false,
   "visible": true,
