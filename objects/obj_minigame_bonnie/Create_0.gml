@@ -13,13 +13,13 @@ ssCurrentNote = 1;
 
 gameover = false;
 
-instance_create(0,0,obj_ss_fg);
-instance_create(0,0,obj_ss_bonnie);
-instance_create(0,0,obj_ss_left);
-instance_create(0,0,obj_ss_down);
-instance_create(0,0,obj_ss_up);
-instance_create(0,0,obj_ss_right);
-instance_create(0,0,obj_ss_text);
+instance_create(0,0,obj_minigame_fg);
+instance_create(120,180,obj_ss_bonnie);
+instance_create(360,80,obj_ss_left);
+instance_create(500,60,obj_ss_down);
+instance_create(620,60,obj_ss_up);
+instance_create(740,80,obj_ss_right);
+//instance_create(0,0,obj_ss_text);
 
 global.playerobject.stopMoving = true;
 

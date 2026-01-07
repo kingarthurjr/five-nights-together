@@ -97,4 +97,5 @@ if success = true
 		}
 	}
 	htme_globalSet("bonnieBroke",1,buffer_bool);
+	instance_destroy();
 }

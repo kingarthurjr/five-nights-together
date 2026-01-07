@@ -3,7 +3,7 @@ if obj_minigame_bonnie.ssRound = obj_minigame_bonnie.ssInstruction
     image_index = 0;
     buttonIsPushed = 0;
     
-    if obj_minigame_bonnie.note[obj_minigame_bonnie.ssCurrentNote] = 1
+    if obj_minigame_bonnie.note[obj_minigame_bonnie.ssCurrentNote] = 3
     {
         obj_minigame_bonnie.ssCurrentNote += 1;
         
