@@ -9,9 +9,9 @@ alarm[0] = 1*room_speed;
 randomize();
 if htme_globalGet("activePlayers") < 4
 {
-    moveSpeed = choose(70,70,80,90);
+    moveSpeed = choose(30,30,40,40);
 }
 else
 {
-    moveSpeed = choose(70,80,80,90,90,100,100);
+    moveSpeed = choose(30,40,40,50,50,60,60);
 }

@@ -17,11 +17,11 @@ if whichWay = 1
         audio_play_sound(snd_run,10,false);
     }
 }
-if x <= 120
+if x <= 60
 {
     whichWay = 0;
 }
-if x >= 1420
+if x >= 710
 {
     whichWay = 1;
 }

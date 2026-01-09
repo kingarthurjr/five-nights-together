@@ -2,7 +2,7 @@ depth = -99996;
 //Create Components
 instance_create(0,0,obj_minigame_fg);
 instance_create(0,0,obj_hc_ui);
-instance_create(820,600,obj_hc_chica);
+instance_create(410,300,obj_hc_chica);
 //Freeze Player
 global.playerobject.stopMoving = true;
 //Music Change
