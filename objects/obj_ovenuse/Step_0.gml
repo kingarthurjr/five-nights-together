@@ -1,1 +1,1 @@
-image_index = htme_globalGet("ovenUse");
+image_index = htme_globalGet("ovenUse")-1;

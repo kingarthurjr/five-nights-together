@@ -9,6 +9,8 @@ instance_destroy(obj_partsandservice_wfoxy);
 instance_destroy(obj_partsandservice_springtrap);
 instance_destroy(obj_partsandservice_mimic);
 
+instance_destroy(obj_ovenaccess);
+
 if instance_exists(obj_videoerror)
 {
     instance_destroy(obj_videoerror);
