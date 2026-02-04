@@ -1,6 +1,9 @@
-depth = -999998;
 ///Variable Defaults
-event_inherited();
+depth = -room_height;
+layer = layer_get_id("UI");
+blur = 2
+randomize();
+alarm[0] = lerp(100, 400, scr_sinein(random(1)));
 coinRoom = null;
 
 ///Create Locators

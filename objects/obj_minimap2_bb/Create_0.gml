@@ -1,2 +1,2 @@
-depth = -999999;
+depth = -(room_height+3);
 bbRoom = null;

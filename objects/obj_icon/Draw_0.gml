@@ -1,6 +1,1 @@
-//Follow the camera
-x = camera_get_view_x(view_camera[0]);
-y = camera_get_view_y(view_camera[0]);
-
-//Chromatic Aberration
-event_inherited();
+/// @description Don't Draw

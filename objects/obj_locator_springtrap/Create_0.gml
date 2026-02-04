@@ -1,6 +1,6 @@
 /// @description Which Map?
 
-depth = -999999;
+depth = -room_height;
 if htme_globalGet("mapSelected") = 0 //FNaF1
 {
 	sprite_index = spr_locator1_springtrap;

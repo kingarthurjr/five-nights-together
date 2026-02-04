@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Party Room 1",
-    "path": "folders/Objects/Devices/Cameras/Animatronics/FNaF2/Party Room 1.yy",
+    "name": "Party Room 2",
+    "path": "folders/Objects/Devices/Cameras/Animatronics/FNaF2/Party Room 2.yy",
   },
 }

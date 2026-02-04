@@ -1,1 +1,1 @@
-depth = -99998;
+depth = -(room_height+1);

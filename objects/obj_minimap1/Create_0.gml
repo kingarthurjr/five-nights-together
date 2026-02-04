@@ -1,7 +1,9 @@
-depth = -99997;
 ///Variable Defaults
 facing = 0;
-event_inherited();
+depth = -room_height;
+blur = 2
+randomize();
+alarm[0] = lerp(100, 400, scr_sinein(random(1)));
 coinRoom = null;
 
 ///Create Locators

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_minimap2_bb",
   "spriteId": {
-    "name": "spr_minimap1_springtrap",
-    "path": "sprites/spr_minimap1_springtrap/spr_minimap1_springtrap.yy",
+    "name": "spr_minimap2_springtrap",
+    "path": "sprites/spr_minimap2_springtrap/spr_minimap2_springtrap.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,7 +26,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":73,"eventType":8,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],

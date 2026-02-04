@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_party2_tchica",
   "spriteId": {
-    "name": "spr_hall_tchica",
-    "path": "sprites/spr_hall_tchica/spr_hall_tchica.yy",
+    "name": "spr_party2_tchica",
+    "path": "sprites/spr_party2_tchica/spr_party2_tchica.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Main Hall",
-    "path": "folders/Objects/Devices/Cameras/Animatronics/FNaF2/Main Hall.yy",
+    "name": "Party Room 2",
+    "path": "folders/Objects/Devices/Cameras/Animatronics/FNaF2/Party Room 2.yy",
   },
 }

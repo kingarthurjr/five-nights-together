@@ -11,7 +11,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_chromabb",
+    "path": "objects/obj_chromabb/obj_chromabb.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
