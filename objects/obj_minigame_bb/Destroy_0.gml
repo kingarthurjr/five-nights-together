@@ -11,4 +11,4 @@ instance_destroy(obj_bb_instructions);
 
 audio_play_sound(snd_bb_laugh,10,false);
 
-gms_global_set("bbGame",0);
+htme_globalSet("bbGame",0,buffer_bool);

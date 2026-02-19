@@ -223,8 +223,8 @@ if spawn = true and htme_globalGet("mapSelected") = 1
 	    }
 		if global.animatronicChosen = 6 //Springtrap
 	    {
-	        x = 40;
-	        y = 800;
+	        x = 320;
+	        y = 1020;
 	    }
 	}
 	if room = rm_kidscove

@@ -216,7 +216,7 @@ if !(htme_globalGet("camera") = htme_globalGet("puppet") and htme_globalGet("pup
 	        }
 			if htme_globalGet("camera") = 6 //Game Area
 	        {
-	            if htme_globalGet("springtrap") = 0 or htme_globalGet("springtrap") = 5 or htme_globalGet("springtrap") = 7
+	            if htme_globalGet("springtrap") = 0 or htme_globalGet("springtrap") = 5 or htme_globalGet("springtrap") = 7 or htme_globalGet("springtrap") = 8
 	            {
 	                htme_globalSet("bbLocation",choose(2,3,4,5,7),buffer_u8);
 	            }

@@ -1,14 +1,14 @@
 depth = -99997;
 //Create Components
 instance_create(0,0,obj_minigame_fg);
-instance_create(0,0,obj_bb_instructions);
+instance_create(900,500,obj_bb_instructions);
 instance_create(0,0,obj_minigame_border);
-instance_create(850,70,obj_bb_balloonboy);
-instance_create(250,875,obj_bb_createItem);
-instance_create(550,875,obj_bb_createItem);
-instance_create(850,875,obj_bb_createItem);
-instance_create(1150,875,obj_bb_createItem);
-instance_create(1450,875,obj_bb_createItem);
+instance_create(425,35,obj_bb_balloonboy);
+instance_create(125,437,obj_bb_createItem);
+instance_create(275,437,obj_bb_createItem);
+instance_create(425,437,obj_bb_createItem);
+instance_create(575,437,obj_bb_createItem);
+instance_create(725,437,obj_bb_createItem);
 //Freeze the Player
 global.playerobject.stopMoving = true;
 //Defaults

@@ -1,42 +1,46 @@
 //BB Location
 bbRoom = null;
-if global.bbLocation = 1
+if htme_globalGet("bbLocation") = 1
 {
 	bbRoom = 0;
 }
-if global.bbLocation >= 2 and global.bbLocation <= 7
+if htme_globalGet("bbLocation") = 6
+{
+	bbRoom = 5;
+}
+if (htme_globalGet("bbLocation") >= 2 and htme_globalGet("bbLocation") <= 5) or htme_globalGet("bbLocation") = 7
 {
 	bbRoom = 6;
 }
-if global.bbLocation = 8
+if htme_globalGet("bbLocation") = 8
 {
 	bbRoom = 7;
 }
-if global.bbLocation >= 9 and global.bbLocation <= 11
+if htme_globalGet("bbLocation") >= 9 and htme_globalGet("bbLocation") <= 11
 {
 	bbRoom = 8;
 }
-if global.bbLocation = 12 or global.bbLocation = 13
+if htme_globalGet("bbLocation") = 12 or htme_globalGet("bbLocation") = 13
 {
 	bbRoom = 9;
 }
-if global.bbLocation = 14
+if htme_globalGet("bbLocation") = 14
 {
 	bbRoom = 10;
 }
-if global.bbLocation = 15
+if htme_globalGet("bbLocation") = 15
 {
 	bbRoom = 11;
 }
-if global.bbLocation = 16
+if htme_globalGet("bbLocation") = 16
 {
 	bbRoom = 12;
 }
-if global.bbLocation = 17
+if htme_globalGet("bbLocation") = 17
 {
 	bbRoom = 13;
 }
-image_index = bbRoom+1;
+image_index = bbRoom;
 
 if image_alpha >= 1
 {

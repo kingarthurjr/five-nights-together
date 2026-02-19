@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_bb_instructions",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_bbgame_text",
+    "path": "sprites/spr_bbgame_text/spr_bbgame_text.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
