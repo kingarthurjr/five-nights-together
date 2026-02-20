@@ -1,3 +1,12 @@
+//Close Monitor
+if instance_exists(obj_camera2)
+{
+    with(obj_camera2)
+    {
+        instance_change(obj_monitor,true);
+    }
+}
+
 //Flickering
 instance_destroy(obj_office2_flickering);
 instance_destroy(obj_office2_desk_flickering);
