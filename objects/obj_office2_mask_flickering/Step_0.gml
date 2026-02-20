@@ -1,0 +1,1 @@
+image_alpha = obj_office2_flickering.image_alpha;
