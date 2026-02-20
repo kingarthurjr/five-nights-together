@@ -15,7 +15,7 @@ if door = 1
 {
     htme_globalSet("bonk",1,buffer_bool);
     audio_play_sound(snd_bonk,10,false);
-    obj_player.respawn = true;
+    obj_player.spawn = true;
     obj_special.foxyReady = false;
     htme_globalSet("foxyReady",maxCount,buffer_u16);
     global.coinLocation = 0;

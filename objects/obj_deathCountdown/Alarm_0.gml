@@ -15,7 +15,7 @@ else
 	            audio_play_sound(snd_bonk,10,false);
 	            global.deathCoin = false;
 	            global.coinLocation = 0;
-	            obj_player.respawn = true;
+	            obj_player.spawn = true;
 	            room = rm_diningarea;
 	        }
 	        else
@@ -33,7 +33,7 @@ else
 	            audio_play_sound(snd_bonk,10,false);
 	            global.deathCoin = false;
 	            global.coinLocation = 0;
-	            obj_player.respawn = true;
+	            obj_player.spawn = true;
 	            room = rm_diningarea;
 	        }
 	        else
@@ -50,7 +50,7 @@ else
 	    {
 	        global.deathCoin = false;
 	        global.coinLocation = 0;
-	        obj_player.respawn = true;
+	        obj_player.spawn = true;
 	        room = rm_gamearea;
 	    }
 	    else

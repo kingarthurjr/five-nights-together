@@ -218,8 +218,8 @@ if spawn = true and htme_globalGet("mapSelected") = 1
 	    }
 		if global.animatronicChosen = 5 //The Puppet
 	    {
-	        x = 680;
-	        y = 760;
+	        x = 760;
+	        y = 960;
 	    }
 		if global.animatronicChosen = 6 //Springtrap
 	    {

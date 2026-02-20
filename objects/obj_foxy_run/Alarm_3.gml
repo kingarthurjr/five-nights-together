@@ -3,7 +3,7 @@
 //Is Door Open?
 if htme_globalGet("foxyClicked")
 {
-    obj_player.respawn = true;
+    obj_player.spawn = true;
     obj_special.foxyReady = false;
     htme_globalSet("foxyReady",maxCount,buffer_u16);
     global.coinLocation = 0;

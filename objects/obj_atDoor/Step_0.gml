@@ -14,7 +14,7 @@ else
     image_alpha = .10;
 }
 
-if keyboard_check(ord(global.doorKey))
+if keyboard_check(ord(global.doorKey)) and obj_player.spawn = false
 {
 	if scr_cam_isEmpty(camNumber)
 	{
@@ -65,7 +65,7 @@ if keyboard_check_released(ord(global.doorKey))
 				htme_globalSet("leftSeen",0,buffer_bool);
 	            global.deathCoin = false;
 	            global.coinLocation = 0;
-	            obj_player.respawn = true;
+	            obj_player.spawn = true;
 	            room = spawn;
 	        }
 	    }
@@ -80,7 +80,7 @@ if keyboard_check_released(ord(global.doorKey))
 				htme_globalSet("rightSeen",0,buffer_bool);
 	            global.deathCoin = false;
 	            global.coinLocation = 0;
-	            obj_player.respawn = true;
+	            obj_player.spawn = true;
 	            room = spawn;
 	        }
 	    }
@@ -88,7 +88,7 @@ if keyboard_check_released(ord(global.doorKey))
 		{
 			global.deathCoin = false;
 	        global.coinLocation = 0;
-	        obj_player.respawn = true;
+	        obj_player.spawn = true;
 	        room = spawn;
 		}
 	}

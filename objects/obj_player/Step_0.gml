@@ -301,7 +301,11 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if htme_globalGet("puppetSpecial") = 1
+				if inVent != 0
+				{
+					sprite_index = spr_puppet_crawl_d;
+				}
+				else if htme_globalGet("puppetSpecial") = 1
 				{
 					sprite_index = spr_puppet_d_special;
 				}
@@ -311,13 +315,34 @@ else
 				}
 				break;
 			case LEFT:
-				sprite_index = spr_puppet_l;
+				if inVent = 2
+				{
+					sprite_index = spr_puppet_crawl_l;
+				}
+				else if inVent = 0
+				{
+					sprite_index = spr_puppet_l;
+				}
 				break;
 			case RIGHT:
-				sprite_index = spr_puppet_r;
+				if inVent = 1
+				{
+					sprite_index = spr_puppet_crawl_r;
+				}
+				else if inVent = 0
+				{
+					sprite_index = spr_puppet_r;
+				}
 				break;
 			case UP:
-				sprite_index = spr_puppet_u;
+				if inVent != 0
+				{
+					sprite_index = spr_puppet_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_puppet_u;
+				}
 				break;
 		}
 	}
@@ -326,16 +351,44 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				sprite_index = spr_springtrap_d;
+				if inVent != 0
+				{
+					sprite_index = spr_springtrap_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_springtrap_d;
+				}
 				break;
 			case LEFT:
-				sprite_index = spr_springtrap_l;
+				if inVent = 2
+				{
+					sprite_index = spr_springtrap_crawl_l;
+				}
+				else if inVent = 0
+				{
+					sprite_index = spr_springtrap_l;
+				}
 				break;
 			case RIGHT:
-				sprite_index = spr_springtrap_r;
+				if inVent = 1
+				{
+					sprite_index = spr_springtrap_crawl_r;
+				}
+				else if inVent = 0
+				{
+					sprite_index = spr_springtrap_r;
+				}
 				break;
 			case UP:
-				sprite_index = spr_springtrap_u;
+				if inVent != 0
+				{
+					sprite_index = spr_springtrap_crawl_d;
+				}
+				else
+				{
+					sprite_index = spr_springtrap_u;
+				}
 				break;
 		}
 	}
