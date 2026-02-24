@@ -1,7 +1,3 @@
-//Follow the camera
-x = camera_get_view_x(view_camera[0])+740;
-y = camera_get_view_y(view_camera[0])+20;
-
 //Chromatic Aberration
 gpu_set_blendmode(bm_normal);
 draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,c_green,image_alpha);
