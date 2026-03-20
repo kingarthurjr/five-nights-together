@@ -27,6 +27,7 @@ htme_globalSet("bonnieSpecial",0,buffer_bool);
 htme_globalSet("bonnieBroke",0,buffer_bool);
 htme_globalSet("ovenUse",0,buffer_u8);
 htme_globalSet("foxyReady",900,buffer_u16);
+htme_globalSet("foxyRunning",0,buffer_bool);
 htme_globalSet("bonk",0,buffer_bool);
 htme_globalSet("puppetSpecial",0,buffer_bool);
 htme_globalSet("puppetUsed",0,buffer_bool);

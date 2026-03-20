@@ -33,3 +33,16 @@ if audio_is_playing(snd_outage)
 //Nose Honks
 instance_create_layer(370,189,"Buttons",obj_honk_freddy);
 instance_create_layer(213,397,"Buttons",obj_honk_helpy);
+
+//Foxy Special
+if htme_globalGet("foxyRunning")
+{
+	if obj_time.part_spawn[0] and !instance_exists(obj_foxy_head)
+	{
+		instance_create_layer(0,0,"Buttons",obj_foxy_head);
+	}
+	if obj_time.part_spawn[1] and !instance_exists(obj_foxy_arm)
+	{
+		instance_create_layer(0,0,"Buttons",obj_foxy_arm);
+	}
+}

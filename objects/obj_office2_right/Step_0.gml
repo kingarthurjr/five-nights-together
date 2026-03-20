@@ -1,3 +1,12 @@
+//Foxy Special
+if htme_globalGet("foxyRunning")
+{
+	if obj_time.part_spawn[3] and !instance_exists(obj_foxy_right)
+	{
+		instance_create_layer(0,0,"Buttons",obj_foxy_right);
+	}
+}
+
 //Light
 if keyboard_check(ord(global.lightKey))
 {

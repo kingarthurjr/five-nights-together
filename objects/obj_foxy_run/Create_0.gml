@@ -2,6 +2,7 @@
 
 //Start Running
 htme_globalSet("foxyRunning",1,buffer_bool);
+htme_globalSet("foxyClicked",0,buffer_u8);
 alarm[0] = 60;
 global.playerobject.stopMoving = true;
 
@@ -12,12 +13,13 @@ if htme_globalGet("mapSelected") = 0 //FNaF1
 }
 if htme_globalGet("mapSelected") = 1 //FNaF2
 {
+	//Play Trigger Audio
 	if htme_globalGet("wfoxyTaken") != "noone"
 	{
 		randomize();
 		audio_play_sound(choose(snd_foxylaugh1,snd_foxylaugh2,snd_foxylaugh3),10,false);
 	}
-	if htme_globalGet("mangleSelected")
+	if htme_globalGet("mangleTaken") != "noone"
 	{
 		audio_play_sound(snd_mangle,10,true);
 	}
@@ -30,11 +32,11 @@ if htme_globalGet("mapSelected") = 1 //FNaF2
 
 //Which Door?
 closestDoor = 0;
-if room = rm_backstage or room = rm_closet or room = rm_westhall or room = rm_dininghall
+if room = rm_backstage or room = rm_closet or room = rm_westhall or room = rm_diningarea
 {
     closestDoor = 1;
 }
-if room = rm_easthall or room = rm_bathrooms or room = rm_kitchen
+if room = rm_easthall or room = rm_restrooms or room = rm_kitchen
 {
     closestDoor = 2;
 }

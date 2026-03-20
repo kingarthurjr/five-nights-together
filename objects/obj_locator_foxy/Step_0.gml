@@ -4,7 +4,7 @@ if htme_globalGet("foxyTaken") != "noone"
 {
 	active = htme_globalGet("foxy");
 }
-if htme_globalGet("mangleSelected") != "noone"
+if htme_globalGet("mangleTaken") != "noone"
 {
 	active = htme_globalGet("mangle");
 }

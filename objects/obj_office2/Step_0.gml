@@ -17,6 +17,19 @@
 15 = Right Vent
 */
 
+//Foxy Special
+if htme_globalGet("foxyRunning")
+{
+	if obj_time.part_spawn[0] and !instance_exists(obj_foxy_head)
+	{
+		instance_create_layer(0,0,"Buttons",obj_foxy_head);
+	}
+	if obj_time.part_spawn[1] and !instance_exists(obj_foxy_arm)
+	{
+		instance_create_layer(0,0,"Buttons",obj_foxy_arm);
+	}
+}
+
 ///In Office
 if htme_globalGet("tfreddy") = 1 or htme_globalGet("tbonnie") = 1 or htme_globalGet("tchica") = 1 or htme_globalGet("mangle") = 1 or htme_globalGet("wfreddy") = 1 or htme_globalGet("wbonnie") = 1 or htme_globalGet("wchica") = 1 or htme_globalGet("wfoxy") = 1 or htme_globalGet("puppet") = 1 or htme_globalGet("springtrap") = 1 or htme_globalGet("mimic") = 1
 {

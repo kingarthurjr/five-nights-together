@@ -1,6 +1,7 @@
 /// @description Door Check
 
 //Which Door to Enter?
+door = 0;
 if closestDoor = 1
 {
 	door = htme_globalGet("doorLeft");
