@@ -1,5 +1,5 @@
 draw_texture_flush();
-alarm[0] = 200;
+alarm[0] = 5;
 
 if global.mobile = false
 {
