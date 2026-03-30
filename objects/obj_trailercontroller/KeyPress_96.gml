@@ -1,4 +1,4 @@
-/// @description Reset
+/// @description Reset Animatronics
 
 htme_globalSet("freddy",0,buffer_s8);
 htme_globalSet("bonnie",0,buffer_s8);
