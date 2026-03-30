@@ -7,11 +7,11 @@ if current = 0
 }
 if current = 1 or current = 8 or current = 12
 {
-	cinfo = "Freddy:  Activating his music box while the guard is watching will\ntrip the power!"
+	cinfo = "Freddy:  Activating his music box while the guard is watching will\ntrip the power, forcing the guard to reboot the generator."
 }
 if current = 2 or current = 9 or current = 13
 {
-	cinfo = "Bonnie:  Disable cameras by completing a minigame before the\nguard notices!"
+	cinfo = "Bonnie:  Disable cameras by completing a minigame before the\nguard notices, forcing the guard to reboot the network."
 }
 if current = 3 or current = 10 or current = 14
 {
@@ -19,7 +19,7 @@ if current = 3 or current = 10 or current = 14
 }
 if current = 4 or current = 11 or current = 15
 {
-	cinfo = "Foxy:  Hide from the guard long enough and run straight into the\noffice's nearest door!"
+	cinfo = "Foxy:  Evade the cameras long enough and you can run straight into\n the office's nearest door."
 }
 if current = 5
 {
@@ -27,7 +27,7 @@ if current = 5
 }
 if current = 6
 {
-	cinfo = "Springtrap:  Skip the Death Coin, and stubbornly wait by the\ndoors. Unless you should hear any nearby children."
+	cinfo = "Springtrap:  Skip the Death Coin, and stubbornly wait by the\ndoors, unless you should hear any nearby children."
 }
 
 draw_set_halign(fa_left);
