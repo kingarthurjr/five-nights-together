@@ -29,6 +29,10 @@ if current = 6
 {
 	cinfo = "Springtrap:  Skip the Death Coin, and stubbornly wait by the\ndoors, unless you should hear any nearby children."
 }
+if current = 7
+{
+	cinfo = "The Mimic:  Toggle between all four abilities of the Fazbear\nBand, requiring the guard's unfaultered attention."
+}
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
