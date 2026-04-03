@@ -13,6 +13,10 @@ if htme_globalGet("wfreddyTaken") != "noone"
 {
 	activeFreddy = htme_globalGet("wfreddy");
 }
+if htme_globalGet("mimicTaken") != "noone"
+{
+	activeFreddy = htme_globalGet("mimic");
+}
 
 //Night Guard Events
 if global.nightGuard
