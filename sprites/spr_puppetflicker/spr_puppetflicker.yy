@@ -36,7 +36,7 @@
     "name": "spr_puppetflicker",
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 0.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -69,7 +69,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Animatronics",
-    "path": "folders/Sprites/Devices/Camera/FNaF1/Animatronics.yy",
+    "name": "Mechanics",
+    "path": "folders/Sprites/Devices/Camera/Mechanics.yy",
   },
 }
