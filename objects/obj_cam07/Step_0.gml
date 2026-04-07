@@ -51,7 +51,7 @@ if keyboard_check(ord(global.lightKey)) and !instance_exists(obj_videoerror)
 if keyboard_check_released(ord(global.lightKey)) or instance_exists(obj_videoerror) or instance_exists(obj_movement)
 {
 	htme_globalSet("light",0,buffer_bool);
-		if audio_is_playing(snd_light2)
+	if audio_is_playing(snd_light2)
 	{
 		audio_stop_sound(snd_light2);
 	}

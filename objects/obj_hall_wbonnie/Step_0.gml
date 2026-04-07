@@ -1,6 +1,6 @@
 x = obj_cam07.x;
 
-if htme_globalGet("tbonnie") = 8
+if htme_globalGet("wbonnie") = 8
 {
 	image_index = (htme_globalGet("bonnieSpecial")) ? 2 : 1;
 }
@@ -10,9 +10,9 @@ else
 }
 if htme_globalGet("light") = 1
 {
-	sprite_index = spr_hall_tbonnie_light;
+	sprite_index = spr_hall_wbonnie_light;
 }
 else
 {
-	sprite_index = spr_hall_tbonnie;
+	sprite_index = spr_hall_wbonnie;
 }

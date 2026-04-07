@@ -1,6 +1,6 @@
 x = obj_cam07.x;
 
-if htme_globalGet("tbonnie") = 7
+if htme_globalGet("wbonnie") = 7
 {
 	image_index = (htme_globalGet("bonnieSpecial")) ? 2 : 1;
 }
