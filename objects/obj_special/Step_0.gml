@@ -143,15 +143,15 @@ if htme_globalGet("mapSelected") = 1 //FNaF2
 }
 
 //Display Opacity
-freddyCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 0) or ((scr_get_anim_icon(global.animatronicChosen,true)+1 = 1) && (freddyReady = true)));
-bonnieCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 1) or ((scr_get_anim_icon(global.animatronicChosen,true)+1 = 2) && (bonnieReady = true) && camSelected));
-chicaCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 2) or ((scr_get_anim_icon(global.animatronicChosen,true)+1 = 3) && (chicaReady = true)));
-foxyCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 3) or ((scr_get_anim_icon(global.animatronicChosen,true)+1 = 4) && (foxyReady = true)));
+freddyCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 0) or ((scr_get_anim_icon(global.animatronicChosen,true)+1 = 1))) && (freddyReady = true);
+bonnieCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 1) or ((scr_get_anim_icon(global.animatronicChosen,true)+1 = 2))) && ((bonnieReady = true) && camSelected);
+chicaCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 2) or ((scr_get_anim_icon(global.animatronicChosen,true)+1 = 3))) && (chicaReady = true);
+foxyCondition = ((htme_globalGet("mimicTaken") != "noone" and global.currentMimic = 3) or ((scr_get_anim_icon(global.animatronicChosen,true)+1 = 4))) && (foxyReady = true);
 puppetCondition = global.animatronicChosen = 5 && (puppetReady = true);
 
 if !freddyCondition and !bonnieCondition and !chicaCondition and !foxyCondition and !puppetCondition
 {
-	image_alpha = .50;
+	image_alpha = .3;
 }
 else
 {

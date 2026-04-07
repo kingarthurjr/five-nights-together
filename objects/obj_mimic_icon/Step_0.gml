@@ -7,5 +7,5 @@ if global.currentMimic = animNumber
 }
 else
 {
-	image_alpha = .3;
+	image_alpha = .1;
 }
