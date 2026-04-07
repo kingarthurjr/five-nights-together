@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_office2_mangle",
   "spriteId": {
-    "name": "spr_office2_tchica",
-    "path": "sprites/spr_office2_tchica/spr_office2_tchica.yy",
+    "name": "spr_office2_mangle",
+    "path": "sprites/spr_office2_mangle/spr_office2_mangle.yy",
   },
   "solid": false,
   "visible": true,

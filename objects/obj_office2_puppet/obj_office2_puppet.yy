@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_office2_puppet",
   "spriteId": {
-    "name": "spr_office2_wfoxy",
-    "path": "sprites/spr_office2_wfoxy/spr_office2_wfoxy.yy",
+    "name": "spr_office2_puppet",
+    "path": "sprites/spr_office2_puppet/spr_office2_puppet.yy",
   },
   "solid": false,
   "visible": true,

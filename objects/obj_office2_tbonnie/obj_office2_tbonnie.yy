@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_office2_tbonnie",
   "spriteId": {
-    "name": "spr_office2_tfreddy",
-    "path": "sprites/spr_office2_tfreddy/spr_office2_tfreddy.yy",
+    "name": "spr_office2_tbonnie",
+    "path": "sprites/spr_office2_tbonnie/spr_office2_tbonnie.yy",
   },
   "solid": false,
   "visible": true,
