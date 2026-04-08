@@ -14,7 +14,10 @@ if other.name = global.name //If this player is you
 	{
 	    if (fade == 1)
 	    {
-	        instance_create(0, 0, obj_doorfade);
+	        if !instance_exists(obj_doorfade)
+			{
+				instance_create(0, 0, obj_doorfade);
+			}
 	        obj_doorfade.newx = newx;
 	        obj_doorfade.newy = newy;
 	        obj_doorfade.newroom = newroom;

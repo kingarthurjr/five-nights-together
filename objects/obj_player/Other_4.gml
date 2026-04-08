@@ -262,6 +262,7 @@ if spawn = true and htme_globalGet("mapSelected") = 1
 	    }*/
 	}
 	inVent = 0;
+	obj_stat.inVent = 0;
 	spawn = false;
 }
 
