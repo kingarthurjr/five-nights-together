@@ -6,7 +6,25 @@ if global.nightGuard = 1
 }
 else
 {
-    if htme_globalGet("jumpscareHappened") = 1
+    audio_stop_all();
+	instance_destroy(obj_icon);
+	if instance_exists(obj_minimap1)
+	{
+		instance_destroy(obj_minimap1);
+	}
+	if instance_exists(obj_minimap2)
+	{
+		instance_destroy(obj_minimap2);
+	}
+	if instance_exists(obj_special)
+	{
+		instance_destroy(obj_special);
+	}
+	if instance_exists(obj_atDoor)
+	{
+		instance_destroy(obj_atDoor);
+	}
+	if htme_globalGet("jumpscareHappened") = 1
     {
         if htme_globalGet("whoGot") = 1
         {

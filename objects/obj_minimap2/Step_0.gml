@@ -1,40 +1,47 @@
 /// @description Special Events
 
 //Death Coin Location
-coinRoom = null;
-if global.coinLocation <= 7
+if global.deathCoin
 {
-	coinRoom = 6;
+	image_index = 0;
 }
-if global.coinLocation = 8 or global.coinLocation = 9
+else
 {
-	coinRoom = 7;
+	coinRoom = null;
+	if global.coinLocation <= 7
+	{
+		coinRoom = 6;
+	}
+	if global.coinLocation = 8 or global.coinLocation = 9
+	{
+		coinRoom = 7;
+	}
+	if global.coinLocation >= 10 and global.coinLocation <= 12
+	{
+		coinRoom = 8;
+	}
+	if global.coinLocation = 13 or global.coinLocation = 14
+	{
+		coinRoom = 9;
+	}
+	if global.coinLocation = 15 or global.coinLocation = 16
+	{
+		coinRoom = 10;
+	}
+	if global.coinLocation = 17 or global.coinLocation = 18
+	{
+		coinRoom = 11;
+	}
+	if global.coinLocation = 19 or global.coinLocation = 20
+	{
+		coinRoom = 12;
+	}
+	if global.coinLocation = 21 or global.coinLocation = 22
+	{
+		coinRoom = 13;
+	}
+	image_index = coinRoom+1;
 }
-if global.coinLocation >= 10 and global.coinLocation <= 12
-{
-	coinRoom = 8;
-}
-if global.coinLocation = 13 or global.coinLocation = 14
-{
-	coinRoom = 9;
-}
-if global.coinLocation = 15 or global.coinLocation = 16
-{
-	coinRoom = 10;
-}
-if global.coinLocation = 17 or global.coinLocation = 18
-{
-	coinRoom = 11;
-}
-if global.coinLocation = 19 or global.coinLocation = 20
-{
-	coinRoom = 12;
-}
-if global.coinLocation = 21 or global.coinLocation = 22
-{
-	coinRoom = 13;
-}
-image_index = coinRoom+1;
 
 //Puppet Special
 if htme_globalGet("puppetSpecial") = 1

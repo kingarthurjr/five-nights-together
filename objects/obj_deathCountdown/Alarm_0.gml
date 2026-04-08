@@ -5,7 +5,8 @@ if global.animatronicChosen = 6
 }
 else
 {
-    if htme_globalGet("mapSelected") = 0 //FNaF1
+    global.atDoor = false;
+	if htme_globalGet("mapSelected") = 0 //FNaF1
 	{
 		if obj_doorOffice.camNumber = 1
 	    {

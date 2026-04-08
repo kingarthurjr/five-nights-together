@@ -30,6 +30,7 @@ if instance_exists(obj_mask)
 //Tell everyone the jumpscare has begun
 htme_globalSet("jumpscareHappened",1,buffer_bool);
 //Who jumpscared?
+audio_stop_all();
 if htme_globalGet("whoGot") = 1
 {
     sprite_index = spr_jumpscare_freddy;
