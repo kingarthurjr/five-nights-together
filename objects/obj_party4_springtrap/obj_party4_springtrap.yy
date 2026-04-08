@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_party4_springtrap",
   "spriteId": {
-    "name": "spr_party4_wfoxy",
-    "path": "sprites/spr_party4_wfoxy/spr_party4_wfoxy.yy",
+    "name": "spr_party4_springtrap",
+    "path": "sprites/spr_party4_springtrap/spr_party4_springtrap.yy",
   },
   "solid": false,
   "visible": true,

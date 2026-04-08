@@ -1,6 +1,6 @@
 x = obj_cam11.x;
 
-if htme_globalGet("wfreddy") = 11
+if htme_globalGet("wfreddy") = 5
 {
 	image_index = (htme_globalGet("freddySpecial")) ? 2 : 1;
 }

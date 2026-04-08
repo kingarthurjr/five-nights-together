@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_cove2_springtrap",
   "spriteId": {
-    "name": "spr_cove2_wfoxy",
-    "path": "sprites/spr_cove2_wfoxy/spr_cove2_wfoxy.yy",
+    "name": "spr_cove2_springtrap",
+    "path": "sprites/spr_cove2_springtrap/spr_cove2_springtrap.yy",
   },
   "solid": false,
   "visible": true,

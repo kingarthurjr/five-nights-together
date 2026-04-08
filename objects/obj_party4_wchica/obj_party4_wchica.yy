@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_party4_wchica",
   "spriteId": {
-    "name": "spr_party4_tchica",
-    "path": "sprites/spr_party4_tchica/spr_party4_tchica.yy",
+    "name": "spr_party4_wchica",
+    "path": "sprites/spr_party4_wchica/spr_party4_wchica.yy",
   },
   "solid": false,
   "visible": true,

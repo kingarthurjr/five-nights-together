@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_prize_springtrap",
   "spriteId": {
-    "name": "spr_prize_wfoxy",
-    "path": "sprites/spr_prize_wfoxy/spr_prize_wfoxy.yy",
+    "name": "spr_prize_springtrap",
+    "path": "sprites/spr_prize_springtrap/spr_prize_springtrap.yy",
   },
   "solid": false,
   "visible": true,

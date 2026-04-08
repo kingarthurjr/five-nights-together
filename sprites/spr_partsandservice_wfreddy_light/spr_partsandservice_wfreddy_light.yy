@@ -28,9 +28,7 @@
   "gridY": 0,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9c61ff1b-0288-4f89-bc18-4ccfa2a47ba0",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bcba3ebe-b565-4c0f-a52a-eaeca7acbfac",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"225ed0a1-cc73-4dd3-bddc-4b925456ff3e",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"923519e6-4228-4615-a328-981fc28fb536",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"052fc179-f18d-441f-8b98-8fb088c19c5f",},
   ],
   "sequence": {
@@ -43,16 +41,14 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 5.0,
+    "length": 3.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"8ef13b68-c2c3-42e1-b199-605a117991e9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9c61ff1b-0288-4f89-bc18-4ccfa2a47ba0","path":"sprites/spr_partsandservice_wfreddy_light/spr_partsandservice_wfreddy_light.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"f2d456a9-132c-40fe-b437-de50c888b174","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bcba3ebe-b565-4c0f-a52a-eaeca7acbfac","path":"sprites/spr_partsandservice_wfreddy_light/spr_partsandservice_wfreddy_light.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"62e40689-8dad-4674-8794-83499faf2b72","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"225ed0a1-cc73-4dd3-bddc-4b925456ff3e","path":"sprites/spr_partsandservice_wfreddy_light/spr_partsandservice_wfreddy_light.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"54664752-e3c4-4657-8fa6-e623b04ecfcd","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"923519e6-4228-4615-a328-981fc28fb536","path":"sprites/spr_partsandservice_wfreddy_light/spr_partsandservice_wfreddy_light.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"48f1acc7-7930-487b-b06d-896a77dbbc15","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"052fc179-f18d-441f-8b98-8fb088c19c5f","path":"sprites/spr_partsandservice_wfreddy_light/spr_partsandservice_wfreddy_light.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"62e40689-8dad-4674-8794-83499faf2b72","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"225ed0a1-cc73-4dd3-bddc-4b925456ff3e","path":"sprites/spr_partsandservice_wfreddy_light/spr_partsandservice_wfreddy_light.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"48f1acc7-7930-487b-b06d-896a77dbbc15","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"052fc179-f18d-441f-8b98-8fb088c19c5f","path":"sprites/spr_partsandservice_wfreddy_light/spr_partsandservice_wfreddy_light.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

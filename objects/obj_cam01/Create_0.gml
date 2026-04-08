@@ -3,8 +3,8 @@
 //Create Animatronics in Draw Order
 instance_create(0,0,obj_party1_tfreddy);
 instance_create(0,0,obj_party1_wfreddy);
-instance_create(0,0,obj_party1_tfreddy);
-instance_create(0,0,obj_party1_wfreddy);
+instance_create(0,0,obj_party1_tbonnie);
+instance_create(0,0,obj_party1_wbonnie);
 instance_create(0,0,obj_party1_mangle);
 instance_create(0,0,obj_party1_wfoxy);
 instance_create(0,0,obj_party1_tchica);
