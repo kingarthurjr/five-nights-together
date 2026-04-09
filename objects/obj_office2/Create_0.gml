@@ -30,10 +30,6 @@ if audio_is_playing(snd_outage)
 	audio_stop_sound(snd_outage);
 }
 
-//Nose Honks
-instance_create_layer(370,189,"Buttons",obj_honk_freddy);
-instance_create_layer(213,397,"Buttons",obj_honk_helpy);
-
 //Foxy Special
 if htme_globalGet("foxyRunning")
 {

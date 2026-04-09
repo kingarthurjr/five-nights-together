@@ -19,3 +19,6 @@ if htme_globalGet("foxyRunning")
 		instance_create_layer(0,0,"Buttons",obj_foxy_left);
 	}
 }
+
+//Nose Honk
+instance_create(545,87,obj_honk_freddy);
