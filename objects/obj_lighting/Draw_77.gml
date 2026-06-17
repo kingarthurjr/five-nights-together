@@ -2,10 +2,11 @@ if (surface_exists(application_surface) && surface_exists(light_surface))
 {
     shader_set(sh_fog_crt);
 
-    shader_set_uniform_f(u_curve, curve_amt);
-    texture_set_stage(u_lightTex, surface_get_texture(light_surface));
+    shader_set_uniform_f(u_curve,curve_amt);
+    texture_set_stage(u_lightTex,surface_get_texture(light_surface));
 
-    draw_surface(application_surface, 0, 0);
+    //draw_surface(application_surface,0,0);
+	draw_surface_stretched(application_surface,0,0,window_get_width(),window_get_height());
 
     shader_reset();
 }
