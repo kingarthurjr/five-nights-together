@@ -1,9 +1,9 @@
 //Determine Rotation
-if room = rm_easthall or room = rm_restrooms
+if room = rm_westhall or room = rm_restrooms or room = rm_closet
 {
 	facing = 1;
 }
-else if room = rm_westhall
+else if room = rm_easthall
 {
 	facing = 2;
 }

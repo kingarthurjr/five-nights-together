@@ -40,13 +40,27 @@ else
 }
 
 //Rotate Accordingly
-if (facing = 1 and image_angle != -90) or (facing = 0 and image_angle = 90)
+/*if (facing = 1 and image_angle != 90) or (facing = 0 and image_angle != 0)
 {
 	image_angle -= 2;
 }
-if (facing = 2 and image_angle != 90) or (facing = 0 and image_angle = -90)
+if (facing = 2 and image_angle != -90) or (facing = 0 and image_angle != 0)
 {
 	image_angle += 2;
+}*/
+
+if (facing == 1)
+{
+    if (image_angle < 90) image_angle += 2;
+}
+else if (facing == 2)
+{
+    if (image_angle > -90) image_angle -= 2;
+}
+else // facing == 0
+{
+    if (image_angle > 0) image_angle -= 2;
+    else if (image_angle < 0) image_angle += 2;
 }
 
 //Puppet Special

@@ -1,10 +1,11 @@
 if htme_globalGet("mapSelected") = 0 //FNaF1
 {
-	x = obj_minimap1.x
-	y = obj_minimap1.y
+	x = obj_minimap1.x;
+	y = obj_minimap1.y;
+	image_angle = obj_minimap1.image_angle;
 }
 if htme_globalGet("mapSelected") = 1 //FNaF2
 {
-	x = obj_minimap2.x
-	y = obj_minimap2.y
+	x = obj_minimap2.x;
+	y = obj_minimap2.y;
 }

@@ -1,2 +1,2 @@
-x = camera_get_view_x(view_camera[0])+740;
-y = camera_get_view_y(view_camera[0])+20;
+x = camera_get_view_x(view_camera[0])+840;
+y = camera_get_view_y(view_camera[0])+100;
