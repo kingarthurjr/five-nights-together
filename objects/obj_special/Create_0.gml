@@ -1,6 +1,7 @@
 depth = -99998;
 //Chromatic Aberration
 event_inherited();
+isUI = true;
 
 //Choose Icon
 if global.animatronicChosen = 7 //The Mimic

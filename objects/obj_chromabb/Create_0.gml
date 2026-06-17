@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+isUI = false;
 depth = -y;
 
 blur = 2;

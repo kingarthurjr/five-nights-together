@@ -32,3 +32,4 @@ else
 	//Chromatic Aberration
 	event_inherited();
 }
+isUI = true;
