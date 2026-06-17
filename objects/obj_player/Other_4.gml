@@ -277,6 +277,10 @@ if room != rm_waitingroom
     {
         instance_create(0,0,obj_special);
     }
+	if !instance_exists(obj_lighting)
+	{
+		instance_create(0,0,obj_lighting);
+	}
     if htme_globalGet("mapSelected") = 0 and !instance_exists(obj_minimap1)
     {
         instance_create(0,0,obj_minimap1);
