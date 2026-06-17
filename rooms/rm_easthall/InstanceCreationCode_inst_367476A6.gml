@@ -1,2 +1,2 @@
-camNumber = 1;
+camNumber = 2;
 facing = UP;

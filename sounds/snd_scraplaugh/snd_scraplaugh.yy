@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_surflaugh",
+  "name": "snd_scraplaugh",
   "conversionMode": 0,
   "compression": 1,
   "volume": 1.0,
@@ -14,7 +14,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_surflaugh.mp3",
+  "soundFile": "snd_scraplaugh.mp3",
   "duration": 1.201633,
   "parent": {
     "name": "Minigames",

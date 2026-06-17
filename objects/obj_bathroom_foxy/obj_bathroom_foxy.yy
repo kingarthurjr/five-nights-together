@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_bathroom_foxy",
   "spriteId": {
-    "name": "spr_bathroom_chica",
-    "path": "sprites/spr_bathroom_chica/spr_bathroom_chica.yy",
+    "name": "spr_bathroom_foxy",
+    "path": "sprites/spr_bathroom_foxy/spr_bathroom_foxy.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,6 +1,6 @@
 if global.animatronicChosen = 6
 {
-    instance_create(0,0,obj_springtrapSuccess);
+    instance_create(0,0,obj_springtrapSuccess).camNumber = camNumber;
     dont = true;
 }
 else

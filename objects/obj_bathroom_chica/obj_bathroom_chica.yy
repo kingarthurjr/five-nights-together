@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_bathroom_chica",
   "spriteId": {
-    "name": "spr_righthall_chica",
-    "path": "sprites/spr_righthall_chica/spr_righthall_chica.yy",
+    "name": "spr_bathroom_chica",
+    "path": "sprites/spr_bathroom_chica/spr_bathroom_chica.yy",
   },
   "solid": false,
   "visible": true,

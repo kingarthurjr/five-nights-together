@@ -1,4 +1,4 @@
-newx = 1680;
+newx = 1660;
 newy = 360;
 newroom = rm_diningarea;
 fade = 1;

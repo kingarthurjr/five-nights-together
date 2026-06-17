@@ -1,5 +1,15 @@
 ///Set Animatronic Defaults
 
+//Temp
+if htme_globalGet("mapSelected") = 0
+{
+	room_goto(rm_characterselect1);
+}
+if htme_globalGet("mapSelected") = 1
+{
+	room_goto(rm_characterselect2);
+}
+
 //Background
 bg = layer_get_id("Background");
 if htme_globalGet("mapSelected") = 0 //FNaF1

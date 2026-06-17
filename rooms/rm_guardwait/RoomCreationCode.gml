@@ -58,4 +58,11 @@ htme_globalSet("leftSeen",0,buffer_bool);
 htme_globalSet("rightSeen",0,buffer_bool);
 
 ///Temporary
-room_goto(rm_office2);
+if htme_globalGet("mapSelected") = 0
+{
+	room_goto(rm_office1);
+}
+if htme_globalGet("mapSelected") = 1
+{
+	room_goto(rm_office2);
+}
