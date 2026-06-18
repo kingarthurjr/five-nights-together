@@ -1,9 +1,15 @@
-if (surface_exists(light_surface))
+if (variable_instance_exists(id, "light_surface"))
 {
-    surface_free(light_surface);
+    if (surface_exists(light_surface))
+    {
+        surface_free(light_surface);
+    }
 }
 
-if (surface_exists(ui_surface))
+if (variable_instance_exists(id, "ui_surface"))
 {
-    surface_free(ui_surface);
+    if (surface_exists(ui_surface))
+    {
+        surface_free(ui_surface);
+    }
 }
