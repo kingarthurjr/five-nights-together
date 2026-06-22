@@ -12,7 +12,7 @@ if other.name = global.name //If this is the player
 	}
 	if global.animatronicChosen = 6
 	{
-		htme_globalSet("springtrap",camNumber,buffer_s8);
+		htme_globalSet("springtrap",13,buffer_s8);
 	}
 	if global.animatronicChosen = 7
 	{
