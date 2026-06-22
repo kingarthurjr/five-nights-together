@@ -17,7 +17,7 @@
   ],
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Lighting","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_57AE79C4","properties":[],"isDnd":false,"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.4249363,"scaleY":1.9137056,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":400.0,"y":540.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_57AE79C4","properties":[],"isDnd":false,"objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.4249363,"scaleY":1.7614213,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":400.0,"y":498.4264,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":20,"gridY":20,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Solids","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5043A695","properties":[],"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":36.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":40.0,"y":200.0,},
@@ -34,14 +34,10 @@
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":20,"gridY":20,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":20,"gridY":20,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","tilesetId":{"name":"ts_fnaf1","path":"tilesets/ts_fnaf1/ts_fnaf1.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":20,"SerialiseHeight":14,"TileCompressedData":[
-1,-2147483648,-19,0,101,-2147483648,3,4,3,4,3,4,3,4,3,4,3,4,3,4,
-3,4,3,4,0,-2147483648,8,9,8,9,8,9,8,9,8,9,8,9,8,9,
-8,9,8,9,0,-2147483648,13,14,13,14,13,14,13,14,13,14,13,14,13,14,
-13,14,13,14,0,-2147483648,18,19,18,19,18,19,18,19,18,19,18,19,18,19,
-18,19,18,19,0,-2147483648,23,24,23,24,23,24,23,24,23,24,23,24,23,24,
-23,24,23,24,0,-2147483648,-18,1,2,0,-2147483648,-18,1,2,0,-2147483648,-18,1,2,0,
--2147483648,-18,1,2,0,-2147483648,-18,1,2,0,-2147483648,-18,1,2,0,-2147483648,-18,1,3,0,
--2147483648,-2147483648,-6,0,-4,1,-8,0,],},"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":20,"gridY":20,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+1,-2147483648,-19,0,1,-2147483648,-18,3,2,0,-2147483648,-18,8,2,0,-2147483648,-18,13,2,0,
+-2147483648,-18,18,2,0,-2147483648,-18,23,2,0,-2147483648,-18,1,2,0,-2147483648,-18,1,2,0,
+-2147483648,-18,1,2,0,-2147483648,-18,1,2,0,-2147483648,-18,1,2,0,-2147483648,-18,1,2,0,
+-2147483648,-18,1,3,0,-2147483648,-2147483648,-6,0,-4,1,-8,0,],},"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":20,"gridY":20,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","spriteId":null,"colour":4278190080,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":20,"gridY":20,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
   ],
   "inheritLayers": false,

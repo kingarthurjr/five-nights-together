@@ -14,7 +14,7 @@ if (!surface_exists(light_surface)
 }
 
 surface_set_target(light_surface);
-draw_clear_alpha(make_color_rgb(0,0,32),1);
+draw_clear_alpha(make_color_rgb(18,18,42),1);
 
 gpu_set_blendmode_ext(bm_zero,bm_inv_src_alpha);
 
