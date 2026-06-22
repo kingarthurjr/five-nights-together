@@ -28,11 +28,11 @@ else
 	{
 		coinRoom = 10;
 	}
-	if global.coinLocation >= 14 or global.coinLocation <= 16
+	if global.coinLocation >= 14 and global.coinLocation <= 16
 	{
 		coinRoom = 5;
 	}
-	if global.coinLocation >= 17 or global.coinLocation <= 19
+	if global.coinLocation >= 17 and global.coinLocation <= 19
 	{
 		coinRoom = 6;
 	}
