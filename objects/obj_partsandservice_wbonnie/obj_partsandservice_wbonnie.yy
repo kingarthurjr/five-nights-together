@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_partsandservice_wbonnie",
   "spriteId": {
-    "name": "spr_partsandservice_tbonnie",
-    "path": "sprites/spr_partsandservice_tbonnie/spr_partsandservice_tbonnie.yy",
+    "name": "spr_partsandservice_wbonnie",
+    "path": "sprites/spr_partsandservice_wbonnie/spr_partsandservice_wbonnie.yy",
   },
   "solid": false,
   "visible": true,
