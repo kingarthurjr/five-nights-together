@@ -5,7 +5,7 @@ if htme_globalGet("doorLeft") = 1
 {
 	if closed = 0
 	{
-		image_speed -= 1;
+		image_speed = 1;
 		if audioStarted = false
 		{
 			if !audio_is_playing(snd_door)
@@ -20,7 +20,7 @@ else
 {
 	if closed = 1
 	{
-		image_speed = 1;
+		image_speed = -1;
 		if audioStarted = false
 		{
 			if !audio_is_playing(snd_door)
