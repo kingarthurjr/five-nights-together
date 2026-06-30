@@ -20,7 +20,7 @@ fade = 1 (fade out)
 fade = 2 (fade in)
 */
 
-if collision = true and darkness = .6
+if collision = true and darkness = 1
 {
     fade = 1;
 }

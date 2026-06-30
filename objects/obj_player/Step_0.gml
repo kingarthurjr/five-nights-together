@@ -879,12 +879,11 @@ fade = 1 (fade out)
 fade = 2 (fade in)
 */
 
-/*
 if room != rm_waitingroom
 {
-    if obj_gameknow.powerOut = 1
+    if htme_globalGet("powerOut") = 1
     {
-        darkness = .6;
+        darkness = 1;
     }
     else
     {
@@ -901,7 +900,7 @@ if room != rm_waitingroom
         }
         if fade == 2
         {
-            if darkness < .6
+            if darkness < 1
             {
                 darkness += .10;
             }
@@ -911,7 +910,7 @@ if room != rm_waitingroom
             }
         }
     }
-}*/
+}
 
 //Freddy Special
 if htme_globalGet("freddySpecial") and !instance_exists(obj_musicbox)
