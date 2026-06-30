@@ -22,6 +22,18 @@ with(obj_light)
 {
     draw_sprite_ext(spr_light,0,x-cam_x,y-cam_y,self.image_xscale,self.image_yscale,self.image_angle,self.image_blend,self.image_alpha);
 }
+with(obj_deathcoin)
+{
+    draw_sprite_ext(spr_deathcoin,0,x-cam_x,y-cam_y,self.image_xscale,self.image_yscale,self.image_angle,c_black,self.image_alpha);
+}
+with(obj_door_office1_left)
+{
+	draw_sprite_ext(spr_light_door_left1,self.image_index,x-cam_x,y-cam_y,self.image_xscale,self.image_yscale,self.image_angle,self.image_blend,self.image_alpha);
+}
+with(obj_door_office1_right)
+{
+	draw_sprite_ext(spr_light_door_right1,self.image_index,x-cam_x,y-cam_y,self.image_xscale,self.image_yscale,self.image_angle,self.image_blend,self.image_alpha);
+}
 
 gpu_set_blendmode(bm_normal);
 surface_reset_target();
