@@ -7,6 +7,7 @@ if global.nightGuard = 1
 else
 {
 	instance_destroy(obj_icon);
+	instance_destroy(obj_lighting);
 	if instance_exists(obj_minimap1)
 	{
 		instance_destroy(obj_minimap1);
@@ -75,37 +76,61 @@ else
             }
         }
 		if htme_globalGet("whoGot") = 8
-		{
-		    audio_play_sound(snd_jumpscare_tfreddy,10,false,2);
-		}
-		if htme_globalGet("whoGot") = 9
-		{
-		    audio_play_sound(snd_jumpscare_tbonnie,10,false,2);
-		}
-		if htme_globalGet("whoGot") = 10
-		{
-		    audio_play_sound(snd_jumpscare_tchica,10,false,2);
-		}
-		if htme_globalGet("whoGot") = 11
-		{
-		    audio_play_sound(snd_jumpscare_mangle,10,false,2);
-		}
+        {
+            if !audio_is_playing(snd_jumpscare_tfreddy)
+            {
+                audio_play_sound(snd_jumpscare_tfreddy,10,false);
+            }
+        }
+        if htme_globalGet("whoGot") = 9
+        {
+            if !audio_is_playing(snd_jumpscare_tbonnie)
+            {
+                audio_play_sound(snd_jumpscare_tbonnie,10,false);
+            }
+        }
+        if htme_globalGet("whoGot") = 10
+        {
+            if !audio_is_playing(snd_jumpscare_tchica)
+            {
+                audio_play_sound(snd_jumpscare_tchica,10,false);
+            }
+        }
+        if htme_globalGet("whoGot") = 11
+        {
+            if !audio_is_playing(snd_jumpscare_mangle)
+            {
+                audio_play_sound(snd_jumpscare_mangle,10,false);
+            }
+        }
 		if htme_globalGet("whoGot") = 12
-		{
-		    audio_play_sound(snd_jumpscare_wfreddy,10,false,2);
-		}
-		if htme_globalGet("whoGot") = 13
-		{
-		    audio_play_sound(snd_jumpscare_wbonnie,10,false,2);
-		}
-		if htme_globalGet("whoGot") = 14
-		{
-		    audio_play_sound(snd_jumpscare_wchica,10,false,2);
-		}
-		if htme_globalGet("whoGot") = 15
-		{
-		    audio_play_sound(snd_jumpscare_wfoxy,10,false,2);
-		}
+        {
+            if !audio_is_playing(snd_jumpscare_wfreddy)
+            {
+                audio_play_sound(snd_jumpscare_wfreddy,10,false);
+            }
+        }
+        if htme_globalGet("whoGot") = 13
+        {
+            if !audio_is_playing(snd_jumpscare_wbonnie)
+            {
+                audio_play_sound(snd_jumpscare_wbonnie,10,false);
+            }
+        }
+        if htme_globalGet("whoGot") = 14
+        {
+            if !audio_is_playing(snd_jumpscare_wchica)
+            {
+                audio_play_sound(snd_jumpscare_wchica,10,false);
+            }
+        }
+        if htme_globalGet("whoGot") = 15
+        {
+            if !audio_is_playing(snd_jumpscare_wfoxy)
+            {
+                audio_play_sound(snd_jumpscare_wfoxy,10,false);
+            }
+        }
     }
     if htme_globalGet("gameover") = 1
     {

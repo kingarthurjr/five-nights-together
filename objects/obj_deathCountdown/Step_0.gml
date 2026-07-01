@@ -5,7 +5,7 @@
 htme_globalSet(global.animatronics[global.animatronicChosen-1],camNumber,buffer_s8);
 
 //Interrupt if BB
-if global.bbLocation != 0
+if global.animatronicChosen = 6 and global.bbLocation != 0
 {
     instance_destroy();
 }
