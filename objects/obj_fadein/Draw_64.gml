@@ -1,1 +1,1 @@
-draw_sprite_ext(sprite_index,image_index,x*2,y*2,image_xscale*2,image_yscale*2,image_angle,image_blend,image_alpha);
+draw_sprite_stretched_ext(sprite_index,image_index,x*2,y*2,window_get_width()*2,window_get_height()*2,image_blend,image_alpha);

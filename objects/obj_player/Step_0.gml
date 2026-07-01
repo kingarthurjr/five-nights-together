@@ -879,7 +879,7 @@ fade = 1 (fade out)
 fade = 2 (fade in)
 */
 
-if room != rm_waitingroom
+/*if room != rm_waitingroom
 {
     if htme_globalGet("powerOut") = 1
     {
@@ -910,7 +910,7 @@ if room != rm_waitingroom
             }
         }
     }
-}
+}*/
 
 //Freddy Special
 if htme_globalGet("freddySpecial") and !instance_exists(obj_musicbox)

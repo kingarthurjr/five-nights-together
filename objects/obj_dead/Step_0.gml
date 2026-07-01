@@ -6,7 +6,6 @@ if global.nightGuard = 1
 }
 else
 {
-    audio_stop_all();
 	instance_destroy(obj_icon);
 	if instance_exists(obj_minimap1)
 	{
@@ -75,6 +74,38 @@ else
                 audio_play_sound(snd_jumpscare_mimic,10,false);
             }
         }
+		if htme_globalGet("whoGot") = 8
+		{
+		    audio_play_sound(snd_jumpscare_tfreddy,10,false,2);
+		}
+		if htme_globalGet("whoGot") = 9
+		{
+		    audio_play_sound(snd_jumpscare_tbonnie,10,false,2);
+		}
+		if htme_globalGet("whoGot") = 10
+		{
+		    audio_play_sound(snd_jumpscare_tchica,10,false,2);
+		}
+		if htme_globalGet("whoGot") = 11
+		{
+		    audio_play_sound(snd_jumpscare_mangle,10,false,2);
+		}
+		if htme_globalGet("whoGot") = 12
+		{
+		    audio_play_sound(snd_jumpscare_wfreddy,10,false,2);
+		}
+		if htme_globalGet("whoGot") = 13
+		{
+		    audio_play_sound(snd_jumpscare_wbonnie,10,false,2);
+		}
+		if htme_globalGet("whoGot") = 14
+		{
+		    audio_play_sound(snd_jumpscare_wchica,10,false,2);
+		}
+		if htme_globalGet("whoGot") = 15
+		{
+		    audio_play_sound(snd_jumpscare_wfoxy,10,false,2);
+		}
     }
     if htme_globalGet("gameover") = 1
     {

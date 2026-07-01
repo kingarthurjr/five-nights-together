@@ -39,6 +39,22 @@ with(obj_deathCountdown)
 {
     event_user(0);
 }
+with(obj_minimap1_puppet)
+{
+    event_user(0);
+}
+with(obj_minimap1_disabled)
+{
+    event_user(0);
+}
+with(obj_minimap2_puppet)
+{
+    event_user(0);
+}
+with(obj_minimap2_disabled)
+{
+    event_user(0);
+}
 
 surface_reset_target();
 

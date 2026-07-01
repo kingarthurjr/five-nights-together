@@ -1,4 +1,4 @@
-depth = -9999;
+depth = -999999;
 image_alpha = 0;
 audio_stop_all();
 audio_play_sound(mus_6am,10,false,.5);

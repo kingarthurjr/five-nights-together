@@ -10,7 +10,7 @@ if fade = 1
 {
     if image_alpha < 1
     {
-        image_alpha += .20;
+        image_alpha += .10;
     }
     else
     {
@@ -21,7 +21,7 @@ if fade = 2
 {
     if image_alpha > 0
     {
-        image_alpha -= .20;
+        image_alpha -= .10;
     }
     else
     {

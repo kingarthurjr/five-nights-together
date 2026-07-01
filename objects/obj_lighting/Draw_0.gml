@@ -14,10 +14,14 @@ if (!surface_exists(light_surface)
 }
 
 surface_set_target(light_surface);
-draw_clear_alpha(make_color_rgb(18,18,42),1);
+draw_clear_alpha(make_color_rgb(0,0,24),1);
 
 gpu_set_blendmode_ext(bm_zero,bm_inv_src_alpha);
 
+with(obj_player)
+{
+	draw_sprite(spr_light,0,x-cam_x,y-cam_y);
+}
 with(obj_light)
 {
     draw_sprite_ext(spr_light,0,x-cam_x,y-cam_y,self.image_xscale,self.image_yscale,self.image_angle,self.image_blend,self.image_alpha);
@@ -25,6 +29,14 @@ with(obj_light)
 with(obj_deathcoin)
 {
     draw_sprite_ext(spr_deathcoin,0,x-cam_x,y-cam_y,self.image_xscale,self.image_yscale,self.image_angle,c_black,self.image_alpha);
+}
+with(obj_cam)
+{
+	draw_sprite_ext(self.sprite_index,self.image_index,x-cam_x,y-cam_y,self.image_xscale,self.image_yscale,self.image_angle,c_black,self.image_alpha);
+}
+with(obj_officehall)
+{
+	draw_sprite_ext(self.sprite_index,self.image_index,x-cam_x,y-cam_y,self.image_xscale,self.image_yscale,self.image_angle,c_black,self.image_alpha);
 }
 with(obj_door_office1_left)
 {
