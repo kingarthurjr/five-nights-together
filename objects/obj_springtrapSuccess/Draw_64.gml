@@ -1,1 +1,1 @@
-draw_sprite_stretched_ext(sprite_index,image_index,camera_get_view_width(view_get_camera(0))*0.5,camera_get_view_width(view_get_camera(0))*0.5,camera_get_view_width(view_get_camera(0))*2,camera_get_view_height(view_get_camera(0))*2,image_blend,image_alpha);
+draw_sprite_stretched(sprite_index,image_index,0,0,display_get_gui_width(),display_get_gui_height());
