@@ -879,11 +879,11 @@ fade = 1 (fade out)
 fade = 2 (fade in)
 */
 
-/*if room != rm_waitingroom
+if room != rm_waitingroom
 {
     if htme_globalGet("powerOut") = 1
     {
-        darkness = 1;
+        darkness = 0;
     }
     else
     {
@@ -891,7 +891,7 @@ fade = 2 (fade in)
         {
             if darkness > 0
             {
-                darkness -= .10;
+                darkness -= .20;
             }
             else
             {
@@ -902,7 +902,7 @@ fade = 2 (fade in)
         {
             if darkness < 1
             {
-                darkness += .10;
+                darkness += .20;
             }
             else
             {
@@ -910,7 +910,7 @@ fade = 2 (fade in)
             }
         }
     }
-}*/
+}
 
 //Freddy Special
 if htme_globalGet("freddySpecial") and !instance_exists(obj_musicbox)

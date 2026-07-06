@@ -5,7 +5,6 @@ if (variable_instance_exists(id, "light_surface"))
         surface_free(light_surface);
     }
 }
-
 if (variable_instance_exists(id, "ui_surface"))
 {
     if (surface_exists(ui_surface))
