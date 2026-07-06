@@ -31,8 +31,7 @@ htme_globalSet("bonk",0,buffer_bool);
 htme_globalSet("puppetSpecial",0,buffer_bool);
 htme_globalSet("puppetUsed",0,buffer_bool);
 htme_globalSet("bbGame",0,buffer_bool);
-global.bbRoom = 0;
-global.bbLocation = 0;
+htme_globalSet("bbLocation",0,buffer_u8);
 global.currentMimic = 0;
 //Lockable Doors
 htme_globalSet("kitchenDoor",0,buffer_bool);

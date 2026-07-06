@@ -26,5 +26,6 @@ if htme_globalGet("mapSelected") = 0 //FNaF1
 //Destroy if lured
 if htme_globalGet("bbLocation") != 0
 {
+	global.playerobject.stopMoving = false;
 	instance_destroy();
 }

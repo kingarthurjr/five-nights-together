@@ -14,7 +14,7 @@ else
     image_alpha = .10;
 }
 
-if keyboard_check(ord(global.doorKey)) and obj_player.spawn = false
+if keyboard_check_pressed(ord(global.doorKey)) and obj_player.spawn = false
 {
 	if scr_cam_isEmpty(camNumber)
 	{
@@ -48,10 +48,10 @@ if keyboard_check_released(ord(global.doorKey))
 	{
 	    instance_destroy(obj_deathCountdown);
 	}
-	if instance_exists(obj_instructions_deathcoin)
+	/*if instance_exists(obj_instructions_deathcoin)
 	{
 	    instance_destroy(obj_instructions_deathcoin);
-	}
+	}*/
 	if global.animatronicChosen != 6
 	{
 	    if (room = rm_westhall and obj_doorOffice.camNumber = 1) or (room = rm_officehall and obj_doorOffice.camNumber = 2)
