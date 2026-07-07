@@ -881,7 +881,7 @@ fade = 2 (fade in)
 
 if room != rm_waitingroom
 {
-    if htme_globalGet("powerOut") = 1
+    if htme_globalGet("powerOut") = 1 or htme_globalGet("mapSelected") = 1 //FNaF2
     {
         darkness = 0;
     }
