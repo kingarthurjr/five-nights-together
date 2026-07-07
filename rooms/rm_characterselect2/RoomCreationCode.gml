@@ -50,3 +50,4 @@ htme_globalSet("guardScore",0,buffer_u32);
 
 global.warnsound = 0;
 global.clickable = true;
+global.outageAudio = 0;

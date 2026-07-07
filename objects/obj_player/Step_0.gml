@@ -22,6 +22,18 @@ if htme_globalGet("6am") = 1
         instance_create(0,0,obj_6am);
     }
 }
+if htme_globalGet("powerOut") = 1
+{
+	if global.outageAudio = 0
+	{
+		audio_play_sound(snd_outage,10,false);
+		global.outageAudio = 1;
+	}
+}
+if htme_globalGet("powerOut") = 0
+{
+	global.outageAudio = 0;
+}
 
 /*
 if obj_gameknow.powerOut = 1 and powersound = 0 and !audio_is_playing(snd_powerout)

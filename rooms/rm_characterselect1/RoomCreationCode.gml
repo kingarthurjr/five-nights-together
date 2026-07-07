@@ -20,6 +20,7 @@ htme_globalSet("wfoxy",0,buffer_s8);
 global.atDoor = false;
 htme_globalSet("tooLate",0,buffer_u8);
 htme_globalSet("whoGot",0,buffer_u8);
+htme_globalSet("ventLeave",0,buffer_bool);
 //Abilities
 htme_globalSet("freddySpecial",0,buffer_bool);
 htme_globalSet("freddyOut",0,buffer_bool);
@@ -27,11 +28,13 @@ htme_globalSet("bonnieSpecial",0,buffer_bool);
 htme_globalSet("bonnieBroke",0,buffer_bool);
 htme_globalSet("ovenUse",0,buffer_u8);
 htme_globalSet("foxyReady",900,buffer_u16);
+htme_globalSet("foxyRunning",0,buffer_bool);
 htme_globalSet("bonk",0,buffer_bool);
 htme_globalSet("puppetSpecial",0,buffer_bool);
 htme_globalSet("puppetUsed",0,buffer_bool);
 htme_globalSet("bbGame",0,buffer_bool);
 htme_globalSet("bbLocation",0,buffer_u8);
+htme_globalSet("springtrapMove",0,buffer_bool);
 global.currentMimic = 0;
 //Lockable Doors
 htme_globalSet("kitchenDoor",0,buffer_bool);
@@ -45,4 +48,6 @@ global.coinLocation = 0;
 //Difficulty Counter
 htme_globalSet("guardScore",0,buffer_u32);
 
+global.warnsound = 0;
 global.clickable = true;
+global.outageAudio = 0;
