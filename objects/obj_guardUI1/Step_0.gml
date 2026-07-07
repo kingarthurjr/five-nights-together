@@ -72,3 +72,80 @@ if htme_globalGet("ovenTemp") >= 445 and htme_globalGet("ovenTemp") <= 550
     heatUp = 30;
     goUp = 1;
 }
+
+if htme_globalGet("foxyRunning") = 1
+{
+    if !audio_is_playing(snd_sprint)
+    {
+        audio_play_sound(snd_sprint,10,false);
+    }
+    htme_globalSet("foxyRunning",0,buffer_bool);
+}
+
+//Kitchen Sounds
+if htme_globalGet("chica") = 9 or htme_globalGet("mimic") = 9
+{
+	if !audio_is_playing(snd_kitchen)
+	{
+		audio_play_sound(snd_kitchen,10,true);
+	}
+	if htme_globalGet("cameraActive") and htme_globalGet("camera") = 9
+	{
+		audio_sound_gain(snd_kitchen,1,0);
+	}
+	else
+	{
+		audio_sound_gain(snd_kitchen,.1,0);
+	}
+}
+else
+{
+	if audio_is_playing(snd_kitchen)
+	{
+		audio_stop_sound(snd_kitchen);
+	}
+}
+if htme_globalGet("foxy") = 9
+{
+	if !audio_is_playing(snd_dum)
+	{
+		audio_play_sound(snd_dum,10,true);
+	}
+	if htme_globalGet("cameraActive") and htme_globalGet("camera") = 9
+	{
+		audio_sound_gain(snd_dum,.5,0);
+	}
+	else
+	{
+		audio_sound_gain(snd_dum,.02,0);
+	}
+}
+else
+{
+	if audio_is_playing(snd_dum)
+	{
+		audio_stop_sound(snd_dum);
+	}
+}
+if htme_globalGet("springtrap") = 9
+{
+	if !audio_is_playing(snd_cooktrap)
+	{
+		audio_play_sound(snd_cooktrap,10,true);
+	}
+	if htme_globalGet("cameraActive") and htme_globalGet("camera") = 9
+	{
+		audio_sound_gain(snd_cooktrap,.2,0);
+	}
+	else
+	{
+		audio_sound_gain(snd_cooktrap,.01,0);
+	}
+}
+else
+{
+	if audio_is_playing(snd_cooktrap)
+	{
+		audio_stop_sound(snd_cooktrap);
+	}
+}

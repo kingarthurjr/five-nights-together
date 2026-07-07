@@ -20,6 +20,7 @@ htme_globalSet("wfoxy",0,buffer_s8);
 global.atDoor = false;
 htme_globalSet("tooLate",0,buffer_u8);
 htme_globalSet("whoGot",0,buffer_u8);
+htme_globalSet("ventLeave",0,buffer_bool);
 //Abilities
 htme_globalSet("freddySpecial",0,buffer_bool);
 htme_globalSet("freddyOut",0,buffer_bool);
@@ -33,6 +34,7 @@ htme_globalSet("puppetSpecial",0,buffer_bool);
 htme_globalSet("puppetUsed",0,buffer_bool);
 htme_globalSet("bbGame",0,buffer_bool);
 htme_globalSet("bbLocation",0,buffer_u8);
+htme_globalSet("springtrapMove",0,buffer_bool);
 global.currentMimic = 0;
 //Lockable Doors
 htme_globalSet("kitchenDoor",0,buffer_bool);

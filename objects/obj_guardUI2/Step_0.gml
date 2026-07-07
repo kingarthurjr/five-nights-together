@@ -70,3 +70,29 @@ if htme_globalGet("ovenTemp") >= 445 and htme_globalGet("ovenTemp") <= 550
     heatUp = 30;
     goUp = 1;
 }
+
+//Sounds
+if htme_globalGet("springtrapMove") = 1
+{
+	if !audio_is_playing(snd_groan)
+	{
+		audio_play_sound(snd_groan,10,false);
+	}
+	htme_globalSet("springtrapMove",0,buffer_bool);
+}
+if audio_is_playing(snd_groan)
+{
+	if htme_globalGet("cameraActive") = 1 and htme_globalGet("camera") = htme_globalGet("springtrap")
+	{
+		audio_sound_gain(snd_groan,.3,0);
+	}
+	else
+	{
+		audio_sound_gain(snd_groan,.1,0);
+	}
+}
+if htme_globalGet("ventLeave") = 1
+{
+	audio_play_sound(snd_ventleave,10,false);
+	htme_globalSet("ventLeave",0,buffer_bool);
+}

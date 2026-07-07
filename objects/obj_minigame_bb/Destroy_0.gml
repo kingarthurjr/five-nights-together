@@ -12,3 +12,4 @@ instance_destroy(obj_bb_instructions);
 audio_play_sound(snd_bb_laugh,10,false);
 
 htme_globalSet("bbGame",0,buffer_bool);
+htme_globalSet("springtrapMove",1,buffer_bool);

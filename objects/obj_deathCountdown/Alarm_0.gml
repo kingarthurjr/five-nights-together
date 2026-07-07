@@ -49,7 +49,11 @@ else
 	{
 	    if htme_globalGet("mask") = camNumber
 	    {
-	        global.deathCoin = false;
+			if camNumber = 2 or camNumber = 3
+			{
+				htme_globalSet("ventLeave",1,buffer_bool);
+			}
+			global.deathCoin = false;
 	        global.coinLocation = 0;
 	        obj_player.spawn = true;
 	        room = rm_gamearea;
