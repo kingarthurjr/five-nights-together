@@ -1,3 +1,4 @@
+depth = -9999;
 //Close Devices
 if instance_exists(obj_camera1)
 {
