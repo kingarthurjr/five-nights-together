@@ -1,3 +1,4 @@
+depth = -12;
 //Sprite
 if htme_globalGet("powerOut") = 1
 {

@@ -1,3 +1,4 @@
+depth = -12;
 //Who to Display
 if htme_globalGet("tfreddy") = 14 and htme_globalGet("freddySpecial")
 {

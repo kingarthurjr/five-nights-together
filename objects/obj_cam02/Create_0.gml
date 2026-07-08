@@ -1,3 +1,4 @@
+depth = -12;
 /// @description Party Room 2
 
 //Create Animatronics in Draw Order

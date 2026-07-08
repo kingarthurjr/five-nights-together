@@ -1,3 +1,4 @@
+depth = -12;
 /// @description Game Area
 
 x = global.camMoveX;

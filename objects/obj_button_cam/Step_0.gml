@@ -1,8 +1,3 @@
-if depth != -1
-{
-	depth = -1;
-}
-
 //Select Animation
 if htme_globalGet("camera") = camNumber
 {

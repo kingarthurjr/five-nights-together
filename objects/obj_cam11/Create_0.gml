@@ -1,3 +1,4 @@
+depth = -12;
 /// @description Prize Corner
 
 x = global.camMoveX;

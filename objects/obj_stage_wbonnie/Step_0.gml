@@ -15,3 +15,4 @@ else
 {
 	sprite_index = spr_stage_wbonnie;
 }
+depth = -14;

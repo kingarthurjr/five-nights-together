@@ -1,3 +1,4 @@
+depth = -9;
 //Close Monitor
 if instance_exists(obj_camera2)
 {

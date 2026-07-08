@@ -1,3 +1,4 @@
+depth = -11;
 if htme_globalGet("mapSelected") = 0 //FNaF1
 {
 	audio_play_sound(snd_flip,10,false);

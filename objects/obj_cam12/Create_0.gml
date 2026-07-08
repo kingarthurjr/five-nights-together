@@ -1,3 +1,4 @@
+depth = -12;
 /// @description Kid's Cove
 
 x = global.camMoveX;

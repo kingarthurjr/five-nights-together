@@ -15,6 +15,6 @@ if htme_globalGet("mangleTaken") != "noone"
 	image_index = 3;
 }
 
-depth = -7;
+depth = -18;
 image_alpha = 0.3;
 alarm[0] = random_range(0,30);

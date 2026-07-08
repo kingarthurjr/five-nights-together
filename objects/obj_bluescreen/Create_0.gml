@@ -1,4 +1,4 @@
-depth = -12;
+depth = -19;
 if global.bluescreenFirstTime == false
 {
     audio_play_sound(snd_error,10,false);

@@ -1,3 +1,4 @@
+depth = -12;
 /// @description Show Stage
 
 x = global.camMoveX;

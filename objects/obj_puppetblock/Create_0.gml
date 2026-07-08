@@ -1,4 +1,4 @@
-depth = -7;
+depth = -18;
 //Create Puppet Head
 instance_create(0,0,obj_puppetstare);
 //Set Variables for Phantom Flash

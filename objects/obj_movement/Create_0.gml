@@ -1,4 +1,4 @@
-depth = -8;
+depth = -19;
 randomize();
 alarm[0] = 90;
 if htme_globalGet("mapSelected") = 0 //FNaF1

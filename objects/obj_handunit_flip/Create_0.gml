@@ -1,3 +1,4 @@
+depth = -12;
 if htme_globalGet("powerOut") = 1
 {
 	sprite_index = spr_handunit_up_dark;

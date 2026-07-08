@@ -1,3 +1,4 @@
+depth = -12;
 //Who to Display
 image_index = 0;
 if htme_globalGet("tfreddy") = 15 and htme_globalGet("freddySpecial")

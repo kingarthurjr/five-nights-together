@@ -8,4 +8,4 @@ else
 	image_index = 0;
 }
 current = image_index;
-depth = -4;
+depth = -13;

@@ -1,4 +1,4 @@
-depth = -7;
+depth = -18;
 alarm[0] = 30;
 image_alpha = 0;
 audio_play_sound(mus_puppet,10,true);

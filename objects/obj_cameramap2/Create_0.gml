@@ -1,5 +1,5 @@
 //Depth
-depth = -9;
+depth = -20;
 
 //Camera Buttons
 instance_create(545,360,obj_button_cam01);

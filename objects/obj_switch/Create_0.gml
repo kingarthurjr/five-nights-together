@@ -1,4 +1,4 @@
-depth = -10;
+depth = -19;
 if room = rm_office1 //FNaF1
 {
 	audio_play_sound(snd_blip,10,false);

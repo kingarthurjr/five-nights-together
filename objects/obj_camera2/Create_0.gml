@@ -1,3 +1,4 @@
+depth = -12;
 //Muffle the Fan Audio
 if audio_is_playing(snd_office2)
 {

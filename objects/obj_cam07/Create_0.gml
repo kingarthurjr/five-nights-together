@@ -1,3 +1,4 @@
+depth = -12;
 /// @description Main Hall
 
 x = global.camMoveX;

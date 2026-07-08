@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Game Area",
-    "path": "folders/Objects/Devices/Cameras/Animatronics/FNaF2/Game Area.yy",
+    "name": "Prize Corner",
+    "path": "folders/Objects/Devices/Cameras/Animatronics/FNaF2/Prize Corner.yy",
   },
 }
