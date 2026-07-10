@@ -1,22 +1,14 @@
-card_x = 640;
-card_y = 240;
+card_title = "";
+card_description = "";
+card_icon = -1;
 
-card_w = 640;
-card_h = 600;
+card_width = 640;
+card_height = 600;
 
+fade = 0;
 
-// Fade in
-card_alpha = 0;
-fade_speed = 0.12;
+blurA = -1;
+blurB = -1;
 
-
-// Surfaces
-scene_surface = -1;
-blur_surface = -1;
-
-
-// Shader uniforms
-u_blur_x = shader_get_uniform(sh_blur_horizontal, "u_pixel");
-u_blur_y = shader_get_uniform(sh_blur_vertical, "u_pixel");
-
-audio_play_sound(snd_instruction,10,false);
+blurA = surface_create(card_width, card_height);
+blurB = surface_create(card_width, card_height);

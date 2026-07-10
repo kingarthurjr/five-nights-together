@@ -1,6 +1,5 @@
 // Fade in
-card_alpha = min(card_alpha + fade_speed, 1);
-
+fade = min(fade + 0.08,1);
 
 // Close card
 if (keyboard_check_pressed(ord(global.doorKey)))
