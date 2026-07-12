@@ -42,11 +42,11 @@ if htme_globalGet("powerOut") = 0
 	}
 	with(obj_door_office1_left)
 	{
-		draw_sprite_ext(spr_light_door_left1,self.image_index,x-cam_x,y-cam_y,self.image_xscale,self.image_yscale,self.image_angle,self.image_blend,self.image_alpha);
+		draw_sprite_ext(spr_light_door_left1,self.image_index,x-cam_x,y-cam_y,self.image_xscale,self.image_yscale,self.image_angle,self.image_blend,.5);
 	}
 	with(obj_door_office1_right)
 	{
-		draw_sprite_ext(spr_light_door_right1,self.image_index,x-cam_x,y-cam_y,self.image_xscale,self.image_yscale,self.image_angle,self.image_blend,self.image_alpha);
+		draw_sprite_ext(spr_light_door_right1,self.image_index,x-cam_x,y-cam_y,self.image_xscale,self.image_yscale,self.image_angle,self.image_blend,.5);
 	}
 	with(obj_officehall)
 	{

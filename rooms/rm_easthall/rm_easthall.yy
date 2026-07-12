@@ -45,6 +45,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_323AD02A","properties":[],"isDnd":false,"objectId":{"name":"obj_shelf","path":"objects/obj_shelf/obj_shelf.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":440.0,"y":360.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_292FD27C","properties":[],"isDnd":false,"objectId":{"name":"obj_cam1_righthall","path":"objects/obj_cam1_righthall/obj_cam1_righthall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":660.0,"y":40.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2FB83B2","properties":[],"isDnd":false,"objectId":{"name":"obj_cam1_rightcorner","path":"objects/obj_cam1_rightcorner/obj_cam1_rightcorner.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":420.0,"y":40.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_481D3677","properties":[],"isDnd":false,"objectId":{"name":"obj_purpleguy","path":"objects/obj_purpleguy/obj_purpleguy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":520.0,"y":220.0,},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":20,"gridY":20,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"CamDetect","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_78A2778A","properties":[],"isDnd":false,"objectId":{"name":"obj_camDetect","path":"objects/obj_camDetect/obj_camDetect.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":51.0,"scaleY":6.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":620.0,"y":240.0,},
@@ -90,6 +91,7 @@
     {"name":"inst_344B5702","path":"rooms/rm_easthall/rm_easthall.yy",},
     {"name":"inst_795D9192","path":"rooms/rm_easthall/rm_easthall.yy",},
     {"name":"inst_361F5CD6","path":"rooms/rm_easthall/rm_easthall.yy",},
+    {"name":"inst_481D3677","path":"rooms/rm_easthall/rm_easthall.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
