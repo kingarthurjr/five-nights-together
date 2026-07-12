@@ -1,14 +1,22 @@
-card_title = "";
-card_description = "";
-card_icon = -1;
+// --- Card Content (Children will override these) ---
+title = "NO TITLE";
+icon = 0;
+description = "Someone forgot to code this instruction card.";
+color = c_black;
 
+// --- Card Dimensions ---
 card_width = 640;
 card_height = 600;
 
-fade = 0;
+// --- Surfaces ---
+blur_surf = -1;
+card_surf = -1;
 
-blurA = -1;
-blurB = -1;
+// --- FADE SETTINGS ---
+card_alpha = 0;        // Starts completely transparent
+fade_speed = 0.08;     // Adjust this to change fade speed (0.05 is slower, 0.2 is instant)
 
-blurA = surface_create(card_width, card_height);
-blurB = surface_create(card_width, card_height);
+if instance_exists(obj_player)
+{
+	obj_player.stopMoving = true;
+}

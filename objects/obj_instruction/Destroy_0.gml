@@ -1,5 +1,4 @@
-if (surface_exists(blurA))
-    surface_free(blurA);
-
-if (surface_exists(blurB))
-    surface_free(blurB);
+if instance_exists(obj_player)
+{
+	obj_player.stopMoving = false;
+}

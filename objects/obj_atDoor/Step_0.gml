@@ -27,9 +27,9 @@ if keyboard_check_pressed(ord(global.doorKey)) and obj_player.spawn = false
 	    }
 	    else
 	    {
-	        if !instance_exists(obj_instructions_deathcoin)
+	        if !instance_exists(obj_i_deathcoin)
 	        {
-	            instance_create(0,0,obj_instructions_deathcoin);
+	            instance_create(0,0,obj_i_deathcoin);
 	        }
 	    }
 	}
@@ -48,10 +48,10 @@ if keyboard_check_released(ord(global.doorKey))
 	{
 	    instance_destroy(obj_deathCountdown);
 	}
-	/*if instance_exists(obj_instructions_deathcoin)
+	if instance_exists(obj_i_deathcoin)
 	{
-	    instance_destroy(obj_instructions_deathcoin);
-	}*/
+	    instance_destroy(obj_i_deathcoin);
+	}
 	if global.animatronicChosen != 6
 	{
 	    if (room = rm_westhall and obj_doorOffice.camNumber = 1) or (room = rm_officehall and obj_doorOffice.camNumber = 2)
