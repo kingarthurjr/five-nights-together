@@ -18,5 +18,5 @@ fade_speed = 0.08;     // Adjust this to change fade speed (0.05 is slower, 0.2 
 
 if instance_exists(obj_player)
 {
-	obj_player.stopMoving = true;
+	(global.playerobject).stopMoving = true;
 }

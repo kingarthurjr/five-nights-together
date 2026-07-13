@@ -28,3 +28,8 @@ if fade = 2
         fade = 0;
     }
 }
+
+if (global.playerobject).y > y-188
+{
+	collision = true;
+}

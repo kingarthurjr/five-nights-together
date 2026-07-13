@@ -11,7 +11,7 @@ if global.deathCoin = true
 }
 else
 {
-    image_alpha = .10;
+    image_alpha = .30;
 }
 
 if keyboard_check_pressed(ord(global.doorKey)) and obj_player.spawn = false
