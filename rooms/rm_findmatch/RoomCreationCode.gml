@@ -11,5 +11,9 @@ global.password = false;
 global.animatronics = ["freddy","bonnie","chica","foxy","puppet","springtrap","mimic","tfreddy","tbonnie","tchica","mangle","wfreddy","wbonnie","wchica","wfoxy"];
 global.coinLocation = 0;
 
-audio_stop_all();
-audio_play_sound(mus_flipside,10,true);
+if !audio_is_playing(mus_flipside)
+{
+	audio_stop_all();
+	audio_play_sound(mus_flipside,10,true);
+}
+instance_create(0,0,obj_switch);
