@@ -13,6 +13,8 @@ if htme_globalGet("name["+string(htme_globalGet("guardSelected"))+"]") = global.
 		sprite_prefetch(spr_office1_right);
 		sprite_prefetch(spr_office1_right_door);
 		sprite_prefetch(spr_monitor);
+		sprite_prefetch(spr_handunit_up);
+		sprite_prefetch(spr_handunit_up_dark);
 		sprite_prefetch(spr_handunit);
 		sprite_prefetch(spr_switch);
 		sprite_prefetch(spr_cameramap1);
@@ -47,6 +49,8 @@ if htme_globalGet("name["+string(htme_globalGet("guardSelected"))+"]") = global.
 		sprite_prefetch(spr_office2_left);
 		sprite_prefetch(spr_office2_right);
 		sprite_prefetch(spr_monitor);
+		sprite_prefetch(spr_handunit_up);
+		sprite_prefetch(spr_handunit_up_dark);
 		sprite_prefetch(spr_handunit);
 		sprite_prefetch(spr_mask_flip);
 		sprite_prefetch(spr_mask);

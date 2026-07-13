@@ -61,7 +61,7 @@ if htme_globalGet("powerOut") = 0
 	}
 	with(obj_officehall)
 	{
-		draw_sprite_ext(self.sprite_index,self.image_index,x-cam_x,y-cam_y,self.image_xscale,self.image_yscale,self.image_angle,c_black,self.image_alpha);
+		draw_sprite_ext(self.sprite_index,self.image_index,x-cam_x,y-cam_y,self.image_xscale,self.image_yscale,self.image_angle,c_black,self.image_alpha/2);
 	}
 }
 with(obj_deathcoin)
