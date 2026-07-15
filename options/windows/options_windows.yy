@@ -3,7 +3,7 @@
   "resourceVersion": "1.1",
   "name": "Windows",
   "option_windows_display_name": "Five Nights Together",
-  "option_windows_executable_name": "${five_nights_together}",
+  "option_windows_executable_name": "five-nights-together",
   "option_windows_version": "0.2.0.0",
   "option_windows_company_info": "King Arthur Jr",
   "option_windows_product_info": "",
