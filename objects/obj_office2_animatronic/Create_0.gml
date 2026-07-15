@@ -2,10 +2,14 @@ depth = -9;
 //Close Monitor
 if instance_exists(obj_camera2)
 {
-    with(obj_camera2)
-    {
-        instance_change(obj_monitor,true);
-    }
+    instance_destroy(obj_camera2);
+	instance_create_layer(0,540,"Devices",obj_monitor);
+	with(obj_monitor)
+	{
+		image_index = image_number-1;
+		image_speed = -1;
+	}
+	obj_office2.alarm[0] = 10;
 }
 
 //Flickering
