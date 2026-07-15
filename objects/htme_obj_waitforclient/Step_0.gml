@@ -14,5 +14,6 @@ if (htme_clientConnectionFailed()) {
     htme_error_message_handler("Connection with server failed, it may be full!");
     htme_clientStop();
     room_goto(rm_findmatch);
+	global.failedToConnect = true;
 }
 

@@ -17,3 +17,9 @@ if !audio_is_playing(mus_flipside)
 	audio_play_sound(mus_flipside,10,true);
 }
 instance_create(0,0,obj_switch);
+
+if global.failedToConnect = true
+{
+	instance_create(0,0,obj_i_full);
+}
+global.failedToConnect = false;
