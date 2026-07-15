@@ -32,11 +32,11 @@ else
 {
     if global.animatronicChosen = 4 or 5 //Foxy or Puppet
     {
-        spd = 6;
+        spd = 4;
     }
     else
     {
-        spd = 4;
+        spd = 2;
     }
 }
 
