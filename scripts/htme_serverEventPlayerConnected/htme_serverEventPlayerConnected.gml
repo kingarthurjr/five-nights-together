@@ -100,6 +100,9 @@ function htme_serverEventPlayerConnected(argument0, argument1) {
 	htme_sendGS(player,all);
 
 	//Do not send all instances, instead wait for room anncouncement
+	
+	htme_setData(6,string(ds_list_size(htme_getPlayers())));
+	udphp_serverCommitData();
 
 
 

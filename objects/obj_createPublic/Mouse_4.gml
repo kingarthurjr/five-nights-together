@@ -11,6 +11,7 @@ if (htme_serverStart(port,7)) {
     htme_setData(2,global.name);
     htme_setData(3,"PUBLIC");
     htme_setData(4,string(port));
+	htme_setData(6,string(ds_list_size(htme_getPlayers())));
     room_goto(htme_rom_connecting);
 } else {
     htme_error_message_handler("Could not start server! Check your network configuration!");

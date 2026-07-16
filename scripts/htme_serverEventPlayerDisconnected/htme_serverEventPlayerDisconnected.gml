@@ -77,6 +77,9 @@ function htme_serverEventPlayerDisconnected(argument0) {
 
 	// Clean
 	ds_map_destroy(mapToUse);
+	
+	htme_setData(6,string(ds_list_size(htme_getPlayers())));
+	udphp_serverCommitData();
 
 
 
