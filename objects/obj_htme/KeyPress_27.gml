@@ -6,6 +6,6 @@ if htme_disconnectNow()
     // Remove persistent but not synced objects
     with obj_create_network_objects instance_destroy();
     // Go back to menu room
-    room_goto(htme_rom_menu);    
+    room_goto(rm_findmatch);    
 }
 
