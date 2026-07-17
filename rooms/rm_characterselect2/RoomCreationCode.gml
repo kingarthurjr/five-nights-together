@@ -1,5 +1,7 @@
 ///Set Animatronic Defaults
 
+instance_create(0,0,obj_switch);
+
 //Location
 htme_globalSet("freddy",0,buffer_s8);
 htme_globalSet("bonnie",0,buffer_s8);
@@ -51,3 +53,9 @@ htme_globalSet("guardScore",0,buffer_u32);
 global.warnsound = 0;
 global.clickable = true;
 global.outageAudio = 0;
+
+//Boss Roster
+if htme_globalGet("activePlayers") = 2
+{
+	instance_create(960,5,obj_toggleboss);
+}

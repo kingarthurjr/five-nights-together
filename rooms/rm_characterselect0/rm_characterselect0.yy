@@ -20,6 +20,7 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_56C64F3C_1_1","properties":[],"isDnd":false,"objectId":{"name":"obj_characterInfo","path":"objects/obj_characterInfo/obj_characterInfo.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-20.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_28BF0F07","properties":[],"isDnd":false,"objectId":{"name":"obj_cs_mimic","path":"objects/obj_cs_mimic/obj_cs_mimic.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":425.0,"y":225.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_66C3D0D9","properties":[],"isDnd":false,"objectId":{"name":"obj_toggleboss","path":"objects/obj_toggleboss/obj_toggleboss.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":960.0,"y":5.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":5,"gridY":5,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","spriteId":{"name":"bg_cs_fnaf1","path":"sprites/bg_cs_fnaf1/bg_cs_fnaf1.yy",},"colour":4294967295,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":0.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":20,"gridY":20,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
   ],
@@ -29,6 +30,7 @@
   "instanceCreationOrder": [
     {"name":"inst_56C64F3C_1_1","path":"rooms/rm_characterselect0/rm_characterselect0.yy",},
     {"name":"inst_28BF0F07","path":"rooms/rm_characterselect0/rm_characterselect0.yy",},
+    {"name":"inst_66C3D0D9","path":"rooms/rm_characterselect0/rm_characterselect0.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

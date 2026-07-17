@@ -1,17 +1,9 @@
 ///Set Animatronic Defaults
 
-//Temp
-if htme_globalGet("mapSelected") = 0
-{
-	room_goto(rm_characterselect1);
-}
-if htme_globalGet("mapSelected") = 1
-{
-	room_goto(rm_characterselect2);
-}
+instance_create(0,0,obj_switch);
 
 //Background
-bg = layer_get_id("Background");
+bg = layer_background_get_id("Background");
 if htme_globalGet("mapSelected") = 0 //FNaF1
 {
 	layer_background_sprite(bg,bg_cs_fnaf1);
@@ -68,6 +60,12 @@ htme_globalSet("rightVent",0,buffer_bool);
 //Death Coin
 global.coinRoom = 0;
 global.coinLocation = 0;
+//Difficulty Counter
+htme_globalSet("guardScore",0,buffer_u32);
+
+global.warnsound = 0;
+global.clickable = true;
+global.outageAudio = 0;
 //Difficulty Counter
 htme_globalSet("guardScore",0,buffer_u32);
 
