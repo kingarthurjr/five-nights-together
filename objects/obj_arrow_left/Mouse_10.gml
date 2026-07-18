@@ -42,7 +42,7 @@ if htme_globalGet("light") = 0
 	}
 
 	//FNaF 2
-	if instance_exists(obj_office2)
+	if instance_exists(obj_office2) and !instance_exists(obj_office2_animatronic) and !instance_exists(obj_foxy_part)
 	{
 		with(obj_office2)
 		{
