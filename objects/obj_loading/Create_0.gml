@@ -1,14 +1,7 @@
 draw_texture_flush();
 alarm[0] = 5;
 
-if global.mobile = false
-{
-    randomfact = irandom_range(1,12);
-}
-else
-{
-    randomfact = irandom_range(1,11);
-}
+randomfact = irandom_range(1,17);
 
 if randomfact == 1
 {
@@ -48,7 +41,7 @@ if randomfact == 9
 }
 if randomfact == 10
 {
-    fazfact = "Tip: The Puppet will hide all interactions when blocking your camera.";
+    fazfact = "Tip: The Puppet will hide all abilities when blocking your camera.";
 }
 if randomfact == 11
 {
@@ -56,11 +49,11 @@ if randomfact == 11
 }
 if randomfact == 12
 {
-    fazfact = "Fun Fact: You can press T to bring up an in-game chat!";
+    fazfact = "This isn't how it happened.";
 }
 if randomfact == 13
 {
-    fazfact = "This isn't how it happened.";
+    fazfact = "Why does the mask work on Foxy...?";
 }
 if randomfact == 14
 {
@@ -68,13 +61,9 @@ if randomfact == 14
 }
 if randomfact == 15
 {
-    fazfact = "Was that me...?";
-}
-if randomfact == 16
-{
     fazfact = "Fun Fact: In early development, Flipside Freddy would constantly appear in places he wasn't supposed to.";
 }
-if randomfact == 17
+if randomfact == 16
 {
     fazfact = "Fun Fact: Starting a 1v1 will unlock the BOSS ROSTER.";
 }
