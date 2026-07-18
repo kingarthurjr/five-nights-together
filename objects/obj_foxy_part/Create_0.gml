@@ -1,3 +1,4 @@
+depth = -11;
 hoverAlpha = 0;
 
 if htme_globalGet("wfoxyTaken") != "noone"
