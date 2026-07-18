@@ -48,7 +48,7 @@ function htme_config() {
 	 * Use 95.85.63.183 if you have no server. It is only for debugging!
 	 * @type string
 	 */
-	self.udphp_master_ip = "35.208.119.137";
+	self.udphp_master_ip = "35.209.127.60";
 
 	/** 
 	 * WHEN USING GMnet PUNCH:
