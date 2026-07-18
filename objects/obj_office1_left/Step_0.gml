@@ -9,6 +9,10 @@ if sprite_index = spr_office1_left
 		{
 			audio_play_sound(snd_light,10,true);
 		}
+		if !instance_exists(obj_office1_flickering_light)
+		{
+			instance_create(0,0,obj_office1_flickering_light);
+		}
 		if htme_globalGet("freddy") = 1
 		{
 			image_index = 2;
@@ -67,6 +71,10 @@ if sprite_index = spr_office1_left
 		if audio_is_playing(snd_light)
 		{
 			audio_stop_sound(snd_light);
+		}
+		if instance_exists(obj_office1_flickering_light)
+		{
+			instance_destroy(obj_office1_flickering_light);
 		}
 	}
 	
