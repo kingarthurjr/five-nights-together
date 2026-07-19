@@ -15,6 +15,10 @@ if keyboard_check(ord(global.lightKey))
 	{
 		audio_play_sound(snd_light2,10,true);
 	}
+	if htme_globalGet("tfreddy") = 2 or htme_globalGet("tbonnie") = 2 or htme_globalGet("tchica") = 2 or htme_globalGet("mangle") = 2 or htme_globalGet("wfreddy") = 2 or htme_globalGet("wbonnie") = 2 or htme_globalGet("wchica") = 2 or htme_globalGet("wfoxy") = 2 or htme_globalGet("puppet") = 2 or htme_globalGet("springtrap") = 2 or htme_globalGet("mimic") = 2
+	{
+		htme_globalSet("leftSeen",1,buffer_bool);
+	}
 	if htme_globalGet("tfreddy") = 2
 	{
 		image_index = 2;

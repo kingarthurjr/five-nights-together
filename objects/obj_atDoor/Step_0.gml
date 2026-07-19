@@ -54,7 +54,7 @@ if keyboard_check_released(ord(global.doorKey))
 	}
 	if global.animatronicChosen != 6
 	{
-	    if (room = rm_westhall and obj_doorOffice.camNumber = 1) or (room = rm_officehall and obj_doorOffice.camNumber = 2)
+	    if (room = rm_westhall and obj_doorOffice.camNumber = 1) or (room = rm_officehall and camNumber = 2)
 	    {
 	        if htme_globalGet("leftSeen") = 1
 	        {
@@ -69,7 +69,7 @@ if keyboard_check_released(ord(global.doorKey))
 	            room = spawn;
 	        }
 	    }
-	    if (room = rm_easthall and obj_doorOffice.camNumber = 2) or (room = rm_officehall and obj_doorOffice.camNumber = 3)
+	    if (room = rm_easthall and obj_doorOffice.camNumber = 2) or (room = rm_officehall and camNumber = 3)
 	    {
 	        if htme_globalGet("rightSeen") = 1
 	        {
@@ -84,7 +84,7 @@ if keyboard_check_released(ord(global.doorKey))
 	            room = spawn;
 	        }
 	    }
-		if (room = rm_officehall and obj_doorOffice.camNumber = 1)
+		if (room = rm_officehall and camNumber = 1)
 		{
 			global.deathCoin = false;
 	        global.coinLocation = 0;
