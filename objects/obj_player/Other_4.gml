@@ -95,16 +95,16 @@ if spawn = true and htme_globalGet("mapSelected") = 0
 		}
 		if global.animatronicChosen = 7 //The Mimic
 		{
-		    x = 2584;
-		    y = 593;
+		    x = 940;
+		    y = 290;
 		}
 	}
 	if room = rm_backstage
 	{
 	    if global.animatronicChosen = 5 //The Puppet
 	    {
-	        x = 620;
-	        y = 220;
+	        x = 840; //620
+	        y = 400; //220
 	    }
 	}
 	if global.animatronicChosen != 6 //and global.powerupDeathCoin = 0
@@ -225,6 +225,11 @@ if spawn = true and htme_globalGet("mapSelected") = 1
 	    {
 	        x = 320;
 	        y = 1020;
+	    }
+		if global.animatronicChosen = 7 //The Mimic
+	    {
+	        x = 520;
+	        y = 360;
 	    }
 	}
 	if room = rm_kidscove
