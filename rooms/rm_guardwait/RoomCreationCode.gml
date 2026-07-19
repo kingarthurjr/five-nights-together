@@ -8,6 +8,8 @@ htme_globalSet("doorLeft",0,buffer_bool);
 htme_globalSet("doorRight",0,buffer_bool);
 htme_globalSet("light",0,buffer_bool);
 htme_globalSet("mask",0,buffer_u8);
+htme_globalSet("leftSeen",0,buffer_bool);
+htme_globalSet("rightSeen",0,buffer_bool);
 //Building Status
 htme_globalSet("powerOut",0,buffer_bool);
 htme_globalSet("buildingPower",100,buffer_u8);

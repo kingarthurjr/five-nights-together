@@ -13,6 +13,10 @@ if sprite_index = spr_office1_left
 		{
 			instance_create(0,0,obj_office1_flickering_light);
 		}
+		if htme_globalGet("freddy") = 1 or htme_globalGet("bonnie") = 1 or htme_globalGet("chica") = 1 or htme_globalGet("foxy") = 1 or htme_globalGet("puppet") = 1 or htme_globalGet("springtrap") = 1 or htme_globalGet("mimic") = 1
+		{
+			htme_globalSet("leftSeen",1,buffer_bool);
+		}
 		if htme_globalGet("freddy") = 1
 		{
 			image_index = 2;
