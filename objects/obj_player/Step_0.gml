@@ -135,10 +135,10 @@ if room = rm_waitingroom
 	    switch(facing)
 	    {
 	        case LEFT:
-	            sprite_index = spr_waitfreddy_left;
+	            self.sprite_index = spr_waitfreddy_left;
 	            break;
 	        case RIGHT:
-	            sprite_index = spr_waitfreddy_right;
+	            self.sprite_index = spr_waitfreddy_right;
 	            break;
 	    }
 	}
@@ -147,10 +147,10 @@ if room = rm_waitingroom
 	    switch(facing)
 	    {
 	        case LEFT:
-	            sprite_index = spr_waitbonnie_left;
+	            self.sprite_index = spr_waitbonnie_left;
 	            break;
 	        case RIGHT:
-	            sprite_index = spr_waitbonnie_right;
+	            self.sprite_index = spr_waitbonnie_right;
 	            break;
 	    }
 	}
@@ -159,10 +159,10 @@ if room = rm_waitingroom
 	    switch(facing)
 	    {
 	        case LEFT:
-	            sprite_index = spr_waitchica_left;
+	            self.sprite_index = spr_waitchica_left;
 	            break;
 	        case RIGHT:
-	            sprite_index = spr_waitchica_right;
+	            self.sprite_index = spr_waitchica_right;
 	            break;
 	    }
 	}
@@ -171,10 +171,10 @@ if room = rm_waitingroom
 	    switch(facing)
 	    {
 	        case LEFT:
-	            sprite_index = spr_waitfoxy_left;
+	            self.sprite_index = spr_waitfoxy_left;
 	            break;
 	        case RIGHT:
-	            sprite_index = spr_waitfoxy_right;
+	            self.sprite_index = spr_waitfoxy_right;
 	            break;
 	    }
 	}
@@ -183,10 +183,10 @@ if room = rm_waitingroom
 	    switch(facing)
 	    {
 	        case LEFT:
-	            sprite_index = spr_waitchild_left;
+	            self.sprite_index = spr_waitchild_left;
 	            break;
 	        case RIGHT:
-	            sprite_index = spr_waitchild_right;
+	            self.sprite_index = spr_waitchild_right;
 	            break;
 	    }
 	}
@@ -195,10 +195,10 @@ if room = rm_waitingroom
 	    switch(facing)
 	    {
 	        case LEFT:
-	            sprite_index = spr_waittrap_left;
+	            self.sprite_index = spr_waittrap_left;
 	            break;
 	        case RIGHT:
-	            sprite_index = spr_waittrap_right;
+	            self.sprite_index = spr_waittrap_right;
 	            break;
 	    }
 	}
@@ -207,10 +207,10 @@ if room = rm_waitingroom
 	    switch(facing)
 	    {
 	        case LEFT:
-	            sprite_index = spr_waitomc_left;
+	            self.sprite_index = spr_waitomc_left;
 	            break;
 	        case RIGHT:
-	            sprite_index = spr_waitomc_right;
+	            self.sprite_index = spr_waitomc_right;
 	            break;
 	    }
 	}
@@ -219,609 +219,609 @@ if room = rm_waitingroom
 	    switch(facing)
 	    {
 	        case LEFT:
-	            sprite_index = spr_waitscott_left;
+	            self.sprite_index = spr_waitscott_left;
 	            break;
 	        case RIGHT:
-	            sprite_index = spr_waitscott_right;
+	            self.sprite_index = spr_waitscott_right;
 	            break;
 	    }
 	}
 }
 else
 {
-	if global.animatronicChosen = 1 //Freddy
+	if self.animatronicChosen = 1 //Freddy
 	{
 		switch(facing)
 		{
 			case DOWN:
 				if htme_globalGet("freddySpecial") = 1
 				{
-					sprite_index = spr_freddy_d_special;
+					self.sprite_index = spr_freddy_d_special;
 				}
 				else
 				{
-					sprite_index = spr_freddy_d;
+					self.sprite_index = spr_freddy_d;
 				}
 				break;
 			case LEFT:
-				sprite_index = spr_freddy_l;
+				self.sprite_index = spr_freddy_l;
 				break;
 			case RIGHT:
-				sprite_index = spr_freddy_r;
+				self.sprite_index = spr_freddy_r;
 				break;
 			case UP:
-				sprite_index = spr_freddy_u;
+				self.sprite_index = spr_freddy_u;
 				break;
 		}
 	}
-	if global.animatronicChosen = 2 //Bonnie
+	if self.animatronicChosen = 2 //Bonnie
 	{
 		switch(facing)
 		{
 			case DOWN:
-				sprite_index = spr_bonnie_d;
+				self.sprite_index = spr_bonnie_d;
 				break;
 			case LEFT:
-				sprite_index = spr_bonnie_l;
+				self.sprite_index = spr_bonnie_l;
 				break;
 			case RIGHT:
-				sprite_index = spr_bonnie_r;
+				self.sprite_index = spr_bonnie_r;
 				break;
 			case UP:
-				sprite_index = spr_bonnie_u;
+				self.sprite_index = spr_bonnie_u;
 				break;
 		}
 	}
-	if global.animatronicChosen = 3 //Chica
+	if self.animatronicChosen = 3 //Chica
 	{
 		switch(facing)
 		{
 			case DOWN:
-				sprite_index = spr_chica_d;
+				self.sprite_index = spr_chica_d;
 				break;
 			case LEFT:
-				sprite_index = spr_chica_l;
+				self.sprite_index = spr_chica_l;
 				break;
 			case RIGHT:
-				sprite_index = spr_chica_r;
+				self.sprite_index = spr_chica_r;
 				break;
 			case UP:
-				sprite_index = spr_chica_u;
+				self.sprite_index = spr_chica_u;
 				break;
 		}
 	}
-	if global.animatronicChosen = 4 //Foxy
+	if self.animatronicChosen = 4 //Foxy
 	{
 		switch(facing)
 		{
 			case DOWN:
-				sprite_index = spr_foxy_d;
+				self.sprite_index = spr_foxy_d;
 				break;
 			case LEFT:
-				sprite_index = spr_foxy_l;
+				self.sprite_index = spr_foxy_l;
 				break;
 			case RIGHT:
-				sprite_index = spr_foxy_r;
+				self.sprite_index = spr_foxy_r;
 				break;
 			case UP:
-				sprite_index = spr_foxy_u;
+				self.sprite_index = spr_foxy_u;
 				break;
 		}
 	}
-	if global.animatronicChosen = 5 //The Puppet
+	if self.animatronicChosen = 5 //The Puppet
 	{
 		switch(facing)
 		{
 			case DOWN:
 				if inVent != 0
 				{
-					sprite_index = spr_puppet_crawl_d;
+					self.sprite_index = spr_puppet_crawl_d;
 				}
 				else if htme_globalGet("puppetSpecial") = 1
 				{
-					sprite_index = spr_puppet_d_special;
+					self.sprite_index = spr_puppet_d_special;
 				}
 				else
 				{
-					sprite_index = spr_puppet_d;
+					self.sprite_index = spr_puppet_d;
 				}
 				break;
 			case LEFT:
 				if inVent = 2
 				{
-					sprite_index = spr_puppet_crawl_l;
+					self.sprite_index = spr_puppet_crawl_l;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_puppet_l;
+					self.sprite_index = spr_puppet_l;
 				}
 				break;
 			case RIGHT:
 				if inVent = 1
 				{
-					sprite_index = spr_puppet_crawl_r;
+					self.sprite_index = spr_puppet_crawl_r;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_puppet_r;
+					self.sprite_index = spr_puppet_r;
 				}
 				break;
 			case UP:
 				if inVent != 0
 				{
-					sprite_index = spr_puppet_crawl_d;
+					self.sprite_index = spr_puppet_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_puppet_u;
+					self.sprite_index = spr_puppet_u;
 				}
 				break;
 		}
 	}
-	if global.animatronicChosen = 6 //Springtrap
+	if self.animatronicChosen = 6 //Springtrap
 	{
 		switch(facing)
 		{
 			case DOWN:
 				if inVent != 0
 				{
-					sprite_index = spr_springtrap_crawl_d;
+					self.sprite_index = spr_springtrap_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_springtrap_d;
+					self.sprite_index = spr_springtrap_d;
 				}
 				break;
 			case LEFT:
 				if inVent = 2
 				{
-					sprite_index = spr_springtrap_crawl_l;
+					self.sprite_index = spr_springtrap_crawl_l;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_springtrap_l;
+					self.sprite_index = spr_springtrap_l;
 				}
 				break;
 			case RIGHT:
 				if inVent = 1
 				{
-					sprite_index = spr_springtrap_crawl_r;
+					self.sprite_index = spr_springtrap_crawl_r;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_springtrap_r;
+					self.sprite_index = spr_springtrap_r;
 				}
 				break;
 			case UP:
 				if inVent != 0
 				{
-					sprite_index = spr_springtrap_crawl_d;
+					self.sprite_index = spr_springtrap_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_springtrap_u;
+					self.sprite_index = spr_springtrap_u;
 				}
 				break;
 		}
 	}
-	if global.animatronicChosen = 7 //The Mimic
+	if self.animatronicChosen = 7 //The Mimic
 	{
 		switch(facing)
 		{
 			case DOWN:
 				if inVent != 0
 				{
-					sprite_index = spr_mimic_crawl_d;
+					self.sprite_index = spr_mimic_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_mimic_d;
+					self.sprite_index = spr_mimic_d;
 				}
 				break;
 			case LEFT:
 				if inVent = 2
 				{
-					sprite_index = spr_mimic_crawl_l;
+					self.sprite_index = spr_mimic_crawl_l;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_mimic_l;
+					self.sprite_index = spr_mimic_l;
 				}
 				break;
 			case RIGHT:
 				if inVent = 1
 				{
-					sprite_index = spr_mimic_crawl_r;
+					self.sprite_index = spr_mimic_crawl_r;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_mimic_r;
+					self.sprite_index = spr_mimic_r;
 				}
 				break;
 			case UP:
 				if inVent != 0
 				{
-					sprite_index = spr_mimic_crawl_d;
+					self.sprite_index = spr_mimic_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_mimic_u;
+					self.sprite_index = spr_mimic_u;
 				}
 				break;
 		}
 	}
-	if global.animatronicChosen = 8 //Toy Freddy
+	if self.animatronicChosen = 8 //Toy Freddy
 	{
 		switch(facing)
 		{
 			case DOWN:
 				if inVent != 0
 				{
-					sprite_index = spr_tfreddy_crawl_d;
+					self.sprite_index = spr_tfreddy_crawl_d;
 				}
 				else if htme_globalGet("freddySpecial") = 1
 				{
-					sprite_index = spr_tfreddy_d_special;
+					self.sprite_index = spr_tfreddy_d_special;
 				}
 				else
 				{
-					sprite_index = spr_tfreddy_d;
+					self.sprite_index = spr_tfreddy_d;
 				}
 				break;
 			case LEFT:
 				if inVent = 2
 				{
-					sprite_index = spr_tfreddy_crawl_l;
+					self.sprite_index = spr_tfreddy_crawl_l;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_tfreddy_l;
+					self.sprite_index = spr_tfreddy_l;
 				}
 				break;
 			case RIGHT:
 				if inVent = 1
 				{
-					sprite_index = spr_tfreddy_crawl_r;
+					self.sprite_index = spr_tfreddy_crawl_r;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_tfreddy_r;
+					self.sprite_index = spr_tfreddy_r;
 				}
 				break;
 			case UP:
 				if inVent != 0
 				{
-					sprite_index = spr_tfreddy_crawl_d;
+					self.sprite_index = spr_tfreddy_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_tfreddy_u;
+					self.sprite_index = spr_tfreddy_u;
 				}
 				break;
 		}
 	}
-	if global.animatronicChosen = 9 //Toy Bonnie
+	if self.animatronicChosen = 9 //Toy Bonnie
 	{
 		switch(facing)
 		{
 			case DOWN:
 				if inVent != 0
 				{
-					sprite_index = spr_tbonnie_crawl_d;
+					self.sprite_index = spr_tbonnie_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_tbonnie_d;
+					self.sprite_index = spr_tbonnie_d;
 				}
 				break;
 			case LEFT:
 				if inVent = 2
 				{
-					sprite_index = spr_tbonnie_crawl_l;
+					self.sprite_index = spr_tbonnie_crawl_l;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_tbonnie_l;
+					self.sprite_index = spr_tbonnie_l;
 				}
 				break;
 			case RIGHT:
 				if inVent = 1
 				{
-					sprite_index = spr_tbonnie_crawl_r;
+					self.sprite_index = spr_tbonnie_crawl_r;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_tbonnie_r;
+					self.sprite_index = spr_tbonnie_r;
 				}
 				break;
 			case UP:
 				if inVent != 0
 				{
-					sprite_index = spr_tbonnie_crawl_d;
+					self.sprite_index = spr_tbonnie_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_tbonnie_u;
+					self.sprite_index = spr_tbonnie_u;
 				}
 				break;
 		}
 	}
-	if global.animatronicChosen = 10 //Toy Chica
+	if self.animatronicChosen = 10 //Toy Chica
 	{
 		switch(facing)
 		{
 			case DOWN:
 				if inVent != 0
 				{
-					sprite_index = spr_tchica_crawl_d;
+					self.sprite_index = spr_tchica_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_tchica_d;
+					self.sprite_index = spr_tchica_d;
 				}
 				break;
 			case LEFT:
 				if inVent = 2
 				{
-					sprite_index = spr_tchica_crawl_l;
+					self.sprite_index = spr_tchica_crawl_l;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_tchica_l;
+					self.sprite_index = spr_tchica_l;
 				}
 				break;
 			case RIGHT:
 				if inVent = 1
 				{
-					sprite_index = spr_tchica_crawl_r;
+					self.sprite_index = spr_tchica_crawl_r;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_tchica_r;
+					self.sprite_index = spr_tchica_r;
 				}
 				break;
 			case UP:
 				if inVent != 0
 				{
-					sprite_index = spr_tchica_crawl_d;
+					self.sprite_index = spr_tchica_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_tchica_u;
+					self.sprite_index = spr_tchica_u;
 				}
 				break;
 		}
 	}
-	if global.animatronicChosen = 11 //The Mangle
+	if self.animatronicChosen = 11 //The Mangle
 	{
 		switch(facing)
 		{
 			case DOWN:
 				if inVent != 0
 				{
-					sprite_index = spr_mangle_crawl_d;
+					self.sprite_index = spr_mangle_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_mangle_d;
+					self.sprite_index = spr_mangle_d;
 				}
 				break;
 			case LEFT:
 				if inVent = 2
 				{
-					sprite_index = spr_mangle_crawl_l;
+					self.sprite_index = spr_mangle_crawl_l;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_mangle_l;
+					self.sprite_index = spr_mangle_l;
 				}
 				break;
 			case RIGHT:
 				if inVent = 1
 				{
-					sprite_index = spr_mangle_crawl_r;
+					self.sprite_index = spr_mangle_crawl_r;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_mangle_r;
+					self.sprite_index = spr_mangle_r;
 				}
 				break;
 			case UP:
 				if inVent != 0
 				{
-					sprite_index = spr_mangle_crawl_d;
+					self.sprite_index = spr_mangle_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_mangle_u;
+					self.sprite_index = spr_mangle_u;
 				}
 				break;
 		}
 	}
-	if global.animatronicChosen = 12 //Withered Freddy
+	if self.animatronicChosen = 12 //Withered Freddy
 	{
 		switch(facing)
 		{
 			case DOWN:
 				if inVent != 0
 				{
-					sprite_index = spr_wfreddy_crawl_d;
+					self.sprite_index = spr_wfreddy_crawl_d;
 				}
 				else if htme_globalGet("freddySpecial") = 1
 				{
-					sprite_index = spr_wfreddy_d_special;
+					self.sprite_index = spr_wfreddy_d_special;
 				}
 				else
 				{
-					sprite_index = spr_wfreddy_d;
+					self.sprite_index = spr_wfreddy_d;
 				}
 				break;
 			case LEFT:
 				if inVent = 2
 				{
-					sprite_index = spr_wfreddy_crawl_l;
+					self.sprite_index = spr_wfreddy_crawl_l;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_wfreddy_l;
+					self.sprite_index = spr_wfreddy_l;
 				}
 				break;
 			case RIGHT:
 				if inVent = 1
 				{
-					sprite_index = spr_wfreddy_crawl_r;
+					self.sprite_index = spr_wfreddy_crawl_r;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_wfreddy_r;
+					self.sprite_index = spr_wfreddy_r;
 				}
 				break;
 			case UP:
 				if inVent != 0
 				{
-					sprite_index = spr_wfreddy_crawl_d;
+					self.sprite_index = spr_wfreddy_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_wfreddy_u;
+					self.sprite_index = spr_wfreddy_u;
 				}
 				break;
 		}
 	}
-	if global.animatronicChosen = 13 //Withered Bonnie
+	if self.animatronicChosen = 13 //Withered Bonnie
 	{
 		switch(facing)
 		{
 			case DOWN:
 				if inVent != 0
 				{
-					sprite_index = spr_wbonnie_crawl_d;
+					self.sprite_index = spr_wbonnie_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_wbonnie_d;
+					self.sprite_index = spr_wbonnie_d;
 				}
 				break;
 			case LEFT:
 				if inVent = 2
 				{
-					sprite_index = spr_wbonnie_crawl_l;
+					self.sprite_index = spr_wbonnie_crawl_l;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_wbonnie_l;
+					self.sprite_index = spr_wbonnie_l;
 				}
 				break;
 			case RIGHT:
 				if inVent = 1
 				{
-					sprite_index = spr_wbonnie_crawl_r;
+					self.sprite_index = spr_wbonnie_crawl_r;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_wbonnie_r;
+					self.sprite_index = spr_wbonnie_r;
 				}
 				break;
 			case UP:
 				if inVent != 0
 				{
-					sprite_index = spr_wbonnie_crawl_d;
+					self.sprite_index = spr_wbonnie_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_wbonnie_u;
+					self.sprite_index = spr_wbonnie_u;
 				}
 				break;
 		}
 	}
-	if global.animatronicChosen = 14 //Withered Chica
+	if self.animatronicChosen = 14 //Withered Chica
 	{
 		switch(facing)
 		{
 			case DOWN:
 				if inVent != 0
 				{
-					sprite_index = spr_wchica_crawl_d;
+					self.sprite_index = spr_wchica_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_wchica_d;
+					self.sprite_index = spr_wchica_d;
 				}
 				break;
 			case LEFT:
 				if inVent = 2
 				{
-					sprite_index = spr_wchica_crawl_l;
+					self.sprite_index = spr_wchica_crawl_l;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_wchica_l;
+					self.sprite_index = spr_wchica_l;
 				}
 				break;
 			case RIGHT:
 				if inVent = 1
 				{
-					sprite_index = spr_wchica_crawl_r;
+					self.sprite_index = spr_wchica_crawl_r;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_wchica_r;
+					self.sprite_index = spr_wchica_r;
 				}
 				break;
 			case UP:
 				if inVent != 0
 				{
-					sprite_index = spr_wchica_crawl_d;
+					self.sprite_index = spr_wchica_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_wchica_u;
+					self.sprite_index = spr_wchica_u;
 				}
 				break;
 		}
 	}
-	if global.animatronicChosen = 15 //Withered Foxy
+	if self.animatronicChosen = 15 //Withered Foxy
 	{
 		switch(facing)
 		{
 			case DOWN:
 				if inVent != 0
 				{
-					sprite_index = spr_wfoxy_crawl_d;
+					self.sprite_index = spr_wfoxy_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_wfoxy_d;
+					self.sprite_index = spr_wfoxy_d;
 				}
 				break;
 			case LEFT:
 				if inVent = 2
 				{
-					sprite_index = spr_wfoxy_crawl_l;
+					self.sprite_index = spr_wfoxy_crawl_l;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_wfoxy_l;
+					self.sprite_index = spr_wfoxy_l;
 				}
 				break;
 			case RIGHT:
 				if inVent = 1
 				{
-					sprite_index = spr_wfoxy_crawl_r;
+					self.sprite_index = spr_wfoxy_crawl_r;
 				}
 				else if inVent = 0
 				{
-					sprite_index = spr_wfoxy_r;
+					self.sprite_index = spr_wfoxy_r;
 				}
 				break;
 			case UP:
 				if inVent != 0
 				{
-					sprite_index = spr_wfoxy_crawl_d;
+					self.sprite_index = spr_wfoxy_crawl_d;
 				}
 				else
 				{
-					sprite_index = spr_wfoxy_u;
+					self.sprite_index = spr_wfoxy_u;
 				}
 				break;
 		}
@@ -844,7 +844,7 @@ else
 		{
 			if (floor(image_index) % 2 == 1 && image_index != previousFrame)
 	        {
-	            if global.animatronicChosen = 5
+	            if self.animatronicChosen = 5
 	            {
 	                if global.music = true
 	                {
