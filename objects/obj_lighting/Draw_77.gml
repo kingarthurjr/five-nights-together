@@ -35,6 +35,10 @@ with(obj_mimic_icon)
 {
     event_user(0);
 }
+with(obj_mimic_instruct)
+{
+    event_user(0);
+}
 with(obj_deathCountdown)
 {
     event_user(0);
