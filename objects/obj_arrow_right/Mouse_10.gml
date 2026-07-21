@@ -15,6 +15,7 @@ if htme_globalGet("light") = 0
 		instance_destroy(obj_arrow_left);
 		instance_destroy(obj_button_camera);
 		instance_destroy(obj_button_handunit);
+		instance_destroy();
 	}
 	if instance_exists(obj_office1_left)
 	{
@@ -27,6 +28,7 @@ if htme_globalGet("light") = 0
 			image_index = image_number - 1;
 			image_speed = -1;
 		}
+		instance_destroy();
 	}
 	if instance_exists(obj_office1_left_closed)
 	{
@@ -40,6 +42,7 @@ if htme_globalGet("light") = 0
 			image_index = image_number - 1;
 			image_speed = -1;
 		}
+		instance_destroy();
 	}
 
 	//FNaF 2
