@@ -1,4 +1,37 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Reset Animatronics
 
-instance_create_layer(0,0,"Devices",obj_jumpscare_test);
+htme_globalSet("freddyTaken","trailer",buffer_string);
+htme_globalSet("bonnieTaken","trailer",buffer_string);
+htme_globalSet("chicaTaken","trailer",buffer_string);
+htme_globalSet("foxyTaken","trailer",buffer_string);
+htme_globalSet("springtrapTaken","trailer",buffer_string);
+htme_globalSet("puppetTaken","trailer",buffer_string);
+
+htme_globalSet("tfreddyTaken","noone",buffer_string);
+htme_globalSet("tbonnieTaken","noone",buffer_string);
+htme_globalSet("tchicaTaken","noone",buffer_string);
+htme_globalSet("mangleTaken","trailer",buffer_string);
+htme_globalSet("wfreddyTaken","trailer",buffer_string);
+htme_globalSet("wbonnieTaken","trailer",buffer_string);
+htme_globalSet("wchicaTaken","trailer",buffer_string);
+htme_globalSet("wfoxyTaken","noone",buffer_string);
+
+htme_globalSet("freddy",0,buffer_s8);
+htme_globalSet("bonnie",0,buffer_s8);
+htme_globalSet("chica",0,buffer_s8);
+htme_globalSet("foxy",0,buffer_s8);
+htme_globalSet("puppet",4,buffer_s8);
+htme_globalSet("springtrap",4,buffer_s8);
+htme_globalSet("mimic",0,buffer_s8);
+
+htme_globalSet("tfreddy",0,buffer_s8);
+htme_globalSet("tbonnie",0,buffer_s8);
+htme_globalSet("tchica",4,buffer_s8);
+htme_globalSet("mangle",4,buffer_s8);
+htme_globalSet("wfreddy",0,buffer_s8);
+htme_globalSet("wbonnie",4,buffer_s8);
+htme_globalSet("wchica",0,buffer_s8);
+htme_globalSet("wfoxy",0,buffer_s8);
+
+htme_globalSet("freddySpecial",0,buffer_bool);
+htme_globalSet("bonnieSpecial",0,buffer_bool);

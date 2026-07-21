@@ -1,16 +1,40 @@
-htme_globalSet("freddy",0,buffer_s8);
+/// @description Reset Animatronics
+
+htme_globalSet("freddyTaken","trailer",buffer_string);
+htme_globalSet("bonnieTaken","trailer",buffer_string);
+htme_globalSet("chicaTaken","trailer",buffer_string);
+htme_globalSet("foxyTaken","trailer",buffer_string);
+htme_globalSet("springtrapTaken","noone",buffer_string);
+htme_globalSet("puppetTaken","trailer",buffer_string);
+
+htme_globalSet("tfreddyTaken","noone",buffer_string);
+htme_globalSet("tbonnieTaken","trailer",buffer_string);
+htme_globalSet("tchicaTaken","trailer",buffer_string);
+htme_globalSet("mangleTaken","trailer",buffer_string);
+htme_globalSet("wfreddyTaken","trailer",buffer_string);
+htme_globalSet("wbonnieTaken","noone",buffer_string);
+htme_globalSet("wchicaTaken","noone",buffer_string);
+htme_globalSet("wfoxyTaken","noone",buffer_string);
+
+htme_globalSet("freddy",2,buffer_s8);
 htme_globalSet("bonnie",0,buffer_s8);
 htme_globalSet("chica",0,buffer_s8);
 htme_globalSet("foxy",0,buffer_s8);
-htme_globalSet("puppet",0,buffer_s8);
-htme_globalSet("springtrap",6,buffer_s8);
-htme_globalSet("mimic",0,buffer_s8);
+if htme_globalGet("mapSelected") = 0
+{
+	htme_globalSet("puppet",1,buffer_s8);
+}
+htme_globalSet("springtrap",0,buffer_s8);
+htme_globalSet("mimic",7,buffer_s8);
 
 htme_globalSet("tfreddy",0,buffer_s8);
-htme_globalSet("tbonnie",6,buffer_s8);
+htme_globalSet("tbonnie",0,buffer_s8);
 htme_globalSet("tchica",0,buffer_s8);
-htme_globalSet("mangle",12,buffer_s8);
-htme_globalSet("wfreddy",15,buffer_s8);
+htme_globalSet("mangle",0,buffer_s8);
+htme_globalSet("wfreddy",0,buffer_s8);
 htme_globalSet("wbonnie",0,buffer_s8);
-htme_globalSet("wchica",6,buffer_s8);
+htme_globalSet("wchica",0,buffer_s8);
 htme_globalSet("wfoxy",0,buffer_s8);
+
+htme_globalSet("freddySpecial",0,buffer_bool);
+htme_globalSet("bonnieSpecial",0,buffer_bool);

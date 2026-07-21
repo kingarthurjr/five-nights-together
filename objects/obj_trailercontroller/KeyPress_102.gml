@@ -4,21 +4,21 @@ htme_globalSet("freddyTaken","trailer",buffer_string);
 htme_globalSet("bonnieTaken","trailer",buffer_string);
 htme_globalSet("chicaTaken","trailer",buffer_string);
 htme_globalSet("foxyTaken","trailer",buffer_string);
-htme_globalSet("springtrapTaken","noone",buffer_string);
+htme_globalSet("springtrapTaken","trailer",buffer_string);
 htme_globalSet("puppetTaken","trailer",buffer_string);
 
-htme_globalSet("tfreddyTaken","trailer",buffer_string);
-htme_globalSet("tbonnieTaken","trailer",buffer_string);
+htme_globalSet("tfreddyTaken","noone",buffer_string);
+htme_globalSet("tbonnieTaken","noone",buffer_string);
 htme_globalSet("tchicaTaken","noone",buffer_string);
 htme_globalSet("mangleTaken","trailer",buffer_string);
-htme_globalSet("wfreddyTaken","noone",buffer_string);
-htme_globalSet("wbonnieTaken","noone",buffer_string);
+htme_globalSet("wfreddyTaken","trailer",buffer_string);
+htme_globalSet("wbonnieTaken","trailer",buffer_string);
 htme_globalSet("wchicaTaken","trailer",buffer_string);
 htme_globalSet("wfoxyTaken","noone",buffer_string);
 
 htme_globalSet("freddy",0,buffer_s8);
-htme_globalSet("bonnie",0,buffer_s8);
-htme_globalSet("chica",0,buffer_s8);
+htme_globalSet("bonnie",6,buffer_s8);
+htme_globalSet("chica",6,buffer_s8);
 htme_globalSet("foxy",0,buffer_s8);
 htme_globalSet("puppet",0,buffer_s8);
 htme_globalSet("springtrap",0,buffer_s8);
