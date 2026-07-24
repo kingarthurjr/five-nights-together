@@ -35,6 +35,7 @@ if (htme_isLocal())
 	mp_map_syncIn("pressed_down",self.pressed_down);
 	mp_map_syncIn("pressed_right",self.pressed_right);
 	mp_map_syncIn("special",self.special);
+	mp_map_syncIn("inVent",self.inVent);
 }
 
 ///Lighting

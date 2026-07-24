@@ -11,6 +11,7 @@ if !(htme_isLocal())
 	self.pressed_down = mp_map_syncOut("pressed_down",self.pressed_down);
     self.pressed_right = mp_map_syncOut("pressed_right",self.pressed_right);
 	self.special = mp_map_syncOut("special",self.special);
+	self.inVent = mp_map_syncOut("inVent",self.inVent);
 }
 
 ///Lighting
