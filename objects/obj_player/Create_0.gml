@@ -112,13 +112,19 @@ step = 0;
 
 if room = rm_waitingroom
 {
-    facing = RIGHT;
+    facing = LEFT;
     spd = 8;
 }
 else
 {
-	facing = DOWN;
-	spd = 2; //speed to move at, so it's easier to change speed if necessary
+    if global.animatronicChosen = 4 or global.animatronicChosen = 5 //Foxy or Puppet
+    {
+        spd = 4;
+    }
+    else
+    {
+        spd = 2;
+    }
 }
 
 self.playerNum = -1;

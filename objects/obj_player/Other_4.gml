@@ -30,7 +30,7 @@ if room = rm_waitingroom
 }
 else
 {
-    if global.animatronicChosen = 4 or 5 //Foxy or Puppet
+    if global.animatronicChosen = 4 or global.animatronicChosen = 5 //Foxy or Puppet
     {
         spd = 4;
     }
