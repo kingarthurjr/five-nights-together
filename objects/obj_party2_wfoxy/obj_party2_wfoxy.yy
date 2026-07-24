@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_party2_wfoxy",
   "spriteId": {
-    "name": "spr_party2_mangle",
-    "path": "sprites/spr_party2_mangle/spr_party2_mangle.yy",
+    "name": "spr_party2_wfoxy",
+    "path": "sprites/spr_party2_wfoxy/spr_party2_wfoxy.yy",
   },
   "solid": false,
   "visible": true,
@@ -29,6 +29,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
