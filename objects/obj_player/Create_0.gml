@@ -109,6 +109,7 @@ mp_add("controls","pressed_left,pressed_up,pressed_down,pressed_right",buffer_bo
 
 self.time = 0;
 step = 0;
+facing = DOWN;
 
 if room = rm_waitingroom
 {
@@ -117,7 +118,8 @@ if room = rm_waitingroom
 }
 else
 {
-    if global.animatronicChosen = 4 or global.animatronicChosen = 5 //Foxy or Puppet
+    //If Foxy, Puppet, or Mimic Variant
+	if scr_get_anim_icon(global.animatronicChosen,true)+1 = 4 or scr_get_anim_icon(global.animatronicChosen,true)+1 = 5 or scr_get_anim_icon(global.animatronicChosen,true)+1 = 7
     {
         spd = 4;
     }
