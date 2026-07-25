@@ -1,4 +1,5 @@
 current = false;
+bonnieSpecial = false;
 depth = -12;
 //Who to Display
 image_index = 0;
