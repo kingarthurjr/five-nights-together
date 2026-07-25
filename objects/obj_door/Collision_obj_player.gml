@@ -1,7 +1,7 @@
 // MOVE MOVE
 if other.name = global.name //If this player is you
 {
-	if ((newroom == rm_backstage && htme_globalGet("backstageDoor") == 1) || (newroom == rm_closet && htme_globalGet("closetDoor") == 1) || (newroom == rm_kitchen && ((htme_globalGet("kitchenDoor") == 1) or (global.animatronicChosen != 3 and global.animatronicChosen != 4 and global.animatronicChosen != 6 and global.animatronicChosen != 7))) || (newroom == rm_saferoom && global.animatronicChosen != 6) || (newroom = rm_leftvent && htme_globalGet("leftVent") == 1) || (newroom = rm_rightvent && htme_globalGet("rightVent") == 1))
+	if ((newroom == rm_backstage && htme_globalGet("backstageDoor") == 1) || (newroom == rm_closet && htme_globalGet("closetDoor") == 1) || (newroom == rm_kitchen && ((htme_globalGet("kitchenDoor") == 1) or (global.animatronicChosen != 3 and global.animatronicChosen != 4 and global.animatronicChosen != 6 and global.animatronicChosen != 7))) || (newroom == rm_saferoom && global.animatronicChosen != 6) || (newroom = rm_leftvent && !scr_cam_isEmpty(14)) || (newroom = rm_rightvent && !scr_cam_isEmpty(15)))
 	{
 	    locked = true;
 	}
@@ -71,6 +71,31 @@ if other.name = global.name //If this player is you
 	    if room = rm_closet
 	    {
 	        audio_play_sound(snd_dooropen,10,false);
+	    }
+		//Vents
+		randomize();
+		if room = rm_partyroom1 or room = rm_partyroom2 
+	    {
+	        if !audio_is_playing(snd_vent_close) and !audio_is_playing(snd_vent_amongus)
+			{
+				randomize();
+				var amongus = irandom_range(1,100);
+				if amongus = 1 or amongus = 2
+				{
+					audio_play_sound(snd_vent_amongus,10,false);
+				}
+				else
+				{
+					audio_play_sound(snd_vent_close,10,false);
+				}
+			}
+	    }
+	    if room = rm_leftvent or room = rm_rightvent
+	    {
+	        if !audio_is_playing(snd_vent_open)
+			{
+				audio_play_sound(snd_vent_open,10,false);
+			}
 	    }
 	}
 }
