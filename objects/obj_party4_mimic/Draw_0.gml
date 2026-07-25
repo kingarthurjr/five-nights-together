@@ -6,3 +6,4 @@ else
 {
 	sprite_index = spr_party4_mimic;
 }
+draw_self();

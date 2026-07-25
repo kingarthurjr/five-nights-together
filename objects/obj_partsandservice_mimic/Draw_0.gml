@@ -6,3 +6,4 @@ else
 {
 	sprite_index = spr_partsandservice_mimic;
 }
+draw_self();

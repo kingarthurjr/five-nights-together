@@ -6,3 +6,4 @@ else
 {
 	sprite_index = spr_cove2_wfreddy;
 }
+draw_self();

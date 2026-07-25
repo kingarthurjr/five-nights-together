@@ -6,3 +6,6 @@ else
 {
 	sprite_index = spr_hall_wbonnie;
 }
+gpu_set_texfilter(false);
+draw_self();
+gpu_set_texfilter(true);

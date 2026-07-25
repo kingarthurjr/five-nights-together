@@ -6,3 +6,4 @@ else
 {
 	sprite_index = spr_party2_wfoxy;
 }
+draw_self();

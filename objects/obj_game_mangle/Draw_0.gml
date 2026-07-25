@@ -6,3 +6,4 @@ else
 {
 	sprite_index = spr_game_mangle;
 }
+draw_self();

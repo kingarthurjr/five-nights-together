@@ -6,3 +6,5 @@ else
 {
 	sprite_index = spr_hall_mangle;
 }
+
+draw_self();

@@ -6,3 +6,4 @@ else
 {
 	sprite_index = spr_party4_mangle;
 }
+draw_self();

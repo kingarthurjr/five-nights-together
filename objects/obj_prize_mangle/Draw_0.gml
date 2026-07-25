@@ -6,3 +6,4 @@ else
 {
 	sprite_index = spr_prize_mangle;
 }
+draw_self();

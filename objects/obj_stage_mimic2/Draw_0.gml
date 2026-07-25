@@ -6,3 +6,4 @@ else
 {
 	sprite_index = spr_stage_mimic2;
 }
+draw_self();

@@ -6,3 +6,4 @@ else
 {
 	sprite_index = spr_hall_wfoxy;
 }
+draw_self();

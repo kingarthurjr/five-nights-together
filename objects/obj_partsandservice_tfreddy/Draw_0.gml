@@ -6,3 +6,4 @@ else
 {
 	sprite_index = spr_partsandservice_tfreddy;
 }
+draw_self();

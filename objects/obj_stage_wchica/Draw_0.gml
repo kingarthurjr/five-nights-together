@@ -6,3 +6,4 @@ else
 {
 	sprite_index = spr_stage_wchica;
 }
+draw_self();

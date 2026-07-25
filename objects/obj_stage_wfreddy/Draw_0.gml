@@ -6,3 +6,4 @@ else
 {
 	sprite_index = spr_stage_wfreddy;
 }
+draw_self();

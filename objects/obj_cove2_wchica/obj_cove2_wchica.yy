@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_cove2_wchica",
   "spriteId": {
-    "name": "spr_prize_tchica",
-    "path": "sprites/spr_prize_tchica/spr_prize_tchica.yy",
+    "name": "spr_prize_wchica",
+    "path": "sprites/spr_prize_wchica/spr_prize_wchica.yy",
   },
   "solid": false,
   "visible": true,
