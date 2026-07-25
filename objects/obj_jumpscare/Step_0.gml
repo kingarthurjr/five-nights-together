@@ -14,3 +14,7 @@ if instance_exists(obj_button_handunit)
 {
     instance_destroy(obj_button_handunit);
 }
+if instance_exists(obj_button_mask)
+{
+    instance_destroy(obj_button_mask);
+}
