@@ -121,11 +121,11 @@ else
     //If Foxy, Puppet, or Mimic Variant
 	if scr_get_anim_icon(global.animatronicChosen,true)+1 = 4 or scr_get_anim_icon(global.animatronicChosen,true)+1 = 5 or scr_get_anim_icon(global.animatronicChosen,true)+1 = 7
     {
-        spd = 4;
+        spd = 6;
     }
     else
     {
-        spd = 2;
+        spd = 4;
     }
 }
 
