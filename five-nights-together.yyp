@@ -1170,6 +1170,7 @@
     {"id":{"name":"snd_amongus","path":"sounds/snd_amongus/snd_amongus.yy",},"order":6,},
     {"id":{"name":"ds_list_destroy_debug","path":"scripts/ds_list_destroy_debug/ds_list_destroy_debug.yy",},"order":5,},
     {"id":{"name":"snd_garble2","path":"sounds/snd_garble2/snd_garble2.yy",},"order":5,},
+    {"id":{"name":"NekoPresence","path":"extensions/NekoPresence/NekoPresence.yy",},"order":2,},
     {"id":{"name":"obj_hall_wfreddy","path":"objects/obj_hall_wfreddy/obj_hall_wfreddy.yy",},"order":4,},
     {"id":{"name":"spr_minimap1_saferoom","path":"sprites/spr_minimap1_saferoom/spr_minimap1_saferoom.yy",},"order":1,},
     {"id":{"name":"scr_memory_leak_init","path":"scripts/scr_memory_leak_init/scr_memory_leak_init.yy",},"order":7,},
@@ -1707,7 +1708,6 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room_GameJolt","path":"rooms/Room_GameJolt/Room_GameJolt.yy",},},
     {"roomId":{"name":"rm_warning","path":"rooms/rm_warning/rm_warning.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_westhall","path":"rooms/rm_westhall/rm_westhall.yy",},},
@@ -1768,6 +1768,7 @@
     {"roomId":{"name":"Room_GameJolt_Sessions","path":"rooms/Room_GameJolt_Sessions/Room_GameJolt_Sessions.yy",},},
     {"roomId":{"name":"Room_GameJolt_Trophies","path":"rooms/Room_GameJolt_Trophies/Room_GameJolt_Trophies.yy",},},
     {"roomId":{"name":"rm_gm_base","path":"rooms/rm_gm_base/rm_gm_base.yy",},},
+    {"roomId":{"name":"Room_GameJolt","path":"rooms/Room_GameJolt/Room_GameJolt.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},
