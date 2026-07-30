@@ -84,3 +84,7 @@ else //if start button stopped, delete the countdown
 		instance_destroy(obj_startcountdown);
 	}
 }
+
+//Neko Presence
+np_setpresence_partyparams(ds_list_size(htme_getPlayers()),7,"");
+np_setpresence("Waiting for Players","In Lobby","icon","");

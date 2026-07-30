@@ -1,3 +1,6 @@
+np_clearpresence();
+np_setpresence("","Finding a Match","icon","");
+
 //Temporary
 var ttr = totro(5,7,1);
 global.name = "Guest_" + ttr[0];

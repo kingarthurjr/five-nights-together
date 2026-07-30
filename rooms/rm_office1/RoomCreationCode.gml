@@ -1,3 +1,5 @@
+np_setpresence("Playing as: Night Guard","In Game (FNaF1)","icon","night_guard");
+
 //Load the Chosen Animatronics
 if htme_globalGet("freddyTaken") != "none"
 {

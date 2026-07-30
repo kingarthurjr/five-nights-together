@@ -1,3 +1,6 @@
+np_clearpresence();
+np_setpresence("","Admiring the Main Menu","icon","");
+
 instance_create(0,0,obj_switch);
 instance_create_layer(0,0,"Animatronics",obj_menu_freddy);
 instance_create_layer(0,0,"Animatronics",obj_menu_bonnie);
