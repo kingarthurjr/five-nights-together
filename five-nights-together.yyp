@@ -64,6 +64,7 @@
     {"id":{"name":"snd_flip","path":"sounds/snd_flip/snd_flip.yy",},"order":2,},
     {"id":{"name":"obj_cam7","path":"objects/obj_cam7/obj_cam7.yy",},"order":10,},
     {"id":{"name":"Obj_Steam_Networking_Lobby_setOwner","path":"objects/Obj_Steam_Networking_Lobby_setOwner/Obj_Steam_Networking_Lobby_setOwner.yy",},"order":8,},
+    {"id":{"name":"rm_codesearch","path":"rooms/rm_codesearch/rm_codesearch.yy",},"order":13,},
     {"id":{"name":"obj_mm_road","path":"objects/obj_mm_road/obj_mm_road.yy",},"order":2,},
     {"id":{"name":"htme_config","path":"scripts/htme_config/htme_config.yy",},"order":1,},
     {"id":{"name":"obj_cam1a","path":"objects/obj_cam1a/obj_cam1a.yy",},"order":0,},
@@ -1770,6 +1771,7 @@
     {"roomId":{"name":"Room_GameJolt_Trophies","path":"rooms/Room_GameJolt_Trophies/Room_GameJolt_Trophies.yy",},},
     {"roomId":{"name":"rm_gm_base","path":"rooms/rm_gm_base/rm_gm_base.yy",},},
     {"roomId":{"name":"Room_GameJolt","path":"rooms/Room_GameJolt/Room_GameJolt.yy",},},
+    {"roomId":{"name":"rm_codesearch","path":"rooms/rm_codesearch/rm_codesearch.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},

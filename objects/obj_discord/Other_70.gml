@@ -1,13 +1,10 @@
 // Check if this event came from NekoPresence
 if (async_load[? "event_type"] == "DiscordRichPresence") 
 {
-    // Check if the player clicked "Join" while the game was already running
+    // If the game is already open and they click Join on an invite
     if (async_load[? "discord_event"] == "join") 
     {
-        // Grab the Lobby ID the host sent
-        global.discord_target_lobby = async_load[? "join_secret"];
-        
-        // Go to your server browser room to download the GMnet server list
-        room_goto(rm_online_lobby); 
+        global.target_room_code = async_load[? "join_secret"];
+        room_goto(rm_code_search); 
     }
 }
