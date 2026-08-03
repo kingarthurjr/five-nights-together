@@ -63,3 +63,73 @@ for (var i = ListOffset; i<4+ListOffset;i++)
     myCounter+=1;
 }
 
+// 1. Check if we arrived in this room via a Discord Invite
+if (global.target_room_code != "") 
+{
+    var _list = global.udphp_downloadlist;
+    
+    // 2. Wait patiently until GMnet has actually finished downloading the list
+    if (ds_exists(_list, ds_type_list) && ds_list_size(_list) > 0) 
+    {
+        var _found = false;
+        
+        // 3. The list is ready! Scan it for our Discord room code.
+        for (var i = 0; i < ds_list_size(_list); i++) 
+        {
+            var entry = _list[| i];
+            
+            if (entry[? "data7"] == global.target_room_code) 
+            {
+                _found = true;
+                
+                // 4. Match found! Tell GMnet which slot we are "clicking"
+                MyServerNumber = i; 
+                
+                // 5. Execute your exact native GMnet connection logic
+                var ip = entry[? "ip"];
+                var game = entry[? "data1"];
+                var the_server_port = entry[? "data4"]; 
+                
+                scr_steam_on_LoadSteamIDFromLobby(entry[? "data7"]);
+                global.ConnectToServerPort = real(the_server_port);                    
+                
+                if (game != self.game) 
+                {
+                    show_debug_message("Game server or version is incompatible!");
+                    global.target_room_code = ""; // Clear to stop looping
+                    exit;
+                }
+                else 
+                {
+                    if (script_execute(asset_get_index("htme_clientStart"), ip, 0)) 
+                    {
+                        if (entry[? "data3"] == "PRIVATE") 
+                        {
+                            global.isPrivate = true;
+                        } 
+                        else 
+                        {
+                            global.isPrivate = false;
+                        }
+                        
+                        global.target_room_code = ""; // Clear on success
+                        room_goto(htme_rom_connecting);
+                    }
+                    else 
+                    {
+                        show_debug_message("Could not start client!");
+                        global.target_room_code = ""; // Clear on failure
+                    }
+                }
+                break; // Exit the loop
+            }
+        }
+        
+        // 6. What if the list finished downloading, but the server isn't there?
+        if (!_found) 
+        {
+            show_debug_message("Target server no longer exists on Master Server.");
+            global.target_room_code = ""; // Clear it so the player can use the lobby normally
+        }
+    }
+}

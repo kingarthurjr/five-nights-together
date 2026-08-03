@@ -1,16 +1,21 @@
 /// @description Host leave detection
 
-// Make sure this only runs for clients, not the host
-if (!htme_isServer())
-{ 
-    // Check if the connection to the host has dropped or timed out
-    if (htme_clientConnectionFailed())
-	{   
-        // Safely shut down the GMnet client to stop it from looking for data
-        htme_clientStop(); 
+// Are we a client in an active game, but not in the menus?
+if (!htme_isServer() && htme_isStarted() && room != rm_findmatch && room != htme_rom_connecting) 
+{
+    // Did the End Step from the previous frame drop the connection?
+    if (!htme_clientIsConnected()) 
+    {
+        // 1. Instantly freeze every other object BEFORE the Step phase list is built
+        instance_deactivate_all(true);
         
-        // Throw the player back to your server list room
+        // 2. Officially kill the client connection 
+        htme_clientDisconnect();
+        
+        // 3. Wipe the Discord target code 
+        global.target_room_code = "";
+        
+        // 4. Safely transition back to the lobby
         room_goto(rm_findmatch);
-		instance_create(0,0,obj_i_connection);
     }
 }

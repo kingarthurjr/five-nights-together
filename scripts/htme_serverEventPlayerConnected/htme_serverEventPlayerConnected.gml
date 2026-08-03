@@ -101,7 +101,13 @@ function htme_serverEventPlayerConnected(argument0, argument1) {
 
 	//Do not send all instances, instead wait for room anncouncement
 	
+	var currentplayers = ds_list_size(htme_getPlayers());
 	htme_setData(6,string(ds_list_size(htme_getPlayers())));
+	np_setpresence_partyparams(currentplayers,7,global.my_room_code+"_party",DISCORD_PARTY_PRIVACY_PRIVATE);
+	if room = rm_waitingroom
+	{
+		np_setpresence("Waiting for Players","In Lobby","icon","");
+	}
 	udphp_serverCommitData();
 
 

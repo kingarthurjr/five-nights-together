@@ -1,10 +1,25 @@
-// Check if this event came from NekoPresence
-if (async_load[? "event_type"] == "DiscordRichPresence") 
+// 1. Capture the event type directly from the map
+var _type = async_load[? "event_type"];
+
+// 2. Switch based on the specific Discord event
+switch (_type)
 {
-    // If the game is already open and they click Join on an invite
-    if (async_load[? "discord_event"] == "join") 
-    {
-        global.target_room_code = async_load[? "join_secret"];
-        room_goto(rm_code_search); 
-    }
+    case "DiscordJoinGame":
+        // This is exactly what the documentation says to look for
+        var _secret = async_load[? "join_secret"];
+        
+        if (!is_undefined(_secret) && _secret != "")
+        {
+            global.target_room_code = _secret;
+            room_goto(rm_online_lobby);
+        }
+        break;
+
+    case "DiscordJoinRequest":
+        // If someone clicks "Ask to Join", you would handle it here with np_reply
+        break;
+
+    case "DiscordError":
+        show_debug_message("Discord Error: " + async_load[? "error_message"]);
+        break;
 }

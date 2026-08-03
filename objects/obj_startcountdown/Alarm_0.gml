@@ -83,8 +83,9 @@ if room = rm_waitingroom
 			randomize();
 			htme_globalSet("guardSelected",irandom_range(0,ds_list_size(htme_getPlayers())-1),buffer_s8);
 		}
+		var currentplayers = ds_list_size(htme_getPlayers());
 		np_clearpresence();
-		np_setpresence_partyparams(string(ds_list_size(htme_getPlayers())),7,"");
+		np_setpresence_partyparams(currentplayers,7,global.my_room_code+"_party",DISCORD_PARTY_PRIVACY_PRIVATE);
 		if htme_globalGet("name["+string(htme_globalGet("guardSelected"))+"]") = global.name
 		{
 			np_setpresence("Waiting for Night to Begin","In Game ("+map+")","icon","night_guard");

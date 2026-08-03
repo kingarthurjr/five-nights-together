@@ -3,8 +3,8 @@ audio_play_sound(choose(snd_click1,snd_click2,snd_click3),10,false);
 // 1. Ensure GameMaker generates truly random numbers
 randomize(); 
 
-var new_code = "";
-var is_unique = false;
+var new_code = "11111";
+/*var is_unique = false;
 var list = global.udphp_downloadlist;
 var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
@@ -36,7 +36,7 @@ do
             }
         }
     }
-} until (is_unique == true);
+} until (is_unique == true);*/
 
 // 3. Save the guaranteed unique code
 global.my_room_code = new_code;
@@ -54,6 +54,9 @@ if (htme_serverStart(port,7)) {
     htme_setData(4,string(port));
 	htme_setData(6,string(ds_list_size(htme_getPlayers())));
 	htme_setData(7,global.my_room_code);
+	np_setpresence_partyparams(1,7,global.my_room_code+"_party",DISCORD_PARTY_PRIVACY_PRIVATE); 
+    np_setpresence_secrets("","",global.my_room_code);
+	np_setpresence("Waiting for Players","In Lobby","icon","");
     room_goto(htme_rom_connecting);
 } else {
     htme_error_message_handler("Could not start server! Check your network configuration!");

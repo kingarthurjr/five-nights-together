@@ -1,5 +1,5 @@
 //Is there an animatronic in the room?
-bonnieSpecial = false;
+var bonnieSpecial = false;
 if scr_cam_isEmpty(14)
 {
 	current = false; //No
