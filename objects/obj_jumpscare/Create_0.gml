@@ -28,6 +28,10 @@ if instance_exists(obj_mask)
         instance_change(obj_mask_flip,true);
     }
 }
+if instance_exists(obj_office2_flickering_enter)
+{
+	instance_destroy(obj_office2_flickering_enter);
+}
 //Tell everyone the jumpscare has begun
 htme_globalSet("jumpscareHappened",1,buffer_bool);
 //Who jumpscared?
