@@ -90,6 +90,6 @@
   },
   "parent": {
     "name": "FNaF1",
-    "path": "folders/Rooms/FNaF2/FNaF1.yy",
+    "path": "folders/Rooms/FNaF1.yy",
   },
 }

@@ -18,6 +18,11 @@ if keyboard_check(ord(global.lightKey))
 	if htme_globalGet("tfreddy") = 3 or htme_globalGet("tbonnie") = 3 or htme_globalGet("tchica") = 3 or htme_globalGet("mangle") = 3 or htme_globalGet("wfreddy") = 3 or htme_globalGet("wbonnie") = 3 or htme_globalGet("wchica") = 3 or htme_globalGet("wfoxy") = 3 or htme_globalGet("puppet") = 3 or htme_globalGet("springtrap") = 3 or htme_globalGet("mimic") = 3
 	{
 		htme_globalSet("rightSeen",1,buffer_bool);
+		if global.rightDoorFirstTime = false
+		{
+			audio_play_sound(snd_boo,10,false);
+			global.rightDoorFirstTime = true;
+		}
 	}
 	if htme_globalGet("tfreddy") = 3
 	{

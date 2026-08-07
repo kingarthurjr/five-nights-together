@@ -16,6 +16,11 @@ if sprite_index = spr_office1_left
 		if htme_globalGet("freddy") = 1 or htme_globalGet("bonnie") = 1 or htme_globalGet("chica") = 1 or htme_globalGet("foxy") = 1 or htme_globalGet("puppet") = 1 or htme_globalGet("springtrap") = 1 or htme_globalGet("mimic") = 1
 		{
 			htme_globalSet("leftSeen",1,buffer_bool);
+			if global.leftDoorFirstTime = false
+			{
+				audio_play_sound(snd_boo,10,false);
+				global.leftDoorFirstTime = true;
+			}
 		}
 		if htme_globalGet("freddy") = 1
 		{
