@@ -9,5 +9,6 @@ if htme_globalGet("mapSelected") = 0 //FNaF1
 if htme_globalGet("mapSelected") = 1 //FNaF2
 {
 	sprite_index = spr_movement2;
-	audio_play_sound(snd_stare,10,true,1,61*room_speed);
+	audio_play_sound(snd_stare,10,true);
+	audio_sound_set_track_position(snd_stare,61);
 }

@@ -16,7 +16,8 @@ if instance_exists(obj_camera2)
 instance_destroy(obj_office2_flickering);
 instance_destroy(obj_office2_desk_flickering);
 instance_create_layer(0,0,"DeskShadow",obj_office2_flickering_enter);
-audio_play_sound(snd_stare,10,false,1,random_range(10,50)*room_speed);
+audio_play_sound(snd_stare,10,false);
+audio_sound_set_track_position(snd_stare,random_range(10,50));
 
 
 //Who to Display
