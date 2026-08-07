@@ -81,6 +81,10 @@ if keyboard_check_released(ord(global.lightKey))
 //Jumpscare
 if htme_globalGet("jumpscare") = 1
 {
+	if instance_exists(obj_foxy_part)
+	{
+		instance_destroy(obj_foxy_part);
+	}
 	instance_change(obj_office2_leftturn,true);
 	with(obj_office2_leftturn)
 	{

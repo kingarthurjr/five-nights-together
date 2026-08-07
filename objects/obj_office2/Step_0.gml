@@ -194,7 +194,11 @@ if keyboard_check_released(ord(global.lightKey)) or inOffice = 1
 ///Close everything for Jumpscare
 if htme_globalGet("jumpscare") = 1
 {
-    if instance_exists(obj_camera2)
+    if instance_exists(obj_foxy_part)
+	{
+		instance_destroy(obj_foxy_part);
+	}
+	if instance_exists(obj_camera2)
     {
 		instance_destroy(obj_camera2);
 		instance_create_layer(0,540,"Devices",obj_monitor);
