@@ -4,6 +4,8 @@
   * through the code or the manual for more information :)
   */
 
+image_alpha = 0;
+
 if room = rm_waitingroom
 {
 	layer = layer_get_id("Instances_4");
@@ -174,3 +176,5 @@ else
 
 event_inherited();
 maxCount = 450;
+
+image_alpha = 1;
