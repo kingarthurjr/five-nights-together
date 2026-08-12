@@ -1,7 +1,7 @@
 // MOVE MOVE
 if other.name = global.name //If this player is you
 {
-	if ((newroom == rm_backstage && htme_globalGet("backstageDoor") == 1) || (newroom == rm_closet && htme_globalGet("closetDoor") == 1) || (newroom == rm_kitchen && ((htme_globalGet("kitchenDoor") == 1) or (global.animatronicChosen != 3 and global.animatronicChosen != 4 and global.animatronicChosen != 6 and global.animatronicChosen != 7))) || (newroom == rm_saferoom && global.animatronicChosen != 6) || (newroom = rm_leftvent && !scr_cam_isEmpty(14)) || (newroom = rm_rightvent && !scr_cam_isEmpty(15)))
+	if ((newroom == rm_backstage && !scr_cam_isEmpty(4)) || (newroom == rm_closet && !scr_cam_isEmpty(10)) || (newroom == rm_kitchen && ((!scr_cam_isEmpty(9)) or (global.animatronicChosen != 3 and global.animatronicChosen != 4 and global.animatronicChosen != 6 and global.animatronicChosen != 7))) || (newroom == rm_saferoom && global.animatronicChosen != 6) || (newroom == rm_leftvent && !scr_cam_isEmpty(14)) || (newroom == rm_rightvent && !scr_cam_isEmpty(15)))
 	{
 	    locked = true;
 	}
@@ -74,7 +74,7 @@ if other.name = global.name //If this player is you
 	    }
 		//Vents
 		randomize();
-		if room = rm_partyroom1 or room = rm_partyroom2 
+		if (room = rm_partyroom1 and newroom = rm_leftvent) or (room = rm_partyroom2 and newroom = rm_rightvent)
 	    {
 	        if !audio_is_playing(snd_vent_close) and !audio_is_playing(snd_vent_amongus)
 			{
