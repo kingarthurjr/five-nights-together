@@ -57,7 +57,7 @@ if room = rm_waitingroom
 ///Actual Movement
 if self.stopMoving = false
 {
-	if (self.pressed_up) and !(inVent != 0 and room = rm_officehall)
+	if (self.pressed_up) and !(self.inVent != 0 and room = rm_officehall)
 	{
 	    facing = UP;
 	    if room = rm_waitingroom
@@ -71,7 +71,7 @@ if self.stopMoving = false
 	    step++;
 	}
 
-	if (self.pressed_down) and !(inVent != 0 and room = rm_officehall)
+	if (self.pressed_down) and !(self.inVent != 0 and room = rm_officehall)
 	{
 	    facing = DOWN;
 	    if room = rm_waitingroom
@@ -313,7 +313,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_puppet_crawl_d;
 				}
@@ -327,27 +327,27 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 2
+				if self.inVent = 2
 				{
 					self.sprite_index = spr_puppet_crawl_l;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_puppet_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if self.inVent = 1
 				{
 					self.sprite_index = spr_puppet_crawl_r;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_puppet_r;
 				}
 				break;
 			case UP:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_puppet_crawl_d;
 				}
@@ -363,7 +363,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_springtrap_crawl_d;
 				}
@@ -373,27 +373,27 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 2
+				if self.inVent = 2
 				{
 					self.sprite_index = spr_springtrap_crawl_l;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_springtrap_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if self.inVent = 1
 				{
 					self.sprite_index = spr_springtrap_crawl_r;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_springtrap_r;
 				}
 				break;
 			case UP:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_springtrap_crawl_d;
 				}
@@ -409,7 +409,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_mimic_crawl_d;
 				}
@@ -419,27 +419,27 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 2
+				if self.inVent = 2
 				{
 					self.sprite_index = spr_mimic_crawl_l;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_mimic_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if self.inVent = 1
 				{
 					self.sprite_index = spr_mimic_crawl_r;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_mimic_r;
 				}
 				break;
 			case UP:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_mimic_crawl_d;
 				}
@@ -455,7 +455,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_tfreddy_crawl_d;
 				}
@@ -469,27 +469,27 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 2
+				if self.inVent = 2
 				{
 					self.sprite_index = spr_tfreddy_crawl_l;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_tfreddy_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if self.inVent = 1
 				{
 					self.sprite_index = spr_tfreddy_crawl_r;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_tfreddy_r;
 				}
 				break;
 			case UP:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_tfreddy_crawl_d;
 				}
@@ -505,7 +505,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_tbonnie_crawl_d;
 				}
@@ -515,27 +515,27 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 2
+				if self.inVent = 2
 				{
 					self.sprite_index = spr_tbonnie_crawl_l;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_tbonnie_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if self.inVent = 1
 				{
 					self.sprite_index = spr_tbonnie_crawl_r;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_tbonnie_r;
 				}
 				break;
 			case UP:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_tbonnie_crawl_d;
 				}
@@ -551,7 +551,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_tchica_crawl_d;
 				}
@@ -561,27 +561,27 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 2
+				if self.inVent = 2
 				{
 					self.sprite_index = spr_tchica_crawl_l;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_tchica_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if self.inVent = 1
 				{
 					self.sprite_index = spr_tchica_crawl_r;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_tchica_r;
 				}
 				break;
 			case UP:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_tchica_crawl_d;
 				}
@@ -597,7 +597,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_mangle_crawl_d;
 				}
@@ -607,27 +607,27 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 2
+				if self.inVent = 2
 				{
 					self.sprite_index = spr_mangle_crawl_l;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_mangle_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if self.inVent = 1
 				{
 					self.sprite_index = spr_mangle_crawl_r;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_mangle_r;
 				}
 				break;
 			case UP:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_mangle_crawl_d;
 				}
@@ -643,7 +643,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_wfreddy_crawl_d;
 				}
@@ -657,27 +657,27 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 2
+				if self.inVent = 2
 				{
 					self.sprite_index = spr_wfreddy_crawl_l;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_wfreddy_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if self.inVent = 1
 				{
 					self.sprite_index = spr_wfreddy_crawl_r;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_wfreddy_r;
 				}
 				break;
 			case UP:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_wfreddy_crawl_d;
 				}
@@ -693,7 +693,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_wbonnie_crawl_d;
 				}
@@ -703,27 +703,27 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 2
+				if self.inVent = 2
 				{
 					self.sprite_index = spr_wbonnie_crawl_l;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_wbonnie_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if self.inVent = 1
 				{
 					self.sprite_index = spr_wbonnie_crawl_r;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_wbonnie_r;
 				}
 				break;
 			case UP:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_wbonnie_crawl_d;
 				}
@@ -739,7 +739,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_wchica_crawl_d;
 				}
@@ -749,27 +749,27 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 2
+				if self.inVent = 2
 				{
 					self.sprite_index = spr_wchica_crawl_l;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_wchica_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if self.inVent = 1
 				{
 					self.sprite_index = spr_wchica_crawl_r;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_wchica_r;
 				}
 				break;
 			case UP:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_wchica_crawl_d;
 				}
@@ -785,7 +785,7 @@ else
 		switch(facing)
 		{
 			case DOWN:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_wfoxy_crawl_d;
 				}
@@ -795,27 +795,27 @@ else
 				}
 				break;
 			case LEFT:
-				if inVent = 2
+				if self.inVent = 2
 				{
 					self.sprite_index = spr_wfoxy_crawl_l;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_wfoxy_l;
 				}
 				break;
 			case RIGHT:
-				if inVent = 1
+				if self.inVent = 1
 				{
 					self.sprite_index = spr_wfoxy_crawl_r;
 				}
-				else if inVent = 0
+				else if self.inVent = 0
 				{
 					self.sprite_index = spr_wfoxy_r;
 				}
 				break;
 			case UP:
-				if inVent != 0
+				if self.inVent != 0
 				{
 					self.sprite_index = spr_wfoxy_crawl_d;
 				}
