@@ -3,6 +3,11 @@ instance_activate_all();
 np_clearpresence();
 np_setpresence("","Finding a Match","icon","");
 
+if instance_exists(obj_lighting)
+{
+	instance_destroy(obj_lighting);
+}
+
 //Temporary
 var ttr = totro(5,7,1);
 global.name = "Guest_" + ttr[0];
