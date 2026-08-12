@@ -14,5 +14,5 @@ if htme_globalGet("tfreddyTaken") != "noone"
 //Play Audio for Everyone
 if !audio_is_playing(musicbox)
 {
-	audio_play_sound(musicbox,10,false,.1);
+	audio_play_sound(musicbox,10,false);
 }
