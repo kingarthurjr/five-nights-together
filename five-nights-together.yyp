@@ -1252,6 +1252,7 @@
     {"id":{"name":"obj_stage_tbonnie","path":"objects/obj_stage_tbonnie/obj_stage_tbonnie.yy",},"order":1,},
     {"id":{"name":"obj_foxy_left","path":"objects/obj_foxy_left/obj_foxy_left.yy",},"order":6,},
     {"id":{"name":"obj_office2_leftturn","path":"objects/obj_office2_leftturn/obj_office2_leftturn.yy",},"order":4,},
+    {"id":{"name":"GameJoltAPI","path":"scripts/GameJoltAPI/GameJoltAPI.yy",},"order":6,},
     {"id":{"name":"spr_party4_springtrap","path":"sprites/spr_party4_springtrap/spr_party4_springtrap.yy",},"order":12,},
     {"id":{"name":"spr_party3_tfreddy_light","path":"sprites/spr_party3_tfreddy_light/spr_party3_tfreddy_light.yy",},"order":1,},
     {"id":{"name":"spr_prize_wchica_light","path":"sprites/spr_prize_wchica_light/spr_prize_wchica_light.yy",},"order":13,},
