@@ -1,9 +1,23 @@
-gpu_set_texfilter(true);
-audio_play_sound(mus_menu,10,true);
-instance_create(0,0,obj_discord);
+///Create Persistents
+global.mobile = false; //Enable if Mobile
 instance_create(0,0,obj_dual_instance); //Disable if not testing
+instance_create(0,0,obj_discord);
+instance_create(0,0,obj_htme);
 
-if !instance_exists(obj_htme)
+//Check for Saved Preferences
+ini_open("settings.ini");
+
+global.doorKey = ini_read_real("Options","doorKey",ord("X"));
+global.lightKey = ini_read_real("Options","doorKey",ord("Z"));
+global.cameraKey = ini_read_real("Options","doorKey",ord("X"));
+global.maskKey = ini_read_real("Options","doorKey",ord("X"));
+window_set_fullscreen(ini_read_real("Options","fullscreen",false));
+global.music = ini_read_real("Options","music",true);
+
+ini_close();
+
+//Start Music
+if global.music
 {
-	instance_create(0,0,obj_htme);
+	audio_play_sound(mus_menu,10,true)
 }

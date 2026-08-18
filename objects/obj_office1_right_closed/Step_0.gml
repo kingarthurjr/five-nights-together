@@ -2,7 +2,7 @@
 if sprite_index = spr_office1_right_closed
 {	
 	//Door
-	if keyboard_check(ord(global.doorKey))
+	if keyboard_check(global.doorKey)
 	{
 		htme_globalSet("doorRight",0,buffer_bool);
 		sprite_index = spr_office1_right_door;

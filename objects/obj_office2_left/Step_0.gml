@@ -8,7 +8,7 @@ if htme_globalGet("foxyRunning")
 }
 
 //Light
-if keyboard_check(ord(global.lightKey))
+if keyboard_check(global.lightKey)
 {
 	htme_globalSet("light",1,buffer_bool);
 	if !audio_is_playing(snd_light2)
@@ -73,7 +73,7 @@ if keyboard_check(ord(global.lightKey))
 		image_index = 1;
 	}
 }
-if keyboard_check_released(ord(global.lightKey))
+if keyboard_check_released(global.lightKey)
 {
 	htme_globalSet("light",0,buffer_bool);
 	image_index = 0;

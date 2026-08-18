@@ -48,7 +48,7 @@ else
 	}
 }
 ///Door Light
-if keyboard_check_pressed(ord(global.lightKey)) and inOffice = 0 and !instance_exists(obj_mask) and !instance_exists(obj_monitor) and !instance_exists(obj_camera2)
+if keyboard_check_pressed(global.lightKey) and inOffice = 0 and !instance_exists(obj_mask) and !instance_exists(obj_monitor) and !instance_exists(obj_camera2)
 {
 	image_index = 1;
 	htme_globalSet("light",1,buffer_bool);
@@ -136,7 +136,7 @@ if keyboard_check_pressed(ord(global.lightKey)) and inOffice = 0 and !instance_e
 		}
 	}
 }
-if keyboard_check_released(ord(global.lightKey)) or inOffice = 1
+if keyboard_check_released(global.lightKey) or inOffice = 1
 {
 	image_index = 0;
 	htme_globalSet("light",0,buffer_bool);

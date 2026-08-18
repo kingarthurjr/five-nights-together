@@ -1,6 +1,6 @@
 /// @description Left Vent
 
-if keyboard_check(ord(global.lightKey))
+if keyboard_check(global.lightKey)
 {
 	sprite_index = spr_leftvent_light;
 	htme_globalSet("light",1,buffer_bool);
@@ -53,7 +53,7 @@ if keyboard_check(ord(global.lightKey))
 		image_index = 0;
 	}
 }
-if keyboard_check_released(ord(global.lightKey))
+if keyboard_check_released(global.lightKey)
 {
 	sprite_index = spr_cam05;
 	htme_globalSet("light",0,buffer_bool);

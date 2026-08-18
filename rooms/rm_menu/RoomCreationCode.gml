@@ -11,13 +11,7 @@ global.lostConnection = false;
 global.leaveIntended = false;
 
 //Music
-if !audio_is_playing(mus_menu)
+if !audio_is_playing(mus_menu) and global.music
 {
 	audio_play_sound(mus_menu,10,true);
 }
-
-//Temporary
-global.mobile = false;
-global.music = true;
-global.lightKey = "X";
-global.doorKey = "Z";

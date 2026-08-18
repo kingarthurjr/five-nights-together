@@ -14,7 +14,7 @@ else
     image_alpha = .30;
 }
 
-if keyboard_check_pressed(ord(global.doorKey)) and obj_player.spawn = false
+if keyboard_check_pressed(global.doorKey) and obj_player.spawn = false
 {
 	if scr_cam_isEmpty(camNumber)
 	{
@@ -42,7 +42,7 @@ if keyboard_check_pressed(ord(global.doorKey)) and obj_player.spawn = false
 	    }
 	}
 }
-if keyboard_check_released(ord(global.doorKey))
+if keyboard_check_released(global.doorKey)
 {
 	if instance_exists(obj_deathCountdown)
 	{

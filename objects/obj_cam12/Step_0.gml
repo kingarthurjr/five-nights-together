@@ -39,7 +39,7 @@ if htme_globalGet("camera") != 7
 }
 
 //Flashlight
-if keyboard_check(ord(global.lightKey)) and !instance_exists(obj_videoerror)
+if keyboard_check(global.lightKey) and !instance_exists(obj_videoerror)
 {
 	htme_globalSet("light",1,buffer_bool);
 	if !audio_is_playing(snd_light2)
@@ -48,7 +48,7 @@ if keyboard_check(ord(global.lightKey)) and !instance_exists(obj_videoerror)
 	}
 	image_index = 1;
 }
-if keyboard_check_released(ord(global.lightKey)) or instance_exists(obj_videoerror) or instance_exists(obj_movement)
+if keyboard_check_released(global.lightKey) or instance_exists(obj_videoerror) or instance_exists(obj_movement)
 {
 	htme_globalSet("light",0,buffer_bool);
 		if audio_is_playing(snd_light2)
