@@ -8,9 +8,9 @@ instance_create(0,0,obj_htme);
 ini_open("settings.ini");
 
 global.doorKey = ini_read_real("Options","doorKey",ord("X"));
-global.lightKey = ini_read_real("Options","doorKey",ord("Z"));
-global.cameraKey = ini_read_real("Options","doorKey",ord("X"));
-global.maskKey = ini_read_real("Options","doorKey",ord("X"));
+global.lightKey = ini_read_real("Options","lightKey",ord("Z"));
+global.cameraKey = ini_read_real("Options","cameraKey",vk_space);
+global.maskKey = ini_read_real("Options","maskKey",ord("M"));
 window_set_fullscreen(ini_read_real("Options","fullscreen",false));
 global.music = ini_read_real("Options","music",true);
 

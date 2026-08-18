@@ -5,9 +5,9 @@ draw_set_valign(fa_top);
 draw_set_color(color);
 if (selected)
 {
-	draw_text(x+313,y,"<Press Any Key or ESC>");
+	draw_text(x+312,y,"<Press Any Key or ESC>");
 }
 else
 {
-	draw_text(x+313,y,scr_key_to_string(current_val));
+	draw_text(x+312,y,scr_key_to_string(current_val));
 }
