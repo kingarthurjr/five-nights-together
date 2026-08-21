@@ -1,26 +1,13 @@
-// Check if the popup that just closed is our login prompt
-if (ds_map_find_value(async_load, "id") == login_prompt_id)
+var async_id = async_load[? "id"];
+
+if (async_id == request_login)
 {
-    
-    // Check if they pressed "OK" (status == true) and didn't just close the window
-    if (ds_map_find_value(async_load, "status"))
-	{
+    if (async_load[? "status"])
+	{ 
+        // Temporarily store these globally so our callback can see them
+        global.temp_user = async_load[? "username"];
+        global.temp_token = async_load[? "password"];
         
-        // Grab what they typed
-        var _user = ds_map_find_value(async_load, "username");
-        var _token = ds_map_find_value(async_load, "password");
-        
-        // Send it to GameJolt
-        GJLogin(_user, _token, function(_success)
-		{
-            if (_success)
-			{
-                show_debug_message("SUCCESS: Logged into GameJolt!");
-                // Optional: Go to the next room or unlock features here
-            } else
-			{
-                show_message_async("Login failed. Check your Username and Token.");
-            }
-        });
+        GJLogin(global.temp_user,global.temp_token,OnLoginAttempt,0);
     }
 }

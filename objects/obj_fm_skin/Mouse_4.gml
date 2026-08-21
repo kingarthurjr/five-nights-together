@@ -1,0 +1,8 @@
+if image_index = image_number -1
+{
+	image_index = 0;
+}
+else
+{
+	image_index += 1;
+}

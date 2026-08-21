@@ -130,7 +130,7 @@ function GJUserFetch(Type, User, onAttemptFunction, autoRetry) {
 	}
 }
 
-/// @function GJOpenSession();
+/// @function GJSessionUpdate();
 //Will attempt to open/close/check/ping a game session of your game for the logged in user.
 //For more info on what each type will do, look at https://gamejolt.com/game-api/doc/sessions
 /// @param Type The type of information being used for the session, this can be open, close, check, or ping these are not cap sensitive.
