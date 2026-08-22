@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_extras_ui",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_extras_ui",
+    "path": "sprites/spr_extras_ui/spr_extras_ui.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

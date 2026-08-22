@@ -1,3 +1,8 @@
+if global.extras != whichButton
+{
+	instance_destroy();
+}
+
 if ended = 0
 {
     if jumpscare = 1

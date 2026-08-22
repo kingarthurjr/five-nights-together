@@ -190,11 +190,11 @@ if global.extras = 3
     }
     if obj_extras_drawings.image_index = 14
     {
-        draw_text(886,50,"Me#(For Buff Helpy)");
+        draw_text(886,50,"Me\n(For Buff Helpy)");
     }
     if obj_extras_drawings.image_index = 15
     {
-        draw_text(886,50,"Me#(For MatPat)");
+        draw_text(886,50,"Me\n(For MatPat)");
     }
     if obj_extras_drawings.image_index = 16
     {
@@ -202,63 +202,63 @@ if global.extras = 3
     }
 	if obj_extras_drawings.image_index = 17
     {
-        draw_text(886,50,"iplayznothing");
+        draw_text(886,30,"iplayznothing");
     }
 	if obj_extras_drawings.image_index = 18
     {
-        draw_text(886,50,"BH9891");
+        draw_text(886,30,"BH9891");
     }
 	if obj_extras_drawings.image_index = 19
     {
-        draw_text(886,50,"Billl");
+        draw_text(886,30,"Billl");
     }
 	if obj_extras_drawings.image_index = 20
     {
-        draw_text(886,50,"chupikloler");
+        draw_text(886,30,"chupikloler");
     }
 	if obj_extras_drawings.image_index = 21
     {
-        draw_text(886,50,"D_GCovers");
+        draw_text(886,30,"D_GCovers");
     }
 	if obj_extras_drawings.image_index = 22
     {
-        draw_text(886,50,"Dank");
+        draw_text(886,30,"Dank");
     }
 	if obj_extras_drawings.image_index = 23
     {
-        draw_text(886,50,"dropacitaproducts");
+        draw_text(886,30,"dropacitaproducts");
     }
 	if obj_extras_drawings.image_index = 24
     {
-        draw_text(886,50,"metrollen");
+        draw_text(886,30,"metrollen");
     }
 	if obj_extras_drawings.image_index = 25
     {
-        draw_text(886,50,"Mora");
+        draw_text(886,30,"Mora");
     }
 	if obj_extras_drawings.image_index = 26
     {
-        draw_text(886,50,"Void1008");
+        draw_text(886,30,"Void1008");
     }
 	if obj_extras_drawings.image_index = 27
     {
-        draw_text(886,50,"MrRemi");
+        draw_text(886,30,"MrRemi");
     }
 	if obj_extras_drawings.image_index = 28
     {
-        draw_text(886,50,"Neisam");
+        draw_text(886,30,"Neisam");
     }
 	if obj_extras_drawings.image_index = 29
     {
-        draw_text(886,50,"nuke_tds");
+        draw_text(886,30,"nuke_tds");
     }
 	if obj_extras_drawings.image_index = 30
     {
-        draw_text(886,50,"ollie");
+        draw_text(886,30,"ollie");
     }
 	if obj_extras_drawings.image_index = 31
     {
-        draw_text(886,50,"Norminis");
+        draw_text(886,30,"Norminis");
     }
 }
 if global.extras = 4
@@ -273,15 +273,15 @@ if global.extras = 4
     }
     if obj_extras_office.image_index = 2
     {
-        draw_text(886,50,"Office V3#(Help Wanted)");
+        draw_text(886,50,"Office V3\n(Help Wanted)");
     }
     if obj_extras_office.image_index = 3
     {
-        draw_text(886,50,"Office V4#(Ultimate FNaF Model Pack)");
+        draw_text(886,50,"Office V4\n(Ultimate FNaF Model Pack)");
     }
 	if obj_extras_office.image_index = 4
     {
-        draw_text(886,50,"Office Final#(FNaF1 Ultimate Session Pack)");
+        draw_text(886,50,"Office Final\n(FNaF1 Ultimate Session Pack)");
     }
 }
 if global.extras = 5

@@ -63,4 +63,5 @@ if jumpscare > 1
 	jumpscare -= 1;
 	ended = 0;
 	image_index = 0;
+	image_speed = 1;
 }
