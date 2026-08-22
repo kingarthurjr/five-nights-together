@@ -1,6 +1,6 @@
 /// @description  Shutdown client or server
 // Tell client/server that we want to shutdown now
-if htme_disconnectNow()
+/*if htme_disconnectNow()
 {
     global.leaveIntended = true;
 	// If disconnect is ok then do some cleaning
@@ -8,4 +8,6 @@ if htme_disconnectNow()
     with obj_create_network_objects instance_destroy();
     // Go back to menu room
     room_goto(rm_findmatch);    
-}
+}*/
+
+instance_create(0,0,obj_i_leave);
