@@ -856,10 +856,21 @@ else
 	            }
 	            else
 	            {
-	                randomize();
-					if !audio_is_playing(snd_foot1) and !audio_is_playing(snd_foot2) and !audio_is_playing(snd_foot3) and !audio_is_playing(snd_foot4) and !audio_is_playing(snd_foot5)
+	                if inVent = 1
 					{
-						audio_play_sound(choose(snd_foot1,snd_foot2,snd_foot3,snd_foot4,snd_foot5),10,false);
+						randomize();
+						if !audio_is_playing(snd_crawl1) and !audio_is_playing(snd_crawl2) and !audio_is_playing(snd_crawl3) and !audio_is_playing(snd_crawl4)
+						{
+							audio_play_sound(choose(snd_crawl1,snd_crawl2,snd_crawl3,snd_crawl4),10,false);
+						}
+					}
+					else
+					{
+						randomize();
+						if !audio_is_playing(snd_foot1) and !audio_is_playing(snd_foot2) and !audio_is_playing(snd_foot3) and !audio_is_playing(snd_foot4) and !audio_is_playing(snd_foot5)
+						{
+							audio_play_sound(choose(snd_foot1,snd_foot2,snd_foot3,snd_foot4,snd_foot5),10,false);
+						}
 					}
 					/*while(sound = previousSound)
 					{
