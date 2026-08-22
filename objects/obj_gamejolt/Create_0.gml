@@ -41,3 +41,21 @@ if (saved_user != "" && saved_token != "")
     // Silently attempt login
     GJLogin(saved_user,saved_token,OnLoginAttempt,0);
 }
+
+//GJDataSet("version","2.0.0.1",false,-1,0);
+
+function OnVersionCheck(Success, Data, ErrorMessage, RetryNumber)
+{
+	// Check if the fetch was successful
+	if (Success)
+	{
+		if Data != global.version
+		{
+			global.updateDetected = true;
+			room_goto(rm_menu);
+			instance_destroy(obj_gamejolt);
+		}
+	}
+}
+
+GJDataFetch("version",false,OnVersionCheck,0);
