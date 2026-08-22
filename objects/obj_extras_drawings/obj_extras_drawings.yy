@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_extras_drawings",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_extras_drawings",
+    "path": "sprites/spr_extras_drawings/spr_extras_drawings.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
