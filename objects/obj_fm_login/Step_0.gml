@@ -1,6 +1,10 @@
 if GJGetLoginStatus() != ""
 {
-	instance_destroy();
+	button_text = "LOG OUT";
+}
+else
+{
+	button_text = "LOG IN";
 }
 
 event_inherited();
