@@ -15,3 +15,9 @@ if !audio_is_playing(mus_menu) and global.music
 {
 	audio_play_sound(mus_menu,10,true);
 }
+
+if global.updateDetected
+{
+	instance_create(0,0,obj_i_update);
+	global.updateDetected = false;
+}
