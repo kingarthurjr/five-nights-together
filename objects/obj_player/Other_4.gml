@@ -142,6 +142,7 @@ if spawn = true and htme_globalGet("mapSelected") = 0
 	}
 	spawn = false;
 	global.atDoor = false;
+	htme_globalSet("guardScore",htme_globalGet("guardScore")+100,buffer_u32);
 }
 //FNaF2
 if spawn = true and htme_globalGet("mapSelected") = 1
@@ -272,6 +273,7 @@ if spawn = true and htme_globalGet("mapSelected") = 1
 	obj_stat.inVent = 0;
 	spawn = false;
 	global.atDoor = false;
+	htme_globalSet("guardScore",htme_globalGet("guardScore")+100,buffer_u32);
 }
 
 ///Animatronic UI

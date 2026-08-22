@@ -944,6 +944,7 @@
     {"id":{"name":"obj_arrow_right","path":"objects/obj_arrow_right/obj_arrow_right.yy",},"order":4,},
     {"id":{"name":"spr_loading","path":"sprites/spr_loading/spr_loading.yy",},"order":8,},
     {"id":{"name":"spr_party2_wfoxy_light","path":"sprites/spr_party2_wfoxy_light/spr_party2_wfoxy_light.yy",},"order":11,},
+    {"id":{"name":"obj_i_login","path":"objects/obj_i_login/obj_i_login.yy",},"order":11,},
     {"id":{"name":"spr_oven_use","path":"sprites/spr_oven_use/spr_oven_use.yy",},"order":11,},
     {"id":{"name":"obj_fm_shop","path":"objects/obj_fm_shop/obj_fm_shop.yy",},"order":7,},
     {"id":{"name":"snd_jumpscare_mangle","path":"sounds/snd_jumpscare_mangle/snd_jumpscare_mangle.yy",},"order":10,},

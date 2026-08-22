@@ -10,8 +10,15 @@ switch (_type)
         
         if (!is_undefined(_secret) && _secret != "")
         {
-            global.target_room_code = _secret;
-            room_goto(rm_online_lobby);
+            if room = rm_menu or room = rm_options or room = rm_extras
+			{
+				instance_create(0,0,obj_i_login);
+			}
+			else
+			{
+				global.target_room_code = _secret;
+	            room_goto(rm_online_lobby);
+			}
         }
         break;
 

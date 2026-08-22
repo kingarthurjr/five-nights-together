@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mus_flipside.mp3",
-  "duration": 111.04653,
+  "soundFile": "mus_flipside.ogg",
+  "duration": 111.072655,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",
