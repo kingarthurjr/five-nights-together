@@ -18,6 +18,12 @@ if htme_globalGet("powerOut") = 0
 	}
 	if htme_globalGet("buildingTemp") >= 110 //Overheated
 	{
+		ini_open("settings.ini");
+		if ini_read_real("Game","Chica",0) = 0
+		{
+			instance_create(0,0,obj_i_chica);
+		}
+		ini_close();
 		if !audio_is_playing(snd_blow)
 		{
 			audio_play_sound(snd_blow,10,true);

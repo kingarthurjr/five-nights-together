@@ -292,6 +292,7 @@
     {"id":{"name":"obj_office1_leftturn","path":"objects/obj_office1_leftturn/obj_office1_leftturn.yy",},"order":2,},
     {"id":{"name":"spr_rightvent_light","path":"sprites/spr_rightvent_light/spr_rightvent_light.yy",},"order":0,},
     {"id":{"name":"spr_locator1_puppet","path":"sprites/spr_locator1_puppet/spr_locator1_puppet.yy",},"order":4,},
+    {"id":{"name":"obj_i_foxy2","path":"objects/obj_i_foxy2/obj_i_foxy2.yy",},"order":10,},
     {"id":{"name":"spr_screenlines","path":"sprites/spr_screenlines/spr_screenlines.yy",},"order":5,},
     {"id":{"name":"obj_button_cam7","path":"objects/obj_button_cam7/obj_button_cam7.yy",},"order":11,},
     {"id":{"name":"snd_blow","path":"sounds/snd_blow/snd_blow.yy",},"order":10,},

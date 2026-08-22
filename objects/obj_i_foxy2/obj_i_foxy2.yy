@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_i_freddy",
+  "name": "obj_i_foxy2",
   "spriteId": null,
   "solid": false,
   "visible": true,

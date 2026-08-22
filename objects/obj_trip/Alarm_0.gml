@@ -31,6 +31,12 @@ if htme_globalGet("cameraActive") and htme_globalGet("camera") = activeFreddy
 		obj_guardUI2.alarm[0] = 1;
 	}
 	instance_destroy();
+	ini_open("settings.ini");
+	if ini_read_real("Game","Freddy",0) = 0
+	{
+		instance_create(0,0,obj_i_freddy);
+	}
+	ini_close();
 }
 else
 {
