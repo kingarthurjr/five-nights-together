@@ -1,2 +1,1 @@
-audio_stop_all();
-room_goto(rm_waitingroom);
+instance_create(0,0,obj_guardresult);

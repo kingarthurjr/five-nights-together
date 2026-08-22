@@ -1,5 +1,18 @@
 ///Set Night Guard Defaults
 
+instance_create(0,0,obj_switch);
+
+//Background
+bg = layer_background_get_id("Background");
+if htme_globalGet("mapSelected") = 0 //FNaF1
+{
+	layer_background_sprite(bg,bg_cs_fnaf1);
+}
+if htme_globalGet("mapSelected") = 1 //FNaF2
+{
+	layer_background_sprite(bg,bg_cs_fnaf2);
+}
+
 //Time
 htme_globalSet("6am",0,buffer_bool);
 //Office Status
@@ -60,13 +73,3 @@ htme_globalSet("jumpscareHappened",0,buffer_bool);
 htme_globalSet("gameover",0,buffer_bool);
 htme_globalSet("leftSeen",0,buffer_bool);
 htme_globalSet("rightSeen",0,buffer_bool);
-
-///Temporary
-if htme_globalGet("mapSelected") = 0
-{
-	room_goto(rm_office1);
-}
-if htme_globalGet("mapSelected") = 1
-{
-	room_goto(rm_office2);
-}

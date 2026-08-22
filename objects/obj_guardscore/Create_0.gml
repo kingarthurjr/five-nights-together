@@ -1,0 +1,1 @@
+scoreDisplay = 0;

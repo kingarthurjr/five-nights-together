@@ -100,6 +100,7 @@ if room = rm_waitingroom
 //Spawn Animatronics
 if room = rm_characterselect0 or room = rm_characterselect1 or room = rm_characterselect2
 {
+	htme_globalSet("nightReady",1,buffer_bool);
 	np_setpresence("Playing as: "+animatronic,"In Game ("+map+")","icon","animatronic");
 	if htme_globalGet("mapSelected") = 0 //FNaF1
 	{

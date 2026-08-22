@@ -1,3 +1,5 @@
+request_login = -1;
+
 // 1. Initialize the wrapper (Replace with your actual ID and Key)
 GJInit("632695","1649efcd2efef17b86a437f7e13900a9",false);
 

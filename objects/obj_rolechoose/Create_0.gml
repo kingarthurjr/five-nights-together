@@ -1,6 +1,7 @@
 //Show the role you have
 if htme_globalGet("name["+string(htme_globalGet("guardSelected"))+"]") = global.name
 {
+	htme_globalSet("guard",global.name,buffer_string);
 	sprite_index = spr_helpy_nightguard;
 	global.nightGuard = 1;
 }
