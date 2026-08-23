@@ -12,6 +12,7 @@ if GJGetLoginStatus() != ""
 	__GjGameToken = "";
 	global.temp_user = "";
 	global.temp_token = "";
+	GJSessionUpdate("close","",-1,0);
 
 	with (obj_gamejolt)
 	{
@@ -27,5 +28,5 @@ if GJGetLoginStatus() != ""
 }
 else
 {
-	request_login = get_login_async("GameJolt Username","GameJolt Token");
+	prompt_user_id = get_string_async("Enter your GameJolt Username:", "");
 }
