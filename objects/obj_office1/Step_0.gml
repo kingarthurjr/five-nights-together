@@ -24,7 +24,7 @@ if htme_globalGet("jumpscare") = 1
 			image_index = image_number - 1;
 		}
     }
-    if !instance_exists(obj_camera1) and !instance_exists(obj_monitor) and !instance_exists(obj_handunit) and !instance_exists(obj_handunit_flip)
+    if !instance_exists(obj_camera1) and !instance_exists(obj_monitor) and !instance_exists(obj_handunit) and !instance_exists(obj_handunit_flip) and !instance_exists(obj_6am)
     {
         if !instance_exists(obj_jumpscare)
         {
