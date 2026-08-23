@@ -3,8 +3,7 @@ scoreDisplay = 0;
 if GJGetLoginStatus() != ""
 {
 	GJDataUpdate("current_score","add",htme_globalGet("guardScore"),true,-1,0);
-	GJDataFetch("current_score", true, OnScoreFetchAndSubmit, 0);
-
+	
 	function OnScoreFetchAndSubmit(Success, Data, ErrorMessage, RetryNumber)
 	{
 	    // Check if the fetch was successful
@@ -28,4 +27,6 @@ if GJGetLoginStatus() != ""
 	        show_debug_message("Failed to fetch score: " + ErrorMessage);
 	    }
 	}
+	
+	GJDataFetch("current_score", true, OnScoreFetchAndSubmit, 0);
 }
