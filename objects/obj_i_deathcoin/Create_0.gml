@@ -11,6 +11,8 @@ if room = rm_diningarea or room = rm_gamearea
 }
 else
 {
+	card_alpha = 1;
 	icon = 7;
 	color = c_red;
+	audio_play_sound(snd_denied,10,false);
 }

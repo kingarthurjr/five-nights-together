@@ -35,11 +35,11 @@ if other.name = global.name //If this player is you
 	else
 	{
 	    collision = true;
-	    if (!instance_exists(obj_i_locked))
-	    {
-	        instance_create(0,0,obj_i_locked);
-	    }
-
+		if (!instance_exists(obj_i_locked))
+		{
+			instance_create(0,0,obj_i_locked)
+		}
+		obj_i_locked.keepAlive = 2;
 	}
 
 	///Door Sounds

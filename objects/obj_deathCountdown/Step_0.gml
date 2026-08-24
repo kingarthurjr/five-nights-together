@@ -8,6 +8,7 @@ htme_globalSet(global.animatronics[global.animatronicChosen-1],camNumber,buffer_
 if global.animatronicChosen = 6 and htme_globalGet("bbLocation") != 0
 {
     instance_destroy();
+	instance_create(0,0,obj_i_springtrap);
 }
 
 //Death Countdown

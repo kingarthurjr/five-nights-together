@@ -31,7 +31,7 @@ global.coinLocation = 0;
 global.target_room_code = "";
 global.my_room_code = "";
 
-if !audio_is_playing(mus_flipside)
+if !audio_is_playing(mus_flipside) and global.music
 {
 	audio_stop_all();
 	audio_play_sound(mus_flipside,10,true);

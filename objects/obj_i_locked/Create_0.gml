@@ -13,11 +13,14 @@ blur_surf = -1;
 card_surf = -1;
 
 // --- FADE SETTINGS ---
-card_alpha = 0;        // Starts completely transparent
-fade_speed = 0.08;     // Adjust this to change fade speed (0.05 is slower, 0.2 is instant)
+card_alpha = 1;
+fade_speed = 0.08;
 
 //Card Information
 title = "IT'S LOCKED";
 icon = 5;
 description = "";
 color = c_red;
+
+audio_play_sound(snd_denied,10,false);
+keepAlive = 2;
