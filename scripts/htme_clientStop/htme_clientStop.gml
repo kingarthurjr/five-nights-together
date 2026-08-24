@@ -19,6 +19,27 @@ function htme_clientStop() {
 	**      <Nothing>
 	**
 	*/
+	
+	// --- THE GLOBAL FAILSAFE ---
+	// Only trigger this if the player did not intentionally click "Quit" or "Disconnect"
+	if (global.leaveIntended == false)
+	{
+	    global.lostConnection = true; 
+    
+	    // Instantly freeze all other custom game objects
+	    instance_deactivate_all(true);
+    
+	    // Keep the network controller awake just long enough to finish the rest of this script
+	    instance_activate_object(obj_htme);
+    
+	    // Queue the room change to the lobby safely
+	    if (room != rm_findmatch)
+		{
+	        room_goto(rm_findmatch);
+	    }
+	}
+	// ---------------------------
+	
 	with (global.htme_object) {
 	    htme_debugger("htme_clientStop",htme_debug.WARNING,"STOPPING CLIENT");
 	    htme_shutdown();

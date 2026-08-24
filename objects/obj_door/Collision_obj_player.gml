@@ -90,7 +90,7 @@ if other.name = global.name //If this player is you
 				}
 			}
 	    }
-	    if room = rm_leftvent or room = rm_rightvent
+	    if (room = rm_leftvent and newroom = rm_partyroom1) or (room = rm_rightvent and newroom = rm_partyroom2)
 	    {
 	        if !audio_is_playing(snd_vent_open)
 			{

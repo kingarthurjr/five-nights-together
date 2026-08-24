@@ -15,7 +15,7 @@ function htme_clientDisconnect() {
 	**
 	*/
 
-	if global.leaveIntended = false
+	/*if global.leaveIntended = false
 	{
 		// THE OVERRIDE: Catch the disconnect before data is destroyed
 		if (room != rm_findmatch) { // Replace rm_menu with your actual menu room name
@@ -28,7 +28,7 @@ function htme_clientDisconnect() {
 		    // Queue the room change
 		    room_goto(rm_findmatch);
 		}
-	}
+	}*/
 
 
 	if (self.isServer) {
