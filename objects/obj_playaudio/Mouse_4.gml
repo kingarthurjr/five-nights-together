@@ -244,14 +244,14 @@ if !(htme_globalGet("camera") = htme_globalGet("puppet") and htme_globalGet("pup
 	        }
 			if htme_globalGet("camera") = 10 //Party Room 1
 	        {
-	            if htme_globalGet("springtrap") = 4 or htme_globalGet("springtrap") = 14 or htme_globalGet("springtrap") = 12 or htme_globalGet("springtrap") = 11
+	            if htme_globalGet("springtrap") = 4 or htme_globalGet("springtrap") = 14 or htme_globalGet("springtrap") = 12 or htme_globalGet("springtrap") = 11 or htme_globalGet("springtrap") = 1 or htme_globalGet("springtrap") = 2
 	            {
 	                htme_globalSet("bbLocation",14,buffer_u8);
 	            }
 	        }
 			if htme_globalGet("camera") = 11 //Party Room 2
 	        {
-	            if htme_globalGet("springtrap") = 4 or htme_globalGet("springtrap") = 15 or htme_globalGet("springtrap") = 10 or htme_globalGet("springtrap") = 13
+	            if htme_globalGet("springtrap") = 4 or htme_globalGet("springtrap") = 15 or htme_globalGet("springtrap") = 10 or htme_globalGet("springtrap") = 13 or htme_globalGet("springtrap") = 1 or htme_globalGet("springtrap") = 3
 	            {
 	                htme_globalSet("bbLocation",15,buffer_u8);
 	            }
