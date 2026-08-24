@@ -275,7 +275,7 @@ if !(htme_globalGet("camera") = htme_globalGet("puppet") and htme_globalGet("pup
 	
 	//Replace Button with Cooldown
 	instance_create(0,0,obj_audiocooldown); 
-    instance_create(442,418,obj_buttonload); //Create the loading dots
+    instance_create(432,418,obj_buttonload); //Create the loading dots
     instance_destroy(); //Destroy the button
 }
 else
