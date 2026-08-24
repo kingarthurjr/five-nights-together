@@ -3,9 +3,9 @@ alarm[0] = 5;
 
 randomize();
 secret = irandom_range(1,100);
-randomfact = irandom_range(1,13);
+randomfact = irandom_range(1,14);
 
-if secret <= 5
+if secret <= 2
 {
 	randomfact = irandom_range(1,3);
 	if randomfact == 1
@@ -74,5 +74,9 @@ else
 	if randomfact == 13
 	{
 	    fazfact = "Fun Fact: Starting a 1v1 will unlock the BOSS ROSTER.";
+	}
+	if randomfact == 14
+	{
+	    fazfact = "Tip: Springtrap's groans can be heard when completing his minigame";
 	}
 }
