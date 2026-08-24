@@ -10,3 +10,9 @@ if instance_exists(obj_office2_right)
 {
     image_index = 2;
 }
+
+//Invisible if Camera Up
+if instance_exists(obj_camera2)
+{
+	image_alpha = 0;
+}
