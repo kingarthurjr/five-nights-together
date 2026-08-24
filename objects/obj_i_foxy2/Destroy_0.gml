@@ -12,3 +12,5 @@ with (obj_foxy_run)
 ini_open("settings.ini");
 ini_write_real("Game","Foxy2",1);
 ini_close();
+
+htme_globalSet("foxyCourtesy",0,buffer_bool);

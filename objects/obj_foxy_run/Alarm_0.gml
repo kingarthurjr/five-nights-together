@@ -46,22 +46,13 @@ else
 	}
 	if htme_globalGet("mapSelected") = 1 //FNaF2
 	{
-		ini_open("settings.ini");
-		if ini_read_real("Game","Foxy2",0) = 0
+		if htme_globalGet("activePlayers") = 2
 		{
-			instance_create(0,0,obj_i_foxy2);
+			alarm[3] = 5*room_speed;
 		}
-		else
+		if htme_globalGet("activePlayers") > 2
 		{
-			if htme_globalGet("activePlayers") = 2
-		    {
-				alarm[3] = 5*room_speed;
-			}
-			if htme_globalGet("activePlayers") > 2
-		    {
-				alarm[3] = 10*room_speed;
-			}
+			alarm[3] = 10*room_speed;
 		}
-		ini_close();
 	}
 }
