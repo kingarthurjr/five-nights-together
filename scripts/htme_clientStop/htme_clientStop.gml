@@ -25,6 +25,10 @@ function htme_clientStop() {
 	if (global.leaveIntended == false)
 	{
 	    global.lostConnection = true; 
+		if instance_exists(obj_lighting)
+		{
+			instance_destroy(obj_lighting);
+		}
     
 	    // Instantly freeze all other custom game objects
 	    instance_deactivate_all(true);
