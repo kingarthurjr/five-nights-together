@@ -72,7 +72,7 @@ function htme_config() {
 	 * Works on Windows,Android,Linux
 	 * @type boolean
 	 */
-	self.upnp_enabled = true;
+	self.upnp_enabled = false;
 
 	/** 
 	 * WHEN USING Steam:
