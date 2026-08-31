@@ -319,6 +319,11 @@ if room != rm_waitingroom
     }*/
 }
 
+if global.animatronicChosen == 6
+{
+    global.deathCoin = true;
+}
+
 if room = rm_leftvent
 {
 	inVent = 1;
