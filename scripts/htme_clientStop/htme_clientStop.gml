@@ -8,7 +8,7 @@ function htme_clientStop() {
 	**      The server will not be informed, and you will time out on the server.
 	**      If you want to shutdown the client while informing the server
 	**      use htme_clientShutdown.
-	**  
+	**
 	**  Usage:
 	**      <See above>
 	**
@@ -19,41 +19,46 @@ function htme_clientStop() {
 	**      <Nothing>
 	**
 	*/
-	
+
 	// --- THE GLOBAL FAILSAFE ---
 	// Only trigger this if the player did not intentionally click "Quit" or "Disconnect"
 	if (global.leaveIntended == false)
 	{
-	    global.lostConnection = true; 
-		if instance_exists(obj_lighting)
+		global.lostConnection = true;
+
+		if (instance_exists(obj_lighting))
 		{
 			instance_destroy(obj_lighting);
 		}
-    
-	    // Instantly freeze all other custom game objects
-	    instance_deactivate_all(true);
-    
-	    // Keep the network controller awake just long enough to finish the rest of this script
-	    instance_activate_object(obj_htme);
-    
-	    // Queue the room change to the lobby safely
-	    if (room != rm_findmatch)
-		{
-	        room_goto(rm_findmatch);
-	    }
+
+		// Prevent gameplay objects from continuing to run during disconnect cleanup.
+		instance_deactivate_all(true);
+
+		// Keep the network controller awake so GMnet can finish shutting down.
+		instance_activate_object(obj_htme);
 	}
-	// ---------------------------
 	
-	with (global.htme_object) {
-	    htme_debugger("htme_clientStop",htme_debug.WARNING,"STOPPING CLIENT");
-	    htme_shutdown();
-	    if (self.use_udphp) {
-	        script_execute(asset_get_index("udphp_stopClient"),self.udphp_client_id);
-	        // Clean variable
-	        self.udphp_client_id = noone;        
-	    }
+	// Shut down GMnet BEFORE changing rooms.
+	with (global.htme_object)
+	{
+		htme_debugger("htme_clientStop", htme_debug.WARNING, "STOPPING CLIENT");
+		htme_shutdown();
+
+		if (self.use_udphp)
+		{
+			script_execute(asset_get_index("udphp_stopClient"), self.udphp_client_id);
+
+			// Clean variable
+			self.udphp_client_id = noone;
+		}
 	}
 
-
-
+	// Only redirect players who lost their connection unexpectedly.
+	if (global.leaveIntended == false)
+	{
+		if (room != rm_findmatch)
+		{
+			room_goto(rm_findmatch);
+		}
+	}
 }
