@@ -33,7 +33,7 @@ function htme_serverStart(argument0, argument1) {
 	self.maxConnectingClients = maxclients;
 
 	// Start upnp (if not using udphp else udphp will start the upnp)
-	if upnp_enabled and use_udphp=false
+	/*if upnp_enabled and use_udphp=false
 	{
 	    // Create a upnp handler
 	    if instance_number(obj_upnp)=0 instance_create(0,0,obj_upnp);
@@ -44,7 +44,7 @@ function htme_serverStart(argument0, argument1) {
 	        // Start the setup
 	        with obj_upnp event_user(0);
 	    }
-	}
+	}*/
 
 	// Start steamworks
 	if steam_enabled
