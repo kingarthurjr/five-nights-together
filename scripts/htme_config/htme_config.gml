@@ -90,7 +90,7 @@ function htme_config() {
 	 * The server will only reconnect if it's no longer connected.
 	 * @type real
 	 */
-	self.udphp_rctintv = 3*60*room_speed;
+	self.udphp_rctintv = 5*60*room_speed;
 
 	/** 
 	 * The timeout after which the client gives up to connect.
@@ -100,7 +100,7 @@ function htme_config() {
 	 * The timeout after which the server and client give up to connect to each other.
 	 * @type real
 	 */
-	self.global_timeout = 15*room_speed;
+	self.global_timeout = 30*room_speed;
 
 	/** 
 	 * WHEN USING GMnet PUNCH:
@@ -112,7 +112,7 @@ function htme_config() {
 	 * But this will decrease the chances you connect to the server
 	 * @type real
 	 */
-	self.punch_stage_timeout=1*room_speed; // must wait 1 sec before next try else the Messages wont be sent or the target router will stop them
+	self.punch_stage_timeout=2*room_speed; // must wait 1 sec before next try else the Messages wont be sent or the target router will stop them
 
 	/** 
 	 * Interval the servers broadcast data to the LAN, for the LAN lobby
