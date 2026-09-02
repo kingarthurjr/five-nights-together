@@ -68,7 +68,13 @@ function htme_serverBroadcastRoomChange(argument0) {
 	    key = ds_map_find_next(mapToUse, key);
 	}
 
-	htme_forceSyncLocalInstances(phash);
+	// Only force-sync the player's instances if the player still exists
+	// in the server's player map. If they have already disconnected,
+	// their instances are being cleaned up and there is nothing left to sync.
+	if (!is_undefined(player_id))
+	{
+	    htme_forceSyncLocalInstances(phash);
+	}
 
 	// Clean
 	ds_map_destroy(mapToUse);
