@@ -48,6 +48,19 @@ function htme_syncVar() {
 	var prevSyncMap = argument[5];
 	var addName = false;
 	if (argument_count > 6) addName = argument[6];
+	
+	if (is_undefined(buffer))
+	{
+	    show_debug_message(
+	        "GMNET ERROR: htme_syncVar received UNDEFINED buffer"
+	        + " | var=" + string(varname)
+	        + " | datatype=" + string(datatype)
+	        + " | newval=" + string(newval)
+	        + " | syncForce=" + string(self.syncForce)
+	    );
+
+	    return 0;
+	}
 
 	if (self.syncForce || group[? "type"] != mp_type.SMART) {
 	   //Simply add

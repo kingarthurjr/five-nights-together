@@ -98,6 +98,17 @@ function htme_syncSingleVarGroup(argument0, argument1) {
 	 * }
 	 * var_name and Number of vars only for default datatypes!
 	 **/
+	 
+	/*
+	* Make sure the network buffer still exists.
+	* GMnet can reach this function during room-change cleanup/force-sync
+	* after its normal buffer has been invalidated.
+	*/
+	if (is_undefined(self.buffer) || !buffer_exists(self.buffer))
+	{
+	    self.buffer = buffer_create(256, buffer_grow, 1);
+	}
+	
 	buffer_seek(self.buffer, buffer_seek_start, 0);
 	//Write header
 	buffer_write(self.buffer, buffer_s8, htme_packet.INSTANCE_VARGROUP);

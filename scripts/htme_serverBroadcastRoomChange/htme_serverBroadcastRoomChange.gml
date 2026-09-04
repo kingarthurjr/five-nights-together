@@ -68,7 +68,10 @@ function htme_serverBroadcastRoomChange(argument0) {
 	    key = ds_map_find_next(mapToUse, key);
 	}
 
-	htme_forceSyncLocalInstances(phash);
+	if (!is_undefined(player_id) && player_id != -1)
+	{
+	    htme_forceSyncLocalInstances(phash);
+	}
 
 	// Clean
 	ds_map_destroy(mapToUse);

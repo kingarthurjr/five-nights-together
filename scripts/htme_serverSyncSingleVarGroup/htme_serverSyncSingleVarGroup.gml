@@ -27,6 +27,11 @@ function htme_serverSyncSingleVarGroup(argument0, argument1) {
 	var buffer = argument1;
 	var num = 0;
 
+	if (is_undefined(buffer) || !buffer_exists(buffer))
+	{
+	    return false;
+	}
+
 	/**RETRIEVE INFORMATION**/
 	var inst_hash = group[? "instancehash"];
 	var inst = group[? "instance"];

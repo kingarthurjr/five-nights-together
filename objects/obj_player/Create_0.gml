@@ -93,6 +93,8 @@ mp_setType("playerName",mp_type.SMART);
 mp_add("playerSkin","skin,animatronicChosen",buffer_u8,999999*room_speed);
 mp_setType("playerSkin",mp_type.SMART);
 mp_add("controls","pressed_left,pressed_up,pressed_down,pressed_right",buffer_bool,1);
+mp_add("special","special",buffer_bool,1);
+mp_add("inVent","inVent",buffer_u8,1);
 
 /** 
  * By the way:
