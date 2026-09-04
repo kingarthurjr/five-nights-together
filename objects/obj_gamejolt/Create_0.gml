@@ -42,7 +42,7 @@ if (saved_user != "" && saved_token != "")
     GJLogin(saved_user,saved_token,OnLoginAttempt,0);
 }
 
-//GJDataSet("version","2.0.0.5",false,-1,0);
+//GJDataSet("version","2.0.0.6",false,-1,0);
 
 function OnVersionCheck(Success, Data, ErrorMessage, RetryNumber)
 {
