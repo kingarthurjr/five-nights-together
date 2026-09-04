@@ -1,6 +1,6 @@
 if htme_globalGet("mapSelected") = 0 //FNaF1
 {
-	if !instance_exists(obj_camera1)
+	if !instance_exists(obj_camera1) and !instance_exists(obj_monitor)
 	{
 		instance_create_layer(0,540,"Devices",obj_monitor);
 		with(obj_monitor)
@@ -13,7 +13,7 @@ if htme_globalGet("mapSelected") = 0 //FNaF1
 		instance_destroy(obj_arrow_right);
 		instance_destroy();
 	}
-	else
+	else if instance_exists(obj_camera1)
 	{
 		instance_destroy(obj_camera1);
 		instance_create_layer(0,540,"Devices",obj_monitor);
@@ -28,7 +28,7 @@ if htme_globalGet("mapSelected") = 0 //FNaF1
 }
 if htme_globalGet("mapSelected") = 1 //FNaF2
 {
-	if !instance_exists(obj_camera2)
+	if !instance_exists(obj_camera2) and !instance_exists(obj_monitor)
 	{
 		instance_create_layer(0,540,"Devices",obj_monitor);
 		with(obj_monitor)
@@ -42,7 +42,7 @@ if htme_globalGet("mapSelected") = 1 //FNaF2
 		instance_destroy(obj_arrow_right);
 		instance_destroy();
 	}
-	else
+	else if instance_exists(obj_camera2)
 	{
 		instance_destroy(obj_camera2);
 		instance_create_layer(0,540,"Devices",obj_monitor);
