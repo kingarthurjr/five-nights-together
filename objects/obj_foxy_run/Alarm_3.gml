@@ -14,7 +14,7 @@ else
 	else
 	{
 		//Has the Guard Removed All of the Parts?
-		if htme_globalGet("foxyClicked") = 1
+		if htme_globalGet("foxyClicked") >= 3
 		{
 		    if audio_is_playing(snd_mangle)
 			{

@@ -46,6 +46,7 @@ if htme_globalGet("foxyRunning")
 		if ini_read_real("Game","Foxy2",0) = 0
 		{
 			instance_create(0,0,obj_i_foxy2);
+			ini_write_real("Game","Foxy2",1);
 		}
 		ini_close();
 	}
@@ -56,4 +57,8 @@ else //If Foxy is not running
 	{
 		audio_stop_sound(snd_mangle);
 	}
+	part_spawn[0] = false;
+	part_spawn[1] = false;
+	part_spawn[2] = false;
+	part_spawn[3] = false;
 }
