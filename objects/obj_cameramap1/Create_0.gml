@@ -16,6 +16,7 @@ instance_create(870,219,obj_button_cam7);
 
 //Keyboard Order
 camera_list = [0, 3, null, 5, 7, 10, 6, 8, 4, 9, 11];
+index = 0;
 
 /*
 0 = Stage
