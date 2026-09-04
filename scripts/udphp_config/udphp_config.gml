@@ -105,7 +105,7 @@ function udphp_config(argument0, argument1, argument2, argument3, argument4, arg
 	/** Set timeout for master server connection
 	  * TODO: Add option to specify this value
 	  */
-	network_set_config(network_config_connect_timeout, 10000);
+	network_set_config(network_config_connect_timeout, 4000);
 
 	global.udphp_master = master_ip;
 	global.udphp_master_port = master_port;
