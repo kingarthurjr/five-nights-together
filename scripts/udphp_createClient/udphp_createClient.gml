@@ -43,6 +43,11 @@ function udphp_createClient(argument0, argument1, argument2, argument3, argument
 	var buffer = argument2;
 	var directconnect = argument3;
 	var directconnect_port = argument4;
+	
+	if (is_undefined(buffer) || !buffer_exists(buffer))
+	{
+	    buffer = buffer_create(256, buffer_grow, 1);
+	}
 
 	// Create a new client instance for this client
 	var client = instance_create(0,0,obj_punch_client);

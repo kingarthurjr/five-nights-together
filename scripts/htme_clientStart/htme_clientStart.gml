@@ -59,6 +59,11 @@ function htme_clientStart(argument0, argument1) {
 	self.server_ip = server_ip;
 	self.server_port = server_port;
 
+	if (is_undefined(self.buffer) || !buffer_exists(self.buffer))
+	{
+	    self.buffer = buffer_create(256, buffer_grow, 1);
+	}
+
 	//Set of connection
 	if (self.use_udphp) {
 	   htme_debugger("htme_clientStart",htme_debug.DEBUG,"LOADING UDPHP");
