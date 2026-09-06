@@ -17,7 +17,7 @@ sprite_prefetch(spr_jumpscare_wfoxy);
 ///Create Persistents
 global.mobile = false; //Enable if Mobile
 global.updateDetected = false;
-instance_create(0,0,obj_dual_instance); //Disable if not testing
+//instance_create(0,0,obj_dual_instance); //Disable if not testing
 instance_create(0,0,obj_discord);
 instance_create(0,0,obj_htme);
 
