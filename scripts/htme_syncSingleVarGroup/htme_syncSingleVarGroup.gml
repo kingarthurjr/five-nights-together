@@ -78,6 +78,32 @@ function htme_syncSingleVarGroup(argument0, argument1) {
 	} else {
 	   var inst_room = room;
 	}
+	
+	//============================================================
+	// FIX: DO NOT SERIALIZE INSTANCES THE TARGET CANNOT SEE
+	//============================================================
+	//
+	// GMnet originally performs this check AFTER serializing the
+	// entire vargroup. During room-change force syncing this can
+	// make the server serialize stale/irrelevant instance data.
+	//
+	// If we're sending to one specific player, and that player
+	// isn't in the instance's room, there is nothing to sync.
+	//
+	// stayAlive instances are exempt because they intentionally
+	// exist across rooms.
+	//============================================================
+
+	if (self.isServer && !is_real(target))
+	{
+	    if (target != inst_player)
+	    {
+	        if (!htme_serverPlayerIsInRoom(target,inst_room) && !htme_isStayAlive(inst_hash))
+	        {
+	            exit;
+	        }
+	    }
+	}
 
 	/** START SYNCING **/
 	htme_debugger("htme_syncSingleVarGroup",htme_debug.DEBUG,"Syncing a var group...");
