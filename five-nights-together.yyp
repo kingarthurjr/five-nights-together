@@ -970,6 +970,7 @@
     {"id":{"name":"spr_springtrap_crawl_d","path":"sprites/spr_springtrap_crawl_d/spr_springtrap_crawl_d.yy",},"order":0,},
     {"id":{"name":"spr_cam1a","path":"sprites/spr_cam1a/spr_cam1a.yy",},"order":0,},
     {"id":{"name":"udphp_clientReadData","path":"scripts/udphp_clientReadData/udphp_clientReadData.yy",},"order":9,},
+    {"id":{"name":"room_is_network_only","path":"scripts/room_is_network_only/room_is_network_only.yy",},"order":8,},
     {"id":{"name":"Obj_Steam_Networking","path":"objects/Obj_Steam_Networking/Obj_Steam_Networking.yy",},"order":0,},
     {"id":{"name":"spr_cam01","path":"sprites/spr_cam01/spr_cam01.yy",},"order":0,},
     {"id":{"name":"spr_freddy_d","path":"sprites/spr_freddy_d/spr_freddy_d.yy",},"order":0,},

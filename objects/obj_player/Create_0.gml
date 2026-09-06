@@ -6,7 +6,7 @@
 
 image_alpha = 0;
 
-if room = rm_waitingroom
+if room_is_network_only(room)
 {
 	layer = layer_get_id("Instances_4");
 }
@@ -115,7 +115,7 @@ self.time = 0;
 step = 0;
 facing = DOWN;
 
-if room = rm_waitingroom
+if room_is_network_only(room)
 {
     facing = LEFT;
     spd = 8;

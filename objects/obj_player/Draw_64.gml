@@ -14,7 +14,7 @@ else
     }
 }
 
-if room = rm_waitingroom
+if room_is_network_only(room)
 {
     draw_set_colour(color);
     draw_set_font(fnt_fnaf20);

@@ -23,7 +23,7 @@ if global.mobile = true and room != rm_gameover and room != rm_guardWin
 */
 
 ///Spawn Events
-if room = rm_waitingroom
+if room_is_network_only(room)
 {
     facing = LEFT;
     spd = 8;
@@ -277,7 +277,7 @@ if spawn = true and htme_globalGet("mapSelected") = 1
 }
 
 ///Animatronic UI
-if room != rm_waitingroom
+if !room_is_network_only(room)
 {
     if !instance_exists(obj_icon)
     {

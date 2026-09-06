@@ -49,7 +49,7 @@ if obj_gameknow.powerOut = 0 and audio_is_playing(snd_powerout)
 }*/
 
 ///Global Time
-if room = rm_waitingroom
+if room_is_network_only(room)
 {
 	self.time += 1;
 }
@@ -60,7 +60,7 @@ if self.stopMoving = false
 	if (self.pressed_up) and !(self.inVent != 0 and room = rm_officehall)
 	{
 	    facing = UP;
-	    if room = rm_waitingroom
+	    if room_is_network_only(room)
 	    {
 	        if(!place_meeting(x, y - spd, obj_solid)) if ((self.time % 2) = 0){y -= spd};
 	    }
@@ -74,7 +74,7 @@ if self.stopMoving = false
 	if (self.pressed_down) and !(self.inVent != 0 and room = rm_officehall)
 	{
 	    facing = DOWN;
-	    if room = rm_waitingroom
+	    if room_is_network_only(room)
 	    {
 	        if(!place_meeting(x, y + spd, obj_solid)) if ((self.time % 2) = 0){y += spd};
 	    }
@@ -88,7 +88,7 @@ if self.stopMoving = false
 	if (self.pressed_left) and room != rm_leftvent and room != rm_rightvent
 	{
 	    facing = LEFT;
-	    if room = rm_waitingroom
+	    if room_is_network_only(room)
 	    {
 	        if(!place_meeting(x - spd, y, obj_solid)) if ((self.time % 2) = 0){x -= spd};
 	    }
@@ -102,7 +102,7 @@ if self.stopMoving = false
 	if (self.pressed_right) and room != rm_leftvent and room != rm_rightvent
 	{
 	    facing = RIGHT;
-	    if room = rm_waitingroom
+	    if room_is_network_only(room)
 	    {
 	        if(!place_meeting(x + spd, y, obj_solid)) if ((self.time % 2) = 0){x += spd};
 	    }
@@ -128,7 +128,7 @@ if room != rm_waitingroom
 }
 
 ///Sprite Change
-if room = rm_waitingroom
+if room_is_network_only(room)
 {
 	if self.skin = 0
 	{
