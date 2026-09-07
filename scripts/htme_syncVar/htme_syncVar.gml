@@ -52,13 +52,23 @@ function htme_syncVar() {
 	if (is_undefined(buffer))
 	{
 	    show_debug_message(
-	        "GMNET ERROR: htme_syncVar received UNDEFINED buffer"
+	        "GMNET FATAL PREVENTED: htme_syncVar got UNDEFINED buffer"
 	        + " | var=" + string(varname)
-	        + " | datatype=" + string(datatype)
-	        + " | newval=" + string(newval)
-	        + " | syncForce=" + string(self.syncForce)
+	        + " | group=" + string(group[? "name"])
+	        + " | instance=" + string(group[? "instancehash"])
 	    );
+	    return 0;
+	}
 
+	if (!buffer_exists(buffer))
+	{
+	    show_debug_message(
+	        "GMNET FATAL PREVENTED: htme_syncVar got INVALID buffer"
+	        + " | buffer=" + string(buffer)
+	        + " | var=" + string(varname)
+	        + " | group=" + string(group[? "name"])
+	        + " | instance=" + string(group[? "instancehash"])
+	    );
 	    return 0;
 	}
 

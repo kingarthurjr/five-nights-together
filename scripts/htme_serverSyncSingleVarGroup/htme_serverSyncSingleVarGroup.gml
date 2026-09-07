@@ -27,22 +27,59 @@ function htme_serverSyncSingleVarGroup(argument0, argument1) {
 	var buffer = argument1;
 	var num = 0;
 
-	if (is_undefined(buffer) || !buffer_exists(buffer))
+	if (is_undefined(buffer))
 	{
 	    return false;
 	}
 
-	/**RETRIEVE INFORMATION**/
+	if (!buffer_exists(buffer))
+	{
+	    return false;
+	}
+
 	var inst_hash = group[? "instancehash"];
 	var inst = group[? "instance"];
-	var backupEntry = ds_map_find_value(self.serverBackup,inst_hash);
+
+	var backupEntry = ds_map_find_value(self.serverBackup, inst_hash);
+
+	if (is_undefined(backupEntry) || !ds_exists(backupEntry, ds_type_map))
+	{
+	    htme_debugger(
+	        "htme_serverSyncSingleVarGroup",
+	        htme_debug.WARNING,
+	        "MISSING BACKUP ENTRY FOR " + string(inst_hash)
+	    );
+	    return false;
+	}
+
 	var inst_groups = backupEntry[? "groups"];
 	var inst_object = backupEntry[? "object"];
-	var inst_player = backupEntry[? "player"];      
+	var inst_player = backupEntry[? "player"];
 	var inst_stayAlive = backupEntry[? "stayAlive"];
 
 	var backupVars = backupEntry[? "backupVars"];
 	var prevSyncMap = backupEntry[? "syncVars"];
+
+	if (is_undefined(backupVars) || !ds_exists(backupVars, ds_type_map))
+	{
+	    htme_debugger(
+	        "htme_serverSyncSingleVarGroup",
+	        htme_debug.WARNING,
+	        "MISSING backupVars FOR " + string(inst_hash)
+	    );
+	    return false;
+	}
+
+	if (is_undefined(prevSyncMap) || !ds_exists(prevSyncMap, ds_type_map))
+	{
+	    htme_debugger(
+	        "htme_serverSyncSingleVarGroup",
+	        htme_debug.WARNING,
+	        "MISSING syncVars FOR " + string(inst_hash)
+	    );
+	    return false;
+	}
+	
 	switch (group[? "datatype"]) {
 	    //Check special datatypes
 	    case mp_buffer_type.BUILTINPOSITION:  
