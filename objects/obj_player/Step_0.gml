@@ -13,11 +13,14 @@ if htme_isLocal()
 ///Night Guard Syncing
 if htme_globalGet("jumpscare") = 1
 {
-    room_goto(rm_gameover);
+    if !room_is_network_only(room)
+	{
+		room_goto(rm_gameover);
+	}
 }
 if htme_globalGet("6am") = 1
 {
-    if !instance_exists(obj_6am)
+    if !instance_exists(obj_6am) and room != rm_guardWin
     {
         instance_create(0,0,obj_6am);
     }
@@ -33,6 +36,10 @@ if htme_globalGet("powerOut") = 1
 if htme_globalGet("powerOut") = 0
 {
 	global.outageAudio = 0;
+	if audio_is_playing(snd_outage)
+	{
+		audio_stop_sound(snd_outage);
+	}
 }
 
 /*
