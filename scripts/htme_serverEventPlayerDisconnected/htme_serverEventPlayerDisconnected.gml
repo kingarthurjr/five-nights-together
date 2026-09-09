@@ -87,7 +87,4 @@ function htme_serverEventPlayerDisconnected(argument0) {
 		np_setpresence("Waiting for Players","In Lobby","icon","");
 	}
 	udphp_serverCommitData();
-
-
-
 }

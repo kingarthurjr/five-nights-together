@@ -83,6 +83,10 @@ if room = rm_waitingroom
 			randomize();
 			htme_globalSet("guardSelected",irandom_range(0,ds_list_size(htme_getPlayers())-1),buffer_s8);
 		}
+		var guard_index = htme_globalGet("guardSelected");
+		var guard_hash = ds_list_find_value(htme_getPlayers(), guard_index);
+
+		global.htme_object.guardHash = guard_hash;
 		var currentplayers = ds_list_size(htme_getPlayers());
 		np_clearpresence();
 		np_setpresence_partyparams(currentplayers,7,global.my_room_code+"_party",DISCORD_PARTY_PRIVACY_PRIVATE);
