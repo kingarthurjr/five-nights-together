@@ -240,3 +240,13 @@ if htme_globalGet("jumpscare") = 1
         }
     }
 }
+
+//Foxy Light
+if (htme_globalGet("light") = 1) and ((htme_globalGet("wfoxyTaken") != "noone" and htme_globalGet("wfoxy") = 4) or (htme_globalGet("mangleTaken") != "noone" and htme_globalGet("mangle") = 4) or  (htme_globalGet("mimicTaken") != "noone" and htme_globalGet("mimic") = 4))
+{
+	htme_globalSet("foxyWatched",1,buffer_bool);
+}
+else if !instance_exists(obj_camera2)
+{
+	htme_globalSet("foxyWatched",0,buffer_bool);
+}
