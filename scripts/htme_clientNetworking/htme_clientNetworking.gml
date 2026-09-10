@@ -30,8 +30,12 @@ function htme_clientNetworking() {
 	var in_port = ds_map_find_value(async_load, "port");
 
 	//Check that the packet is from the server
-	if (in_ip == self.server_ip) {
-	    //Read command
+	if (in_ip == self.server_ip)
+	{
+		// Any valid packet from the server proves the connection is alive.
+		self.clientTimeoutRecv = self.global_timeout;
+		
+		//Read command
 	    var code = buffer_read(in_buff, buffer_s8 );
 	    switch code {
 	        case htme_packet.SERVER_GREETINGS:

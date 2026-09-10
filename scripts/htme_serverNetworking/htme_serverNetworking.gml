@@ -30,7 +30,14 @@ function htme_serverNetworking() {
 
 	//Check that the packet is from a valid client
 	if (!is_undefined(player)) {
-	    //Read command
+	    // Any valid packet from this client proves the connection is alive.
+	    ds_map_replace(
+	        self.serverTimeoutRecv,
+	        in_ip + ":" + string(in_port),
+	        self.global_timeout
+	    );
+		
+		//Read command
 	    var code = buffer_read(in_buff, buffer_s8 );
 	    switch code {
 	        case htme_packet.INSTANCE_VARGROUP:
