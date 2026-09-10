@@ -1636,6 +1636,7 @@
     {"id":{"name":"obj_gobutton","path":"objects/obj_gobutton/obj_gobutton.yy",},"order":8,},
     {"id":{"name":"scr_serverGuardCheck","path":"scripts/scr_serverGuardCheck/scr_serverGuardCheck.yy",},"order":30,},
     {"id":{"name":"fnt_fnaf60","path":"fonts/fnt_fnaf60/fnt_fnaf60.yy",},"order":8,},
+    {"id":{"name":"htme_resetNetworkRound","path":"scripts/htme_resetNetworkRound/htme_resetNetworkRound.yy",},"order":46,},
     {"id":{"name":"obj_handunit_shadow","path":"objects/obj_handunit_shadow/obj_handunit_shadow.yy",},"order":13,},
     {"id":{"name":"snd_foxylaugh2","path":"sounds/snd_foxylaugh2/snd_foxylaugh2.yy",},"order":4,},
     {"id":{"name":"spr_party1_wbonnie","path":"sprites/spr_party1_wbonnie/spr_party1_wbonnie.yy",},"order":9,},
