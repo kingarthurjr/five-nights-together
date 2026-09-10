@@ -6,3 +6,7 @@ if self.clientStopped = true {
 ///htme_roomstart(); - Sync current room
 htme_roomstart();
 
+/*if (room == rm_waitingroom)
+{
+    alarm[0] = room_speed;
+}*/
