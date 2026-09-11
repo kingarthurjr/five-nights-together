@@ -32,7 +32,7 @@ if keyboard_check_pressed(global.cameraKey) and !instance_exists(obj_monitor)
 	{
 		if !instance_exists(obj_camera2) and !instance_exists(obj_monitor)
 		{
-			var monitor = instance_create_layer(0,540,"Devices",obj_monitor);
+			instance_create_layer(0,540,"Devices",obj_monitor);
 			with(obj_monitor)
 			{
 				image_index = 0;
