@@ -318,6 +318,33 @@ if !room_is_network_only(room)
         }
     }*/
 }
+else
+{
+	if instance_exists(obj_icon)
+	{
+		instance_destroy(obj_icon);
+	}
+	if instance_exists(obj_mimic_icon)
+	{
+		instance_destroy(obj_mimic_icon);
+	}
+	if instance_exists(obj_special)
+	{
+		instance_destroy(obj_special);
+	}
+	if instance_exists(obj_lighting)
+	{
+		instance_destroy(obj_lighting);
+	}
+	if instance_exists(obj_minimap1)
+	{
+		instance_destroy(obj_minimap1);
+	}
+	if instance_exists(obj_minimap2)
+	{
+		instance_destroy(obj_minimap2);
+	}
+}
 
 if global.animatronicChosen == 6
 {
