@@ -34,6 +34,7 @@ if htme_globalGet("cameraActive") and htme_globalGet("camera") = activeFreddy
 	ini_open("settings.ini");
 	if ini_read_real("Game","Freddy",0) = 0
 	{
+		ini_write_real("Game","Freddy",1);
 		instance_create(0,0,obj_i_freddy);
 	}
 	ini_close();

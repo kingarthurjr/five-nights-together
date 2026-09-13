@@ -42,13 +42,6 @@ if htme_globalGet("foxyRunning")
 				part_spawn[slots[i]] = true;
 			}
 		}
-		ini_open("settings.ini");
-		if ini_read_real("Game","Foxy2",0) = 0
-		{
-			instance_create(0,0,obj_i_foxy2);
-			ini_write_real("Game","Foxy2",1);
-		}
-		ini_close();
 	}
 }
 else //If Foxy is not running
