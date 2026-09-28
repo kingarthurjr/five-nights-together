@@ -9,47 +9,67 @@ function htme_serverSyncSingleVarGroup(argument0, argument1) {
 	**
 	**      Stores the data of the instance in the buffer. if the instance does
 	**      not exist, data from the backup list is taken
-	**  
-	**  Usage:
-	**      <See above>
-	**
-	**  Arguments:
-	**      group     ds_map            vargroup to sync
-	**      buffer    real              id of sending buffer
-	**
 	**
 	**  Returns:
 	**      real - number of synced variables - 0 (false) if none!
-	**
 	*/
 
 	var group = argument0;
 	var buffer = argument1;
 	var num = 0;
 
+	// Buffer must exist.
 	if (is_undefined(buffer))
 	{
-	    return false;
+		return false;
 	}
 
 	if (!buffer_exists(buffer))
 	{
-	    return false;
+		return false;
 	}
 
+	// Group must exist.
+	if (is_undefined(group) || !ds_exists(group, ds_type_map))
+	{
+		return false;
+	}
+
+	// Backup map must exist.
+	if (
+		is_undefined(self.serverBackup)
+		|| !ds_exists(self.serverBackup, ds_type_map)
+	)
+	{
+		return false;
+	}
+
+	/** RETRIEVE INFORMATION **/
+
 	var inst_hash = group[? "instancehash"];
-	var inst = group[? "instance"];
 
-	var backupEntry = ds_map_find_value(self.serverBackup, inst_hash);
+	if (is_undefined(inst_hash) || inst_hash == "")
+	{
+		return false;
+	}
 
+	var backupEntry = ds_map_find_value(
+		self.serverBackup,
+		inst_hash
+	);
+
+	// This is the important stale-state check.
 	if (is_undefined(backupEntry) || !ds_exists(backupEntry, ds_type_map))
 	{
-	    htme_debugger(
-	        "htme_serverSyncSingleVarGroup",
-	        htme_debug.WARNING,
-	        "MISSING BACKUP ENTRY FOR " + string(inst_hash)
-	    );
-	    return false;
+		htme_debugger(
+			"htme_serverSyncSingleVarGroup",
+			htme_debug.WARNING,
+			"Refused to sync instance " +
+			string(inst_hash) +
+			": MISSING BACKUP ENTRY!"
+		);
+
+		return false;
 	}
 
 	var inst_groups = backupEntry[? "groups"];
@@ -60,66 +80,234 @@ function htme_serverSyncSingleVarGroup(argument0, argument1) {
 	var backupVars = backupEntry[? "backupVars"];
 	var prevSyncMap = backupEntry[? "syncVars"];
 
-	if (is_undefined(backupVars) || !ds_exists(backupVars, ds_type_map))
+	// These maps are required for serialization.
+	if (
+		is_undefined(backupVars)
+		|| !ds_exists(backupVars, ds_type_map)
+	)
 	{
-	    htme_debugger(
-	        "htme_serverSyncSingleVarGroup",
-	        htme_debug.WARNING,
-	        "MISSING backupVars FOR " + string(inst_hash)
-	    );
-	    return false;
+		return false;
 	}
 
-	if (is_undefined(prevSyncMap) || !ds_exists(prevSyncMap, ds_type_map))
+	if (
+		is_undefined(prevSyncMap)
+		|| !ds_exists(prevSyncMap, ds_type_map)
+	)
 	{
-	    htme_debugger(
-	        "htme_serverSyncSingleVarGroup",
-	        htme_debug.WARNING,
-	        "MISSING syncVars FOR " + string(inst_hash)
-	    );
-	    return false;
+		return false;
 	}
-	
-	switch (group[? "datatype"]) {
-	    //Check special datatypes
-	    case mp_buffer_type.BUILTINPOSITION:  
-	        num += htme_syncVar(buffer,group,buffer_f32,backupVars[? "x"],"x",prevSyncMap);
-	        num += htme_syncVar(buffer,group,buffer_f32,backupVars[? "y"],"y",prevSyncMap);
-	    break;
-	    case mp_buffer_type.BUILTINBASIC:  
-	        num += htme_syncVar(buffer,group,buffer_u8,backupVars[? "image_alpha"],"image_alpha",prevSyncMap);
-	        num += htme_syncVar(buffer,group,buffer_u32,backupVars[? "image_blend"],"image_blend",prevSyncMap);
-	        num += htme_syncVar(buffer,group,buffer_u16,backupVars[? "image_index"],"image_index",prevSyncMap);
-	        num += htme_syncVar(buffer,group,buffer_f32,backupVars[? "image_speed"],"image_speed",prevSyncMap);
-	        num += htme_syncVar(buffer,group,buffer_f32,backupVars[? "image_xscale"],"image_xscale",prevSyncMap);
-	        num += htme_syncVar(buffer,group,buffer_f32,backupVars[? "image_yscale"],"image_yscale",prevSyncMap);
-	        num += htme_syncVar(buffer,group,buffer_f32,backupVars[? "image_angle"],"image_angle",prevSyncMap);
-	        num += htme_syncVar(buffer,group,buffer_bool,backupVars[? "visible"],"visible",prevSyncMap);
-	    break;
-	    case mp_buffer_type.BUILTINPHYSICS:
-	        num += htme_syncVar(buffer,group,buffer_f32,backupVars[? "direction"],"direction",prevSyncMap);
-	        num += htme_syncVar(buffer,group,buffer_f32,backupVars[? "gravity"],"gravity",prevSyncMap);
-	        num += htme_syncVar(buffer,group,buffer_u16,backupVars[? "gravity_direction"],"gravity_direction",prevSyncMap);
-	        num += htme_syncVar(buffer,group,buffer_f32,backupVars[? "friction"],"friction",prevSyncMap);
-	        num += htme_syncVar(buffer,group,buffer_f32,backupVars[? "hspeed"],"hspeed",prevSyncMap);
-	        num += htme_syncVar(buffer,group,buffer_f32,backupVars[? "vspeed"],"vspeed",prevSyncMap);
-	    break;
-	    default:
-	        //Simple datatype
-	        buffer_write(buffer, buffer_u8, ds_list_size(group[? "variables"]));
-	        for (var l=0;l<ds_list_size(group[? "variables"]);l++) {
-	            var vname = ds_list_find_value(group[? "variables"],l);
-	            var vval = ds_map_find_value(backupVars,vname);
-	            if (is_undefined(vval)) {
-	               //Undefined! We haven't even recieved this yet, how on earth would be sync it?!
-	               return false;
-	            }
-	            num += htme_syncVar(buffer,group,group[? "datatype"],vval,vname,prevSyncMap,true);
-	        }
-	    break;
+
+	// The server should never serialize an ownerless instance.
+	if (!is_string(inst_player) || inst_player == "")
+	{
+		return false;
 	}
+
+	switch (group[? "datatype"])
+	{
+		// Check special datatypes
+		case mp_buffer_type.BUILTINPOSITION:
+
+			num += htme_syncVar(
+				buffer,
+				group,
+				buffer_f32,
+				backupVars[? "x"],
+				"x",
+				prevSyncMap
+			);
+
+			num += htme_syncVar(
+				buffer,
+				group,
+				buffer_f32,
+				backupVars[? "y"],
+				"y",
+				prevSyncMap
+			);
+
+		break;
+
+		case mp_buffer_type.BUILTINBASIC:
+
+			num += htme_syncVar(
+				buffer,
+				group,
+				buffer_u8,
+				backupVars[? "image_alpha"],
+				"image_alpha",
+				prevSyncMap
+			);
+
+			num += htme_syncVar(
+				buffer,
+				group,
+				buffer_u32,
+				backupVars[? "image_blend"],
+				"image_blend",
+				prevSyncMap
+			);
+
+			num += htme_syncVar(
+				buffer,
+				group,
+				buffer_u16,
+				backupVars[? "image_index"],
+				"image_index",
+				prevSyncMap
+			);
+
+			num += htme_syncVar(
+				buffer,
+				group,
+				buffer_f32,
+				backupVars[? "image_speed"],
+				"image_speed",
+				prevSyncMap
+			);
+
+			num += htme_syncVar(
+				buffer,
+				group,
+				buffer_f32,
+				backupVars[? "image_xscale"],
+				"image_xscale",
+				prevSyncMap
+			);
+
+			num += htme_syncVar(
+				buffer,
+				group,
+				buffer_f32,
+				backupVars[? "image_yscale"],
+				"image_yscale",
+				prevSyncMap
+			);
+
+			num += htme_syncVar(
+				buffer,
+				group,
+				buffer_f32,
+				backupVars[? "image_angle"],
+				"image_angle",
+				prevSyncMap
+			);
+
+			num += htme_syncVar(
+				buffer,
+				group,
+				buffer_bool,
+				backupVars[? "visible"],
+				"visible",
+				prevSyncMap
+			);
+
+		break;
+
+		case mp_buffer_type.BUILTINPHYSICS:
+
+			num += htme_syncVar(
+				buffer,
+				group,
+				buffer_f32,
+				backupVars[? "direction"],
+				"direction",
+				prevSyncMap
+			);
+
+			num += htme_syncVar(
+				buffer,
+				group,
+				buffer_f32,
+				backupVars[? "gravity"],
+				"gravity",
+				prevSyncMap
+			);
+
+			num += htme_syncVar(
+				buffer,
+				group,
+				buffer_u16,
+				backupVars[? "gravity_direction"],
+				"gravity_direction",
+				prevSyncMap
+			);
+
+			num += htme_syncVar(
+				buffer,
+				group,
+				buffer_f32,
+				backupVars[? "friction"],
+				"friction",
+				prevSyncMap
+			);
+
+			num += htme_syncVar(
+				buffer,
+				group,
+				buffer_f32,
+				backupVars[? "hspeed"],
+				"hspeed",
+				prevSyncMap
+			);
+
+			num += htme_syncVar(
+				buffer,
+				group,
+				buffer_f32,
+				backupVars[? "vspeed"],
+				"vspeed",
+				prevSyncMap
+			);
+
+		break;
+
+		default:
+
+			// Simple datatype
+			var variableList = group[? "variables"];
+
+			if (
+				is_undefined(variableList)
+				|| !ds_exists(variableList, ds_type_list)
+			)
+			{
+				return false;
+			}
+
+			buffer_write(
+				buffer,
+				buffer_u8,
+				ds_list_size(variableList)
+			);
+
+			for (
+				var l = 0;
+				l < ds_list_size(variableList);
+				l += 1
+			)
+			{
+				var vname = ds_list_find_value(variableList, l);
+				var vval = ds_map_find_value(backupVars, vname);
+
+				if (is_undefined(vval))
+				{
+					return false;
+				}
+
+				num += htme_syncVar(
+					buffer,
+					group,
+					group[? "datatype"],
+					vval,
+					vname,
+					prevSyncMap,
+					true
+				);
+			}
+
+		break;
+	}
+
 	return num;
-
-
-
 }
