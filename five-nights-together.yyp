@@ -1117,6 +1117,7 @@
     {"id":{"name":"spr_arrow_mask","path":"sprites/spr_arrow_mask/spr_arrow_mask.yy",},"order":6,},
     {"id":{"name":"htmerpc_SCRIPTS_RUN_IN_ALL_ROOMS_INIT","path":"scripts/htmerpc_SCRIPTS_RUN_IN_ALL_ROOMS_INIT/htmerpc_SCRIPTS_RUN_IN_ALL_ROOMS_INIT.yy",},"order":3,},
     {"id":{"name":"htmerpc_Send_Return_Value","path":"scripts/htmerpc_Send_Return_Value/htmerpc_Send_Return_Value.yy",},"order":1,},
+    {"id":{"name":"spr_phantom_bb","path":"sprites/spr_phantom_bb/spr_phantom_bb.yy",},"order":12,},
     {"id":{"name":"spr_office2_tbonnie","path":"sprites/spr_office2_tbonnie/spr_office2_tbonnie.yy",},"order":1,},
     {"id":{"name":"spr_puppet_d","path":"sprites/spr_puppet_d/spr_puppet_d.yy",},"order":0,},
     {"id":{"name":"htmerpc_callback","path":"scripts/htmerpc_callback/htmerpc_callback.yy",},"order":3,},
